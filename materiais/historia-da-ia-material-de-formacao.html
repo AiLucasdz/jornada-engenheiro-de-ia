@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>História da IA — material de formação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F3F5F4;
+    --surface:#FFFFFF;
+    --ink:#14191C;
+    --muted:#5C6A70;
+    --line:#D8DEDC;
+    --frost:#2E6F9E;        /* invernos / estrutura */
+    --frost-wash:#E6EEF4;
+    --ember:#A9741B;        /* primaveras / avanços */
+    --ember-wash:#F5EEDF;
+    --alert:#8C3A2B;
+    --measure:74ch;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;} *{transition:none !important;}}
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,sans-serif;
+    font-size:17px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px 96px;}
+
+  /* ---------- tipografia ---------- */
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.14;margin:0;}
+  h1{font-size:clamp(2.4rem,6vw,3.8rem);letter-spacing:-.02em;font-variation-settings:"SOFT" 0,"WONK" 1;}
+  h2{font-size:clamp(1.6rem,3.6vw,2.1rem);letter-spacing:-.01em;}
+  h3{font-size:1.18rem;font-family:"IBM Plex Sans",sans-serif;font-weight:600;letter-spacing:-.005em;}
+  p{margin:0 0 1em;max-width:var(--measure);}
+  a{color:var(--frost);text-underline-offset:3px;}
+  a:hover{color:var(--ink);}
+  a:focus-visible,summary:focus-visible{outline:2px solid var(--frost);outline-offset:3px;border-radius:2px;}
+  strong{font-weight:600;}
+  em{font-style:italic;}
+  code{font-family:"IBM Plex Mono",monospace;font-size:.88em;background:var(--frost-wash);padding:1px 5px;border-radius:3px;}
+
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace;font-size:.7rem;font-weight:500;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+  }
+
+  /* ---------- capa ---------- */
+  header.capa{padding:88px 0 40px;border-bottom:1px solid var(--line);}
+  .capa .eyebrow{display:block;margin-bottom:22px;}
+  .tese{
+    font-family:"Fraunces",Georgia,serif;font-size:clamp(1.15rem,2.4vw,1.4rem);
+    line-height:1.45;color:var(--ink);max-width:60ch;margin:26px 0 0;
+  }
+  .credito{margin-top:30px;font-size:.9rem;color:var(--muted);max-width:60ch;}
+
+  /* ---------- faixa do clima (elemento-assinatura) ---------- */
+  .clima{margin:52px 0 8px;}
+  .clima-barra{display:flex;height:15px;border-radius:2px;overflow:hidden;border:1px solid var(--line);}
+  .clima-barra span{display:block;}
+  .q1{background:#E9E5DC;flex:12;}
+  .q2{background:var(--ember);opacity:.55;flex:17;}
+  .q3{background:var(--frost);flex:7;}
+  .q4{background:var(--ember);opacity:.7;flex:7;}
+  .q5{background:var(--frost);flex:8;}
+  .q6{background:#C9D6D2;flex:17;}
+  .q7{background:var(--ember);opacity:.85;flex:10;}
+  .q8{background:var(--ember);flex:5;}
+  .clima-escala{
+    display:flex;justify-content:space-between;margin-top:8px;
+    font-family:"IBM Plex Mono",monospace;font-size:.68rem;color:var(--muted);
+  }
+  .clima-nota{margin-top:14px;font-size:.88rem;color:var(--muted);max-width:62ch;}
+  .clima-legenda{
+    list-style:none;margin:16px 0 0;padding:0;
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:7px 26px;
+    font-size:.8rem;color:var(--ink);
+  }
+  .clima-legenda li{display:flex;align-items:baseline;gap:8px;}
+  .clima-legenda i{
+    flex:0 0 auto;width:11px;height:11px;border-radius:2px;
+    border:1px solid rgba(0,0,0,.12);transform:translateY(1px);
+  }
+  .clima-legenda em{
+    font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.68rem;
+    color:var(--muted);margin-left:auto;padding-left:10px;white-space:nowrap;
+  }
+
+  /* ---------- seções ---------- */
+  section{padding:62px 0 0;}
+  .cabeca{border-top:2px solid var(--ink);padding-top:14px;margin-bottom:34px;}
+  .cabeca .eyebrow{display:block;margin-bottom:10px;}
+  .intro-secao{color:var(--muted);max-width:64ch;}
+
+  /* ---------- blocos da linha do tempo ---------- */
+  .bloco{
+    display:grid;grid-template-columns:112px 1fr;gap:28px;
+    padding:26px 0 30px;border-left:4px solid var(--line);padding-left:26px;margin-bottom:2px;
+  }
+  .bloco.quente{border-left-color:var(--ember);background:linear-gradient(90deg,var(--ember-wash),transparent 42%);}
+  .bloco.frio{border-left-color:var(--frost);background:linear-gradient(90deg,var(--frost-wash),transparent 42%);}
+  .bloco.neutro{border-left-color:#B9C4C0;}
+  .anos{font-family:"IBM Plex Mono",monospace;font-size:.94rem;font-weight:600;color:var(--muted);padding-top:3px;}
+  .anos small{display:block;font-weight:400;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;margin-top:7px;}
+  .bloco.quente .anos small{color:var(--ember);}
+  .bloco.frio .anos small{color:var(--frost);}
+  .corpo h3{margin-bottom:12px;}
+  .corpo p:last-child{margin-bottom:0;}
+
+  ul.marcos{list-style:none;margin:0 0 14px;padding:0;max-width:var(--measure);}
+  ul.marcos li{padding:7px 0 7px 0;border-bottom:1px dotted var(--line);}
+  ul.marcos li:last-child{border-bottom:none;}
+  ul.marcos b{font-family:"IBM Plex Mono",monospace;font-size:.86rem;font-weight:600;color:var(--ink);margin-right:8px;}
+
+  .porque{
+    margin-top:16px;padding:13px 16px;background:var(--surface);
+    border:1px solid var(--line);border-radius:4px;font-size:.94rem;max-width:var(--measure);
+  }
+  .porque b{display:block;font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);margin-bottom:5px;font-weight:600;}
+  .porque p{margin:0;}
+
+  /* ---------- cartões de conceito ---------- */
+  .conceito{
+    background:var(--surface);border:1px solid var(--line);border-radius:5px;
+    padding:30px 30px 24px;margin-bottom:22px;
+  }
+  .conceito .eyebrow{display:block;margin-bottom:10px;}
+  .conceito h3{font-size:1.32rem;font-family:"Fraunces",Georgia,serif;font-weight:600;margin-bottom:14px;}
+  .frase-chave{
+    font-family:"Fraunces",Georgia,serif;font-size:1.12rem;line-height:1.45;
+    border-left:3px solid var(--ember);padding-left:16px;margin:0 0 20px;max-width:58ch;
+  }
+  .passo{margin-bottom:16px;max-width:var(--measure);}
+  .passo b{display:block;font-size:.94rem;margin-bottom:2px;}
+  .analogia{
+    background:var(--ember-wash);border-radius:4px;padding:16px 18px;margin:20px 0;
+    font-size:.95rem;max-width:var(--measure);
+  }
+  .analogia b{display:block;font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ember);margin-bottom:6px;}
+  .analogia p:last-child{margin-bottom:0;}
+
+  ol.pratica{margin:0;padding-left:1.2em;max-width:var(--measure);}
+  ol.pratica li{margin-bottom:10px;}
+  ol.pratica li::marker{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--frost);}
+
+  /* ---------- padrões ---------- */
+  .padrao{display:grid;grid-template-columns:44px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line);}
+  .padrao:last-child{border-bottom:none;}
+  .padrao .num{font-family:"IBM Plex Mono",monospace;font-size:1.5rem;font-weight:600;color:var(--frost);line-height:1;}
+  .padrao h3{margin-bottom:6px;}
+  .padrao p{margin-bottom:0;font-size:.96rem;}
+
+  /* ---------- tabelas ---------- */
+  .tabela-scroll{overflow-x:auto;margin-bottom:20px;}
+  table{border-collapse:collapse;width:100%;min-width:520px;font-size:.93rem;}
+  th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;border-bottom:1.5px solid var(--ink);}
+  td.errado{color:var(--alert);}
+
+  /* ---------- trilha ---------- */
+  .nivel{border-top:1px solid var(--line);padding:24px 0;}
+  .nivel:first-of-type{border-top:2px solid var(--ink);}
+  .nivel-topo{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px;}
+  .nivel-topo h3{font-size:1.1rem;}
+  .nivel-topo .eyebrow{color:var(--frost);}
+  .nivel > p{color:var(--muted);font-size:.92rem;margin-bottom:16px;}
+  .livro{padding:14px 0;border-bottom:1px dotted var(--line);max-width:var(--measure);}
+  .livro:last-child{border-bottom:none;}
+  .livro b{display:block;font-size:1rem;}
+  .livro .autor{font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--muted);display:block;margin:2px 0 6px;}
+  .livro p{margin:0;font-size:.93rem;}
+  .selo{
+    display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.63rem;letter-spacing:.1em;
+    text-transform:uppercase;background:var(--ember);color:#fff;padding:2px 7px;border-radius:3px;
+    margin-left:8px;vertical-align:2px;font-weight:600;
+  }
+  .selo.frio{background:var(--frost);}
+
+  .aviso{
+    border:1px solid var(--alert);border-radius:4px;padding:16px 18px;margin-top:22px;
+    font-size:.93rem;max-width:var(--measure);
+  }
+  .aviso b{color:var(--alert);}
+
+  /* ---------- checklist ---------- */
+  .check{
+    background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--frost);
+    border-radius:4px;padding:20px 24px;margin-bottom:14px;max-width:var(--measure);
+  }
+  .check b{display:block;font-family:"Fraunces",Georgia,serif;font-size:1.08rem;margin-bottom:6px;}
+  .check p{margin:0;font-size:.94rem;color:var(--muted);}
+
+  footer{margin-top:70px;padding-top:26px;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted);}
+
+  /* ---------- responsivo ---------- */
+  @media (max-width:640px){
+    body{font-size:16px;}
+    .wrap{padding:0 18px 64px;}
+    header.capa{padding:52px 0 32px;}
+    .bloco{grid-template-columns:1fr;gap:12px;padding-left:18px;border-left-width:3px;}
+    .anos{padding-top:0;}
+    .anos small{display:inline;margin-left:10px;margin-top:0;}
+    .padrao{grid-template-columns:32px 1fr;gap:14px;}
+    .conceito{padding:22px 20px 18px;}
+    .clima-escala span:nth-child(2){display:none;}
+  }
+
+  /* ---------- impressão / PDF ---------- */
+  @media print{
+    body{background:#fff;font-size:11pt;}
+    .wrap{max-width:none;padding:0;}
+    header.capa{padding-top:0;}
+    section{padding-top:28px;page-break-inside:auto;}
+    .bloco,.conceito,.check,.livro,.padrao{page-break-inside:avoid;}
+    .cabeca{page-break-after:avoid;}
+    a{color:var(--ink);text-decoration:none;}
+    a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#666;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="capa">
+  <span class="eyebrow">Material de formação · Área de IA · Dizevolv</span>
+  <h1>Como a inteligência artificial chegou até aqui</h1>
+  <p class="tese">Oitenta anos separam um neurônio rabiscado num papel da caixa de texto que você usa todo dia. No meio do caminho, o campo quase morreu duas vezes — e não foi por falha técnica.</p>
+  <p class="credito">Leitura estimada: 25 minutos. Guia de estudo depois: semanas. A ideia não é decorar datas, é entender por que as coisas aconteceram na ordem em que aconteceram — porque esses mesmos padrões decidem quais projetos de IA dão certo dentro de uma empresa hoje.</p>
+
+  <div class="clima">
+    <div class="clima-barra" role="img" aria-label="Faixa do clima de financiamento da IA entre 1943 e 2026: dois períodos frios, correspondentes aos invernos da IA, entre períodos de euforia.">
+      <span class="q1" title="1943–1955 · Fundações: o campo ainda não tinha nome"></span><span class="q2" title="1956–1973 · Primeira primavera"></span><span class="q3" title="1974–1980 · Primeiro inverno"></span><span class="q4" title="1980–1987 · Sistemas especialistas"></span><span class="q5" title="1987–1995 · Segundo inverno"></span><span class="q6" title="1995–2011 · Retomada silenciosa"></span><span class="q7" title="2012–2022 · Deep learning e Transformer"></span><span class="q8" title="2022–2026 · Explosão"></span>
+    </div>
+    <div class="clima-escala"><span>1943</span><span>1980</span><span>2026</span></div>
+    <ul class="clima-legenda">
+      <li><i style="background:#E9E5DC"></i>Antes do campo existir <em>1943–1955</em></li>
+      <li><i style="background:var(--ember)"></i>Euforia e dinheiro entrando <em>1956–1973 · 1980–1987 · 2012–hoje</em></li>
+      <li><i style="background:var(--frost)"></i>Inverno: verba cortada <em>1974–1980 · 1987–1995</em></li>
+      <li><i style="background:#C9D6D2"></i>Retomada silenciosa, sem hype <em>1995–2011</em></li>
+    </ul>
+    <p class="clima-nota">Nos trechos cor de âmbar, quanto mais forte o tom, maior o volume de investimento e de expectativa daquele período — o mais intenso de todos é o de agora. A faixa acompanha o documento inteiro: cada bloco da linha do tempo tem uma barra lateral com a cor do clima correspondente, e os dois trechos azuis são os invernos da IA.</p>
+  </div>
+</header>
+
+<!-- ============ PARTE 1 ============ -->
+<section id="linha-do-tempo">
+  <div class="cabeca">
+    <span class="eyebrow">Parte 1 de 6</span>
+    <h2>A linha do tempo, em linha reta</h2>
+  </div>
+  <p class="intro-secao">Sete blocos, de 1943 a hoje. Cada um termina com o que ele ensina — que é a parte que interessa pro nosso trabalho.</p>
+
+  <div class="bloco neutro">
+    <div class="anos">1943<br>1955<small>Fundações</small></div>
+    <div class="corpo">
+      <h3>A ideia antes da máquina</h3>
+      <ul class="marcos">
+        <li><b>1943</b> Warren McCulloch e Walter Pitts publicam o primeiro modelo matemático de um neurônio: ele recebe sinais, soma, e dispara se a soma passar de um limite. É o marco zero de tudo que veio depois.</li>
+        <li><b>1950</b> Alan Turing publica <em>Computing Machinery and Intelligence</em> e troca a pergunta impossível ("máquinas pensam?") por um teste prático: se uma pessoa conversando por escrito não distingue máquina de gente, a máquina passou.</li>
+        <li><b>1951</b> Marvin Minsky e Dean Edmonds constroem o SNARC, a primeira rede neural física: 40 neurônios feitos de válvulas e peças de avião. Aprendeu a sair de um labirinto.</li>
+        <li><b>1952</b> Arthur Samuel, na IBM, cria um programa de damas que aprende com a própria experiência e passa a ganhar dos criadores. Ele cunha o termo <em>machine learning</em> em 1959.</li>
+        <li><b>1954</b> Turing morre aos 41 anos, após ser condenado por homossexualidade e submetido a castração química. O Reino Unido só se desculpou em 2009.</li>
+      </ul>
+      <div class="porque">
+        <b>Por que importa</b>
+        <p>O campo só destravou quando Turing trocou uma pergunta filosófica por um teste operacional. É a mesma lógica de definir a métrica antes de aprovar o projeto: enquanto a pergunta for "isso é inteligente?", não há resposta; quando vira "isso reduz o tempo de X em Y%?", há.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco quente">
+    <div class="anos">1956<br>1973<small>Primavera</small></div>
+    <div class="corpo">
+      <h3>O batismo e a euforia</h3>
+      <ul class="marcos">
+        <li><b>1956</b> John McCarthy organiza um workshop de oito semanas no Dartmouth College com dez pesquisadores — entre eles Minsky, Claude Shannon, Allen Newell e Herbert Simon. Ali nasce o termo <strong>inteligência artificial</strong>. A proposta original dizia que dava pra avançar muito "em um verão". Levou 66 anos.</li>
+        <li><b>1958</b> Frank Rosenblatt constrói o Perceptron, máquina do tamanho de um armário que reconhecia formas. Ele diz ao <em>New York Times</em> que ela logo andaria, falaria, se reproduziria e teria consciência de si.</li>
+        <li><b>1966</b> Joseph Weizenbaum cria o ELIZA, que imitava uma psicoterapeuta com casamento de palavras-chave. Sem nenhuma inteligência. Mesmo assim a própria secretária dele pediu privacidade pra conversar com o programa. Weizenbaum passou o resto da vida criticando o campo.</li>
+        <li><b>1969</b> Minsky e Papert provam que o Perceptron de uma camada não resolve o XOR — um problema de lógica básico. Redes neurais viram assunto proibido na academia.</li>
+        <li><b>1973</b> O relatório Lighthill demole o campo no Reino Unido. O governo corta o financiamento.</li>
+      </ul>
+      <div class="porque">
+        <b>Por que importa</b>
+        <p>Ninguém entregou consciência, e a conta chegou. O ELIZA também deixou um alerta que vale hoje: as pessoas atribuem inteligência e intenção a sistemas que só combinam padrões. Isso enche os olhos numa demo e vira problema em produção.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco frio">
+    <div class="anos">1974<br>1980<small>1º inverno</small></div>
+    <div class="corpo">
+      <h3>Primeiro inverno</h3>
+      <p>Verba cortada nos dois lados do Atlântico, laboratórios fechados, pesquisadores de redes neurais tratados como malucos. A causa não foi a tecnologia ter falhado — foi a distância entre o que foi prometido em 1958 e o que existia em 1973.</p>
+      <div class="porque">
+        <b>Por que importa</b>
+        <p>Esse é o mecanismo do inverno, e ele se repete em escala de empresa. Se a área de IA promete "vai substituir metade do time comercial" e entrega 15% de ganho de eficiência, o orçamento do ano seguinte some — mesmo que os 15% fossem um resultado excelente.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco quente">
+    <div class="anos">1980<br>1987<small>Primavera</small></div>
+    <div class="corpo">
+      <h3>Sistemas especialistas: o primeiro ROI de verdade</h3>
+      <p>A IA volta por outro caminho. A receita: entrevistar um especialista humano por centenas de horas e transformar o conhecimento dele em regras <code>se… então…</code>.</p>
+      <ul class="marcos">
+        <li><b>MYCIN</b> diagnosticava infecções bacterianas melhor do que muitos médicos jovens.</li>
+        <li><b>XCON</b> configurava computadores na Digital Equipment e economizava cerca de US$ 40 milhões por ano. Primeira vez que IA gera retorno mensurável dentro de uma empresa.</li>
+        <li><b>1982</b> O Japão anuncia o projeto Quinta Geração, de US$ 850 milhões. EUA e Reino Unido abrem o cofre em resposta.</li>
+      </ul>
+      <div class="porque">
+        <b>Por que importa</b>
+        <p>Essa é a era mais parecida com o que fazemos hoje. A fórmula que funcionou: <strong>escopo estreito + regra clara + processo caro</strong>. Continua sendo a fórmula. Projetos que dão retorno rápido são os que atacam um processo específico e caro, não os que prometem transformar a empresa.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco frio">
+    <div class="anos">1987<br>1995<small>2º inverno</small></div>
+    <div class="corpo">
+      <h3>Segundo inverno — e a semente plantada no meio dele</h3>
+      <p>Os sistemas especialistas quebraram por um motivo específico: eram <strong>caros de manter</strong>. Cada caso fora das regras dava resposta absurda, e cada mudança no negócio exigia reescrever a base. Eles não aprendiam com o erro. O mercado inteiro de máquinas dedicadas evaporou.</p>
+      <p>No meio do inverno, três pesquisadores publicam em 1986 o artigo que populariza a <strong>backpropagation</strong> — o método que permite uma rede com muitas camadas aprender com o próprio erro. É a semente do deep learning. Não havia máquina capaz de rodar aquilo. Geoffrey Hinton, Yann LeCun e Yoshua Bengio seguem trabalhando nisso sendo chamados de loucos por mais de uma década.</p>
+      <div class="porque">
+        <b>Por que importa</b>
+        <p>Duas lições em uma. A primeira: <strong>o que mata uma automação não é o resultado, é o custo marginal de manutenção</strong>. Vale rodar esse teste em qualquer fluxo nosso — se cada cliente novo exige um humano caro escrevendo regra, aquilo não escala. A segunda: uma ideia certa pode ficar 26 anos esperando o resto do mundo chegar.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco neutro">
+    <div class="anos">1995<br>2011<small>Trabalho silencioso</small></div>
+    <div class="corpo">
+      <h3>O terreno sendo preparado</h3>
+      <ul class="marcos">
+        <li><b>1997</b> O Deep Blue, da IBM, vence Garry Kasparov no xadrez. Mas era IA antiga: 200 milhões de posições por segundo, força bruta, <strong>sem aprender nada</strong>.</li>
+        <li><b>2004</b> No primeiro DARPA Grand Challenge, nenhum carro autônomo termina o percurso; o melhor para em 12 km. No ano seguinte, cinco terminam.</li>
+        <li><b>2006</b> Hinton mostra que é possível treinar redes profundas. O termo <em>deep learning</em> ganha tração.</li>
+        <li><b>2009</b> Fei-Fei Li lança o ImageNet: 14 milhões de imagens rotuladas à mão. É o terreno onde a revolução vai acontecer.</li>
+        <li><b>2011</b> O Watson, da IBM, vence dois campeões humanos num programa de perguntas na TV americana.</li>
+      </ul>
+      <div class="porque">
+        <b>Por que importa</b>
+        <p>O marco de 2009 não é um algoritmo, é <strong>um conjunto de dados rotulados</strong>. Guarde isso: em quase todo projeto real, o gargalo não é o modelo, é ter dado organizado com resposta certa.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco quente">
+    <div class="anos">2012<br>2022<small>A virada</small></div>
+    <div class="corpo">
+      <h3>Deep learning, Transformer e o dia que mudou tudo</h3>
+      <ul class="marcos">
+        <li><b>2012</b> <strong>AlexNet.</strong> Krizhevsky, Sutskever e Hinton vencem o concurso do ImageNet e derrubam o erro de ~26% para ~15% de uma vez. O segredo foi juntar três coisas que já existiam separadas: o algoritmo de 1986, os dados de 2009 e as <strong>GPUs</strong> — placas feitas para videogame que eram ótimas em fazer muita conta ao mesmo tempo. É o Big Bang da IA moderna.</li>
+        <li><b>2014</b> Ian Goodfellow inventa as GANs, duas redes competindo entre si. É a semente da geração de imagens e dos deepfakes.</li>
+        <li><b>2016</b> O AlphaGo vence o campeão mundial de Go por 4 a 1. Os especialistas achavam que faltavam dez anos.</li>
+        <li><b>2017</b> <strong>"Attention Is All You Need"</strong>, oito pesquisadores do Google, oito páginas. Nasce o Transformer — o "T" de ChatGPT. É a base de absolutamente todo modelo de linguagem em uso hoje.</li>
+        <li><b>2020</b> GPT-3, com 175 bilhões de parâmetros. Junto vêm as <em>scaling laws</em>: a descoberta de que o desempenho melhora de forma previsível conforme você aumenta dados, tamanho e poder de processamento. IA deixa de ser problema de pesquisa e vira problema de capital.</li>
+        <li><b>2022</b> O <strong>RLHF</strong> (aprendizado por reforço com feedback humano) ensina o modelo a seguir instrução em vez de só completar texto. É o que transforma um modelo bruto em produto usável.</li>
+        <li><b>30/11/2022</b> A OpenAI publica o ChatGPT num post discreto no blog, rodando sobre um modelo que já existia havia dois anos e meio. Sam Altman esperava até 10 milhões de usuários em meses. Deu <strong>1 milhão em 5 dias e 100 milhões em 2 meses</strong> — o produto digital de crescimento mais rápido até então.</li>
+      </ul>
+      <div class="porque">
+        <b>Por que importa</b>
+        <p>Esta é a lição mais valiosa do documento inteiro. O maior evento comercial da história da IA <strong>não foi um avanço de modelo — foi de interface</strong>. O GPT-3.5 já existia. O que mudou foi barreira de entrada zero: abre a página, digita, dá enter. Quem construía tecnologia perdeu para quem construiu acesso.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bloco quente">
+    <div class="anos">2023<br>hoje<small>Aplicação e agentes</small></div>
+    <div class="corpo">
+      <h3>Onde estamos</h3>
+      <ul class="marcos">
+        <li><b>2023</b> GPT-4, Claude e Gemini chegam ao público. A Meta libera o Llama com pesos abertos; DeepSeek e Mistral entram na disputa. Modelos viram multimodais: texto, imagem, áudio.</li>
+        <li><b>2024</b> Surgem os modelos de raciocínio, que geram cadeias de pensamento antes de responder. Em outubro, Hinton e John Hopfield levam o <strong>Nobel de Física</strong> por redes neurais, e Demis Hassabis, John Jumper e David Baker levam o <strong>Nobel de Química</strong> pelo dobramento de proteínas.</li>
+        <li><b>2025–2026</b> Era dos agentes: modelos que controlam o navegador, escrevem e executam código, abrem arquivos e completam tarefas longas. O custo por token despenca de forma contínua.</li>
+      </ul>
+      <div class="porque">
+        <b>Por que importa</b>
+        <p>O gargalo mudou de lugar. Não é mais "o modelo consegue?" — é <strong>"o processo do cliente está organizado o suficiente para o modelo operar nele?"</strong>. Com o custo do modelo em queda, a margem não está na tecnologia; está no entendimento do processo e na integração.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTE 2 ============ -->
+<section id="conceitos">
+  <div class="cabeca">
+    <span class="eyebrow">Parte 2 de 6</span>
+    <h2>Os três conceitos que você precisa entender de verdade</h2>
+  </div>
+  <p class="intro-secao">Sem matemática. Se você entender só estes três, já conversa de igual pra igual com quase qualquer pessoa da área.</p>
+
+  <div class="conceito">
+    <span class="eyebrow">Conceito 1 · 1986</span>
+    <h3>Backpropagation</h3>
+    <p class="frase-chave">É o método que faz a rede descobrir de quem foi a culpa pelo erro — e corrigir cada parte na medida exata da culpa.</p>
+
+    <div class="passo"><b>Primeiro: o que é uma rede neural</b>
+    Imagine uma mesa de som gigante, com milhões de botõezinhos de volume. Entra informação de um lado, sai uma resposta do outro. No começo, todos os botões estão em posição aleatória — então sai lixo.</div>
+
+    <div class="passo"><b>Treinar é ajustar botão</b>
+    Você mostra uma foto de gato e diz: "a resposta certa é gato". A rede chuta "cachorro". Errou. E aqui está o problema difícil: você sabe que errou, mas <em>quais</em> dos milhões de botões deve mexer? Pra que lado? E quanto? Testar um por um levaria bilhões de anos.</div>
+
+    <div class="passo"><b>É isso que o backprop resolve</b>
+    Ele percorre a rede <strong>do fim para o começo</strong> — daí o "back" — camada por camada, calculando quanto cada botão contribuiu para aquele erro específico. Depois mexe cada um um pouquinho na direção que teria reduzido o erro. Repete bilhões de vezes. Isso é o treinamento de um modelo.</div>
+
+    <div class="analogia">
+      <b>Analogia</b>
+      <p>É atribuição num funil de vendas. A campanha vendeu menos do que devia. O gestor ruim diz "todo mundo se esforça mais". O gestor bom rastreia de trás pra frente — proposta, qualificação, página, anúncio — descobre que 70% da queda veio da qualificação, 20% da proposta e 10% do anúncio, e ajusta cada etapa proporcionalmente. Backprop é isso, feito com contas, em milhões de "etapas", milhões de vezes por segundo.</p>
+    </div>
+
+    <p><strong>Por que foi revolucionário:</strong> antes dele só dava pra treinar rede de uma camada só — a que não resolvia o XOR. Backprop permitiu empilhar muitas camadas e ainda assim conseguir ajustá-las. <em>Deep</em> learning é literalmente isso: profundo = muitas camadas.</p>
+    <p><strong>Por que precisou de GPU:</strong> cada ajuste é um monte de multiplicação de tabelas de números. Com milhões de botões e milhões de exemplos, é conta demais para um processador comum. A GPU faz milhares dessas contas em paralelo.</p>
+
+    <p style="margin-top:22px"><strong>As três coisas que isso explica no dia a dia:</strong></p>
+    <ol class="pratica">
+      <li><strong>Por que o modelo não aprende com a sua conversa.</strong> Quando você usa o ChatGPT ou o Claude, os botões estão travados — nenhum backprop está rodando. Por isso "memória" em produto de IA é um texto reinjetado no prompt, não aprendizado.</li>
+      <li><strong>Por que treinar é caríssimo e usar é barato.</strong> Treinar = backprop bilhões de vezes = meses de GPU. Usar = uma passada só, sem correção.</li>
+      <li><strong>O que é fine-tuning de verdade:</strong> destravar alguns botões e rodar backprop com dados nossos. Daí vem a pergunta que você deve fazer toda vez que alguém propuser isso: <em>"a gente tem gabarito? quantos exemplos com resposta certa?"</em> Sem gabarito não há erro a medir, e sem erro não há o que retropropagar. Na maioria dos casos a resposta certa não é fine-tuning — é RAG ou um prompt melhor.</li>
+    </ol>
+  </div>
+
+  <div class="conceito">
+    <span class="eyebrow">Conceito 2 · 2012 e 2020</span>
+    <h3>Escala: GPU e as leis de escala</h3>
+    <p class="frase-chave">Nada de novo foi inventado em 2012. Três peças que já existiam separadas foram encaixadas — e isso bastou.</p>
+    <p>O algoritmo era de 1986. Os dados, de 2009. As GPUs existiam para rodar videogame. Uma placa de vídeo é boa em fazer <em>muita conta simples ao mesmo tempo</em>, que é exatamente o que uma rede neural precisa. Juntar os três produziu o AlexNet.</p>
+    <p>Em 2020 veio a descoberta que reorganizou a indústria inteira: as <strong>scaling laws</strong>. Aumentando dados, tamanho do modelo e poder de processamento de forma proporcional, o desempenho melhora <em>de forma previsível</em>. Isso transformou IA de aposta de pesquisa em investimento calculável — e é por isso que hoje a fronteira é disputada por meia dúzia de empresas com bilhões em capital.</p>
+    <div class="analogia">
+      <b>O que tirar disso</b>
+      <p>Vantagem competitiva quase nunca vem do modelo, porque o modelo é commodity em queda de preço. Vem do arranjo: modelo + dado proprietário + distribuição. Se o nosso diferencial num projeto for "usamos o melhor modelo", não temos diferencial.</p>
+    </div>
+  </div>
+
+  <div class="conceito">
+    <span class="eyebrow">Conceito 3 · 2017</span>
+    <h3>Transformer e "atenção"</h3>
+    <p class="frase-chave">Em vez de ler a frase palavra por palavra, o modelo olha para a frase inteira de uma vez e decide quais palavras importam para entender cada uma das outras.</p>
+    <p>Antes de 2017, os modelos de linguagem liam em sequência, uma palavra de cada vez, tentando carregar na memória tudo que veio antes. Duas consequências ruins: era lento (não dava pra dividir o trabalho entre várias placas) e o modelo esquecia o começo de textos longos.</p>
+
+    <div class="analogia">
+      <b>Analogia</b>
+      <p>Pense na frase: <em>"O cliente pediu a proposta porque <strong>ele</strong> estava com pressa."</em> Para entender "ele", você não precisa reler a frase inteira com o mesmo esforço — você volta direto em "cliente" e ignora o resto. Isso é atenção: para cada palavra, o modelo calcula o quanto cada uma das outras importa. É como um mapa de relevância recalculado o tempo todo.</p>
+    </div>
+
+    <p>O ganho prático foi duplo. Como todas as palavras são processadas ao mesmo tempo, o treinamento pôde ser dividido entre milhares de GPUs — foi isso que permitiu escalar até modelos gigantes. E como cada palavra "enxerga" todas as outras diretamente, o contexto longo parou de se perder.</p>
+    <p>É a arquitetura de todos os modelos que usamos: o <strong>T</strong> de ChatGPT é Transformer. Um artigo de oito páginas sustenta uma indústria inteira.</p>
+  </div>
+</section>
+
+<!-- ============ PARTE 3 ============ -->
+<section id="padroes">
+  <div class="cabeca">
+    <span class="eyebrow">Parte 3 de 6</span>
+    <h2>Os cinco padrões que se repetem</h2>
+  </div>
+  <p class="intro-secao">Se você esquecer todas as datas deste documento e lembrar só desta seção, ela já pagou a leitura.</p>
+
+  <div class="padrao"><div class="num">01</div><div>
+    <h3>Invernos são causados por promessa, não por falha técnica</h3>
+    <p>Em nenhum dos dois invernos a tecnologia parou de funcionar. O que quebrou foi a distância entre o que foi prometido e o que foi entregue. Isso vale para o orçamento de um país e para a credibilidade da nossa área dentro da empresa.</p>
+  </div></div>
+
+  <div class="padrao"><div class="num">02</div><div>
+    <h3>A tecnologia chega antes do caso de uso viável</h3>
+    <p>Backprop esperou 26 anos por uma placa de vídeo. Antes de descartar uma ideia como inviável, pergunte qual das peças está faltando — dado, processamento, algoritmo ou processo — em vez de concluir que a ideia é ruim.</p>
+  </div></div>
+
+  <div class="padrao"><div class="num">03</div><div>
+    <h3>O gargalo muda de lugar</h3>
+    <p>Já foi processamento, já foi dado, já foi algoritmo. Hoje é processo e integração. Quem investe em otimizar o gargalo de ontem queima orçamento sem melhorar resultado.</p>
+  </div></div>
+
+  <div class="padrao"><div class="num">04</div><div>
+    <h3>Escopo estreito ganha de ambição larga</h3>
+    <p>O XCON gerou dezenas de milhões em economia configurando computadores. O projeto japonês da Quinta Geração queimou centenas de milhões tentando reinventar a computação. Um resolveu um processo específico e caro; o outro quis mudar o mundo.</p>
+  </div></div>
+
+  <div class="padrao"><div class="num">05</div><div>
+    <h3>A camada que captura valor sobe com o tempo</h3>
+    <p>Hardware, depois modelo, depois aplicação, agora fluxo de trabalho. Quem ficou preso na camada de baixo foi apagado — o mercado inteiro de máquinas dedicadas dos anos 80 desapareceu em poucos anos. Vale perguntar sempre em que camada o nosso valor está.</p>
+  </div></div>
+</section>
+
+<!-- ============ PARTE 4 ============ -->
+<section id="erros">
+  <div class="cabeca">
+    <span class="eyebrow">Parte 4 de 6</span>
+    <h2>O que não repetir</h2>
+  </div>
+  <p class="intro-secao">Erros e simplificações que circulam bastante em vídeos e posts sobre história da IA. Se você repetir algum destes numa reunião com cliente técnico, custa credibilidade.</p>
+
+  <h3 style="margin-bottom:14px">Correções factuais</h3>
+  <div class="tabela-scroll">
+    <table>
+      <thead><tr><th>Circula por aí</th><th>O correto</th></tr></thead>
+      <tbody>
+        <tr><td class="errado">A Microsoft investiu US$ 10 bi na OpenAI semanas antes do ChatGPT</td><td>Semanas <strong>depois</strong> — janeiro de 2023. Foi reação ao sucesso, não aposta antecipada. Isso inverte completamente a leitura estratégica do episódio.</td></tr>
+        <tr><td class="errado">Turing previu que 70% das pessoas não saberiam se falam com uma máquina</td><td>Turing disse que o interrogador teria <strong>no máximo 70% de chance de acertar</strong> após cinco minutos — ou seja, erraria cerca de 30%.</td></tr>
+        <tr><td class="errado">Hinton criou a backpropagation</td><td>Ele <strong>popularizou</strong>, em 1986, com Rumelhart e Williams. A técnica já aparecia em trabalhos dos anos 70.</td></tr>
+        <tr><td class="errado">O Nobel de Química de 2024 foi de uma pessoa do Google</td><td>Foi dividido: Demis Hassabis e John Jumper (DeepMind) e David Baker (Universidade de Washington).</td></tr>
+        <tr><td class="errado">Modelos passam no teste de Turing regularmente</td><td>Existe um estudo controlado relevante (2025), não um corpo consolidado de evidências.</td></tr>
+        <tr><td class="errado">Yann LeCun é o chefe de IA da Meta</td><td>Desatualizado. Ele saiu da Meta em novembro de 2025, após 12 anos, e fundou a AMI Labs em Paris, apostando em "world models" contra os LLMs.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin:30px 0 14px">Simplificações perigosas</h3>
+  <ol class="pratica">
+    <li><strong>"LLM é inversão de matrizes."</strong> Não é. Treinar e usar envolve <em>multiplicação</em> de matrizes e ajuste por gradiente. Não há inversão de matriz no funcionamento de um modelo de linguagem.</li>
+    <li><strong>"É só um papagaio estatístico."</strong> Isso não é uma descrição neutra — é uma tese específica e contestada, publicada em 2021. Use como uma posição no debate, nunca como fato estabelecido.</li>
+    <li><strong>"Os algoritmos já existiam nos anos 50, só faltava máquina."</strong> Meia-verdade. Faltava máquina, mas também faltavam backprop (1986), Transformer (2017) e RLHF (2022). Processamento foi condição necessária, não suficiente.</li>
+  </ol>
+
+  <h3 style="margin:30px 0 14px">Os nomes escritos certo</h3>
+  <p>Transcrições automáticas destroem estes. Se for citar alguém por escrito, confira aqui:</p>
+  <div class="tabela-scroll">
+    <table>
+      <thead><tr><th>Certo</th><th>Aparece errado como</th></tr></thead>
+      <tbody>
+        <tr><td>Frank Rosenblatt</td><td class="errado">Rosenblat</td></tr>
+        <tr><td>David Rumelhart</td><td class="errado">Rummerhart</td></tr>
+        <tr><td>Yann LeCun</td><td class="errado">Ian Lecun</td></tr>
+        <tr><td>Yoshua Bengio</td><td class="errado">Oshua Bengel</td></tr>
+        <tr><td>Alex Krizhevsky · Ilya Sutskever</td><td class="errado">Krizikiewski · Ilha Sutzkever</td></tr>
+        <tr><td>MYCIN · XCON</td><td class="errado">MySim · XCOM</td></tr>
+        <tr><td>XOR (ou-exclusivo)</td><td class="errado">Shor · short</td></tr>
+        <tr><td>ImageNet · AlexNet</td><td class="errado">Imaginete</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ PARTE 5 ============ -->
+<section id="trilha">
+  <div class="cabeca">
+    <span class="eyebrow">Parte 5 de 6</span>
+    <h2>Trilha de estudos</h2>
+  </div>
+  <p class="intro-secao">Uma escada, não uma lista de compras. Lista grande de livros é a forma mais comum de não ler nenhum: comece por <strong>um</strong> livro do Nível 1 e a série de vídeos do 3Blue1Brown em paralelo.</p>
+
+  <div class="nivel">
+    <div class="nivel-topo"><span class="eyebrow">Nível 1</span><h3>Entender o campo, zero matemática</h3></div>
+    <p>Ponto de partida para quem não vem de tecnologia.</p>
+    <div class="livro">
+      <b>Artificial Intelligence: A Guide for Thinking Humans<span class="selo">comece aqui</span></b>
+      <span class="autor">Melanie Mitchell</span>
+      <p>Explica como as coisas funcionam por dentro sem uma única equação, e com muito senso crítico contra hype. Tem edição em espanhol; vale checar se saiu em português.</p>
+    </div>
+    <div class="livro">
+      <b>Genius Makers</b>
+      <span class="autor">Cade Metz</span>
+      <p>A história do campo contada pelas pessoas — Hinton, LeCun, Bengio, a compra da empresa do Hinton pelo Google. Leitura leve e bem apurada.</p>
+    </div>
+  </div>
+
+  <div class="nivel">
+    <div class="nivel-topo"><span class="eyebrow">Nível 2</span><h3>A lógica de negócio</h3></div>
+    <p>Provavelmente o nível de maior retorno para quem trabalha com implementação em empresa.</p>
+    <div class="livro">
+      <b>Máquinas Preditivas</b>
+      <span class="autor">Ajay Agrawal, Joshua Gans e Avi Goldfarb · há edição brasileira</span>
+      <p>Escrito por economistas. A tese: IA não é "inteligência", é <strong>queda no custo da previsão</strong> — e o livro mostra o que muda numa empresa quando previsão fica barata. É o melhor material para decidir <em>onde</em> aplicar IA.</p>
+    </div>
+    <div class="livro">
+      <b>Co-Intelligence</b>
+      <span class="autor">Ethan Mollick</span>
+      <p>Prático e curto, sobre como trabalhar junto com o modelo no dia a dia.</p>
+    </div>
+  </div>
+
+  <div class="nivel">
+    <div class="nivel-topo"><span class="eyebrow">Nível 3</span><h3>Técnico de verdade, mas ainda legível</h3></div>
+    <p>Só depois dos anteriores.</p>
+    <div class="livro">
+      <b>AI Engineering<span class="selo frio">o livro do nosso cargo</span></b>
+      <span class="autor">Chip Huyen</span>
+      <p>Como construir sistemas em cima de modelos prontos: RAG, avaliação, controle de custo, quando fine-tuning vale e quando não vale. É o mais diretamente aplicável ao que fazemos.</p>
+    </div>
+    <div class="livro">
+      <b>The Hundred-Page Machine Learning Book</b>
+      <span class="autor">Andriy Burkov</span>
+      <p>Panorama técnico curto do aprendizado de máquina clássico.</p>
+    </div>
+    <div class="livro">
+      <b>Build a Large Language Model (From Scratch)</b>
+      <span class="autor">Sebastian Raschka</span>
+      <p>Para quem quiser abrir o capô e montar um modelo pequeno linha por linha.</p>
+    </div>
+  </div>
+
+  <div class="nivel">
+    <div class="nivel-topo"><span class="eyebrow">Nível 4</span><h3>Os textos originais</h3></div>
+    <p>Todos gratuitos. Não precisa entender a matemática — leia a introdução e as conclusões, que é onde está o argumento.</p>
+    <div class="livro">
+      <b>Computing Machinery and Intelligence · 1950</b>
+      <span class="autor">Alan Turing</span>
+      <p>Curto e surpreendentemente legível. Onde nasce o Teste de Turing.</p>
+    </div>
+    <div class="livro">
+      <b>The Bitter Lesson · 2019</b>
+      <span class="autor">Rich Sutton · 3 páginas</span>
+      <p>O texto mais importante desta lista. Argumenta que, em 70 anos de IA, métodos que aproveitam escala sempre venceram métodos que embutem conhecimento humano — e que os pesquisadores continuam resistindo a aceitar isso. Leia em <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">incompleteideas.net/IncIdeas/BitterLesson.html</a>.</p>
+    </div>
+    <div class="livro">
+      <b>Attention Is All You Need · 2017</b>
+      <span class="autor">Vaswani e outros, Google</span>
+      <p>O artigo do Transformer. Leia a introdução e olhe o diagrama da arquitetura. <a href="https://arxiv.org/abs/1706.03762">arxiv.org/abs/1706.03762</a></p>
+    </div>
+    <div class="livro">
+      <b>Scaling Laws for Neural Language Models · 2020</b>
+      <span class="autor">Kaplan e outros, OpenAI</span>
+      <p>Leia só as conclusões. É o texto que explica por que a indústria virou uma corrida de capital. <a href="https://arxiv.org/abs/2001.08361">arxiv.org/abs/2001.08361</a></p>
+    </div>
+    <div class="livro">
+      <b>Training Language Models to Follow Instructions · 2022</b>
+      <span class="autor">Ouyang e outros, OpenAI</span>
+      <p>O artigo do RLHF — a peça que transformou modelo bruto em produto. <a href="https://arxiv.org/abs/2203.02155">arxiv.org/abs/2203.02155</a></p>
+    </div>
+  </div>
+
+  <div class="nivel">
+    <div class="nivel-topo"><span class="eyebrow">Grátis</span><h3>Vídeo e áudio</h3></div>
+    <div class="livro">
+      <b>3Blue1Brown — série sobre redes neurais<span class="selo">melhor material sobre backprop</span></b>
+      <span class="autor">YouTube · 4 vídeos · legendas em português</span>
+      <p>A melhor explicação visual de backpropagation que existe. Vale mais do que qualquer livro para esse conceito específico.</p>
+    </div>
+    <div class="livro">
+      <b>Andrej Karpathy — Neural Networks: Zero to Hero</b>
+      <span class="autor">YouTube · gratuito</span>
+      <p>Ex-OpenAI e ex-Tesla, é o melhor professor de IA em atividade. A aula "Let's build GPT" constrói um modelo do zero explicando cada passo.</p>
+    </div>
+    <div class="livro">
+      <b>StarTalk — episódio com Geoffrey Hinton</b>
+      <span class="autor">Podcast, com Neil deGrasse Tyson</span>
+      <p>O criador do deep learning explicando por que hoje tem medo do que ajudou a construir.</p>
+    </div>
+  </div>
+
+  <div class="aviso">
+    <b>Não comece por estes.</b> <em>Deep Learning</em> (Goodfellow, Bengio e Courville) e <em>Artificial Intelligence: A Modern Approach</em> (Russell e Norvig) são obras de referência, não leitura corrida. Começar por eles trava a pessoa na página 30 e cria a impressão errada de que o problema é ela.
+  </div>
+</section>
+
+<!-- ============ PARTE 6 ============ -->
+<section id="checklist">
+  <div class="cabeca">
+    <span class="eyebrow">Parte 6 de 6</span>
+    <h2>Checklist para qualquer projeto de IA</h2>
+  </div>
+  <p class="intro-secao">Cinco perguntas tiradas direto das lições anteriores. Rode antes de aprovar ou estimar qualquer implementação.</p>
+
+  <div class="check"><b>1. O escopo é estreito o suficiente?</b><p>Qual processo específico e caro isso ataca? Se a resposta for uma categoria ("melhorar o atendimento") e não um processo ("qualificar lead que chega fora do horário"), o escopo ainda não está pronto. — <em>lição do XCON</em></p></div>
+
+  <div class="check"><b>2. Qual o custo de manter isso daqui a doze meses?</b><p>Cada cliente novo vai exigir alguém escrevendo regra na mão? Se sim, funciona hoje e quebra na escala. — <em>lição do segundo inverno</em></p></div>
+
+  <div class="check"><b>3. Existe gabarito?</b><p>Se a proposta envolve fine-tuning ou avaliação automática: temos exemplos com resposta certa? Quantos? Sem gabarito não há erro a medir, e sem erro não há aprendizado nem forma de saber se melhorou. — <em>lição do backprop e do ImageNet</em></p></div>
+
+  <div class="check"><b>4. Onde está o nosso diferencial?</b><p>No modelo (commodity em queda de preço), na interface, no dado que acumulamos ou no entendimento do processo do cliente? Se a resposta for "usamos o melhor modelo", não há diferencial. — <em>lição de 2012 e das scaling laws</em></p></div>
+
+  <div class="check"><b>5. O que exatamente estamos prometendo?</b><p>Escreva o número antes de começar. Entregar 15% de ganho depois de prometer 15% é sucesso; entregar os mesmos 15% depois de prometer transformação é o que corta o orçamento do ano seguinte. — <em>lição dos dois invernos</em></p></div>
+</section>
+
+<footer>
+  <p>Material de formação interna da área de IA. As datas e nomes foram conferidos; onde o mercado ainda discute (risco existencial, "papagaio estatístico", limites dos LLMs), o texto apresenta as posições em disputa em vez de escolher uma. Se encontrar algo desatualizado, avise — a parte final deste documento envelhece rápido.</p>
+</footer>
+
+</div>
+</body>
+</html>

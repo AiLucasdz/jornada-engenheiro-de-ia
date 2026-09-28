@@ -1,0 +1,14 @@
+{
+  "diagram_type": "workflow",
+  "specification_sha256": "65f7edd2fac871bbb06015e919451063abea791350e0f6cf4582b7e5fb7d474b",
+  "artifact_sha256": "e93be9868ebc098ac21c8762b75eca79e6ba3af36afe5991871ecea41b8d246c",
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "browser_evidence": "passed",
+  "generator": "Archify 3.0.1",
+  "visual_review": "Exportação SVG revisada visualmente; sem cortes ou sobreposição de textos."
+}
