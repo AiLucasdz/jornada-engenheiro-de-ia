@@ -1,5 +1,7 @@
 # Casos de avaliação
 
+[← Índice da pasta](README.md) · [Início](../README.md)
+
 Comece com exemplos anonimizados ou sintéticos. Para cada mudança relevante, rode a mesma bateria e compare com a versão anterior.
 
 | ID | Situação / entrada | Resultado esperado | Critério de aprovação | Resultado observado | Passou? |

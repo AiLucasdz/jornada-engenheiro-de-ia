@@ -1,0 +1,200 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Onde estudar: fontes e aplicações · Jornada IA</title><meta name="description" content="Uma trilha prática de Engenharia de IA: materiais, fontes oficiais, projetos e comunidades."><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a  href="../../index.html">Início</a><a  href="trilha-12-semanas.html">Trilha</a><a  href="../materiais/index.html">Materiais</a><a aria-current="page" href="fontes-e-comunidade.html">Onde estudar</a><a  href="comunidades.html">X e Discord</a><a  href="../modelos/index.html">Modelos</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">CONSULTE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="RAG, teoria, Discord…" data-index="../../assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#comece-pelos-materiais-da-formação">Comece pelos materiais da formação</a><a href="#openai">OpenAI</a><a href="#anthropic">Anthropic</a><a href="#google">Google</a><a href="#github">GitHub</a><a href="#microsoft">Microsoft</a><a href="#outras-bases">Outras bases</a><a href="#curso-citado-no-material-original">Curso citado no material original</a><a href="#como-escolher-sem-acumular-abas">Como escolher sem acumular abas</a></nav><a class="study-note" href="como-estudar.html"><strong>80% prática<br>20% teoria</strong><span>Estude uma ideia.<br>Aplique no seu agente.</span></a></aside><main id="conteudo"><article><h1 id="onde-estudar-fontes-e-aplicações">Onde estudar: fontes e aplicações</h1>
+<p><a href="index.html">← Guias</a> · <a href="como-estudar.html">Como estudar</a> · <a href="como-pesquisar.html">Pesquisar</a> · <a href="comunidades.html">X e Discord</a></p>
+<p><strong>Escolha uma leitura principal e aplique no seu agente.</strong> Esta curadoria organiza fontes por finalidade; os exercícios são propostas desta trilha. Os catálogos completos são material de consulta, não uma lista de cursos obrigatórios.</p>
+<h2 id="comece-pelos-materiais-da-formação">Comece pelos materiais da formação</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Material</th>
+<th>Quando ler</th>
+<th>O que fazer depois</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../../materiais/historia-da-ia-material-de-formacao.html">História da IA — ler online</a></td>
+<td>Semanas 1 e 4: contexto histórico, conceitos e limites.</td>
+<td>Explicar qual parte do seu problema precisa de IA e qual pode ser resolvida com regras.</td>
+</tr>
+<tr>
+<td><a href="../../materiais/Base%20T%C3%A9cnica%20de%20IA.html">Base Técnica — ler online</a></td>
+<td>Semanas 4–10: consultar o bloco ligado à tarefa atual.</td>
+<td>Desenhar o caminho de uma entrada pelo sistema e identificar onde pode falhar.</td>
+</tr>
+</tbody></table></div>
+<h2 id="openai">OpenAI</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso oficial</th>
+<th>O que estudar</th>
+<th>Aplicação sugerida</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://developers.openai.com/learn">OpenAI Developers — Learn</a></td>
+<td>Guias de construção de agentes e aplicações.</td>
+<td>Semanas 4–7: seguir um exemplo pequeno e adaptar as entradas ao seu projeto.</td>
+</tr>
+<tr>
+<td><a href="https://developers.openai.com/cookbook">OpenAI Cookbook</a></td>
+<td>Exemplos de implementação para uma dúvida concreta.</td>
+<td>Semanas 5–10: reproduzir um exemplo, alterar uma variável e registrar o efeito.</td>
+</tr>
+<tr>
+<td><a href="https://developers.openai.com/learn/evals">Evals — guias e exemplos</a></td>
+<td>Como definir e executar avaliações.</td>
+<td>Semana 9: transformar falhas do agente em casos de avaliação repetíveis.</td>
+</tr>
+</tbody></table></div>
+<p><strong>Comece por:</strong> Learn; consulte o Cookbook quando tiver uma tarefa definida. A documentação do recurso escolhido deve orientar a implementação e a versão da API.</p>
+<h2 id="anthropic">Anthropic</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso oficial</th>
+<th>O que estudar</th>
+<th>Aplicação sugerida</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://academy.claude.com/">Claude Academy</a></td>
+<td>Fluência em IA, uso de Claude e construção com seus produtos.</td>
+<td>Semanas 1–4: praticar como delegar uma tarefa e avaliar a resposta.</td>
+</tr>
+<tr>
+<td><a href="https://www.anthropic.com/engineering/building-effective-agents">Building effective agents</a></td>
+<td>Escolhas de desenho entre fluxos e agentes.</td>
+<td>Semana 7: desenhar onde o fluxo é fixo e onde o modelo pode decidir.</td>
+</tr>
+<tr>
+<td><a href="https://platform.claude.com/docs/en/intro">Claude Platform Docs</a></td>
+<td>Integração com a API e uso de ferramentas.</td>
+<td>Semanas 5–8: conectar uma ferramenta de leitura e verificar seus argumentos.</td>
+</tr>
+<tr>
+<td><a href="https://www.anthropic.com/engineering">Anthropic Engineering</a></td>
+<td>Relatos técnicos sobre agentes, contexto e avaliação.</td>
+<td>Semanas 7–10: escolher um artigo que ajude a investigar uma falha atual.</td>
+</tr>
+</tbody></table></div>
+<p><strong>Comece por:</strong> Academy para fundamentos; para o primeiro agente, leia o artigo de desenho antes de ampliar a autonomia.</p>
+<h2 id="google">Google</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso oficial</th>
+<th>O que estudar</th>
+<th>Aplicação sugerida</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://developers.google.com/machine-learning/crash-course?hl=pt-br">Machine Learning Crash Course</a></td>
+<td>Fundamentos de aprendizado de máquina; selecione os módulos necessários.</td>
+<td>Semana 4: explicar treinamento e inferência e comparar regras com modelo.</td>
+</tr>
+<tr>
+<td><a href="https://ai.google.dev/gemini-api/docs">Gemini API — documentação</a></td>
+<td>Primeira integração, saídas estruturadas e chamadas de ferramentas.</td>
+<td>Semanas 5–8: extrair dados de uma entrada e validar o formato antes de agir.</td>
+</tr>
+<tr>
+<td><a href="https://cloud.google.com/learn/training">Google Cloud — treinamento</a></td>
+<td>Cursos e laboratórios, conforme a necessidade do projeto.</td>
+<td>Semanas 8–11: escolher um laboratório relacionado ao ambiente em que vai operar.</td>
+</tr>
+</tbody></table></div>
+<p><strong>Comece por:</strong> um conceito do Crash Course ou o início rápido da Gemini API, conforme sua lacuna. Confira os requisitos de acesso e uso do laboratório escolhido.</p>
+<h2 id="github">GitHub</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso oficial</th>
+<th>O que estudar</th>
+<th>Aplicação sugerida</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/skills/introduction-to-github">Introduction to GitHub — Skills</a></td>
+<td>Repositório, branch, commit e pull request.</td>
+<td>Desde a semana 1: guardar o projeto e revisar uma mudança antes de incorporá-la.</td>
+</tr>
+<tr>
+<td><a href="https://learn.github.com/">GitHub Learn</a></td>
+<td>Catálogo de aprendizado e guias de produtos.</td>
+<td>Semanas 3–11: procurar a atividade que atende sua necessidade de colaboração ou automação.</td>
+</tr>
+<tr>
+<td><a href="https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources">Git e GitHub — recursos de aprendizado</a></td>
+<td>Orientação para estudar controle de versão.</td>
+<td>Recuperar uma versão e explicar a diferença entre duas entregas.</td>
+</tr>
+</tbody></table></div>
+<p><strong>Comece por:</strong> Introduction to GitHub e aplique no mesmo repositório em que constrói o agente.</p>
+<h2 id="microsoft">Microsoft</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso oficial</th>
+<th>O que estudar</th>
+<th>Aplicação sugerida</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/microsoft/generative-ai-for-beginners">Generative AI for Beginners</a></td>
+<td>Lições e exemplos de aplicações com IA generativa.</td>
+<td>Semanas 4–9: selecionar a lição ligada à entrega e reproduzir um exercício.</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/pt-br/training/">Microsoft Learn em português</a></td>
+<td>Módulos e roteiros de aprendizado; busque o tema da semana.</td>
+<td>Semanas 4–11: estudar um módulo de IA ou operação e aplicar a decisão ao agente.</td>
+</tr>
+</tbody></table></div>
+<p><strong>Comece por:</strong> uma lição de Generative AI for Beginners; use o Learn para aprofundar a parte que precisa agora.</p>
+<h2 id="outras-bases">Outras bases</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Fonte</th>
+<th>Tema e etapa</th>
+<th>Aplicação sugerida</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://huggingface.co/learn/agents-course/unit0/introduction">Hugging Face — Agents Course</a></td>
+<td>Agentes; semanas 7–8.</td>
+<td>Reproduzir um exercício e comparar seu ciclo de decisão com o agente da trilha.</td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Guides/Overview">MDN — visão geral do HTTP</a></td>
+<td>Requisições e respostas; semana 5.</td>
+<td>Inspecionar uma chamada da integração e explicar método, status e conteúdo.</td>
+</tr>
+<tr>
+<td><a href="https://www.postgresql.org/docs/current/tutorial.html">PostgreSQL — tutorial</a></td>
+<td>Banco relacional e SQL; semana 6.</td>
+<td>Gravar eventos e consultar o histórico de uma execução.</td>
+</tr>
+<tr>
+<td><a href="https://theleanstartup.com/principles">Lean Startup — princípios</a></td>
+<td>Hipóteses e experimentação; semana 2.</td>
+<td>Definir a menor entrega capaz de testar a hipótese do projeto.</td>
+</tr>
+<tr>
+<td><a href="https://scrumguides.org/scrum-guide.html">Guia do Scrum</a></td>
+<td>Objetivo, incremento e inspeção; semana 3.</td>
+<td>Definir critérios de aceitação e uma revisão semanal.</td>
+</tr>
+</tbody></table></div>
+<h2 id="curso-citado-no-material-original">Curso citado no material original</h2>
+<p><strong>Bruno Okamoto:</strong> mantenha como complemento de prática guiada, caso você já tenha acesso ao curso recomendado. Refaça o exercício no seu agente e registre as adaptações e os testes. O arquivo original não identifica o curso ou a edição; por isso, não vinculamos uma oferta específica nem tornamos a compra uma etapa da trilha.</p>
+<h2 id="como-escolher-sem-acumular-abas">Como escolher sem acumular abas</h2>
+<ol>
+<li>Abra <a href="trilha-12-semanas.html">a semana atual</a> e leia a entrega.</li>
+<li>Escolha uma fonte que responda à decisão mais próxima.</li>
+<li>Anote uma ideia e implemente um teste.</li>
+<li>Guarde a fonte junto com <a href="../modelos/experimento.html">o experimento</a>.</li>
+<li>Use <a href="comunidades.html">X e Discord</a> para discutir o resultado ou uma dúvida que permaneceu.</li>
+</ol>
+<p>Páginas principais consultadas em <strong>28/09/2026</strong>. Idioma, catálogo e requisitos de acesso variam por recurso; escolha o módulo, exemplo ou trecho que cabe nos 20% de estudo. Documentação pode ser aberta mesmo quando a execução de uma API ou laboratório exige conta ou créditos.</p>
+</article><footer><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia/blob/main/docs/fontes-e-comunidade.md">Ver este conteúdo no GitHub ↗</a><span>Um projeto. Aprendizado contínuo.</span></footer></main></div></body></html>

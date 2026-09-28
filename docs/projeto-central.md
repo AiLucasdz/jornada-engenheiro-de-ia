@@ -1,5 +1,7 @@
 # Projeto central: seu próprio agente
 
+[← Índice da pasta](README.md) · [Início](../README.md)
+
 O tema é escolhido por você. Pode ser atendimento, pesquisa, operação, análise comercial ou outro processo ao qual tenha acesso legítimo. Para tornar a trilha concreta, usamos **qualificação de leads** como exemplo; adapte os nomes e as métricas ao seu contexto.
 
 ## Definição inicial

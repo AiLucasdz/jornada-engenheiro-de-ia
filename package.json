@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "marked": "18.0.14"
+  },
+  "name": "jornada-engenheiro-de-ia",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "check": "node scripts/check-links.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

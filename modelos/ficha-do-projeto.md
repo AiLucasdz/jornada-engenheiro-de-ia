@@ -1,5 +1,7 @@
 # Ficha do projeto
 
+[← Índice da pasta](README.md) · [Início](../README.md)
+
 - **Processo e usuário:**
 - **Dor observada e evidência:**
 - **Como funciona hoje (fluxo e pessoas):**

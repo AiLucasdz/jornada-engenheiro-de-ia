@@ -10,11 +10,36 @@ Uma trilha prática para desenvolver as habilidades de um Engenheiro de IA, cone
 
 **12 semanas de referência · 1 hora por dia · 80% prática · Um projeto do início à operação**
 
-[Começar a trilha](docs/trilha-12-semanas.md) · [Conhecer o projeto](docs/projeto-central.md) · [Explorar os materiais](#materiais-para-acompanhar-a-jornada)
+[**Abrir o guia online ↗**](https://ailucasdz.github.io/jornada-engenheiro-de-ia/) · [Trilha](docs/trilha-12-semanas.md) · [Onde estudar](docs/fontes-e-comunidade.md) · [X e Discord](docs/comunidades.md)
 
 </div>
 
 ---
+
+## Encontre o que precisa
+
+| Quero… | Acesse |
+| --- | --- |
+| **Começar hoje** | [Como estudar: 80% prática e 20% teoria](docs/como-estudar.md) |
+| **Saber o que fazer em cada semana** | [Trilha de 12 semanas, com entregas e fontes](docs/trilha-12-semanas.md) |
+| **Ler os materiais da formação** | [Biblioteca: História e Base Técnica de IA](materiais/README.md) |
+| **Estudar nas fontes oficiais** | [OpenAI, Anthropic, Google, GitHub, Microsoft e outras referências](docs/fontes-e-comunidade.md) |
+| **Pesquisar uma dúvida** | [Como pesquisar no Google e nas documentações](docs/como-pesquisar.md) |
+| **Acompanhar novidades e trocar experiências** | [X, Discord e comunidades](docs/comunidades.md) |
+| **Trabalhar no meu agente** | [Projeto central](docs/projeto-central.md) e [modelos para preencher](modelos/README.md) |
+
+**Leia tudo no navegador:** o [guia online](https://ailucasdz.github.io/jornada-engenheiro-de-ia/) reúne trilha, materiais, fontes e busca por assunto. Aqui no GitHub, cada pasta tem um índice com o que ler e por onde começar.
+
+## 80% prática. 20% teoria. Toda semana.
+
+| Construir · 4 horas por semana | Estudar · 1 hora por semana |
+| --- | --- |
+| Implementar, integrar, testar, depurar e melhorar o mesmo agente. | Ler fundamentos, consultar documentação e acompanhar X e Discord com uma pergunta concreta. |
+| **Saída:** uma entrega verificável e seu resultado registrado. | **Saída:** um conceito entendido e uma decisão para aplicar no projeto. |
+
+Em uma sessão de uma hora, use **12 minutos para estudar e 48 para aplicar**. Ajuste a distribuição quando precisar: vale a proporção ao longo da semana. A leitura prepara a próxima mudança; o teste mostra o que estudar depois.
+
+→ [Ver uma sessão de exemplo e o ritmo semanal](docs/como-estudar.md)
 
 ## Seu próximo passo: construir
 
@@ -37,9 +62,9 @@ Cada etapa combina uma entrega prática com os conceitos que ajudam a tomar deci
 
 ## Seu caminho em um mapa
 
-[![Mapa da jornada: fundamentos, construção e operação](assets/jornada.svg)](https://ailucasdz.github.io/jornada-engenheiro-de-ia/)
+[![Mapa da jornada: fundamentos, construção e operação](assets/jornada.svg)](https://ailucasdz.github.io/jornada-engenheiro-de-ia/mapa.html)
 
-[**Explorar o mapa interativo ↗**](https://ailucasdz.github.io/jornada-engenheiro-de-ia/) · Diagrama criado com [Archify](https://github.com/tt-a1i/archify).
+[**Explorar o mapa interativo ↗**](https://ailucasdz.github.io/jornada-engenheiro-de-ia/mapa.html) · Diagrama criado com [Archify](https://github.com/tt-a1i/archify).
 
 ## Como a jornada funciona
 
@@ -83,11 +108,32 @@ A evolução do projeto passa por seis entregas:
 
 | Material | Quando consultar |
 | --- | --- |
-| [**História da IA**](materiais/historia-da-ia-material-de-formacao.html) | Para entender a evolução do campo e dar contexto aos fundamentos. |
-| [**Base Técnica de IA**](materiais/Base%20T%C3%A9cnica%20de%20IA.html) | Para estudar LLMs, RAG, agentes, infraestrutura e avaliação conforme esses temas aparecem no projeto. |
+| [**História da IA**](https://ailucasdz.github.io/jornada-engenheiro-de-ia/materiais/historia-da-ia-material-de-formacao.html) | Para entender a evolução do campo e dar contexto aos fundamentos. |
+| [**Base Técnica de IA**](https://ailucasdz.github.io/jornada-engenheiro-de-ia/materiais/Base%20T%C3%A9cnica%20de%20IA.html) | Para estudar LLMs, RAG, agentes, infraestrutura e avaliação conforme esses temas aparecem no projeto. |
 | [**Fontes e comunidade**](docs/fontes-e-comunidade.md) | Para encontrar leituras, trocar experiências e compartilhar descobertas. |
 
-Os materiais HTML podem ser baixados e abertos no navegador. O plano semanal indica quando consultar cada base; as leituras acompanham as decisões do projeto.
+Os dois materiais abrem como páginas de leitura, direto no navegador. Consulte a [biblioteca](materiais/README.md) para escolher a seção que acompanha sua etapa.
+
+## Onde estudar e se manter atualizado
+
+| Fonte | Use para |
+| --- | --- |
+| [OpenAI — Learn e Cookbook](docs/fontes-e-comunidade.md#openai) | Guias, exemplos de implementação e avaliações. |
+| [Anthropic — Academy e Engineering](docs/fontes-e-comunidade.md#anthropic) | Colaboração com IA, ferramentas e desenho de agentes. |
+| [Google — fundamentos e Gemini](docs/fontes-e-comunidade.md#google) | Entender modelos e experimentar integrações. |
+| [GitHub — Learn e Skills](docs/fontes-e-comunidade.md#github) | Versionar, revisar e organizar o projeto. |
+| [Microsoft — Learn e cursos abertos](docs/fontes-e-comunidade.md#microsoft) | Estudar conceitos e reproduzir exercícios de IA generativa. |
+| [Outras bases técnicas](docs/fontes-e-comunidade.md#outras-bases) | Hugging Face, HTTP, SQL, Lean e métodos ágeis. |
+
+Escolha **uma leitura principal por etapa**. O [guia de fontes](docs/fontes-e-comunidade.md) associa cada recomendação a uma aplicação no agente; o [guia de pesquisa](docs/como-pesquisar.md) traz buscas prontas para aprofundar dúvidas.
+
+### Acompanhe, converse e experimente
+
+- **X:** comece por [@ailucasdz](https://x.com/ailucasdz) e explore [os perfis que acompanha](https://x.com/ailucasdz/following). Guarde até três ideias por semana e transforme uma delas em experimento.
+- **Discord:** participe de [Nous Research](https://discord.gg/NousResearch) e [OpenClaw](https://discord.gg/clawd) para acompanhar projetos, discutir implementação e investigar bloqueios.
+- **Rotina:** inclua esse acompanhamento nos 20% de estudo e leve uma pergunta, um resultado ou uma falha reproduzível para a conversa.
+
+→ [Abrir o guia de X e Discord](docs/comunidades.md)
 
 ## O que você leva ao concluir
 
@@ -101,3 +147,14 @@ Um agente demonstrável em um processo real ou ambiente de teste representativo,
 Esse conjunto permite mostrar **o que você construiu, por que escolheu esse caminho e como verificou o resultado**.
 
 > Conduzir a construção exige entender o comportamento esperado, os limites do sistema e as evidências de que ele funciona. Quando precisar ler código, logs ou SQL, aprenda o necessário e aplique no projeto.
+
+## Navegue pelas pastas
+
+| Pasta | O que você encontra |
+| --- | --- |
+| [docs/](docs/README.md) | Roteiro, método de estudo, projeto, fontes, pesquisa e comunidades. |
+| [materiais/](materiais/README.md) | Os materiais de formação, com links para leitura online. |
+| [modelos/](modelos/README.md) | Ficha do projeto, experimentos e casos de avaliação. |
+| [assets/](assets/README.md) | Capa e mapa visual usados neste guia. |
+
+Para colaborar com os textos e atualizar o site, consulte [o guia de contribuição](CONTRIBUTING.md).
