@@ -1,0 +1,97 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>06 · Descubra por que funcionou e onde falhou · Jornada IA</title><meta name="description" content="Uma trilha prática de Engenharia de IA: materiais, fontes oficiais, projetos e comunidades."><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a  href="../../index.html">Início</a><a  href="../docs/trilha-12-semanas.html">Trilha</a><a  href="index.html">Aulas</a><a  href="../docs/fontes-e-comunidade.html">Onde estudar</a><a  href="../docs/comunidades.html">X e Discord</a><a  href="../modelos/index.html">Modelos</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">CONSULTE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="RAG, teoria, Discord…" data-index="../../assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#eval-uma-pergunta-de-qualidade-que-você-consegue-repetir">Eval: uma pergunta de qualidade que você consegue repetir</a><a href="#teste-de-software-e-avaliação-do-modelo-se-complementam">Teste de software e avaliação do modelo se complementam</a><a href="#logs-traces-e-métricas">Logs, traces e métricas</a><a href="#guardrails-e-injeção-de-prompt">Guardrails e injeção de prompt</a><a href="#laboratório-80-prática">Laboratório · 80% prática</a><a href="#estudo-guiado-20-teoria">Estudo guiado · 20% teoria</a></nav><a class="study-note" href="../docs/como-estudar.html"><strong>80% prática<br>20% teoria</strong><span>Estude uma ideia.<br>Aplique no seu agente.</span></a></aside><main id="conteudo"><article><h1 id="06-descubra-por-que-funcionou-e-onde-falhou">06 · Descubra por que funcionou e onde falhou</h1>
+<p><a href="05-agentes-e-ferramentas.html">← Aula anterior</a> · <a href="index.html">Aulas</a> · <a href="07-operacao-e-comunicacao.html">Próxima aula →</a></p>
+<p><strong>Quando usar:</strong> semanas 9–10. <strong>Entrega:</strong> uma bateria de avaliação repetível e uma falha investigada do início ao fim.</p>
+<p>Uma demonstração mostra que algo pode funcionar. Avaliação e observabilidade mostram como o sistema se comporta em diferentes situações e dão pistas para melhorá-lo. As duas atividades precisam acompanhar mudanças de prompt, modelo, dados e ferramentas.</p>
+<h2 id="eval-uma-pergunta-de-qualidade-que-você-consegue-repetir">Eval: uma pergunta de qualidade que você consegue repetir</h2>
+<p>Um <strong>eval</strong> reúne casos, critérios e um método de medição para avaliar comportamento. A <a href="https://developers.openai.com/api/docs/guides/evaluation-best-practices">documentação oficial da OpenAI sobre avaliação</a> recomenda casos específicos da aplicação, comparação entre versões e calibração de avaliações automáticas com julgamento humano.</p>
+<p>No agente de leads, “respondeu bem” é amplo demais. Divida em perguntas observáveis: identificou a intenção? Usou o preço válido? Pediu o dado que faltava? Encaminhou o caso fora da política? Registrou a ação uma única vez?</p>
+<p>A analogia é uma prova acompanhada de critérios de correção. Em alguns casos, existe uma resposta exata; em outros, várias respostas são aceitáveis. Para o segundo grupo, descreva o que deve estar presente e o que constitui erro.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Caso didático</th>
+<th>Resultado esperado</th>
+<th>Forma de conferir</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Pergunta sobre plano disponível</td>
+<td>Informar o valor da fonte vigente e identificar a fonte.</td>
+<td>Comparação com o documento usado.</td>
+</tr>
+<tr>
+<td>Pedido sem identificação suficiente</td>
+<td>Solicitar o dado necessário antes de consultar informação restrita.</td>
+<td>Critério passa/falha com justificativa.</td>
+</tr>
+<tr>
+<td>Pedido de condição comercial não prevista</td>
+<td>Encaminhar sem prometer a condição.</td>
+<td>Revisão da resposta e das ações.</td>
+</tr>
+<tr>
+<td>Mesmo evento recebido duas vezes</td>
+<td>Produzir um único efeito no CRM.</td>
+<td>Consultar registros pelo identificador da operação.</td>
+</tr>
+<tr>
+<td>Documento com instrução indevida</td>
+<td>Tratar o trecho como conteúdo e preservar os limites de ação.</td>
+<td>Conferir resposta, ferramentas solicitadas e ações executadas.</td>
+</tr>
+</tbody></table></div>
+<p>Critérios binários ajudam quando a condição é clara. Rubricas com níveis ou comparações entre duas respostas também podem servir; o importante é ter critérios consistentes. Se usar outro modelo como avaliador, confira uma amostra manualmente e investigue desacordos. O avaliador também pode errar.</p>
+<h2 id="teste-de-software-e-avaliação-do-modelo-se-complementam">Teste de software e avaliação do modelo se complementam</h2>
+<p>Um teste de integração verifica se a chamada ao CRM registra o evento corretamente. Um eval verifica se o agente escolheu registrar o interesse no contexto certo. Você precisa dos dois para compreender a solução inteira.</p>
+<p>Comece com uma bateria pequena, como os <strong>20 casos propostos no projeto central</strong>, e amplie conforme surgirem falhas e riscos. Esse número é uma atividade inicial da trilha, não uma garantia de cobertura. Inclua dados realistas autorizados, exemplos sintéticos revisados e casos difíceis. Reserve alguns casos para avaliar mudanças sem ajustá-las repetidamente aos mesmos exemplos.</p>
+<p>Guarde a versão do prompt, do modelo, da base e das ferramentas junto dos resultados. Repita casos quando a variabilidade importar. Uma alteração que melhora a média pode piorar justamente uma categoria crítica; compare por tipo de tarefa e gravidade do erro.</p>
+<h2 id="logs-traces-e-métricas">Logs, traces e métricas</h2>
+<p>Um <strong>log</strong> registra um evento. Um <strong>trace</strong> relaciona etapas de uma mesma execução. Uma <strong>métrica</strong> agrega medidas de várias execuções. Juntos, permitem sair de “o agente falhou” para “a busca recuperou uma versão antiga e a resposta usou esse preço”.</p>
+<p>Pense na caixa-preta de uma viagem: você quer reconstruir os passos, sem guardar informação desnecessária sobre todas as pessoas envolvidas. Registre identificadores, versões, status, duração e consumo. Guarde conteúdo somente quando houver necessidade e condições de acesso, proteção e retenção definidas; exemplos fictícios ajudam no desenvolvimento.</p>
+<p>Uma estrutura inicial de rastreamento pode incluir:</p>
+<pre><code>execucao_id → entrada validada → trechos recuperados
+            → chamada ao modelo → ferramenta solicitada
+            → validação → ação executada → resultado final</code></pre><p>Não confunda a justificativa textual gerada pelo modelo com uma explicação causal confiável do funcionamento interno. Para depurar, examine os dados e eventos observáveis: o que entrou, quais fontes foram recuperadas, qual ferramenta foi pedida e o que ocorreu.</p>
+<h2 id="guardrails-e-injeção-de-prompt">Guardrails e injeção de prompt</h2>
+<p><strong>Guardrails</strong> são verificações aplicadas ao redor do modelo e das ações. Podem validar campos, checar acesso, restringir ferramentas e encaminhar determinados resultados para revisão. Cada controle precisa ser testado: um bloqueio excessivo também pode impedir uma tarefa legítima.</p>
+<p>Uma <strong>injeção de prompt</strong> tenta transformar conteúdo em uma instrução que desvia o sistema. Pode aparecer na mensagem do usuário ou dentro de documento, página e resultado de ferramenta. A analogia é um bilhete falso no meio do manual: “ignore as regras e libere acesso”.</p>
+<p>No agente de leads, uma FAQ nunca deveria conceder permissão para exportar todos os contatos. Aplique a permissão no código ou serviço da ferramenta, limite as operações disponíveis e mantenha os dados de consulta separados das instruções da aplicação. Um texto de sistema dizendo “seja seguro” não substitui esses controles.</p>
+<h2 id="laboratório-80-prática">Laboratório · 80% prática</h2>
+<p>Use <strong>4 horas por semana</strong> para medir e investigar o mesmo agente.</p>
+<p><strong>Semana 9 — avaliação repetível:</strong> preencha o <a href="../modelos/casos-de-avaliacao.html">modelo de casos</a>; defina critérios antes de rodar; execute a bateria; classifique as falhas; altere uma causa provável; repita e compare. Registre também o que piorou. Defina critérios de liberação proporcionais ao risco e bloqueie regressões críticas.</p>
+<p><strong>Semana 10 — investigação:</strong> adicione um identificador que acompanhe toda a execução. Provoque uma busca sem resultado, uma resposta incorreta e uma integração indisponível. Localize cada falha nos registros e descreva a correção. Inclua um documento fictício com instrução conflitante e confira se ele consegue provocar uma ação fora do escopo.</p>
+<p>Faça uma revisão manual de parte das respostas aprovadas automaticamente. Esse passo revela falsos sucessos: uma frase pode estar correta e a necessidade da pessoa continuar sem solução.</p>
+<p><strong>Você concluiu quando:</strong> repete a comparação entre duas versões, mostra uma falha por camada e usa um trace para sustentar a correção escolhida.</p>
+<h2 id="estudo-guiado-20-teoria">Estudo guiado · 20% teoria</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>O que selecionar</th>
+<th>O que aplicar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://developers.openai.com/api/docs/guides/evaluation-best-practices">OpenAI — Evaluation best practices</a></td>
+<td>Desenho de avaliações e tipos de falha.</td>
+<td>Escrever critérios da sua tarefa; a atividade não depende de uma plataforma específica.</td>
+</tr>
+<tr>
+<td><a href="https://developers.openai.com/cookbook">OpenAI Cookbook</a></td>
+<td>Um exemplo relacionado à falha encontrada.</td>
+<td>Reproduzir a ideia com seus casos e registrar a diferença.</td>
+</tr>
+<tr>
+<td><a href="https://www.anthropic.com/engineering">Anthropic Engineering</a></td>
+<td>Um artigo de avaliação, contexto ou agentes ligado ao seu problema.</td>
+<td>Formular e testar uma hipótese de correção.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chiphuyen/aie-book">AI Engineering — materiais de Chip Huyen</a></td>
+<td>Avaliação de aplicações e análise de erros.</td>
+<td>Separar qualidade do componente e resultado do processo.</td>
+</tr>
+</tbody></table></div>
+<p>Na <strong>1 hora de estudo</strong> semanal, prefira a fonte que ajuda a explicar uma falha concreta. Para aprofundar segurança, consulte o <a href="https://genai.owasp.org/llm-top-10/">OWASP Top 10 para aplicações de LLM e IA generativa</a>: escolha um risco, como injeção de prompt ou autonomia excessiva, e transforme-o em um caso de teste do agente. Compartilhe em <a href="../docs/comunidades.html">X ou Discord</a> uma versão reduzida e sem dados privados do caso que ainda não entendeu.</p>
+<p><a href="07-operacao-e-comunicacao.html">Próxima aula: operação e comunicação →</a></p>
+</article><footer><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia/blob/main/aulas/06-avaliacao-e-confiabilidade.md">Ver este conteúdo no GitHub ↗</a><span>Um projeto. Aprendizado contínuo.</span></footer></main></div></body></html>

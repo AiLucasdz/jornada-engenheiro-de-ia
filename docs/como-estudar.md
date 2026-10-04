@@ -17,7 +17,7 @@ A proporção é uma referência semanal. Você pode estudar 12 minutos e pratic
 
 **Exemplo: seu agente está inventando respostas quando falta informação.**
 
-1. **12 min · Entender.** Leia sobre contexto e fontes na [Base Técnica](https://ailucasdz.github.io/jornada-engenheiro-de-ia/materiais/Base%20T%C3%A9cnica%20de%20IA.html). Escolha uma mudança pequena: encaminhar perguntas sem fonte.
+1. **12 min · Entender.** Leia sobre contexto e fontes na [aula de contexto e RAG](../aulas/04-contexto-e-rag.md). Escolha uma mudança pequena: encaminhar perguntas sem fonte.
 2. **28 min · Construir.** Oriente a IA que programa, forneça o comportamento esperado e implemente a mudança no agente.
 3. **15 min · Verificar.** Rode perguntas com fonte, sem fonte e ambíguas. Compare com a versão anterior.
 4. **5 min · Registrar.** Preencha [um experimento](../modelos/experimento.md) e anote a próxima hipótese.
@@ -44,7 +44,7 @@ Se algo falhar, leve o erro observado e um exemplo reproduzível. Peça uma expl
 
 ## Escolha a leitura da vez
 
-- **Não conheço o conceito:** abra a [biblioteca da formação](../materiais/README.md).
+- **Não conheço o conceito:** abra a [aula da etapa](../aulas/README.md).
 - **Preciso implementar:** escolha a documentação do provedor em [onde estudar](fontes-e-comunidade.md).
 - **Encontrei um erro:** use [o roteiro de pesquisa](como-pesquisar.md).
 - **Quero trocar experiências:** leve o experimento ao [X ou Discord](comunidades.md).

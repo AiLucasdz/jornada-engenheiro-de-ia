@@ -1,0 +1,117 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>01 · Da história da IA ao seu primeiro problema · Jornada IA</title><meta name="description" content="Uma trilha prática de Engenharia de IA: materiais, fontes oficiais, projetos e comunidades."><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a  href="../../index.html">Início</a><a  href="../docs/trilha-12-semanas.html">Trilha</a><a  href="index.html">Aulas</a><a  href="../docs/fontes-e-comunidade.html">Onde estudar</a><a  href="../docs/comunidades.html">X e Discord</a><a  href="../modelos/index.html">Modelos</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">CONSULTE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="RAG, teoria, Discord…" data-index="../../assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#uma-linha-do-tempo-para-tomar-decisões">Uma linha do tempo para tomar decisões</a><a href="#cinco-lições-que-entram-no-projeto">Cinco lições que entram no projeto</a><a href="#regras-aprendizado-e-produto">Regras, aprendizado e produto</a><a href="#laboratório-80-prática">Laboratório · 80% prática</a><a href="#estudo-guiado-20-teoria">Estudo guiado · 20% teoria</a></nav><a class="study-note" href="../docs/como-estudar.html"><strong>80% prática<br>20% teoria</strong><span>Estude uma ideia.<br>Aplique no seu agente.</span></a></aside><main id="conteudo"><article><h1 id="01-da-história-da-ia-ao-seu-primeiro-problema">01 · Da história da IA ao seu primeiro problema</h1>
+<p><a href="index.html">← Aulas</a> · <a href="../docs/trilha-12-semanas.html">Plano de 12 semanas</a> · <a href="02-modelos-e-aprendizado.html">Próxima aula →</a></p>
+<p><strong>Quando usar:</strong> semanas 1–2. <strong>Entrega:</strong> um protótipo pequeno, um problema delimitado e uma hipótese que você consegue testar.</p>
+<p>A história da IA ajuda a decidir o que construir. Ela mostra como demonstrações impressionantes podem esconder limitações, por que dados e infraestrutura importam e como o custo de manutenção aparece depois da primeira entrega. Nesta aula, você transforma essas lições em decisões para o <a href="../docs/projeto-central.html">seu agente</a>.</p>
+<h2 id="uma-linha-do-tempo-para-tomar-decisões">Uma linha do tempo para tomar decisões</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Período</th>
+<th>O que mudou</th>
+<th>A pergunta que fica para seu projeto</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1943–1950 · fundações</td>
+<td>McCulloch e Pitts descreveram um modelo matemático de neurônio. Turing propôs investigar comportamento observável em uma conversa, deslocando a discussão para um teste.</td>
+<td>Qual comportamento vou observar para dizer que o sistema funciona?</td>
+</tr>
+<tr>
+<td>1956–1973 · primeiras expectativas</td>
+<td>O encontro de Dartmouth consolidou o nome inteligência artificial. O perceptron de Rosenblatt explorou aprendizado; ELIZA mostrou como regras simples podiam sustentar uma conversa que parecia humana.</td>
+<td>Estou medindo capacidade ou me impressionando com a apresentação?</td>
+</tr>
+<tr>
+<td>Década de 1970 · primeiro inverno</td>
+<td>Limites técnicos, promessas excessivas e decisões de financiamento contribuíram para uma retração. Problemas simples em laboratório não se generalizavam facilmente.</td>
+<td>Em quais situações meu protótipo ainda falha?</td>
+</tr>
+<tr>
+<td>Década de 1980 · sistemas especialistas</td>
+<td>Sistemas como MYCIN e XCON representavam conhecimento em regras. Aplicações delimitadas demonstraram utilidade, mas bases grandes de regras exigiam manutenção.</td>
+<td>Quanto trabalho será necessário quando o processo mudar?</td>
+</tr>
+<tr>
+<td>Fim dos anos 1980–1990 · retração e continuidade</td>
+<td>O mercado de sistemas especialistas perdeu força. Ao mesmo tempo, a pesquisa continuou: o trabalho de Rumelhart, Hinton e Williams, de 1986, ajudou a popularizar a retropropagação em redes neurais.</td>
+<td>Estou confundindo a viabilidade de uma ideia com as limitações de uma implementação?</td>
+</tr>
+<tr>
+<td>1990–2011 · métodos e dados</td>
+<td>Deep Blue venceu Kasparov em 1997; a pesquisa em aprendizado estatístico avançou; conjuntos de dados como ImageNet permitiram comparar sistemas em tarefas comuns.</td>
+<td>Tenho exemplos representativos e um critério compartilhado de comparação?</td>
+</tr>
+<tr>
+<td>2012–2022 · deep learning e linguagem</td>
+<td>AlexNet combinou redes profundas, dados e GPUs. O Transformer, proposto em 2017, ampliou as possibilidades dos modelos de linguagem. Em 2022, o ChatGPT popularizou o acesso por conversa.</td>
+<td>O que falta aqui: capacidade do modelo, dados, integração ou uma interface utilizável?</td>
+</tr>
+<tr>
+<td>Aplicações atuais · ferramentas e agentes</td>
+<td>Modelos são integrados a busca, bancos, código e ferramentas. Construir uma solução passa a envolver também permissões, estado, avaliação e operação.</td>
+<td>Como uma resposta vira uma ação verificável?</td>
+</tr>
+</tbody></table></div>
+<p>As datas organizam a história; elas não provam que houve uma causa única para cada avanço ou inverno. O artigo <a href="https://arxiv.org/abs/2104.12871">Why AI is Harder Than We Think, de Melanie Mitchell</a>, discute justamente a distância recorrente entre expectativas e dificuldades reais.</p>
+<h2 id="cinco-lições-que-entram-no-projeto">Cinco lições que entram no projeto</h2>
+<p><strong>Defina sucesso antes de automatizar.</strong> Uma resposta bem escrita pode não resolver o problema. No exemplo de qualificação de leads, o resultado é uma primeira resposta útil e um encaminhamento correto. “Parecer inteligente” não serve como critério de aceitação.</p>
+<p><strong>Comece por um processo delimitado.</strong> Os sistemas especialistas ajudam a enxergar o valor de resolver uma tarefa concreta. “Melhorar o comercial” ainda é amplo. “Receber uma mensagem fora do horário, identificar a intenção e registrar o encaminhamento” permite testar entradas, regras e saídas.</p>
+<p><strong>Calcule a manutenção.</strong> Uma automação pode funcionar hoje e exigir revisão quando mudam preços, produtos ou integrações. Imagine uma receita de cozinha: ela é útil enquanto os ingredientes e o processo continuam válidos. Alguém precisa atualizar a receita e conferir o resultado quando isso muda.</p>
+<p><strong>Dados de avaliação são parte da construção.</strong> Uma tabela com perguntas e respostas aceitáveis permite comparar versões. Inclua casos fáceis, ambíguos e sem resposta disponível. Não escolha só exemplos que valorizam a demonstração.</p>
+<p><strong>Descubra o gargalo atual.</strong> Uma resposta errada pode vir de dados desatualizados, uma regra ruim ou uma integração que não executou. Trocar de modelo só ajuda quando a limitação está nele. Mais adiante, você aprenderá a localizar essa falha por camada.</p>
+<h2 id="regras-aprendizado-e-produto">Regras, aprendizado e produto</h2>
+<p>Em um programa de regras, alguém escreve explicitamente o que fazer: se falta o contato, pedir o contato. Em aprendizado de máquina, um modelo ajusta parâmetros a partir de dados para produzir previsões. Uma aplicação pode combinar os dois: a IA interpreta uma mensagem livre; o código valida campos obrigatórios e decide quais ações são permitidas.</p>
+<p>Pense em uma central de atendimento. A política de quem pode receber desconto é uma regra de negócio. Identificar se “queria entender os planos” expressa interesse comercial é uma tarefa de interpretação. Não é necessário entregar as duas decisões ao mesmo mecanismo.</p>
+<p>A linha de base é o resultado do processo antes da mudança. Sem ela, você pode demonstrar funcionamento, mas terá dificuldade para demonstrar melhora. Meça também o que não pode piorar: resposta incorreta, esforço humano, custo e satisfação.</p>
+<h2 id="laboratório-80-prática">Laboratório · 80% prática</h2>
+<p>Use <strong>4 horas por semana</strong> como referência, distribuídas entre estas duas entregas. Os tempos são ajustáveis; a evidência de funcionamento é o critério para avançar.</p>
+<p><strong>Semana 1 — faça o caminho existir:</strong></p>
+<ol>
+<li>Escolha o processo e descreva quem chega, o que precisa e qual resultado espera. Preencha a <a href="../modelos/ficha-do-projeto.html">ficha do projeto</a>.</li>
+<li>Separe cinco mensagens fictícias ou autorizadas: duas simples, duas ambíguas e uma fora do escopo.</li>
+<li>Construa um protótipo que recebe a mensagem e registra o pedido. Use regras simples para sugerir uma categoria ou faça essa classificação manualmente, deixando isso documentado. A comparação formal com um LLM entra na semana 4.</li>
+<li>Peça a uma pessoa para usar o protótipo e observe onde precisa explicar o funcionamento.</li>
+<li>Salve a primeira versão no GitHub. Registre o que funciona, o que falhou e o próximo ajuste.</li>
+</ol>
+<p><strong>Semana 2 — teste a hipótese:</strong></p>
+<ol>
+<li>Meça ou estime explicitamente a linha de base com uma pequena amostra. Identifique estimativas para não apresentá-las como medições.</li>
+<li>Escreva a hipótese: “Acreditamos que [mudança] melhora [métrica] para [público], preservando [limite de qualidade]”.</li>
+<li>Execute os mesmos casos com o fluxo atual e o protótipo. Registre resultado, tempo e necessidade de intervenção.</li>
+<li>Escolha uma melhoria a partir da maior dificuldade encontrada e registre um <a href="../modelos/experimento.html">experimento</a>.</li>
+</ol>
+<p><strong>Você concluiu quando:</strong> consegue demonstrar o fluxo, explicar qual decisão precisa de IA e apresentar pelo menos uma evidência que apoia ou enfraquece a hipótese.</p>
+<h2 id="estudo-guiado-20-teoria">Estudo guiado · 20% teoria</h2>
+<p>Reserve <strong>1 hora por semana</strong>: leia esta aula, escolha uma fonte abaixo e volte ao protótipo com uma decisão para testar. Os livros são aprofundamentos opcionais; não é preciso comprá-los para seguir a trilha.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Escolha conforme sua dúvida</th>
+<th>Como estudar</th>
+<th>O que aplicar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://us.macmillan.com/books/9781250404855/artificialintelligence/">Melanie Mitchell — Artificial Intelligence: A Guide for Thinking Humans</a></td>
+<td>Leia um trecho sobre capacidades e limites; anote uma expectativa que precisa de teste.</td>
+<td>Transformar essa expectativa em um caso do seu agente.</td>
+</tr>
+<tr>
+<td><a href="https://theleanstartup.com/principles">Lean Startup — princípios</a></td>
+<td>Foque no ciclo de hipótese, experimento e aprendizagem.</td>
+<td>Reduzir o piloto à menor entrega que testa valor.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/skills/introduction-to-github">GitHub Skills — Introduction to GitHub</a></td>
+<td>Pratique repositório, branch, commit e pull request no próprio projeto.</td>
+<td>Registrar e revisar a primeira entrega.</td>
+</tr>
+<tr>
+<td><a href="https://academy.claude.com/">Claude Academy</a></td>
+<td>Escolha uma atividade introdutória sobre trabalhar com IA.</td>
+<td>Especificar uma tarefa e conferir a resposta com um critério explícito.</td>
+</tr>
+</tbody></table></div>
+<p>Para ampliar a leitura histórica, procure <strong>Genius Makers</strong>, de Cade Metz; para entender decisões de negócio, <strong>Máquinas Preditivas</strong>, de Agrawal, Gans e Goldfarb. Os caminhos de consulta estão na <a href="../docs/fontes-e-comunidade.html">curadoria de estudo</a>. Leve uma observação do protótipo aos <a href="../docs/comunidades.html">canais de acompanhamento</a>, junto com o que você já testou.</p>
+<p><a href="../docs/trilha-12-semanas.html">Continuar no plano: semana 3, produto e cadência →</a> · <a href="02-modelos-e-aprendizado.html">Depois: modelos e aprendizado →</a></p>
+</article><footer><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia/blob/main/aulas/01-historia-e-problemas.md">Ver este conteúdo no GitHub ↗</a><span>Um projeto. Aprendizado contínuo.</span></footer></main></div></body></html>

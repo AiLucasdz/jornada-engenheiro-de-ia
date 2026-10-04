@@ -1,0 +1,113 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>05 · Transforme uma resposta em ação · Jornada IA</title><meta name="description" content="Uma trilha prática de Engenharia de IA: materiais, fontes oficiais, projetos e comunidades."><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a  href="../../index.html">Início</a><a  href="../docs/trilha-12-semanas.html">Trilha</a><a  href="index.html">Aulas</a><a  href="../docs/fontes-e-comunidade.html">Onde estudar</a><a  href="../docs/comunidades.html">X e Discord</a><a  href="../modelos/index.html">Modelos</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">CONSULTE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="RAG, teoria, Discord…" data-index="../../assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#ferramentas-o-modelo-pede-o-sistema-executa">Ferramentas: o modelo pede, o sistema executa</a><a href="#fluxo-e-agente-escolha-onde-a-decisão-acontece">Fluxo e agente: escolha onde a decisão acontece</a><a href="#o-ciclo-precisa-terminar">O ciclo precisa terminar</a><a href="#orquestração-e-mcp">Orquestração e MCP</a><a href="#repetição-sem-efeito-duplicado">Repetição sem efeito duplicado</a><a href="#laboratório-80-prática">Laboratório · 80% prática</a><a href="#estudo-guiado-20-teoria">Estudo guiado · 20% teoria</a></nav><a class="study-note" href="../docs/como-estudar.html"><strong>80% prática<br>20% teoria</strong><span>Estude uma ideia.<br>Aplique no seu agente.</span></a></aside><main id="conteudo"><article><h1 id="05-transforme-uma-resposta-em-ação">05 · Transforme uma resposta em ação</h1>
+<p><a href="04-contexto-e-rag.html">← Aula anterior</a> · <a href="index.html">Aulas</a> · <a href="06-avaliacao-e-confiabilidade.html">Próxima aula →</a></p>
+<p><strong>Quando usar:</strong> semanas 7–8. <strong>Entrega:</strong> um agente com ferramenta de leitura e uma ação controlada em ambiente de teste.</p>
+<p>Seu sistema já recebe mensagens, guarda estado e consulta fontes. Agora ele poderá pedir uma ação, observar o resultado e decidir como continuar. O desenho desse ciclo define a autonomia que você está concedendo.</p>
+<h2 id="ferramentas-o-modelo-pede-o-sistema-executa">Ferramentas: o modelo pede, o sistema executa</h2>
+<p>Em <strong>tool use</strong> ou <strong>function calling</strong>, você disponibiliza ferramentas com nome, descrição e um contrato de argumentos. O modelo pode produzir uma solicitação de chamada. O código ou serviço responsável pela ferramenta valida a solicitação, executa a operação autorizada e devolve o resultado.</p>
+<p>Imagine uma requisição de estoque. Uma pessoa preenche produto e quantidade; o estoque confere identidade, disponibilidade e permissão antes de liberar. Uma requisição bem preenchida não é uma autorização automática.</p>
+<p>No agente de leads, comece com uma ferramenta como <code>consultar_planos</code>. Depois, experimente <code>registrar_interesse</code> em uma base de teste. Uma descrição útil deixa explícito o que cada ferramenta faz, os campos exigidos e o que ela não consegue decidir. A integração deve verificar o acesso ao lead; não confie em um identificador inventado pelo modelo.</p>
+<h2 id="fluxo-e-agente-escolha-onde-a-decisão-acontece">Fluxo e agente: escolha onde a decisão acontece</h2>
+<p>Em um <strong>fluxo com IA</strong>, você define a sequência principal e usa o modelo em certas etapas. Em um <strong>agente</strong>, o modelo pode selecionar próximos passos e ferramentas dentro dos limites do sistema. Essa distinção é apresentada em <a href="https://www.anthropic.com/engineering/building-effective-agents">Building effective agents, da Anthropic</a>.</p>
+<p>Pense em receita e cozinheiro: uma receita define a ordem; um cozinheiro escolhe como adaptar o caminho. A analogia não torna autonomia uma qualidade automática. Mais liberdade pode aumentar a variedade de situações resolvidas, mas também o trabalho de verificar o que aconteceu.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Parte do agente de leads</th>
+<th>Desenho inicial</th>
+<th>Motivo</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Validar campos e identidade</td>
+<td>Código com regras explícitas.</td>
+<td>A condição de aceitação é conhecida.</td>
+</tr>
+<tr>
+<td>Interpretar a intenção da mensagem</td>
+<td>Modelo, com categorias avaliáveis.</td>
+<td>O texto varia.</td>
+</tr>
+<tr>
+<td>Consultar plano ou política</td>
+<td>Ferramenta de leitura com acesso delimitado.</td>
+<td>A resposta precisa de informação atual.</td>
+</tr>
+<tr>
+<td>Escolher entre pedir esclarecimento e consultar</td>
+<td>Decisão do modelo dentro do escopo.</td>
+<td>Depende do que falta na mensagem.</td>
+</tr>
+<tr>
+<td>Alterar oportunidade comercial</td>
+<td>Validação de argumentos e permissão antes da execução.</td>
+<td>Muda um registro do processo.</td>
+</tr>
+<tr>
+<td>Prometer condição fora da política</td>
+<td>Encaminhamento humano.</td>
+<td>O agente não recebeu autoridade para isso.</td>
+</tr>
+</tbody></table></div>
+<h2 id="o-ciclo-precisa-terminar">O ciclo precisa terminar</h2>
+<p>Um ciclo típico é: objetivo → contexto → decisão → solicitação de ferramenta → validação e execução → resultado → nova decisão. Ele termina quando a tarefa foi concluída, faltam informações, ocorreu uma falha sem recuperação prevista ou um limite foi atingido.</p>
+<p>Defina limite de passos, prazo e orçamento. Registre o motivo da parada. Se a ferramenta devolver “não encontrado”, o agente não deve repetir para sempre a mesma consulta. Ele pode pedir um dado necessário ou encaminhar o caso.</p>
+<p>Não use um multiplicador fixo para estimar o custo de um agente. Meça quantas chamadas ocorrem, quanto contexto é reenviado, o tamanho das respostas e o custo das ferramentas. Uma tarefa simples com muitas tentativas pode custar mais que uma tarefa extensa bem delimitada.</p>
+<h2 id="orquestração-e-mcp">Orquestração e MCP</h2>
+<p><strong>Orquestração</strong> organiza estado, sequência, chamadas, erros e retomadas. Pode começar como poucas funções no seu código. Bibliotecas e plataformas acrescentam abstrações para problemas específicos: fluxos com estado, automação visual ou acesso a diferentes provedores, por exemplo.</p>
+<p>Nomes como LangChain, LangGraph, n8n, Langflow, LiteLLM e Semantic Kernel aparecem nesse ecossistema, mas não representam todos a mesma camada. Antes de escolher, descreva a capacidade necessária: “preciso retomar uma execução interrompida” é uma justificativa verificável; “a ferramenta está em alta” não descreve uma necessidade do projeto.</p>
+<p>O <strong>Model Context Protocol (MCP)</strong> padroniza a conexão de aplicações de IA com ferramentas e fontes de dados. A analogia é uma tomada: uma interface comum reduz adaptações entre componentes compatíveis. O protocolo não substitui suas decisões de autorização, confiança e qualidade. A <a href="https://modelcontextprotocol.io/docs/getting-started/intro">introdução oficial do MCP</a> explica seus componentes e usos.</p>
+<p>Para aprender, implemente primeiro uma ferramenta simples que você consiga inspecionar. Depois avalie se expô-la por MCP ou usar uma estrutura de orquestração resolve um problema real de integração.</p>
+<h2 id="repetição-sem-efeito-duplicado">Repetição sem efeito duplicado</h2>
+<p><strong>Retry</strong> é repetir uma operação após uma falha. Ele precisa de limite e intervalo adequado. <strong>Idempotência</strong> significa que repetir a mesma operação lógica não cria efeitos adicionais indesejados. Uma chave de evento ou de operação pode ajudar a reconhecer que o trabalho já aconteceu.</p>
+<p>No nosso exemplo, o CRM pode registrar o interesse e a resposta da API se perder. Se o agente repetir sem controle, surgem dois registros. Guarde a identidade da operação e confira o resultado antes de criar outro registro. Uma fila pode separar recebimento e processamento, mas também exige cuidado com entregas repetidas.</p>
+<h2 id="laboratório-80-prática">Laboratório · 80% prática</h2>
+<p>Reserve <strong>4 horas por semana</strong>, aproveitando o trabalho de contexto da aula anterior.</p>
+<p><strong>Semana 7 — uma ferramenta de leitura:</strong></p>
+<ol>
+<li>Descreva <code>consultar_planos</code> com entradas, saídas e erros esperados.</li>
+<li>Dê ao agente uma tarefa delimitada: esclarecer a dúvida sobre um plano e pedir a informação que faltar.</li>
+<li>Registre cada solicitação de ferramenta e seu resultado. Defina limite de passos e comportamento de encerramento.</li>
+<li>Teste pergunta simples, ambiguidade, ausência de fonte e ferramenta indisponível.</li>
+</ol>
+<p><strong>Semana 8 — ação em ambiente de teste:</strong></p>
+<ol>
+<li>Adicione <code>registrar_interesse</code> para um CRM simulado ou uma tabela de teste.</li>
+<li>Valide argumentos e acesso. Exija revisão humana para a ação que você classificou como sensível no seu processo.</li>
+<li>Simule uma resposta perdida depois do registro e repita a operação com a mesma chave. Confirme que o efeito não foi duplicado.</li>
+<li>Provoque uma falha persistente e observe se o agente para e encaminha o caso.</li>
+<li>Compare um fluxo fixo com uma decisão flexível do agente. Mantenha a flexibilidade apenas onde o teste mostrar utilidade.</li>
+</ol>
+<p><strong>Você concluiu quando:</strong> demonstra leitura, ação autorizada, parada e tratamento de duplicatas, explicando onde cada controle é aplicado.</p>
+<h2 id="estudo-guiado-20-teoria">Estudo guiado · 20% teoria</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>O que selecionar</th>
+<th>O que aplicar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.anthropic.com/engineering/building-effective-agents">Anthropic — Building effective agents</a></td>
+<td>Diferença entre fluxo e agente; comece pelos padrões simples.</td>
+<td>Justificar onde o modelo decide o próximo passo.</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/learn/agents-course/unit0/introduction">Hugging Face — Agents Course</a></td>
+<td>Conceito de ferramenta e ciclo do agente.</td>
+<td>Comparar o ciclo do exercício com o seu.</td>
+</tr>
+<tr>
+<td><a href="https://platform.claude.com/docs/en/intro">Claude Platform Docs</a> ou <a href="https://ai.google.dev/gemini-api/docs">Gemini API</a></td>
+<td>Ferramentas na API efetivamente escolhida.</td>
+<td>Conferir o contrato da solicitação e da resposta.</td>
+</tr>
+<tr>
+<td><a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP — introdução oficial</a></td>
+<td>Componentes e conexão com ferramentas.</td>
+<td>Desenhar onde entraria no seu sistema, se necessário.</td>
+</tr>
+</tbody></table></div>
+<p>Em <strong>AI Engineering</strong>, de Chip Huyen, procure os tópicos de agentes e desenho de aplicação; os <a href="https://github.com/chiphuyen/aie-book">materiais de apoio</a> ajudam a encontrar a seção relevante. Use <strong>1 hora por semana</strong> de estudo para orientar uma decisão do laboratório.</p>
+<p><a href="06-avaliacao-e-confiabilidade.html">Próxima aula: avaliação e confiabilidade →</a></p>
+</article><footer><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia/blob/main/aulas/05-agentes-e-ferramentas.md">Ver este conteúdo no GitHub ↗</a><span>Um projeto. Aprendizado contínuo.</span></footer></main></div></body></html>

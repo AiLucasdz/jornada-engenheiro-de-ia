@@ -22,13 +22,13 @@ Uma trilha prática para desenvolver as habilidades de um Engenheiro de IA, cone
 | --- | --- |
 | **Começar hoje** | [Como estudar: 80% prática e 20% teoria](docs/como-estudar.md) |
 | **Saber o que fazer em cada semana** | [Trilha de 12 semanas, com entregas e fontes](docs/trilha-12-semanas.md) |
-| **Ler os materiais da formação** | [Biblioteca: História e Base Técnica de IA](materiais/README.md) |
+| **Aprender os conceitos da etapa** | [Aulas: explicação, fontes e prática no mesmo lugar](aulas/README.md) |
 | **Estudar nas fontes oficiais** | [OpenAI, Anthropic, Google, GitHub, Microsoft e outras referências](docs/fontes-e-comunidade.md) |
 | **Pesquisar uma dúvida** | [Como pesquisar no Google e nas documentações](docs/como-pesquisar.md) |
 | **Acompanhar novidades e trocar experiências** | [X, Discord e comunidades](docs/comunidades.md) |
 | **Trabalhar no meu agente** | [Projeto central](docs/projeto-central.md) e [modelos para preencher](modelos/README.md) |
 
-**Leia tudo no navegador:** o [guia online](https://ailucasdz.github.io/jornada-engenheiro-de-ia/) reúne trilha, materiais, fontes e busca por assunto. Aqui no GitHub, cada pasta tem um índice com o que ler e por onde começar.
+**Leia tudo no navegador:** o [guia online](https://ailucasdz.github.io/jornada-engenheiro-de-ia/) reúne aulas, exercícios, fontes e busca por assunto. Aqui no GitHub, cada pasta tem um índice com o que ler e por onde começar.
 
 ## 80% prática. 20% teoria. Toda semana.
 
@@ -72,7 +72,7 @@ O ritmo de referência é **1 hora por dia, 5 dias por semana**: cerca de 4 hora
 
 | Etapa | Foco | O que você constrói |
 | --- | --- | --- |
-| **Semanas 1–3 · Entender e planejar** | Problema, negócio, produto e métodos ágeis | Um fluxo com hipótese, métrica e entregas priorizadas. |
+| **Semanas 1–3 · Entender e planejar** | Problema, negócio, produto e métodos ágeis | Um primeiro protótipo, com hipótese, métrica e entregas priorizadas. |
 | **Semanas 4–6 · Criar a base** | Fundamentos de IA, integrações e dados | Uma comparação entre regras e LLM, uma entrada de dados e um histórico de execução. |
 | **Semanas 7–8 · Dar capacidade de ação** | Agentes, ferramentas e automação confiável | Um agente que consulta informações e executa uma ação em ambiente de teste. |
 | **Semanas 9–10 · Verificar e melhorar** | Avaliação e observabilidade | Casos de teste e registros para investigar erros, custo e tempo de resposta. |
@@ -104,15 +104,21 @@ A evolução do projeto passa por seis entregas:
 3. **Construa a primeira entrega.** Use [o projeto central](docs/projeto-central.md) como referência e adapte ao seu contexto.
 4. **Registre o que aprendeu.** Documente [os experimentos](modelos/experimento.md) e mantenha [os casos de avaliação](modelos/casos-de-avaliacao.md) atualizados.
 
-## Materiais para acompanhar a jornada
+## Aprenda o conceito e aplique no projeto
 
-| Material | Quando consultar |
-| --- | --- |
-| [**História da IA**](https://ailucasdz.github.io/jornada-engenheiro-de-ia/materiais/historia-da-ia-material-de-formacao.html) | Para entender a evolução do campo e dar contexto aos fundamentos. |
-| [**Base Técnica de IA**](https://ailucasdz.github.io/jornada-engenheiro-de-ia/materiais/Base%20T%C3%A9cnica%20de%20IA.html) | Para estudar LLMs, RAG, agentes, infraestrutura e avaliação conforme esses temas aparecem no projeto. |
-| [**Fontes e comunidade**](docs/fontes-e-comunidade.md) | Para encontrar leituras, trocar experiências e compartilhar descobertas. |
+Cada etapa traz a explicação que você precisa, uma leitura recomendada e um exercício no seu agente. História, fundamentos e decisões técnicas fazem parte desse caminho.
 
-Os dois materiais abrem como páginas de leitura, direto no navegador. Consulte a [biblioteca](materiais/README.md) para escolher a seção que acompanha sua etapa.
+| Na etapa de… | Você aprende… | Comece pela aula |
+| --- | --- | --- |
+| **Escolher o problema** | Como a IA evoluiu, quais promessas falharam e como definir um escopo útil. | [História e problemas](aulas/01-historia-e-problemas.md) |
+| **Entender o modelo** | Redes neurais, treinamento, atenção, tokens, contexto e alucinação. | [Modelos e aprendizado](aulas/02-modelos-e-aprendizado.md) |
+| **Conectar a solução** | APIs, dados, estado e atualização das fontes. | [Integrações e dados](aulas/03-integracoes-e-dados.md) |
+| **Responder com informação** | Embeddings, busca, RAG e quando considerar fine-tuning. | [Contexto e RAG](aulas/04-contexto-e-rag.md) |
+| **Dar capacidade de ação** | Ferramentas, agentes, MCP e limites de autonomia. | [Agentes e ferramentas](aulas/05-agentes-e-ferramentas.md) |
+| **Verificar o resultado** | Avaliação, diagnóstico, observabilidade e confiabilidade. | [Avaliação e confiabilidade](aulas/06-avaliacao-e-confiabilidade.md) |
+| **Colocar em uso** | Custo, latência, operação e explicação das decisões. | [Operação e comunicação](aulas/07-operacao-e-comunicacao.md) |
+
+→ [Navegar por todas as aulas](aulas/README.md)
 
 ## Onde estudar e se manter atualizado
 
@@ -153,7 +159,7 @@ Esse conjunto permite mostrar **o que você construiu, por que escolheu esse cam
 | Pasta | O que você encontra |
 | --- | --- |
 | [docs/](docs/README.md) | Roteiro, método de estudo, projeto, fontes, pesquisa e comunidades. |
-| [materiais/](materiais/README.md) | Os materiais de formação, com links para leitura online. |
+| [aulas/](aulas/README.md) | Conteúdo da formação integrado às referências e aos exercícios. |
 | [modelos/](modelos/README.md) | Ficha do projeto, experimentos e casos de avaliação. |
 | [assets/](assets/README.md) | Capa e mapa visual usados neste guia. |
 

@@ -8,7 +8,8 @@ Para sugerir uma correção ou uma fonte de estudo, abra uma issue com o trecho,
 
 - `README.md`: entrada principal da jornada no GitHub e no site.
 - `docs/`: método, trilha, fontes, pesquisa, comunidades e projeto.
-- `materiais/`: HTMLs de formação e índice para leitura online.
+- `aulas/`: conteúdo didático com explicação, fontes, aplicação e exercício.
+- `materiais/`: redirecionamentos de endereços anteriores para as aulas.
 - `modelos/`: modelos para usar no projeto.
 - `assets/`: imagens, estilos e recursos da navegação.
 - `leitura/`: páginas de leitura geradas dos Markdown; edite os arquivos de origem.
@@ -24,7 +25,7 @@ npm run build
 npm run check
 ```
 
-O gerador mantém os Markdown como origem, atualiza `index.html` e `leitura/`, reconstrói a busca e adiciona navegação aos materiais HTML. Revise as mudanças e inclua os arquivos gerados no mesmo commit. O GitHub Pages publica os arquivos estáticos da branch `main`.
+O gerador mantém os Markdown como origem, atualiza `index.html` e `leitura/`, reconstrói a busca e preserva os redirecionamentos de endereços antigos. Revise as mudanças e inclua os arquivos gerados no mesmo commit. O GitHub Pages publica os arquivos estáticos da branch `main`.
 
 ## Recomendar uma fonte
 

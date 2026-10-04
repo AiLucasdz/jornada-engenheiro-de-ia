@@ -13,4 +13,4 @@ Escolha uma etapa abaixo. Cada página pode ser lida aqui no GitHub ou no guia o
 | Consulta | [Como pesquisar](como-pesquisar.md) | Buscar respostas no Google, na documentação e em repositórios. |
 | Acompanhamento | [X e Discord](comunidades.md) | Encontrar pessoas, discussões e experiências práticas. |
 
-Também disponíveis: [biblioteca da formação](../materiais/README.md) e [modelos para preencher](../modelos/README.md).
+Também disponíveis: [aulas com conceitos, referências e exercícios](../aulas/README.md) e [modelos para preencher](../modelos/README.md).

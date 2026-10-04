@@ -1,0 +1,109 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>03 · Faça a informação percorrer o sistema · Jornada IA</title><meta name="description" content="Uma trilha prática de Engenharia de IA: materiais, fontes oficiais, projetos e comunidades."><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a  href="../../index.html">Início</a><a  href="../docs/trilha-12-semanas.html">Trilha</a><a  href="index.html">Aulas</a><a  href="../docs/fontes-e-comunidade.html">Onde estudar</a><a  href="../docs/comunidades.html">X e Discord</a><a  href="../modelos/index.html">Modelos</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">CONSULTE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="RAG, teoria, Discord…" data-index="../../assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#api-http-e-json">API, HTTP e JSON</a><a href="#autenticação-webhook-e-respostas-de-erro">Autenticação, webhook e respostas de erro</a><a href="#sql-estado-e-histórico">SQL, estado e histórico</a><a href="#etl-e-pipeline-o-dado-também-precisa-de-manutenção">ETL e pipeline: o dado também precisa de manutenção</a><a href="#laboratório-80-prática">Laboratório · 80% prática</a><a href="#estudo-guiado-20-teoria">Estudo guiado · 20% teoria</a></nav><a class="study-note" href="../docs/como-estudar.html"><strong>80% prática<br>20% teoria</strong><span>Estude uma ideia.<br>Aplique no seu agente.</span></a></aside><main id="conteudo"><article><h1 id="03-faça-a-informação-percorrer-o-sistema">03 · Faça a informação percorrer o sistema</h1>
+<p><a href="02-modelos-e-aprendizado.html">← Aula anterior</a> · <a href="index.html">Aulas</a> · <a href="04-contexto-e-rag.html">Próxima aula →</a></p>
+<p><strong>Quando usar:</strong> semanas 5–6. <strong>Entrega:</strong> uma entrada validada, um histórico persistido e uma consulta que reconstrói o que aconteceu.</p>
+<p>O modelo pode interpretar a mensagem de um lead, mas alguém precisa receber o evento, identificar a pessoa, guardar o estado e registrar o resultado. Esses fundamentos de software e dados sustentam o agente que você começou nas primeiras semanas.</p>
+<h2 id="api-http-e-json">API, HTTP e JSON</h2>
+<p>Uma <strong>API</strong> é uma interface para um programa usar recursos de outro. Uma API HTTP recebe requisições em endereços chamados endpoints e devolve respostas. Muitas APIs seguem convenções REST, embora HTTP e REST não sejam sinônimos. Pense em um balcão: há pedidos aceitos, informações obrigatórias e respostas possíveis.</p>
+<p>Uma requisição costuma reunir método, endereço, cabeçalhos e, quando necessário, corpo. <code>GET</code> normalmente consulta um recurso; <code>POST</code> envia dados para processamento ou criação. <strong>JSON</strong> é um formato comum para representar os dados, com objetos, listas, textos, números e outros valores.</p>
+<p>No seu protótipo, um evento fictício pode ser representado assim:</p>
+<pre><code>{
+  &quot;evento_id&quot;: &quot;evt_demo_001&quot;,
+  &quot;lead_id&quot;: &quot;lead_demo_007&quot;,
+  &quot;mensagem&quot;: &quot;Quero conhecer o plano para minha equipe&quot;,
+  &quot;recebido_em&quot;: &quot;2026-10-01T19:30:00Z&quot;
+}</code></pre><p>Um JSON válido ainda pode estar incompleto. Valide campos obrigatórios, tipos, tamanho e valores aceitos antes de seguir. <code>lead_id</code> em texto não prova que quem enviou o evento tenha acesso àquele lead.</p>
+<h2 id="autenticação-webhook-e-respostas-de-erro">Autenticação, webhook e respostas de erro</h2>
+<p><strong>Autenticação</strong> identifica quem fez a chamada; <strong>autorização</strong> determina o que essa identidade pode fazer. Chaves de API são credenciais: mantenha-as fora do repositório e dos exemplos públicos. Use variáveis de ambiente ou o mecanismo de segredos do ambiente escolhido.</p>
+<p>Um <strong>webhook</strong> permite que outro sistema envie um aviso quando algo acontece. Em vez de perguntar repetidamente se chegou um lead, você recebe um evento. Valide a origem pelo mecanismo documentado pelo serviço; não presuma autenticidade só porque o corpo parece correto.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Resposta ou condição</th>
+<th>O que investigar</th>
+<th>Comportamento útil</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>401</code></td>
+<td>Credencial ausente ou rejeitada.</td>
+<td>Corrigir autenticação; repetir sem mudança tende a falhar novamente.</td>
+</tr>
+<tr>
+<td><code>403</code></td>
+<td>A chamada não tem permissão.</td>
+<td>Conferir o acesso exigido para a operação.</td>
+</tr>
+<tr>
+<td><code>404</code></td>
+<td>Recurso ou caminho não encontrado.</td>
+<td>Conferir endpoint e identificador.</td>
+</tr>
+<tr>
+<td><code>429</code></td>
+<td>Limite de uso atingido.</td>
+<td>Respeitar a orientação da API e limitar novas tentativas.</td>
+</tr>
+<tr>
+<td><code>5xx</code></td>
+<td>Falha no servidor ou serviço intermediário.</td>
+<td>Registrar o erro e avaliar uma repetição controlada.</td>
+</tr>
+<tr>
+<td>Timeout</td>
+<td>Não houve resposta dentro do prazo.</td>
+<td>Verificar se a ação chegou a ocorrer antes de repeti-la.</td>
+</tr>
+</tbody></table></div>
+<p>O <strong>rate limit</strong> é um limite de requisições ou consumo por intervalo. A política varia por serviço. Uma integração confiável trata o resultado real da chamada e não interpreta toda ausência de resposta como “nada aconteceu”. O funcionamento de requisições e respostas é detalhado na <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Guides/Overview">visão geral de HTTP da MDN</a>.</p>
+<h2 id="sql-estado-e-histórico">SQL, estado e histórico</h2>
+<p><strong>SQL</strong> permite consultar e modificar dados em bancos relacionais. Tabelas representam entidades e eventos; chaves identificam registros; relações conectam esses registros. Um banco operacional serve ao uso diário do produto: receber um lead e atualizar seu encaminhamento, por exemplo.</p>
+<p>O <strong>estado</strong> responde “como está agora?”; o <strong>histórico de eventos</strong> responde “como chegou aqui?”. Guardar apenas o status final dificulta investigar falhas. Uma estrutura inicial pode ter uma tabela de leads e outra de eventos, ligada pelo identificador do lead.</p>
+<p>Se você criar uma tabela <code>eventos</code> com <code>lead_id</code>, <code>tipo</code>, <code>status</code> e <code>ocorrido_em</code>, esta consulta didática exibe a sequência de um lead fictício:</p>
+<pre><code>SELECT tipo, status, ocorrido_em
+FROM eventos
+WHERE lead_id = 'lead_demo_007'
+ORDER BY ocorrido_em;</code></pre><p>Ao usar valores vindos de usuários em código, prefira consultas parametrizadas. Não monte SQL concatenando o texto recebido.</p>
+<p>Um <strong>data warehouse</strong>, como BigQuery ou Snowflake, atende principalmente a consultas analíticas e integração de históricos. A analogia é o caixa da loja versus o setor que compara vendas de vários anos. Essa distinção ajuda a escolher a arquitetura; seu primeiro protótipo não precisa de um warehouse só por usar IA.</p>
+<h2 id="etl-e-pipeline-o-dado-também-precisa-de-manutenção">ETL e pipeline: o dado também precisa de manutenção</h2>
+<p><strong>ETL</strong> significa extrair, transformar e carregar. Um pipeline organiza essas etapas para execução repetível. Para os leads, pode normalizar datas e campos antes de salvar. Para a base de consulta do agente, pode ler documentos, extrair texto, dividir em trechos e atualizar o índice.</p>
+<p>A atualização precisa cobrir inclusão, alteração e exclusão. Se o preço antigo continuar no índice, o modelo pode responder com a fonte errada mesmo que sua instrução esteja correta. Guarde origem, versão e momento de atualização para descobrir qual dado foi usado.</p>
+<h2 id="laboratório-80-prática">Laboratório · 80% prática</h2>
+<p>Use <strong>4 horas por semana</strong> para fazer o mesmo agente ganhar uma entrada confiável e memória operacional.</p>
+<p><strong>Semana 5 — entrada e contrato:</strong> construa um formulário ou endpoint que receba o evento; valide o payload; simule uma credencial inválida, um campo ausente e uma API indisponível. Guarde o identificador da execução e uma descrição útil do erro, sem expor credenciais.</p>
+<p><strong>Semana 6 — estado e consulta:</strong> persista lead, evento e decisão; implemente a consulta do histórico; envie o mesmo <code>evento_id</code> duas vezes e observe se criou duplicatas. Defina a restrição ou o controle que evitará repetir o processamento. Atualize um documento de teste e registre sua versão para o laboratório de RAG da próxima aula.</p>
+<p>Use uma IA de código para construir em etapas: primeiro o contrato de entrada, depois a validação, depois a persistência. Peça que explique onde cada erro é tratado. Execute os casos de falha antes de juntar as etapas.</p>
+<p><strong>Você concluiu quando:</strong> segue uma mensagem desde a entrada até o registro final, recupera o histórico após reiniciar o programa e distingue falha de autenticação, dado inválido e indisponibilidade.</p>
+<h2 id="estudo-guiado-20-teoria">Estudo guiado · 20% teoria</h2>
+<p>Reserve <strong>1 hora por semana</strong> para a dúvida que bloqueia a entrega.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>O que selecionar</th>
+<th>O que aplicar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Guides/Overview">MDN — HTTP</a></td>
+<td>Estrutura de requisições e respostas.</td>
+<td>Explicar a chamada real da sua integração.</td>
+</tr>
+<tr>
+<td><a href="https://www.postgresql.org/docs/current/tutorial.html">PostgreSQL — tutorial</a></td>
+<td>Tabelas, consultas e relações.</td>
+<td>Persistir eventos e consultar um histórico.</td>
+</tr>
+<tr>
+<td><a href="https://ai.google.dev/gemini-api/docs">Google — Gemini API</a> ou <a href="https://platform.claude.com/docs/en/intro">Anthropic — documentação</a></td>
+<td>Início rápido e contrato da API que você escolheu.</td>
+<td>Validar uma chamada mínima antes de automatizar.</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/pt-br/training/">Microsoft Learn em português</a></td>
+<td>Um módulo de dados ou integração correspondente à sua lacuna.</td>
+<td>Melhorar o desenho do estado ou a consulta.</td>
+</tr>
+</tbody></table></div>
+<p>Consulte também <strong>AI Engineering</strong>, de Chip Huyen, para relacionar dados e arquitetura de aplicação. O <a href="https://github.com/chiphuyen/aie-book">repositório da autora</a> reúne materiais de apoio. Registre dúvidas reproduzíveis seguindo o <a href="../docs/como-pesquisar.html">guia de pesquisa</a>.</p>
+<p><a href="04-contexto-e-rag.html">Próxima aula: contexto e RAG →</a></p>
+</article><footer><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia/blob/main/aulas/03-integracoes-e-dados.md">Ver este conteúdo no GitHub ↗</a><span>Um projeto. Aprendizado contínuo.</span></footer></main></div></body></html>

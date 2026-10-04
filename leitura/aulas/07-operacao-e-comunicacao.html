@@ -1,0 +1,92 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>07 · Coloque em uso e explique suas decisões · Jornada IA</title><meta name="description" content="Uma trilha prática de Engenharia de IA: materiais, fontes oficiais, projetos e comunidades."><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a  href="../../index.html">Início</a><a  href="../docs/trilha-12-semanas.html">Trilha</a><a  href="index.html">Aulas</a><a  href="../docs/fontes-e-comunidade.html">Onde estudar</a><a  href="../docs/comunidades.html">X e Discord</a><a  href="../modelos/index.html">Modelos</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">CONSULTE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="RAG, teoria, Discord…" data-index="../../assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#do-protótipo-ao-ambiente-de-uso">Do protótipo ao ambiente de uso</a><a href="#serverless-e-tempo-de-execução">Serverless e tempo de execução</a><a href="#latência-acompanhe-a-experiência-completa">Latência: acompanhe a experiência completa</a><a href="#custo-por-tarefa-e-cache">Custo por tarefa e cache</a><a href="#comunicação-técnica-é-tornar-a-decisão-verificável">Comunicação técnica é tornar a decisão verificável</a><a href="#laboratório-80-prática">Laboratório · 80% prática</a><a href="#estudo-guiado-20-teoria">Estudo guiado · 20% teoria</a></nav><a class="study-note" href="../docs/como-estudar.html"><strong>80% prática<br>20% teoria</strong><span>Estude uma ideia.<br>Aplique no seu agente.</span></a></aside><main id="conteudo"><article><h1 id="07-coloque-em-uso-e-explique-suas-decisões">07 · Coloque em uso e explique suas decisões</h1>
+<p><a href="06-avaliacao-e-confiabilidade.html">← Aula anterior</a> · <a href="index.html">Aulas</a> · <a href="../docs/trilha-12-semanas.html">Plano completo</a></p>
+<p><strong>Quando usar:</strong> semanas 11–12. <strong>Entrega:</strong> um piloto supervisionado e uma revisão com demonstração, resultados, limitações e próximos passos.</p>
+<p>Operar um agente é acompanhar o que acontece quando entradas, fontes e serviços mudam. O resultado final desta trilha reúne o sistema funcionando e a capacidade de explicar por que ele foi desenhado assim.</p>
+<h2 id="do-protótipo-ao-ambiente-de-uso">Do protótipo ao ambiente de uso</h2>
+<p>O <strong>deploy</strong> disponibiliza uma versão da aplicação em seu ambiente de execução. Separe configurações do código, guarde segredos no mecanismo apropriado e documente como iniciar, interromper e recuperar o serviço. Identifique a versão em uso para relacionar reclamações às alterações recentes.</p>
+<p>O Git, usado desde a primeira semana, permite comparar versões e revisar mudanças. Voltar o código para uma versão anterior não desfaz automaticamente uma ação no CRM ou uma alteração de dados. Seu plano de recuperação precisa considerar tanto a aplicação quanto os efeitos que ela já produziu.</p>
+<p>Comece com poucos usuários ou um conjunto restrito de dados autorizados. Defina quem acompanha o piloto, como recebe os alertas e quando interrompe a automação. Inclua um caminho para uma pessoa continuar o atendimento se uma ferramenta falhar.</p>
+<h2 id="serverless-e-tempo-de-execução">Serverless e tempo de execução</h2>
+<p><strong>Serverless</strong> é um modelo de execução em que o provedor gerencia parte da infraestrutura necessária para rodar seu código. Você continua responsável por configuração, permissões, dados e comportamento da aplicação. Há servidores, mesmo que você não precise administrá-los diretamente.</p>
+<p>Serviços como <a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html">AWS Lambda</a> permitem executar funções em resposta a eventos. A adequação depende de carga, limites, duração e custos. A inicialização de um ambiente pode acrescentar latência, frequentemente chamada <strong>cold start</strong>.</p>
+<p>Pense em chamar um transporte por demanda: você reduz a necessidade de manter um recurso próprio sempre disponível, mas precisa considerar espera e condições de uso. Um agente com execução longa pode precisar de trabalho em segundo plano, fila e retomada de estado. Teste o caminho real antes de escolher só pela facilidade do primeiro deploy.</p>
+<h2 id="latência-acompanhe-a-experiência-completa">Latência: acompanhe a experiência completa</h2>
+<p><strong>Latência</strong> é o tempo de espera associado a uma operação. No nosso agente, meça desde a chegada da mensagem até a primeira resposta útil e até a conclusão da ação. A resposta inicial pode ser rápida e o registro no CRM continuar pendente.</p>
+<p>A mediana descreve um ponto central; o <strong>p95</strong> indica o valor abaixo do qual ficam aproximadamente 95% das observações, conforme o método de cálculo. Em uma amostra pequena, percentis variam bastante. Registre tamanho da amostra, período e tipos de tarefa para interpretar o número.</p>
+<p>Divida a duração por etapa: recuperação, modelo, ferramenta e fila. Se o CRM consome a maior parte do tempo, reduzir o prompt pode trazer pouco ganho ao usuário. A observabilidade da aula anterior deve mostrar onde agir.</p>
+<h2 id="custo-por-tarefa-e-cache">Custo por tarefa e cache</h2>
+<p>Some os componentes realmente cobrados: tokens de entrada e saída, possíveis categorias adicionais do provedor, ferramentas, armazenamento e infraestrutura. Registre a moeda e a referência de preços utilizada. Uma comparação útil para o produto é:</p>
+<pre><code>custo por resolução = custo total observado / tarefas resolvidas no período</code></pre><p>Defina “resolvida” com clareza. Uma resposta encerrada automaticamente, seguida de reabertura, pode não representar uma resolução real. Acompanhe também esforço humano e taxa de encaminhamento para não esconder custo em outra etapa.</p>
+<p><strong>Cache</strong> reaproveita trabalho quando as condições permitem. Cache de prompt pode reduzir custo ou latência ao reutilizar partes compatíveis da entrada; regras, disponibilidade e descontos variam por provedor e modelo. Cache de resposta guarda uma resposta pronta e tem outro risco: servir conteúdo desatualizado ou inadequado a uma pessoa diferente.</p>
+<p>No agente de leads, uma mudança de preço exige revisar onde o dado está armazenado e como os caches são invalidados. Nunca presuma uma redução percentual fixa. Confira os indicadores de uso e compare execuções equivalentes. A economia só conta se o sistema continuar atendendo aos critérios de qualidade.</p>
+<h2 id="comunicação-técnica-é-tornar-a-decisão-verificável">Comunicação técnica é tornar a decisão verificável</h2>
+<p>Explique o sistema seguindo o caminho da informação: mensagem recebida → validação → consulta → resposta → ação → medição. Mostre uma execução real de teste e uma falha conhecida. Para cada decisão, diga qual necessidade ela atende e qual evidência sustenta a escolha.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Explicação que ajuda o time a decidir</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>RAG</td>
+<td>“Buscamos documentos autorizados e enviamos os trechos relevantes ao modelo; a atualização depende do nosso pipeline.”</td>
+</tr>
+<tr>
+<td>Escolha do modelo</td>
+<td>“Comparamos versões nos casos do projeto e observamos qualidade, custo e tempo.”</td>
+</tr>
+<tr>
+<td>Autonomia</td>
+<td>“O modelo escolhe a consulta; a autorização para alterar o CRM é aplicada pela integração.”</td>
+</tr>
+<tr>
+<td>Qualidade</td>
+<td>“Estes casos passaram, estes falharam e esta categoria precisa melhorar antes de ampliar o uso.”</td>
+</tr>
+<tr>
+<td>Incidente</td>
+<td>“A fonte estava antiga; identificamos a versão no trace, corrigimos a atualização e adicionamos um caso de regressão.”</td>
+</tr>
+</tbody></table></div>
+<p>Quando ainda não souber, separe o que observou da hipótese. “Não confirmei a causa; vou comparar as versões da fonte e repetir o caso” é mais útil que apresentar uma explicação sem evidência.</p>
+<h2 id="laboratório-80-prática">Laboratório · 80% prática</h2>
+<p>Reserve <strong>4 horas por semana</strong> para colocar o projeto em uso e fazer a revisão final.</p>
+<p><strong>Semana 11 — piloto:</strong> publique a versão avaliada no ambiente escolhido; confira acesso e configuração; rode poucos casos acompanhados; teste interrupção e encaminhamento humano; meça duração, consumo, resolução e reabertura. Documente quem mantém as fontes e quem cuida de falhas da integração.</p>
+<p><strong>Semana 12 — melhoria e apresentação:</strong> compare os resultados com a linha de base das primeiras semanas. Escolha o gargalo mais importante, faça uma alteração pequena e execute a avaliação novamente. Prepare uma demonstração de cerca de cinco minutos com problema, fluxo, caso bem-sucedido, falha conhecida e decisão de continuar, ajustar ou parar.</p>
+<p>Registre um caso completo no <a href="../modelos/experimento.html">modelo de experimento</a>: contexto → falha → investigação → mudança → resultado medido → limitação. Não invente melhora onde a amostra ainda não permite concluir.</p>
+<p><strong>Você concluiu quando:</strong> outra pessoa consegue entender o fluxo, executar os casos documentados, encontrar o responsável pela operação e avaliar os resultados sem depender da sua memória.</p>
+<h2 id="estudo-guiado-20-teoria">Estudo guiado · 20% teoria</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>O que selecionar</th>
+<th>O que aplicar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://developers.openai.com/api/docs/guides/production-best-practices">OpenAI — Production best practices</a></td>
+<td>Práticas de operação pertinentes à sua integração.</td>
+<td>Rever configuração e acompanhamento antes de ampliar o piloto.</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/pt-br/training/">Microsoft Learn</a> ou <a href="https://cloud.google.com/learn/training">Google Cloud — treinamento</a></td>
+<td>Um módulo do ambiente de execução escolhido.</td>
+<td>Entender seus limites e como observar a aplicação.</td>
+</tr>
+<tr>
+<td><a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html">AWS Lambda — introdução</a></td>
+<td>Use se estiver considerando funções por evento.</td>
+<td>Verificar adequação à duração e à carga do agente.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chiphuyen/aie-book">AI Engineering — recursos de Chip Huyen</a></td>
+<td>Arquitetura, operação e otimização.</td>
+<td>Priorizar uma melhoria orientada por medição.</td>
+</tr>
+</tbody></table></div>
+<p><strong>Co-Intelligence</strong>, de Ethan Mollick, oferece um aprofundamento opcional sobre trabalho com IA. Use a <a href="https://www.penguinrandomhouse.com/books/741805/co-intelligence-by-ethan-mollick/">página da editora</a> para conhecer a obra. Na <strong>1 hora de estudo</strong> semanal, mantenha o foco na decisão que o piloto exige agora.</p>
+<p>Depois da revisão, mantenha uma rotina leve: acompanhar as <a href="../docs/comunidades.html">fontes e comunidades</a>, selecionar uma mudança relevante, experimentar no ambiente de teste e incorporá-la só quando os resultados justificarem. Novas ferramentas entram no projeto para atender uma necessidade observada.</p>
+<p><a href="../docs/projeto-central.html">Revisar o projeto central →</a> · <a href="index.html">Consultar todas as aulas →</a></p>
+</article><footer><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia/blob/main/aulas/07-operacao-e-comunicacao.md">Ver este conteúdo no GitHub ↗</a><span>Um projeto. Aprendizado contínuo.</span></footer></main></div></body></html>
