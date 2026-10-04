@@ -8,11 +8,15 @@ Use as comunidades para descobrir ideias, investigar problemas e compartilhar o 
 
 Se puder investir, Lucas recomenda o curso e a comunidade do [Bruno Okamoto no Pixel AI Hub](https://pixelaihub.pixeleducacao.com.br/). É uma recomendação pessoal, **sem parceria**. Leve dúvidas do projeto e aplique o que aprender no agente.
 
-## X: descubra uma ideia e leve para o projeto
+## X: acompanhe novidades e quem está construindo
 
-O ponto de partida da trilha é [**@ailucasdz**](https://x.com/ailucasdz). Explore também [os perfis que a conta segue](https://x.com/ailucasdz/following) para encontrar pesquisadores, desenvolvedores, produtos e discussões.
+Use o X para acompanhar notícias recentes, pesquisadores das empresas de IA e pessoas que constroem agentes. A [lista de perfis que o Lucas segue](https://x.com/ailucasdz/following) é um ponto de partida para descobrir referências e escolher quem acompanhar conforme seu projeto.
 
-Sugestões de perfis para consultar:
+O conhecimento interno de um modelo vem do treinamento e não acompanha automaticamente cada publicação nova. Uma IA com busca pode consultar fontes recentes; mesmo assim, pode faltar o contexto de uma experiência que acabou de ser publicada ou ainda está sendo testada. Acompanhar o autor, sua demonstração e os comentários ajuda a entender o que ele fez e em quais condições.
+
+Comente uma demonstração, faça uma pergunta específica ou compartilhe o resultado de um teste. Essa participação aproxima você das discussões e do trabalho de pesquisadores e construtores; o que você publica também passa a fazer parte dessa troca.
+
+Alguns perfis de empresas e projetos para consultar anúncios e encontrar os autores envolvidos:
 
 | Perfil | O que procurar |
 | --- | --- |
@@ -25,12 +29,13 @@ Sugestões de perfis para consultar:
 
 O X pode exigir login. Para estudar diretamente na documentação, consulte as [fontes oficiais](fontes-e-comunidade.md).
 
-### Rotina sugerida
+### Da notícia ao seu próprio teste
 
-- Escolha um tema da sua entrega, como ferramentas, contexto ou avaliação.
-- Salve no máximo três ideias com o link da fonte original.
-- Escolha uma para testar. Registre **alegação → fonte → teste → resultado**.
-- Compartilhe uma descoberta com contexto: o que tentou, o que aconteceu e o que ainda não sabe.
+1. **Escolha uma novidade** ligada à tarefa que está construindo.
+2. **Confira fonte, autoria e data:** procure a publicação original e o contexto do anúncio.
+3. **Abra a demonstração ou o repositório:** observe o que foi testado, os requisitos e os limites mostrados.
+4. **Experimente no seu projeto:** compare a proposta com o resultado que conseguiu reproduzir.
+5. **Compartilhe o resultado:** conte o que tentou, o que funcionou e qual dúvida permanece, citando a referência.
 
 ## Discord: converse sobre implementação
 

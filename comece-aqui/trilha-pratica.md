@@ -2,7 +2,7 @@
 
 [← Guia principal](../README.md)
 
-Use esta página para conferir o que falta no projeto. O guia principal traz as explicações e os exemplos completos. As entregas avançam conforme você consegue mostrar o resultado, sem prazo fixo.
+Use esta página para conferir o que falta no projeto. As explicações e os exemplos estão nos [capítulos e exercícios](../aulas/README.md). As entregas avançam conforme você consegue mostrar o resultado, sem prazo fixo.
 
 ## 1 · Coloque seu primeiro agente para funcionar
 

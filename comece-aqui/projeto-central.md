@@ -39,6 +39,6 @@ Mostre o resultado a quem conhece a tarefa. Compare o trabalho manual, as corre�
 
 Um piloto é um uso limitado para aprender com uma tarefa real. Combine participantes, dados e ações permitidos, custo acompanhado, critérios de aceitação e como interromper o agente. Registre quem atualiza o catálogo e trata falhas.
 
-Compare os resultados com o processo anterior. Use o que observou para decidir se vale continuar, ajustar ou parar. O roteiro da primeira oferta está no guia principal.
+Compare os resultados com o processo anterior. Use o que observou para decidir se vale continuar, ajustar ou parar. Consulte o roteiro da primeira oferta no [material de estudo](../aulas/README.md#aula-07).
 
 </details>

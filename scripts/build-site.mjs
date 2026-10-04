@@ -19,7 +19,7 @@ function urlFor(href,source,target){
  return encodeURI(rel(target,targets.get(resolved)||resolved))+(hash?'#'+hash:'');
 }
 function header(target){
- const routes=[['Comece aqui','index.html'],['Entenda a IA','leitura/aulas/index.html'],['Comunidades','index.html#comunidades-aprenda-na-oficina-de-quem-está-construindo'],['Primeira oferta','index.html#como-transformar-o-projeto-em-um-serviço-pago']];
+ const routes=[['A jornada','index.html'],['Estudar e construir','leitura/aulas/index.html'],['Comunidades','index.html#comunidades-aprenda-na-oficina-de-quem-está-construindo'],['Valor profissional','index.html#como-transformar-o-projeto-em-um-serviço-pago']];
  return `<a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="${rel(target,'index.html')}"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal">${routes.map(([label,dest])=>`<a ${dest===target?'aria-current="page"':''} href="${rel(target,dest)}">${label}</a>`).join('')}<a href="${repo}">GitHub ↗</a></nav></header>`;
 }
 const index=[];

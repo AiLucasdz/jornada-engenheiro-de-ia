@@ -687,14 +687,16 @@ Publicar o processo ajuda outras pessoas a entender o trabalho e responder a dú
 
 > Estou construindo um agente para organizar pedidos de orçamento. Testei com mensagens fictícias e conferi os registros. Ele identificou o serviço, mas esqueceu de pedir a disponibilidade exigida pelo catálogo em um caso. Ajustei a instrução e vou repetir os testes. Quem faz esse atendimento hoje: que outra situação eu deveria testar?
 
+No X, acompanhe notícias recentes, pesquisadores das empresas de IA e construtores de agentes. O conhecimento interno do modelo vem do treinamento; uma IA com busca pode consultar novidades, mas ainda pode faltar o contexto de algo que acabou de ser publicado ou está sendo testado. Vá até o relato do autor, a demonstração ou o repositório para entender a experiência.
+
 | Canal | Como usar neste projeto |
 | --- | --- |
-| [X do Lucas](https://x.com/ailucasdz) e sua própria publicação | Acompanhar exemplos, mostrar o resultado observado e formular uma pergunta específica. |
+| [Descobrir referências no X entre os perfis que Lucas segue](https://x.com/ailucasdz/following) | Escolher pesquisadores e construtores para acompanhar, comentar experiências e publicar seus próprios testes. |
 | [Discord da Nous Research](https://discord.gg/NousResearch) | Discutir uma dificuldade reproduzível ligada ao Hermes, no canal apropriado. |
 | [Discord do OpenClaw](https://discord.gg/clawd) | Comparar experiências de agentes e práticas de construção pertinentes ao assunto. |
 | Repositório do projeto | Guardar instrução, fontes fictícias, casos testados e decisões entre versões. |
 
-Leia as regras do canal e retire dados de clientes. Escolha uma sugestão para experimentar; na atualização seguinte, mostre o que mudou. Assim, teoria, prática, comunidade e demonstração alimentam a próxima decisão.
+Use uma rotina curta: **notícia → fonte, autoria e data → demonstração ou repositório → teste → resultado compartilhado**. Comentários e dúvidas específicas aproximam você das discussões de quem está construindo. Leia as regras do canal e retire dados de clientes; na atualização seguinte, mostre o que mudou no seu projeto.
 
 **Sua entrega final:** você consegue demonstrar valor e limites, ouvir o possível usuário e definir o próximo passo. Ele pode ser corrigir uma parte, iniciar um piloto combinado ou escolher um problema melhor.
 
