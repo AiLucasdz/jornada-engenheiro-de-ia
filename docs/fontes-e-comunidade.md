@@ -6,6 +6,14 @@
 
 Reserve cerca de **20% do tempo para estudar e 80% para construir, testar e explicar**. As leituras abaixo cabem em trechos; concluir uma etapa depende da entrega prática. Livros são opcionais, e as aulas, os vídeos e as fontes abertas permitem seguir a trilha sem comprar material.
 
+## Primeiro passo: curso ou vídeo, depois continue aqui
+
+**Recomendação pessoal do Lucas, sem parceria com Bruno Okamoto:** se puder investir, comece pelo curso e pela comunidade do [Pixel AI Hub](https://pixelaihub.pixeleducacao.com.br/). Lucas considera o Bruno um ótimo mentor para começar. Use esta trilha para continuar aplicando o que aprender.
+
+**Se estiver sem orçamento para o curso:** assista ao vídeo do Lucas [Crie seu Agente de IA Hermes em menos de 20 minutos](https://youtu.be/VHh2D9agRps). Coloque o agente para funcionar e siga na construção com as aulas daqui. Para consultar a configuração e os recursos, use a [documentação oficial do Hermes Agent](https://hermes-agent.nousresearch.com/docs/).
+
+**Aplique:** escolha uma tarefa pequena, execute no seu agente e registre o que funcionou e o que quer melhorar. O [guia de estudo](como-estudar.md#comece-com-uma-base-e-evolua-com-ela) mostra como continuar a partir dessa base.
+
 ## Escolha sua etapa
 
 | Etapa | Aula e pergunta central | Entrega que a leitura ajuda a construir |

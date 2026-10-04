@@ -4,6 +4,12 @@
 
 Use as comunidades para descobrir ideias, investigar problemas e compartilhar o que você constrói. Reserve esse acompanhamento dentro dos **20% de estudo**.
 
+## Curso e comunidade para começar
+
+Se puder investir, a recomendação pessoal do Lucas é o curso e a comunidade do [Bruno Okamoto no Pixel AI Hub](https://pixelaihub.pixeleducacao.com.br/). Lucas considera um ótimo início e o Bruno um ótimo mentor; **não há parceria com ele**. Comece por lá e continue desenvolvendo seu agente nesta trilha.
+
+Se estiver sem orçamento para o curso, comece pelo [vídeo do Lucas sobre Hermes](https://youtu.be/VHh2D9agRps), siga com as aulas daqui e participe das comunidades abaixo para trocar experiências.
+
 ## X: descubra uma ideia e leve para o projeto
 
 O ponto de partida da trilha é [**@ailucasdz**](https://x.com/ailucasdz). Explore também [os perfis que a conta segue](https://x.com/ailucasdz/following) para encontrar pesquisadores, desenvolvedores, produtos e discussões.

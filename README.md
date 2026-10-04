@@ -16,6 +16,32 @@ Uma trilha prática para desenvolver as habilidades de um Engenheiro de IA, cone
 
 ---
 
+## Comece por aqui
+
+**Abra a mente para o que você pode construir com IA.** Seu repertório atual é um ponto de partida. Conheça projetos, imagine aplicações no seu dia a dia e dê uma chance às ideias que ainda não sabe executar. A confiança cresce quando você transforma uma possibilidade em um experimento e vê o que consegue construir.
+
+### Minha recomendação — Lucas
+
+**1 · Se puder investir em um curso agora**
+
+Recomendo o curso e a comunidade do **Bruno Okamoto, no [Pixel AI Hub](https://pixelaihub.pixeleducacao.com.br/)**. Considero um ótimo início e o Bruno um ótimo mentor. Comece por lá e continue aqui, aplicando o aprendizado nas entregas da trilha.
+
+> **Não tenho nenhuma parceria com o Bruno Okamoto.** Essa é uma recomendação pessoal, porque considero o trabalho dele um ótimo ponto de partida.
+
+**2 · Se estiver sem orçamento para um curso**
+
+Assista ao meu vídeo **[Crie seu Agente de IA Hermes em menos de 20 minutos](https://youtu.be/VHh2D9agRps)** e coloque seu primeiro agente para funcionar. Use esse Hermes como ponto de partida e siga construindo com as aulas e os exercícios daqui.
+
+Nos dois caminhos, você continua com **um agente que evolui junto com seu aprendizado**. [Veja como aproveitar sua base na trilha](docs/como-estudar.md#comece-com-uma-base-e-evolua-com-ela).
+
+### LLM, agente e Hermes: o que muda?
+
+- **LLM** é o modelo de linguagem: interpreta o contexto e gera respostas ou pedidos de uso de ferramentas.
+- **Agente de IA** é um sistema que combina o modelo com instruções, contexto, ferramentas e um ciclo de execução para realizar tarefas. O modelo pode escolher os próximos passos; o sistema executa as ações permitidas.
+- **Hermes Agent** é um projeto da **Nous Research** que já reúne essa estrutura, com ferramentas, memória e habilidades reutilizáveis. Você configura um modelo e usa essa base para construir seu agente.
+
+Por exemplo: o modelo pode sugerir como organizar uma pesquisa; um agente com as ferramentas adequadas pode consultar as fontes e salvar um relatório. Consulte a [documentação oficial do Hermes](https://hermes-agent.nousresearch.com/docs/) e aprofunde na [aula de agentes e ferramentas](aulas/05-agentes-e-ferramentas.md).
+
 ## Encontre o que precisa
 
 | Quero… | Acesse |
@@ -98,6 +124,8 @@ A evolução do projeto passa por seis entregas:
 → [Explorar o projeto central](docs/projeto-central.md)
 
 ## Comece sua jornada
+
+Parta do curso ou do [vídeo do Hermes](https://youtu.be/VHh2D9agRps) e aproveite o que já colocou para funcionar:
 
 1. **Escolha um processo real.** Leia [o plano da trilha](docs/trilha-12-semanas.md) e identifique um problema que você consiga observar.
 2. **Dê forma à ideia.** Preencha [a ficha do projeto](modelos/ficha-do-projeto.md) com a hipótese, o escopo e a métrica principal.

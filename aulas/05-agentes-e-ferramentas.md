@@ -6,6 +6,12 @@
 
 Seu sistema já recebe mensagens, guarda estado e consulta fontes. Agora ele poderá pedir uma ação, observar o resultado e decidir como continuar. O desenho desse ciclo define a autonomia que você está concedendo.
 
+## Reconheça essas peças no Hermes
+
+Se começou pelo [vídeo do Lucas](https://youtu.be/VHh2D9agRps), você já tem um exemplo para investigar. O **LLM** interpreta o contexto e propõe a resposta ou a próxima chamada de ferramenta. O **agente** organiza o ciclo entre essas decisões, a execução e os resultados. O **Hermes Agent**, da Nous Research, oferece essa estrutura pronta, com ferramentas, memória e habilidades reutilizáveis, conforme sua [documentação oficial](https://hermes-agent.nousresearch.com/docs/).
+
+Escolha uma tarefa que já executou no Hermes e identifique essas peças. Use as seções abaixo para entender e melhorar o próprio agente. Guardar memória ou reutilizar uma habilidade não equivale a treinar novamente o modelo.
+
 ## Ferramentas: o modelo pede, o sistema executa
 
 Em **tool use** ou **function calling**, você disponibiliza ferramentas com nome, descrição e um contrato de argumentos. O modelo pode produzir uma solicitação de chamada. O código ou serviço responsável pela ferramenta valida a solicitação, executa a operação autorizada e devolve o resultado.

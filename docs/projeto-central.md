@@ -4,6 +4,8 @@
 
 O tema é escolhido por você. Pode ser atendimento, pesquisa, operação, análise comercial ou outro processo ao qual tenha acesso legítimo. Para tornar a trilha concreta, usamos **qualificação de leads** como exemplo; adapte os nomes e as métricas ao seu contexto.
 
+**Já começou com o Hermes do vídeo ou com um projeto do curso?** Continue com essa base. Os incrementos abaixo orientam o que entender, implementar e testar no mesmo projeto. No primeiro, isole a entrada e o registro de dados para verificar esse caminho sem depender do modelo. [Veja como começar e aproveitar o que já funciona](como-estudar.md#comece-com-uma-base-e-evolua-com-ela).
+
 ## Definição inicial
 
 **Problema:** leads recebidos fora do horário aguardam resposta e parte deles não é acompanhada.

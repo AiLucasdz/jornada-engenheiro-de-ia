@@ -4,6 +4,21 @@
 
 **80% prática · 20% teoria · Um projeto que evolui.** A meta de cada semana é uma entrega que você consegue demonstrar e explicar.
 
+## Comece com uma base e evolua com ela
+
+A [recomendação do Lucas](../README.md#comece-por-aqui) é começar pelo curso e pela comunidade do [Bruno Okamoto no Pixel AI Hub](https://pixelaihub.pixeleducacao.com.br/), se puder investir, e continuar a construção aqui. É uma indicação pessoal, sem parceria com o Bruno.
+
+Se estiver sem orçamento para o curso, comece pelo vídeo [Crie seu Agente de IA Hermes em menos de 20 minutos](https://youtu.be/VHh2D9agRps), do Lucas. Coloque o agente para funcionar e use essa base nos exercícios. O vídeo é aberto; o uso de modelos, ferramentas e hospedagem pode ter custos conforme a configuração escolhida.
+
+Depois do primeiro contato, siga este roteiro:
+
+1. **Escolha uma possibilidade que queira explorar.** Pense em uma tarefa do seu dia a dia e no resultado que tornaria o agente útil.
+2. **Faça uma tarefa pequena funcionar.** Por exemplo, pedir ao agente que consulte arquivos de teste e produza um resumo com as fontes.
+3. **Entenda o que aconteceu.** Identifique o modelo, o contexto recebido, as ferramentas usadas e o resultado. Se esses termos forem novos, leia [LLM, agente e Hermes](../README.md#llm-agente-e-hermes-o-que-muda).
+4. **Continue na trilha com o mesmo projeto.** Preencha a [ficha do projeto](../modelos/ficha-do-projeto.md) e use as [aulas](../aulas/README.md) para melhorar a base que você já tem.
+
+As entregas mostram o que você precisa aprender a construir e verificar. Aproveite o que já funciona no Hermes ou no projeto do curso; nas partes prontas, investigue como funcionam e teste o comportamento. Aumente o desafio conforme ganhar entendimento e confiança.
+
 ## Sua semana em 5 horas
 
 | Tempo | Atividade | Evidência de aprendizado |

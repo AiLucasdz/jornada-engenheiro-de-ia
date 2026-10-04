@@ -6,6 +6,8 @@
 
 O projeto é cumulativo. Não comece um projeto novo a cada módulo: faça o mesmo agente ganhar confiabilidade.
 
+Se você começou pelo curso recomendado ou pelo vídeo do Hermes, use essa base nas entregas abaixo. Nas partes que já funcionam, explique e teste o comportamento; implemente o que falta. [Veja os dois caminhos de início](como-estudar.md#comece-com-uma-base-e-evolua-com-ela).
+
 | Semana | 80% prática: entrega da semana | 20% teoria: estudo guiado | Aula com explicação, referências e exercício |
 | --- | --- | --- | --- |
 | 1 — problema e fluxo | Escolha um processo real, converse com possíveis usuários, desenhe entrada → decisão → ação → resultado e liste exceções. Preencha a ficha do projeto, construa um protótipo pequeno com cinco entradas de teste e registre a primeira versão no Git. | Pensamento sistêmico, variáveis, estado, condições; evolução da IA, promessas, limites e escopo. | [Aula: história e problemas](../aulas/01-historia-e-problemas.md) |
