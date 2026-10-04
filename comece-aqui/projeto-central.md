@@ -21,7 +21,7 @@ Em uma empresa, esse registro pode ficar em um **CRM**, sistema de acompanhament
 3. **Conectar uma ação:** salvar um resumo ou registrar um pedido em ambiente de teste, com limites definidos.
 4. **Testar e mostrar:** experimentar cinco situações, corrigir uma falha e demonstrar o resultado.
 
-![O agente recebe uma tarefa, consulta o modelo, valida uma ferramenta, observa o resultado e decide se continua ou encerra.](../mapas-e-desenhos/05-ciclo-do-agente.svg)
+<p class="compact-visual"><a href="../mapas-e-desenhos/05-ciclo-do-agente.svg"><img src="../mapas-e-desenhos/05-ciclo-do-agente.svg" width="157" alt="O agente recebe uma tarefa, consulta o modelo, valida uma ferramenta, observa o resultado e decide se continua ou encerra." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p>
 
 A ferramenta é o meio de consultar ou alterar algo. Confira o efeito da ação no arquivo ou na tabela; uma mensagem dizendo “feito” precisa corresponder ao resultado.
 
@@ -42,7 +42,7 @@ Um piloto é um uso limitado para aprender com uma tarefa real. Defina quem part
 
 Compare com a situação inicial: a tarefa ficou mais rápida? A resposta ajudou? Houve erros? Acompanhe o custo indicado pelas ferramentas e amplie os testes conforme o uso crescer.
 
-Se for conectar um CRM ou outro serviço, estude a parte necessária na [aula de integrações](../aulas/03-integracoes-e-dados.md). Se o problema for avaliar o resultado, consulte a [aula de testes](../aulas/06-avaliacao-e-confiabilidade.md). O [guia de operação](../aulas/07-operacao-e-comunicacao.md) ajuda a conduzir o piloto.
+Se for conectar um CRM ou outro serviço, estude a parte necessária na [aula de integrações](../aulas/README.md#aula-03). Se o problema for avaliar o resultado, consulte a [aula de testes](../aulas/README.md#aula-06). O [guia de operação](../aulas/README.md#aula-07) ajuda a conduzir o piloto.
 
 </details>
 

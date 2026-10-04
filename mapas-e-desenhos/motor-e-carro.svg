@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="title desc"><title id="title">LLM é motor; Hermes é o carro</title><desc id="desc">O motor representa o LLM e o carro representa Hermes. O contexto funciona como mapa, a tarefa como destino, ferramentas como rodas e transmissão e checagens e permissões como painel e freios. A pessoa define rota e limites e confere o resultado. O agente pode errar.</desc><defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L12 6L0 12Z" fill="#007969"/></marker></defs><rect width="960" height="480" rx="24" fill="#f5f8f7"/>
+<text x="30" y="42" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#102236" font-weight="700" text-anchor="start">
+<tspan x="30" dy="0">LLM É MOTOR. HERMES É O CARRO.</tspan>
+</text>
+<text x="30" y="73" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#435866" font-weight="400" text-anchor="start">
+<tspan x="30" dy="0">Uma analogia para reconhecer as peças do agente.</tspan>
+</text>
+<rect x="30" y="105" width="232" height="285" rx="20" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<text x="146" y="147" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#102236" font-weight="700" text-anchor="middle">
+<tspan x="146" dy="0">LLM</tspan>
+</text>
+<g transform="translate(62,176) scale(.9)" stroke="#007969" stroke-width="5" stroke-linejoin="round" fill="#e0f0eb"><path d="M24 25H124V42H146V104H121L107 122H33L18 102V54H4V30H24Z"/><path d="M45 8H111V25H45Z M145 56H166V91H146 M61 122V139H95V122"/><path d="M43 57H119 M43 77H119 M43 97H100" fill="none"/><circle cx="75" cy="75" r="13" fill="#f39c7b"/></g>
+<text x="146" y="333" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#435866" font-weight="400" text-anchor="middle">
+<tspan x="146" dy="0">Gera respostas</tspan>
+<tspan x="146" dy="28">e pedidos de ferramenta.</tspan>
+</text>
+<path d="M273 248H319" stroke="#007969" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="333" y="105" width="279" height="65" rx="20" fill="#e0f0eb" stroke="#e0f0eb" stroke-width="2"/>
+<text x="472" y="131" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#007969" font-weight="700" text-anchor="middle">
+<tspan x="472" dy="0">MAPA</tspan>
+</text>
+<text x="472" y="157" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#102236" font-weight="400" text-anchor="middle">
+<tspan x="472" dy="0">Contexto e fontes</tspan>
+</text>
+<rect x="627" y="105" width="303" height="65" rx="20" fill="#e0f0eb" stroke="#e0f0eb" stroke-width="2"/>
+<text x="778" y="131" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#007969" font-weight="700" text-anchor="middle">
+<tspan x="778" dy="0">DESTINO</tspan>
+</text>
+<text x="778" y="157" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#102236" font-weight="400" text-anchor="middle">
+<tspan x="778" dy="0">Tarefa definida</tspan>
+</text>
+<text x="630" y="207" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#102236" font-weight="700" text-anchor="middle">
+<tspan x="630" dy="0">HERMES</tspan>
+</text>
+<g transform="translate(300,-284) scale(.9)" stroke="#102236" stroke-width="5" stroke-linejoin="round"><path d="M72 675L98 626L225 613L280 553H415L481 622L557 650L573 701L555 718H91L67 704Z" fill="#e0f0eb"/><path d="M264 612L299 570H351V612Z M367 570H406L451 612H367Z" fill="white"/><path d="M112 641H226V677H98Z" fill="#007969"/><path d="M250 627V692 M360 629V694 M451 629V694" fill="none"/><path d="M275 642H305 M379 642H409" stroke="#007969"/><path d="M73 674H98 M537 665L562 672" stroke="#f39c7b" stroke-width="9"/><circle cx="177" cy="709" r="42" fill="#102236"/><circle cx="177" cy="709" r="22" fill="white"/><circle cx="481" cy="709" r="42" fill="#102236"/><circle cx="481" cy="709" r="22" fill="white"/><circle cx="326" cy="588" r="11" fill="#f39c7b"/><path d="M310 611Q326 595 342 611" fill="none"/></g>
+<text x="920" y="261" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#435866" font-weight="400" text-anchor="end">
+<tspan x="920" dy="0">Painel e freios:</tspan>
+<tspan x="920" dy="22">checagens e</tspan>
+<tspan x="920" dy="22">permissões</tspan>
+</text>
+<path d="M816 296H792L756 292" stroke="#007969" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="630" y="419" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#007969" font-weight="700" text-anchor="middle">
+<tspan x="630" dy="0">Rodas e transmissão = ferramentas</tspan>
+</text>
+<rect x="30" y="438" width="900" height="33" rx="10" fill="#102236" stroke="#102236" stroke-width="2"/>
+<text x="480" y="461" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="white" font-weight="400" text-anchor="middle">
+<tspan x="480" dy="0">Você define rota e limites e confere a chegada. O agente pode errar.</tspan>
+</text>
+</svg>

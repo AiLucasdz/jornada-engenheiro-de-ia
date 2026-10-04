@@ -21,7 +21,7 @@ Teste situações comuns, dúvidas sem resposta e falhas. Compare o comportament
 
 ## Seu progresso fica visível
 
-![Casos de teste levam à execução, comparação com o esperado, investigação, mudança e novo teste.](../mapas-e-desenhos/06-avaliacao.svg)
+<p class="compact-visual"><a href="../mapas-e-desenhos/06-avaliacao.svg"><img src="../mapas-e-desenhos/06-avaliacao.svg" width="152" alt="Casos de teste levam à execução, comparação com o esperado, investigação, mudança e novo teste." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p>
 
 Seu registro ajuda a responder: **o que tentei, o que aconteceu e o que vou mudar?** Preencha com evidências do projeto e retome na revisão semanal.
 

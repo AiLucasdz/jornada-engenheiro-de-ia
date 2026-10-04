@@ -25,7 +25,7 @@ Use arquivos e dados de teste. Acrescente outras situações conforme descobrir 
 
 ## Veja onde a melhoria acontece
 
-![Comparar o resultado com o esperado, investigar a diferença, ajustar o agente e repetir os testes.](../mapas-e-desenhos/06-avaliacao.svg)
+<p class="compact-visual"><a href="../mapas-e-desenhos/06-avaliacao.svg"><img src="../mapas-e-desenhos/06-avaliacao.svg" width="152" alt="Comparar o resultado com o esperado, investigar a diferença, ajustar o agente e repetir os testes." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p>
 
 Um teste que falha aponta o que investigar: a instrução, a fonte, a ferramenta ou a forma de conferir o resultado.
 
@@ -38,4 +38,4 @@ Se o uso crescer, aumente a variedade dos casos e observe qualidade, tempo e cus
 
 </details>
 
-→ [Aprender a investigar uma falha](../aulas/06-avaliacao-e-confiabilidade.md)
+→ [Aprender a investigar uma falha](../aulas/README.md#aula-06)

@@ -23,7 +23,7 @@ Aproveite o que já funciona no Hermes ou no projeto do curso. Investigue como a
 
 **Exemplo: o agente inventou uma resposta que não estava no documento.**
 
-1. **12 minutos · Entender.** Leia a explicação curta sobre contexto e fontes na [aula 4](../aulas/04-contexto-e-rag.md).
+1. **12 minutos · Entender.** Leia a explicação curta sobre contexto e fontes na [aula 4](../aulas/README.md#aula-04).
 2. **28 minutos · Construir.** Ajuste a instrução e o material: peça que avise quando não encontrar a informação.
 3. **15 minutos · Verificar.** Rode uma pergunta com resposta no documento, uma sem resposta e uma ambígua.
 4. **5 minutos · Registrar.** Anote o resultado e a próxima mudança em [seu experimento](../pratique/experimento.md).
@@ -32,10 +32,10 @@ Aproveite o que já funciona no Hermes ou no projeto do curso. Investigue como a
 
 ## Use as aulas conforme a dúvida
 
-- **Ainda não entendi modelo e agente:** comece pela explicação e pelo desenho na [aula 2](../aulas/02-modelos-e-aprendizado.md).
-- **Quero respostas com minhas informações:** vá à [aula 4](../aulas/04-contexto-e-rag.md).
-- **Quero que o agente faça uma ação:** abra a [aula 5](../aulas/05-agentes-e-ferramentas.md).
-- **Preciso entender uma falha:** consulte a [aula 6](../aulas/06-avaliacao-e-confiabilidade.md).
+- **Ainda não entendi modelo e agente:** comece pela explicação e pelo desenho na [aula 2](../aulas/README.md#aula-02).
+- **Quero respostas com minhas informações:** vá à [aula 4](../aulas/README.md#aula-04).
+- **Quero que o agente faça uma ação:** abra a [aula 5](../aulas/README.md#aula-05).
+- **Preciso entender uma falha:** consulte a [aula 6](../aulas/README.md#aula-06).
 - **Quero conhecer a história e explorar os detalhes:** abra os blocos “Para aprofundar” nas [aulas](../aulas/README.md).
 
 Escolha uma fonte principal quando precisar de ajuda. Vídeos, documentação e conversas no [X ou Discord](comunidades.md) entram nos 20% de estudo; transforme uma ideia em um teste no agente.

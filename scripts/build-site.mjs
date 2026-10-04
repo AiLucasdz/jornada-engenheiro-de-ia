@@ -19,7 +19,7 @@ function urlFor(href,source,target){
  return encodeURI(rel(target,targets.get(resolved)||resolved))+(hash?'#'+hash:'');
 }
 function header(target){
- const routes=[['Começar','leitura/comece-aqui/index.html'],['Aulas','leitura/aulas/index.html'],['Praticar','leitura/pratique/index.html'],['Mapas','leitura/mapas-e-desenhos/index.html'],['Onde estudar','leitura/comece-aqui/fontes-e-comunidade.html'],['Comunidade','leitura/comece-aqui/comunidades.html']];
+ const routes=[['Guia completo','index.html'],['Aulas completas','leitura/aulas/index.html'],['Comunidades','index.html#comunidades-aprenda-na-oficina-de-quem-está-construindo'],['Primeira oferta','index.html#como-transformar-o-projeto-em-um-serviço-pago']];
  return `<a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="${rel(target,'index.html')}"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal">${routes.map(([label,dest])=>`<a ${dest===target?'aria-current="page"':''} href="${rel(target,dest)}">${label}</a>`).join('')}<a href="${repo}">GitHub ↗</a></nav></header>`;
 }
 const index=[];
@@ -27,7 +27,7 @@ for(const source of sources){
  const target=targets.get(source); let markdown=fs.readFileSync(source,'utf8').replace(/<\/?div[^>]*>/g,'');
  const toc=[]; const seen=new Map();let optionalDepth=0;
  const renderer=Object.assign(new Renderer(),{
-  html({text}){optionalDepth+=(text.match(/<details\b/g)||[]).length-(text.match(/<\/details>/g)||[]).length;return text;},
+  html({text}){optionalDepth+=(text.match(/<details\b/g)||[]).length-(text.match(/<\/details>/g)||[]).length;return text.replace(/\b(href|src)="([^"]+)"/g,(_,attribute,url)=>`${attribute}="${esc(urlFor(url,source,target))}"`);},
   heading({tokens,depth}){const text=this.parser.parseInline(tokens);const idBase=slug(text);const count=seen.get(idBase)||0;seen.set(idBase,count+1);const id=idBase+(count?'-'+count:'');if(depth===2&&optionalDepth===0)toc.push({text:text.replace(/<[^>]*>/g,''),id});return `<h${depth} id="${esc(id)}">${text}</h${depth}>\n`;},
   link({href,title,tokens}){return `<a href="${esc(urlFor(href,source,target))}"${title?' title="'+esc(title)+'"':''}>${this.parser.parseInline(tokens)}</a>`;},
   image({href,text}){return `<img src="${esc(urlFor(href,source,target))}" alt="${esc(text)}" loading="lazy"${href.includes('mapas-e-desenhos/')||source.startsWith('mapas-e-desenhos/')&&href.endsWith('.svg')?' class="lesson-diagram"':''}>`;},
@@ -38,22 +38,26 @@ for(const source of sources){
   .replaceAll('<!-- cards:start -->','<div class="link-cards">').replaceAll('<!-- cards:end -->','</div>')
   .replace(/<p>(<img src="([^"]+)"[^>]*class="lesson-diagram"[^>]*>)<\/p>/g,(_,img,url)=>`<figure class="lesson-figure"><a href="${url}" target="_blank" rel="noopener">${img}<span>Ampliar o desenho ↗</span></a></figure>`);
  const title=(markdown.match(/^# (.+)$/m)?.[1]||'Jornada').replace(/\*|`/g,'');
- const content=`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · Jornada IA</title><meta name="description" content="Construa seu primeiro agente de IA em quatro entregas, com aulas curtas, desenhos, exercícios e fontes. Aprenda no seu ritmo."><link rel="stylesheet" href="${rel(target,'assets/site.css')}"><script defer src="${rel(target,'assets/site.js')}"></script></head><body>${header(target)}<div class="page-shell"><aside class="sidebar"><p class="eyebrow">EXPLORE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="Hermes, fontes, testes…" data-index="${rel(target,'assets/busca.json')}"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong>${toc.map(x=>`<a href="#${esc(x.id)}">${esc(x.text)}</a>`).join('')}</nav><a class="study-note" href="${rel(target,'leitura/comece-aqui/trilha-pratica.html')}"><strong>4 entregas.<br>No seu ritmo.</strong><span>80% construindo e testando.<br>20% aprendendo o necessário.</span></a></aside><main id="conteudo"><article>${body}</article><footer><a href="${repo}/blob/main/${encodeURI(source)}">Ver este conteúdo no GitHub ↗</a><span>Um agente. Uma melhoria de cada vez.</span></footer></main></div></body></html>`;
+ const content=`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · Jornada IA</title><meta name="description" content="Construa agentes de IA, aprenda em comunidade, mostre seu trabalho e prepare uma oferta de serviço. Percurso completo, exemplos e exercícios na mesma página."><link rel="stylesheet" href="${rel(target,'assets/site.css')}"><script defer src="${rel(target,'assets/site.js')}"></script></head><body>${header(target)}<div class="page-shell"><aside class="sidebar"><p class="eyebrow">EXPLORE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="Hermes, fontes, testes…" data-index="${rel(target,'assets/busca.json')}"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong>${toc.map(x=>`<a href="#${esc(x.id)}">${esc(x.text)}</a>`).join('')}</nav><a class="study-note" href="${rel(target,'index.html#quatro-entregas-um-projeto-que-ganha-valor')}"><strong>4 entregas.<br>No seu ritmo.</strong><span>80% construindo e testando.<br>20% aprendendo o necessário.</span></a></aside><main id="conteudo"><article${source==='README.md'?' class="guide-home"':''}>${body}</article><footer><a href="${repo}/blob/main/${encodeURI(source)}">Ver este conteúdo no GitHub ↗</a><span>Um agente. Uma melhoria de cada vez.</span></footer></main></div></body></html>`;
  fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,content);
  index.push({title,url:target,text:body.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ')});
 }
 // Keep old bookmarks working; the course content now lives inside the lessons.
 const redirects=[
- ['materiais/historia-da-ia-material-de-formacao.html','leitura/aulas/01-historia-e-problemas.html',{
-  conceitos:'leitura/aulas/02-modelos-e-aprendizado.html',trilha:'leitura/comece-aqui/fontes-e-comunidade.html'
+ ['materiais/historia-da-ia-material-de-formacao.html','leitura/aulas/index.html#aula-01',{
+  conceitos:'leitura/aulas/index.html#aula-02',trilha:'leitura/comece-aqui/fontes-e-comunidade.html'
  }],
- ['materiais/Base Técnica de IA.html','leitura/aulas/02-modelos-e-aprendizado.html',{
-  'bloco-1':'leitura/aulas/02-modelos-e-aprendizado.html','bloco-2':'leitura/aulas/04-contexto-e-rag.html',
-  'bloco-3':'leitura/aulas/05-agentes-e-ferramentas.html','bloco-4':'leitura/aulas/03-integracoes-e-dados.html',
-  'bloco-5':'leitura/aulas/06-avaliacao-e-confiabilidade.html','bloco-6':'leitura/aulas/07-operacao-e-comunicacao.html'
+ ['materiais/Base Técnica de IA.html','leitura/aulas/index.html#aula-02',{
+  'bloco-1':'leitura/aulas/index.html#aula-02','bloco-2':'leitura/aulas/index.html#aula-04',
+  'bloco-3':'leitura/aulas/index.html#aula-05','bloco-4':'leitura/aulas/index.html#aula-03',
+  'bloco-5':'leitura/aulas/index.html#aula-06','bloco-6':'leitura/aulas/index.html#aula-07'
  }],
  ['leitura/materiais/index.html','leitura/aulas/index.html',{}]
 ];
+const oldLessons=['01-historia-e-problemas','02-modelos-e-aprendizado','03-integracoes-e-dados','04-contexto-e-rag','05-agentes-e-ferramentas','06-avaliacao-e-confiabilidade','07-operacao-e-comunicacao'];
+for(const lesson of oldLessons){
+ redirects.push(['leitura/aulas/'+lesson+'.html','leitura/aulas/index.html#aula-'+lesson.slice(0,2),{}]);
+}
 for(const [oldDir,newDir] of [['docs','comece-aqui'],['modelos','pratique']]){
  for(const source of sources.filter(s=>s.startsWith(newDir+'/'))){
   const filename=source.split('/').at(-1).replace('trilha-pratica.md','trilha-12-semanas.md');

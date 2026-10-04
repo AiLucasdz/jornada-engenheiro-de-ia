@@ -20,7 +20,7 @@ Nos dois caminhos, continue com o mesmo agente nas quatro entregas abaixo. O [gu
 
 **Aplique:** escolha uma tarefa pequena, como resumir um arquivo de teste. Execute, confira o resultado e anote o que funcionou. Essa é a primeira entrega da [trilha prática](trilha-pratica.md).
 
-**Se quiser entender melhor sua escolha:** a [aula de história e problemas](../aulas/01-historia-e-problemas.md) conecta as possibilidades e os limites da IA ao que você quer construir.
+**Se quiser entender melhor sua escolha:** a [aula de história e problemas](../aulas/README.md#aula-01) conecta as possibilidades e os limites da IA ao que você quer construir.
 
 <details>
 <summary>Quero aprofundar: história, possibilidades e organização do projeto</summary>
@@ -41,14 +41,14 @@ Escolha apenas o recurso que responde à sua curiosidade. Livros e cursos comple
 
 ## 2 · Contexto e fontes para responder melhor
 
-**Comece por:** [aula de contexto e fontes](../aulas/04-contexto-e-rag.md). Leia primeiro como fornecer uma informação junto da pergunta; avance para busca em documentos quando isso ajudar sua tarefa.
+**Comece por:** [aula de contexto e fontes](../aulas/README.md#aula-04). Leia primeiro como fornecer uma informação junto da pergunta; avance para busca em documentos quando isso ajudar sua tarefa.
 
 **Aplique:** entregue ao agente um arquivo curto e faça perguntas sobre ele. Peça que indique a fonte. Depois faça uma pergunta que o arquivo não responde e confira como o agente lida com a falta de informação.
 
 <details>
 <summary>Quero aprofundar: modelos, busca em documentos e aprendizado</summary>
 
-A [aula sobre modelos](../aulas/02-modelos-e-aprendizado.md) explica tokens, contexto e como as respostas são produzidas. Você pode consultar um conceito de cada vez.
+A [aula sobre modelos](../aulas/README.md#aula-02) explica tokens, contexto e como as respostas são produzidas. Você pode consultar um conceito de cada vez.
 
 | Sua pergunta | Fonte | O que experimentar ou observar |
 | --- | --- | --- |
@@ -66,14 +66,14 @@ O último caminho é um estudo técnico posterior, com programação e matemáti
 
 ## 3 · Uma ação útil
 
-**Comece por:** [aula de agentes e ferramentas](../aulas/05-agentes-e-ferramentas.md). Foque em como um pedido do modelo se transforma em uma ação permitida.
+**Comece por:** [aula de agentes e ferramentas](../aulas/README.md#aula-05). Foque em como um pedido do modelo se transforma em uma ação permitida.
 
 **Aplique:** peça ao agente que use as fontes para produzir e salvar um relatório em uma pasta de teste. Confira o arquivo e o caminho usado. Depois adapte a ação à sua tarefa, aumentando o alcance aos poucos.
 
 <details>
 <summary>Quero aprofundar: ferramentas, integrações e dados</summary>
 
-Consulte a [aula de integrações e dados](../aulas/03-integracoes-e-dados.md) quando precisar ligar outro sistema ao agente. Um banco de dados ou uma integração nova só entra quando sua tarefa precisar.
+Consulte a [aula de integrações e dados](../aulas/README.md#aula-03) quando precisar ligar outro sistema ao agente. Um banco de dados ou uma integração nova só entra quando sua tarefa precisar.
 
 | Sua pergunta | Fonte | O que aplicar |
 | --- | --- | --- |
@@ -87,14 +87,14 @@ Consulte a [aula de integrações e dados](../aulas/03-integracoes-e-dados.md) q
 
 ## 4 · Testar, melhorar e demonstrar
 
-**Comece por:** [aula de avaliação](../aulas/06-avaliacao-e-confiabilidade.md). Leia como escolher perguntas e resultados esperados para conferir o agente.
+**Comece por:** [aula de avaliação](../aulas/README.md#aula-06). Leia como escolher perguntas e resultados esperados para conferir o agente.
 
 **Aplique:** repita as mesmas tarefas, incluindo uma informação ausente e uma ação que falhe. Corrija um problema e teste novamente. Mostre uma tarefa funcionando, uma limitação e a melhoria feita, usando os [registros de prática](../pratique/README.md).
 
 <details>
 <summary>Quero aprofundar: avaliação, custos e uso contínuo</summary>
 
-A [aula de operação e comunicação](../aulas/07-operacao-e-comunicacao.md) ajuda quando você quiser colocar o agente em uso frequente ou compartilhar com outras pessoas.
+A [aula de operação e comunicação](../aulas/README.md#aula-07) ajuda quando você quiser colocar o agente em uso frequente ou compartilhar com outras pessoas.
 
 | Sua pergunta | Fonte | O que aplicar |
 | --- | --- | --- |

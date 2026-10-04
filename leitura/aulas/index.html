@@ -1,26 +1,820 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aprenda enquanto seu agente ganha forma · Jornada IA</title><meta name="description" content="Construa seu primeiro agente de IA em quatro entregas, com aulas curtas, desenhos, exercícios e fontes. Aprenda no seu ritmo."><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a  href="../comece-aqui/index.html">Começar</a><a aria-current="page" href="index.html">Aulas</a><a  href="../pratique/index.html">Praticar</a><a  href="../mapas-e-desenhos/index.html">Mapas</a><a  href="../comece-aqui/fontes-e-comunidade.html">Onde estudar</a><a  href="../comece-aqui/comunidades.html">Comunidade</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">EXPLORE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="Hermes, fontes, testes…" data-index="../../assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#entenda-o-problema-e-a-ia">Entenda o problema e a IA</a><a href="#construa-novas-capacidades">Construa novas capacidades</a><a href="#teste-e-coloque-em-uso">Teste e coloque em uso</a><a href="#como-aproveitar-uma-aula">Como aproveitar uma aula</a></nav><a class="study-note" href="../comece-aqui/trilha-pratica.html"><strong>4 entregas.<br>No seu ritmo.</strong><span>80% construindo e testando.<br>20% aprendendo o necessário.</span></a></aside><main id="conteudo"><article><h1 id="aprenda-enquanto-seu-agente-ganha-forma">Aprenda enquanto seu agente ganha forma</h1>
-<p><a href="../../index.html">← Início</a> · <a href="../comece-aqui/index.html">Comece aqui</a> · <a href="../comece-aqui/trilha-pratica.html">As quatro entregas</a></p>
-<p>São <strong>7 aulas de apoio para construir seu agente</strong>. Consulte a pergunta ligada ao que está fazendo: cada aula traz uma explicação curta, um desenho, uma prática e fontes. Os detalhes técnicos ficam em blocos “Para aprofundar”, dentro do assunto.</p>
-<h2 id="entenda-o-problema-e-a-ia">Entenda o problema e a IA</h2>
-<div class="link-cards"><p><strong><a href="01-historia-e-problemas.html">01 · Descubra um problema que vale resolver</a></strong><br>
-<strong>Ao escolher uma tarefa.</strong> Como a IA chegou até aqui? O que vale tentar resolver com ela? Você sai com uma ideia delimitada e um primeiro teste.</p>
-<p><strong><a href="02-modelos-e-aprendizado.html">02 · Entenda como a IA aprende e responde</a></strong><br>
-<strong>Ao orientar seu agente.</strong> Como um modelo aprende, usa contexto e pode errar? Você melhora as instruções da mesma tarefa.</p>
-</div><p>Comece por uma tarefa pequena no <a href="../comece-aqui/trilha-pratica.html">caminho das quatro entregas</a>. Consulte estas aulas conforme surgir uma dúvida.</p>
-<h2 id="construa-novas-capacidades">Construa novas capacidades</h2>
-<div class="link-cards"><p><strong><a href="03-integracoes-e-dados.html">03 · Conecte seu agente ao mundo</a></strong><br>
-<strong>Ao conectar informações.</strong> Como receber, guardar e consultar informações? Você cria uma entrada de dados e acompanha o que aconteceu.</p>
-<p><strong><a href="04-contexto-e-rag.html">04 · Ensine seu agente a consultar fontes</a></strong><br>
-<strong>Ao dar contexto e fontes.</strong> Como responder usando documentos confiáveis? Você testa busca, contexto e uma pergunta sem resposta na base.</p>
-<p><strong><a href="05-agentes-e-ferramentas.html">05 · Transforme respostas em ações</a></strong><br>
-<strong>Ao conectar uma ação.</strong> Como o agente escolhe e usa uma ferramenta? Você conecta uma consulta e depois uma ação em ambiente de teste.</p>
-</div><h2 id="teste-e-coloque-em-uso">Teste e coloque em uso</h2>
-<div class="link-cards"><p><strong><a href="06-avaliacao-e-confiabilidade.html">06 · Descubra o que funciona e o que falha</a></strong><br>
-<strong>Ao testar e melhorar.</strong> Como saber se melhorou? Você cria casos de avaliação e investiga erros com registros da execução.</p>
-<p><strong><a href="07-operacao-e-comunicacao.html">07 · Coloque em uso e mostre o resultado</a></strong><br>
-<strong>Ao demonstrar e colocar em uso.</strong> Como acompanhar qualidade, tempo e custo? Você conduz um piloto e explica as decisões tomadas.</p>
-</div><h2 id="como-aproveitar-uma-aula">Como aproveitar uma aula</h2>
-<p><strong>Leia a explicação → observe o desenho → faça o exercício → confira o resultado.</strong> Consulte uma fonte de cada vez, quando ela ajudar a responder uma dúvida do projeto.</p>
-<p>Reserve <strong>20% do tempo para estudar e 80% para construir e verificar</strong>. Use os <a href="../pratique/index.html">guias para praticar</a> para guardar sua ideia, seus experimentos e seus testes.</p>
-<p><strong><a href="../comece-aqui/trilha-pratica.html">Começar pela primeira entrega →</a></strong> · <a href="../mapas-e-desenhos/index.html">Revisar pelos desenhos</a></p>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sete aulas completas para construir seu agente · Jornada IA</title><meta name="description" content="Construa agentes de IA, aprenda em comunidade, mostre seu trabalho e prepare uma oferta de serviço. Percurso completo, exemplos e exercícios na mesma página."><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a  href="../../index.html">Guia completo</a><a aria-current="page" href="index.html">Aulas completas</a><a  href="../../index.html#comunidades-aprenda-na-oficina-de-quem-está-construindo">Comunidades</a><a  href="../../index.html#como-transformar-o-projeto-em-um-serviço-pago">Primeira oferta</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">EXPLORE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="Hermes, fontes, testes…" data-index="../../assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#01-escolha-uma-tarefa-que-vale-a-pena-resolver">01 · Escolha uma tarefa que vale a pena resolver</a><a href="#02-entenda-o-modelo-dentro-do-seu-agente">02 · Entenda o modelo dentro do seu agente</a><a href="#03-entenda-por-onde-a-informação-passa">03 · Entenda por onde a informação passa</a><a href="#04-dê-ao-agente-a-fonte-certa">04 · Dê ao agente a fonte certa</a><a href="#05-faça-o-agente-executar-uma-ação">05 · Faça o agente executar uma ação</a><a href="#06-teste-encontre-a-falha-e-melhore">06 · Teste, encontre a falha e melhore</a><a href="#07-mostre-o-valor-e-prepare-sua-primeira-oferta">07 · Mostre o valor e prepare sua primeira oferta</a></nav><a class="study-note" href="../../index.html#quatro-entregas-um-projeto-que-ganha-valor"><strong>4 entregas.<br>No seu ritmo.</strong><span>80% construindo e testando.<br>20% aprendendo o necessário.</span></a></aside><main id="conteudo"><article><p><a id="aulas"></a></p>
+<h1 id="sete-aulas-completas-para-construir-seu-agente">Sete aulas completas para construir seu agente</h1>
+<p><a href="../../index.html">← Voltar ao guia principal</a></p>
+<p><strong>Explicação, exercício, desenho e fontes no mesmo lugar.</strong> Encontre a pergunta ligada à sua tarefa e faça a prática no agente que já colocou para funcionar. Os blocos “Para aprofundar” guardam a história completa, a base técnica e outras leituras dentro de cada assunto.</p>
+<p>A numeração organiza os temas. Você pode começar pela dúvida que tem agora e voltar às demais quando precisar. Use <strong>80% do tempo para experimentar e conferir resultados e 20% para estudar</strong>, no seu ritmo.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>O que quero entender ou fazer</th>
+<th>Vá direto ao assunto</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Escolher uma tarefa e entender de onde a IA veio</td>
+<td><a href="#aula-01">01 · História e escolha do problema</a></td>
+</tr>
+<tr>
+<td>Entender o modelo, o agente e como orientar uma tarefa</td>
+<td><a href="#aula-02">02 · O modelo é o motor; o Hermes é o carro</a></td>
+</tr>
+<tr>
+<td>Acompanhar uma informação e seu registro</td>
+<td><a href="#aula-03">03 · Integrações e dados</a></td>
+</tr>
+<tr>
+<td>Usar documentos e conferir a fonte da resposta</td>
+<td><a href="#aula-04">04 · Contexto e fontes</a></td>
+</tr>
+<tr>
+<td>Fazer o agente executar uma ação</td>
+<td><a href="#aula-05">05 · Ferramentas e limites</a></td>
+</tr>
+<tr>
+<td>Descobrir o erro e verificar uma melhoria</td>
+<td><a href="#aula-06">06 · Testes e avaliação</a></td>
+</tr>
+<tr>
+<td>Demonstrar valor, construir em público e preparar uma oferta</td>
+<td><a href="#aula-07">07 · Uso, demonstração e primeira oferta</a></td>
+</tr>
+</tbody></table></div>
+<p><strong>Seu projeto passa por quatro entregas:</strong> uma tarefa funcionando; contexto e fontes; uma ação útil; testes e demonstração. As aulas apoiam essas entregas. Escolha um exercício, anote o que observou e retome a construção.</p>
+<hr>
+<p><a id="aula-01"></a></p>
+<h2 id="01-escolha-uma-tarefa-que-vale-a-pena-resolver">01 · Escolha uma tarefa que vale a pena resolver</h2>
+<p><strong>Use na entrega 1: colocar o agente para funcionar e escolher uma tarefa.</strong></p>
+<p><strong>Ao terminar:</strong> você terá uma tarefa pequena para o seu agente, exemplos para experimentar e uma forma simples de conferir o resultado.</p>
+<p>Você não precisa começar criando tudo. Se já colocou o Hermes para funcionar, use essa base para experimentar uma tarefa sua. O exemplo da trilha é atender <strong>leads: pessoas interessadas em um produto ou serviço</strong>. Pode ser outra tarefa que você conhece: organizar pedidos, consultar documentos ou preparar um resumo.</p>
+<h3 id="011-o-que-a-história-da-ia-ensina-aqui">01.1 · O que a história da IA ensina aqui</h3>
+<p>A história da IA reúne tentativas de ensinar máquinas por regras e por exemplos. Algumas aplicações funcionaram bem em tarefas delimitadas; outras esbarraram em expectativas altas, limitações e manutenção. Hoje, modelos mais capazes continuam precisando de uma tarefa clara, informação adequada e verificação.</p>
+<p>A lição para começar é concreta: escolha algo que você consegue observar e testar. “Melhorar o atendimento” é amplo. “Responder uma dúvida sobre os planos e mostrar a fonte” permite conferir se o agente ajudou.</p>
+<p class="compact-visual"><a href="../../mapas-e-desenhos/01-historia.svg"><img src="../../mapas-e-desenhos/01-historia.svg" width="153" alt="Marcos da história da IA conectados a decisões sobre problema, dados, limites e manutenção do projeto." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p><p>A linha do tempo ajuda a entender por que testar resultados e cuidar dos dados continuam sendo parte da construção.</p>
+<h3 id="012-faça-no-seu-agente-80-prática">01.2 · Faça no seu agente · 80% prática</h3>
+<ol>
+<li>Escolha <strong>uma tarefa</strong> e escreva o resultado esperado em uma frase. Anote quatro campos: <strong>quem usa, tarefa, informações disponíveis e como conferir o resultado</strong>.</li>
+<li>Separe três exemplos fictícios ou autorizados: um simples, um incompleto e um fora do que o agente deve fazer.</li>
+<li>Experimente os exemplos no agente que já está funcionando. Observe a resposta e confira o resultado.</li>
+<li>Registre o que deu certo, o que falhou e uma próxima melhoria. Guarde o material no repositório do projeto para acompanhar a evolução.</li>
+</ol>
+<p><strong>Pode seguir quando:</strong> você consegue mostrar a tarefa e dizer como confere se ela foi realizada. Uma primeira versão pequena já serve.</p>
+<h3 id="013-estude-para-destravar-20-teoria">01.3 · Estude para destravar · 20% teoria</h3>
+<p>Leia o que ajuda a decidir o próximo ajuste e volte ao agente. A <a href="https://academy.claude.com/">Claude Academy</a> oferece atividades sobre trabalhar com IA; o <a href="https://github.com/skills/introduction-to-github">GitHub Skills</a> ajuda a guardar e revisar seu projeto. Escolha conforme a dificuldade que encontrou.</p>
+<details>
+<summary>Para aprofundar: a história da IA e as decisões que ela ajuda a tomar</summary><h3 id="014-uma-linha-do-tempo-para-tomar-decisões">01.4 · Uma linha do tempo para tomar decisões</h3>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Período</th>
+<th>O que mudou</th>
+<th>A pergunta que fica para seu projeto</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1943–1950 · fundações</td>
+<td>McCulloch e Pitts descreveram um modelo matemático de neurônio. Turing propôs um teste baseado em uma conversa para investigar o comportamento de máquinas.</td>
+<td>Qual comportamento vou observar para dizer que o sistema funciona?</td>
+</tr>
+<tr>
+<td>1956–1973 · primeiras expectativas</td>
+<td>O encontro de Dartmouth consolidou o nome inteligência artificial. O perceptron de Rosenblatt explorou aprendizado; ELIZA mostrou como regras simples podiam sustentar uma conversa que parecia humana.</td>
+<td>Estou medindo capacidade ou me impressionando com a apresentação?</td>
+</tr>
+<tr>
+<td>Década de 1970 · primeiro inverno</td>
+<td>Limites técnicos, promessas excessivas e decisões de financiamento contribuíram para uma retração. Problemas simples em laboratório não se generalizavam facilmente.</td>
+<td>Em quais situações meu protótipo ainda falha?</td>
+</tr>
+<tr>
+<td>Década de 1980 · sistemas especialistas</td>
+<td>Sistemas como MYCIN e XCON representavam conhecimento em regras. Aplicações delimitadas demonstraram utilidade, mas bases grandes de regras exigiam manutenção.</td>
+<td>Quanto trabalho será necessário quando o processo mudar?</td>
+</tr>
+<tr>
+<td>Fim dos anos 1980–1990 · retração e continuidade</td>
+<td>O mercado de sistemas especialistas perdeu força. Ao mesmo tempo, a pesquisa continuou: o trabalho de Rumelhart, Hinton e Williams, de 1986, ajudou a popularizar a retropropagação em redes neurais.</td>
+<td>Estou confundindo a viabilidade de uma ideia com as limitações de uma implementação?</td>
+</tr>
+<tr>
+<td>1990–2011 · métodos e dados</td>
+<td>Deep Blue venceu Kasparov em 1997; a pesquisa em aprendizado estatístico avançou; conjuntos de dados como ImageNet permitiram comparar sistemas em tarefas comuns.</td>
+<td>Tenho exemplos representativos e um critério compartilhado de comparação?</td>
+</tr>
+<tr>
+<td>2012–2022 · redes profundas e linguagem</td>
+<td>AlexNet combinou redes com muitas camadas, dados e processadores capazes de realizar muitas contas em paralelo, as GPUs. O Transformer, proposto em 2017, ampliou as possibilidades dos modelos de linguagem. Em 2022, o ChatGPT popularizou o acesso por conversa.</td>
+<td>O que falta aqui: capacidade do modelo, dados, integração ou uma interface utilizável?</td>
+</tr>
+<tr>
+<td>Aplicações atuais · ferramentas e agentes</td>
+<td>Modelos são integrados a busca, bancos, código e ferramentas. Construir uma solução passa a envolver também permissões, estado, avaliação e operação.</td>
+<td>Como uma resposta vira uma ação verificável?</td>
+</tr>
+</tbody></table></div>
+<p>As datas organizam a história; elas não provam que houve uma causa única para cada avanço ou inverno. O artigo <a href="https://arxiv.org/abs/2104.12871">Why AI is Harder Than We Think, de Melanie Mitchell</a>, discute justamente a distância recorrente entre expectativas e dificuldades reais.</p>
+<h3 id="015-cinco-lições-que-entram-no-projeto">01.5 · Cinco lições que entram no projeto</h3>
+<p><strong>Defina sucesso antes de automatizar.</strong> Uma resposta bem escrita pode não resolver o problema. No exemplo dos leads, queremos uma primeira resposta útil e um encaminhamento correto. Esses resultados podem ser conferidos; “parecer inteligente” não deixa claro o que verificar.</p>
+<p><strong>Comece por um processo delimitado.</strong> Os sistemas especialistas ajudam a enxergar o valor de resolver uma tarefa concreta. “Melhorar o comercial” ainda é amplo. “Receber uma mensagem fora do horário, identificar a intenção e registrar o encaminhamento” permite testar entradas, regras e saídas.</p>
+<p><strong>Calcule a manutenção.</strong> Uma automação pode funcionar hoje e exigir revisão quando mudam preços, produtos ou integrações. Imagine uma receita de cozinha: ela é útil enquanto os ingredientes e o processo continuam válidos. Alguém precisa atualizar a receita e conferir o resultado quando isso muda.</p>
+<p><strong>Dados de avaliação são parte da construção.</strong> Uma tabela com perguntas e respostas aceitáveis permite comparar versões. Inclua casos fáceis, ambíguos e sem resposta disponível. Não escolha só exemplos que valorizam a demonstração.</p>
+<p><strong>Descubra onde o processo falha.</strong> Uma resposta errada pode vir de dados desatualizados, uma regra ruim ou uma ação que não foi executada. Antes de trocar o modelo, investigue o caminho da informação. Mais adiante, você aprenderá a localizar a etapa que precisa de correção.</p>
+<h3 id="016-regras-aprendizado-e-produto">01.6 · Regras, aprendizado e produto</h3>
+<p>Em um programa de regras, alguém escreve o que fazer: se falta o contato, pedir o contato. Em <strong>aprendizado de máquina</strong>, o treinamento ajusta os valores internos de um modelo a partir de dados para que ele produza previsões. Uma aplicação pode combinar os dois: a IA interpreta uma mensagem livre; o código confere campos obrigatórios e aplica permissões.</p>
+<p>Pense em uma central de atendimento. A política de quem pode receber desconto é uma regra de negócio. Identificar se “queria entender os planos” expressa interesse comercial é uma tarefa de interpretação. Não é necessário entregar as duas decisões ao mesmo mecanismo.</p>
+<p>A <strong>linha de base</strong> é o resultado do processo antes da mudança. Por exemplo, quanto tempo uma pessoa costuma esperar pela primeira resposta útil. Essa medida permite comparar o protótipo com o atendimento atual. Acompanhe também erros, esforço humano, custo e satisfação para perceber efeitos indesejados.</p>
+<h3 id="017-mais-fontes-para-consultar">01.7 · Mais fontes para consultar</h3>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Escolha conforme sua dúvida</th>
+<th>Como estudar</th>
+<th>O que aplicar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://us.macmillan.com/books/9781250404855/artificialintelligence/">Melanie Mitchell — Artificial Intelligence: A Guide for Thinking Humans</a></td>
+<td>Leia um trecho sobre capacidades e limites; anote uma expectativa que precisa de teste.</td>
+<td>Transformar essa expectativa em um caso do seu agente.</td>
+</tr>
+<tr>
+<td><a href="https://theleanstartup.com/principles">Lean Startup — princípios</a></td>
+<td>Foque no ciclo de hipótese, experimento e aprendizagem.</td>
+<td>Reduzir o piloto à menor entrega que testa valor.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/skills/introduction-to-github">GitHub Skills — Introduction to GitHub</a></td>
+<td>Pratique repositório, branch, commit e pull request no próprio projeto.</td>
+<td>Registrar e revisar a primeira entrega.</td>
+</tr>
+<tr>
+<td><a href="https://academy.claude.com/">Claude Academy</a></td>
+<td>Escolha uma atividade introdutória sobre trabalhar com IA.</td>
+<td>Especificar uma tarefa e conferir a resposta com um critério explícito.</td>
+</tr>
+</tbody></table></div>
+<p>Para ampliar a leitura histórica, consulte <a href="https://www.penguinrandomhouse.com/books/565698/genius-makers-by-cade-metz/">Genius Makers, de Cade Metz</a>; para entender decisões de negócio, <a href="https://www.predictionmachines.ai/">Máquinas Preditivas, de Agrawal, Gans e Goldfarb</a>. São aprofundamentos opcionais. Leve uma observação do protótipo ao <a href="https://x.com/ailucasdz">X</a> ou aos Discords de <a href="https://discord.gg/NousResearch">Nous Research</a> e <a href="https://discord.gg/clawd">OpenClaw</a>, junto com o que você já testou.</p>
+</details><hr>
+<p><a id="aula-02"></a></p>
+<h2 id="02-entenda-o-modelo-dentro-do-seu-agente">02 · Entenda o modelo dentro do seu agente</h2>
+<p><strong>Use nas entregas 1 e 2: entender o agente e dar a ele as informações certas.</strong></p>
+<p><strong>Ao terminar:</strong> você entenderá o papel do modelo e do agente, saberá preparar uma tarefa e terá comparado duas maneiras de pedi-la.</p>
+<h3 id="021-o-modelo-é-o-motor-o-hermes-é-o-carro-pronto">02.1 · O modelo é o motor; o Hermes é o carro pronto</h3>
+<p>Um <strong>LLM</strong>, ou modelo de linguagem, é como o <strong>motor</strong>: recebe uma entrada e produz uma resposta que ajuda o sistema a realizar a tarefa. O <strong>Hermes é o carro pronto</strong>: um sistema agente que reúne o modelo, as instruções, a memória e as ferramentas necessárias para consultar informações e executar ações.</p>
+<p class="compact-visual"><a href="../../mapas-e-desenhos/motor-e-carro.svg"><img src="../../mapas-e-desenhos/motor-e-carro.svg" width="640" alt="Analogia entre agente e carro: modelo como motor, Hermes como carro, tarefa como destino, contexto como mapa e endereços, verificação e permissões como painel e freios." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p><p>Na analogia, a <strong>tarefa é o destino</strong>, o <strong>contexto é o mapa com os endereços</strong>, e as <strong>verificações e permissões são o painel e os freios</strong>: ajudam a acompanhar o que aconteceu e limitar as ações.</p>
+<p><strong>Você escolhe o objetivo, configura os limites e confere o resultado.</strong> Para organizar pedidos, por exemplo, o destino pode ser uma tabela preenchida; o mapa são os pedidos e as regras; a ferramenta é o acesso à tabela. Comece com essa tarefa pequena no agente que já funciona.</p>
+<h3 id="022-três-ideias-para-usar-agora">02.2 · Três ideias para usar agora</h3>
+<ul>
+<li><strong>Prompt é o que orienta a resposta.</strong> Diga qual é a tarefa, qual resultado espera e o que fazer se faltar informação.</li>
+<li><strong>Contexto é a informação disponível nessa interação.</strong> Inclui a conversa, documentos e resultados de ferramentas que o sistema fornece ao modelo.</li>
+<li><strong>Uma resposta convincente pode estar errada.</strong> Quando o modelo apresenta informação incorreta ou sem apoio de forma plausível, chamamos isso de alucinação. Confira os fatos e as ações.</li>
+</ul>
+<p>Corrigir uma informação na conversa não é treinar novamente o modelo. O produto pode guardar histórico ou memória para reutilizar depois; isso também não significa que seus parâmetros foram alterados.</p>
+<h3 id="023-faça-no-seu-agente-80-prática">02.3 · Faça no seu agente · 80% prática</h3>
+<ol>
+<li>Escolha a tarefa da primeira entrega e escreva um pedido curto.</li>
+<li>Execute o pedido e guarde a resposta.</li>
+<li>Melhore o pedido com o resultado esperado, um exemplo ou uma informação que estava faltando.</li>
+<li>Repita com os mesmos casos e compare: ficou mais útil, correto e fácil de conferir?</li>
+</ol>
+<p><strong>Pode seguir quando:</strong> você reconhece o que mudou no pedido e mostra o efeito na resposta. Se usar IA para programar, peça uma mudança pequena e confira o resultado antes da próxima.</p>
+<h3 id="024-estude-para-destravar-20-teoria">02.4 · Estude para destravar · 20% teoria</h3>
+<p>A introdução de <a href="https://github.com/microsoft/generative-ai-for-beginners">Generative AI for Beginners, da Microsoft</a>, ajuda a entender modelos de linguagem. Use uma lição ligada à dúvida que apareceu no exercício. A matemática e a construção de modelos podem ficar para quando você quiser abrir essa parte do sistema.</p>
+<details>
+<summary>Para aprofundar: treinamento, tokens, atenção e limites do modelo</summary><h3 id="025-como-essas-peças-se-encaixam">02.5 · Como essas peças se encaixam</h3>
+<p class="compact-visual"><a href="../../mapas-e-desenhos/02-modelo-e-agente.svg"><img src="../../mapas-e-desenhos/02-modelo-e-agente.svg" width="153" alt="Modelo de linguagem dentro do sistema agente, acompanhado por instruções, dados, ferramentas e memória; Hermes representa uma estrutura que reúne essas peças." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p><p>O modelo participa das decisões; o sistema ao redor permite consultar dados, executar ações e guardar resultados. Quando o modelo pede uma ferramenta, esse sistema verifica o pedido, executa a operação permitida e devolve o resultado.</p>
+<h3 id="026-rede-neural-treinamento-e-inferência">02.6 · Rede neural, treinamento e inferência</h3>
+<p>Uma <strong>rede neural</strong> transforma entradas em saídas usando operações organizadas em camadas. Seus <strong>parâmetros</strong> são valores numéricos ajustados durante o treinamento. Imagine uma mesa de som com muitos controles: cada ajuste muda como os sinais se combinam.</p>
+<p>No <strong>treinamento</strong>, exemplos e um objetivo orientam o ajuste desses parâmetros. A <strong>função de perda</strong> mede o erro em relação ao objetivo. A <strong>retropropagação</strong>, ou <em>backpropagation</em>, calcula gradientes: medidas de como pequenas mudanças nos parâmetros afetam essa perda. Um <strong>otimizador</strong> usa essas medidas para ajustar os parâmetros e tentar reduzir o erro.</p>
+<p>As GPUs, processadores capazes de realizar muitas operações numéricas em paralelo, ajudam nesse trabalho. Métodos, dados e capacidade de processamento permitiram treinar redes maiores. A história de AlexNet e ImageNet mostra essas peças trabalhando juntas. A série de <a href="https://www.3blue1brown.com/lessons/backpropagation/">3Blue1Brown sobre retropropagação</a> oferece uma explicação visual dos ajustes.</p>
+<p>Na <strong>inferência</strong>, usamos os parâmetros aprendidos para produzir uma saída. Uma conversa comum não atualiza automaticamente os pesos do modelo a cada mensagem. O produto pode manter histórico ou memória, e o fornecedor pode ter políticas específicas de uso de dados; isso é diferente de o modelo aprender imediatamente com cada correção.</p>
+<h3 id="027-escala-e-pós-treinamento">02.7 · Escala e pós-treinamento</h3>
+<p>As <strong>leis de escala</strong> descrevem relações observadas em experimentos entre tamanho do modelo, quantidade de dados, capacidade de processamento e erro de previsão. O estudo de <a href="https://arxiv.org/abs/2001.08361">Kaplan e colaboradores</a> encontrou regularidades nessas relações. Elas ajudam a planejar o treinamento nas condições estudadas. Para escolher um modelo para o agente, ainda é necessário comparar qualidade, custo e tempo nos seus próprios casos.</p>
+<p>O <strong>pós-treinamento</strong> adapta um modelo já treinado a comportamentos desejados, como seguir instruções. No trabalho do <a href="https://arxiv.org/abs/2203.02155">InstructGPT</a>, pesquisadores usaram demonstrações humanas para um ajuste supervisionado e avaliações de preferência para uma etapa de <strong>RLHF</strong>: aprendizado por reforço com feedback humano. Esse processo melhorou a preferência pelas respostas nas condições do estudo, mas os modelos continuaram cometendo erros. Uma resposta prestativa e uma resposta factual precisam de verificações próprias.</p>
+<p>No projeto, essa distinção orienta uma decisão concreta: você pode usar um modelo já preparado para seguir instruções e concentrar o trabalho em contexto, ferramentas e avaliação. Corrigir uma informação no prompt não é executar essas etapas de treinamento novamente.</p>
+<h3 id="028-o-que-um-llm-faz">02.8 · O que um LLM faz</h3>
+<p>Um modelo de linguagem estima continuações para uma sequência de pequenas unidades chamadas <strong>tokens</strong>, explicadas a seguir. Repetindo esse processo, produz textos, código e outros formatos de saída. O treinamento permite representar padrões da linguagem e conhecimentos; a resposta não vem automaticamente de uma consulta a uma fonte atualizada.</p>
+<p>A <strong>data de corte do conhecimento</strong>, quando informada, orienta sobre a cobertura temporal de parte do treinamento. Não garante que o modelo saiba tudo antes dessa data. Busca e ferramentas podem trazer dados atuais durante uma execução, desde que o sistema realmente as use.</p>
+<p>No agente de leads, pergunte separadamente: “o modelo interpreta esta mensagem?” e “o sistema tem a tabela de preços válida?”. A primeira é uma capacidade do modelo; a segunda exige uma fonte e um caminho de acesso.</p>
+<h3 id="029-tokens-e-janela-de-contexto">02.9 · Tokens e janela de contexto</h3>
+<p>Um <strong>token</strong> é uma unidade usada pelo modelo para representar a entrada e a saída. Pode corresponder a parte de palavra, palavra, pontuação ou outro elemento. A divisão depende do tokenizador, do idioma e do conteúdo. Use a contagem reportada pelo provedor; uma regra fixa de caracteres por token pode errar bastante.</p>
+<p>A <strong>janela de contexto</strong> é o limite do que o modelo pode considerar em uma execução, com regras de capacidade que variam por modelo e API. Instruções, mensagens, resultados de ferramentas e documentos ocupam espaço; planeje também o espaço necessário à resposta.</p>
+<p>Pense no contexto como uma mesa de trabalho. Você seleciona o que colocar sobre ela. Uma mesa maior permite incluir mais material, mas não garante que todo detalhe seja usado corretamente. Se a aplicação omite um dado importante ou o dilui em conteúdo irrelevante, a resposta pode piorar.</p>
+<h3 id="0210-transformer-e-atenção">02.10 · Transformer e atenção</h3>
+<p>O Transformer, apresentado em <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a>, usa mecanismos de atenção para combinar informações de posições diferentes de uma sequência. Em “o cliente pediu a proposta porque ele estava com pressa”, as relações entre “ele”, “cliente” e o restante ajudam a construir uma representação da frase.</p>
+<p>A arquitetura permitiu realizar mais operações em paralelo durante o treinamento e ganhou grande importância em modelos de linguagem. Ainda existem outras arquiteturas, e uma janela longa não garante o uso correto de todos os detalhes. Na geração <strong>autoregressiva</strong>, cada novo token depende da sequência que já existe.</p>
+<h3 id="0211-prompt-temperatura-e-respostas-sem-fundamento">02.11 · Prompt, temperatura e respostas sem fundamento</h3>
+<p>O <strong>prompt</strong> reúne as entradas que orientam o modelo. Instruções de sistema ou de desenvolvedor definem o comportamento esperado; a mensagem do usuário traz a tarefa; documentos e ferramentas oferecem contexto. Guarde versões das instruções importantes: mudar o prompt pode mudar o comportamento do produto. A forma de enviar cada parte depende da interface usada para acessar o modelo.</p>
+<p>A <strong>temperatura</strong>, quando disponível, ajusta as probabilidades usadas para escolher a continuação. Valores menores tendem a reduzir a variedade de respostas, mas não garantem saídas idênticas nem fatos corretos. Alguns modelos não oferecem esse controle. Consulte a documentação do modelo escolhido e teste com as mesmas entradas.</p>
+<p>Uma <strong>alucinação</strong> é uma saída incorreta ou sem apoio suficiente apresentada de maneira plausível. Exigir uma resposta objetiva não basta para evitá-la. Forneça fontes, permita sinalizar ausência de informação e verifique o resultado. Um campo JSON válido também pode conter uma informação falsa.</p>
+<h3 id="0212-mais-fontes-para-consultar">02.12 · Mais fontes para consultar</h3>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>Trecho ou atividade</th>
+<th>Retorno ao projeto</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://developers.google.com/machine-learning/crash-course?hl=pt-br">Google — Machine Learning Crash Course</a></td>
+<td>Introdução a modelos, dados e generalização.</td>
+<td>Explicar por que testar em exemplos novos é necessário.</td>
+</tr>
+<tr>
+<td><a href="https://www.3blue1brown.com/lessons/neural-networks/">3Blue1Brown — redes neurais</a></td>
+<td>Vídeo e demonstração visual de reconhecimento de dígitos.</td>
+<td>Identificar entrada, parâmetros e saída no modelo que você usa.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/microsoft/generative-ai-for-beginners">Microsoft — Generative AI for Beginners</a></td>
+<td>Lição introdutória de IA generativa e modelos.</td>
+<td>Reproduzir uma atividade usando mensagens do seu agente.</td>
+</tr>
+<tr>
+<td><a href="https://developers.openai.com/learn">OpenAI — Learn</a></td>
+<td>Selecione uma introdução compatível com a tarefa escolhida.</td>
+<td>Conferir a forma recomendada de implementar essa tarefa.</td>
+</tr>
+</tbody></table></div>
+<p>Para aprofundar depois, <a href="https://www.themlbook.com/">The Hundred-Page Machine Learning Book, de Andriy Burkov</a>, organiza fundamentos; <a href="https://www.manning.com/books/build-a-large-language-model-from-scratch">Build a Large Language Model (From Scratch), de Sebastian Raschka</a>, com <a href="https://github.com/rasbt/LLMs-from-scratch">código do autor</a>, e <a href="https://karpathy.ai/zero-to-hero.html">Neural Networks: Zero to Hero, de Andrej Karpathy</a>, ajudam a construir modelos pequenos. São caminhos opcionais para estudar programação e mecanismos internos; você pode continuar o projeto usando modelos prontos.</p>
+</details><hr>
+<p><a id="aula-03"></a></p>
+<h2 id="03-entenda-por-onde-a-informação-passa">03 · Entenda por onde a informação passa</h2>
+<p><strong>Use na entrega 3: conectar uma ação ao agente.</strong></p>
+<p><strong>Ao terminar:</strong> você conseguirá acompanhar uma informação desde a entrada até o resultado, usando uma ferramenta pronta e um arquivo ou uma tabela de teste.</p>
+<p>Uma <strong>integração</strong> conecta o agente a outro recurso: um arquivo, uma planilha ou um sistema. Quando já existe uma ferramenta pronta para isso, comece por ela. O objetivo é entender o que entra, o que ela pode fazer e como você confere o resultado.</p>
+<p class="compact-visual"><a href="../../mapas-e-desenhos/03-integracoes.svg"><img src="../../mapas-e-desenhos/03-integracoes.svg" width="167" alt="Caminho da mensagem recebida até a validação, o processamento e o registro, com resultado e histórico consultáveis." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p><p>Acompanhe uma mensagem pelo desenho: cada etapa precisa receber a informação certa e deixar um resultado que você consiga conferir.</p>
+<h3 id="031-três-coisas-para-conferir">03.1 · Três coisas para conferir</h3>
+<p><strong>Entrada:</strong> quais dados a ferramenta precisa? Para registrar um pedido, talvez bastem identificador, mensagem e situação. Defina o que acontece se faltar algum campo.</p>
+<p><strong>Permissão:</strong> o agente pode apenas ler ou também alterar? Comece com um recurso de teste e conceda somente o acesso necessário à tarefa.</p>
+<p><strong>Resultado:</strong> a ação realmente aconteceu? Abra o arquivo ou a tabela para conferir. A frase “pronto, registrei” não substitui a verificação.</p>
+<h3 id="032-faça-no-seu-agente-80-prática">03.2 · Faça no seu agente · 80% prática</h3>
+<ol>
+<li>Escolha uma ferramenta que seu agente já oferece, como ler ou atualizar um arquivo permitido.</li>
+<li>Crie um arquivo ou tabela de teste com poucos dados fictícios. Use-o para registrar o resultado da tarefa.</li>
+<li>Envie um caso completo e outro com informação faltando. Confira como o agente se comporta e o que ficou registrado.</li>
+<li>Repita o primeiro pedido. Observe se criou uma duplicata e registre o ajuste necessário.</li>
+</ol>
+<p><strong>Pode seguir quando:</strong> você mostra a entrada, a ação e o resultado salvo. Uma conexão própria por código só entra quando uma ferramenta existente não atende ao que você precisa.</p>
+<h3 id="033-estude-para-destravar-20-teoria">03.3 · Estude para destravar · 20% teoria</h3>
+<p>Consulte a documentação da ferramenta que escolheu. Se estiver usando o Hermes, comece pela <a href="https://hermes-agent.nousresearch.com/docs/">documentação oficial</a>. Se precisar criar uma conexão, a <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Guides/Overview">introdução a HTTP da MDN</a> explica como programas trocam pedidos e respostas.</p>
+<details>
+<summary>Para aprofundar: APIs, bancos de dados e atualização automática</summary><h3 id="034-api-http-e-json">03.4 · API, HTTP e JSON</h3>
+<p>Uma <strong>API</strong> é uma interface para um programa usar recursos de outro. <strong>HTTP</strong> é um protocolo: um conjunto de regras para trocar pedidos e respostas. Uma API HTTP recebe esses pedidos em endereços chamados <strong>endpoints</strong>. Muitas seguem o estilo <strong>REST</strong>, que organiza o acesso a recursos como clientes e pedidos; HTTP e REST não são sinônimos. Pense em um balcão com pedidos aceitos, informações obrigatórias e respostas possíveis.</p>
+<p>Uma <strong>requisição</strong> é um pedido enviado ao serviço. Ela costuma reunir método, endereço, cabeçalhos — informações sobre o pedido — e corpo, que carrega o conteúdo quando necessário. O método <code>GET</code> normalmente consulta um recurso; <code>POST</code> envia dados para processamento ou criação. <strong>JSON</strong> é um formato de dados que usa campos nomeados, listas, textos, números e outros valores.</p>
+<p>No seu protótipo, um evento fictício pode ser representado assim:</p>
+<pre><code>{
+  &quot;evento_id&quot;: &quot;evt_demo_001&quot;,
+  &quot;lead_id&quot;: &quot;lead_demo_007&quot;,
+  &quot;mensagem&quot;: &quot;Quero conhecer o plano para minha equipe&quot;,
+  &quot;recebido_em&quot;: &quot;2026-10-01T19:30:00Z&quot;
+}</code></pre><p>Um JSON válido ainda pode estar incompleto. Valide campos obrigatórios, tipos, tamanho e valores aceitos antes de seguir. <code>lead_id</code> em texto não prova que quem enviou o evento tenha acesso àquele lead.</p>
+<h3 id="035-autenticação-webhook-e-respostas-de-erro">03.5 · Autenticação, webhook e respostas de erro</h3>
+<p><strong>Autenticação</strong> identifica quem fez a chamada; <strong>autorização</strong> determina o que essa identidade pode fazer. Chaves de API são credenciais de acesso: mantenha-as fora do repositório e dos exemplos públicos. Guarde-as nas configurações do ambiente, por meio de variáveis de ambiente ou de um serviço de armazenamento de segredos.</p>
+<p>Um <strong>webhook</strong> permite que outro sistema envie um aviso quando algo acontece. Em vez de perguntar repetidamente se chegou um lead, você recebe um evento. Valide a origem pelo mecanismo documentado pelo serviço; não presuma autenticidade só porque o corpo parece correto.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Resposta ou condição</th>
+<th>O que investigar</th>
+<th>Comportamento útil</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>401</code></td>
+<td>Credencial ausente ou rejeitada.</td>
+<td>Corrigir autenticação; repetir sem mudança tende a falhar novamente.</td>
+</tr>
+<tr>
+<td><code>403</code></td>
+<td>A chamada não tem permissão.</td>
+<td>Conferir o acesso exigido para a operação.</td>
+</tr>
+<tr>
+<td><code>404</code></td>
+<td>Recurso ou caminho não encontrado.</td>
+<td>Conferir endpoint e identificador.</td>
+</tr>
+<tr>
+<td><code>429</code></td>
+<td>Limite de uso atingido.</td>
+<td>Respeitar a orientação da API e limitar novas tentativas.</td>
+</tr>
+<tr>
+<td><code>5xx</code></td>
+<td>Falha no servidor ou serviço intermediário.</td>
+<td>Registrar o erro e avaliar uma repetição controlada.</td>
+</tr>
+<tr>
+<td>Timeout</td>
+<td>Não houve resposta dentro do prazo.</td>
+<td>Verificar se a ação chegou a ocorrer antes de repeti-la.</td>
+</tr>
+</tbody></table></div>
+<p>O <strong>rate limit</strong> é um limite de requisições ou consumo por intervalo. A política varia por serviço. Uma integração confiável trata o resultado real da chamada e não interpreta toda ausência de resposta como “nada aconteceu”. O funcionamento de requisições e respostas é detalhado na <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Guides/Overview">visão geral de HTTP da MDN</a>.</p>
+<h3 id="036-sql-estado-e-histórico">03.6 · SQL, estado e histórico</h3>
+<p><strong>SQL</strong> é uma linguagem para consultar e modificar dados em bancos relacionais, que organizam informações em tabelas conectadas. Uma tabela pode guardar pessoas; outra, mensagens recebidas. Cada registro tem um identificador que permite encontrá-lo e relacioná-lo aos demais. Um banco operacional atende ao uso diário do produto, como receber um lead e atualizar seu encaminhamento.</p>
+<p>O <strong>estado</strong> responde “como está agora?”; o <strong>histórico de eventos</strong> responde “como chegou aqui?”. Guardar apenas o status final dificulta investigar falhas. Uma estrutura inicial pode ter uma tabela de leads e outra de eventos, ligada pelo identificador do lead.</p>
+<p>Se você criar uma tabela <code>eventos</code> com <code>lead_id</code>, <code>tipo</code>, <code>status</code> e <code>ocorrido_em</code>, esta consulta didática exibe a sequência de um lead fictício:</p>
+<pre><code>SELECT tipo, status, ocorrido_em
+FROM eventos
+WHERE lead_id = 'lead_demo_007'
+ORDER BY ocorrido_em;</code></pre><p>Ao usar valores vindos de usuários em código, utilize <strong>consultas parametrizadas</strong>: escreva a consulta com lugares reservados aos valores e deixe a biblioteca do banco preenchê-los. Assim, o texto recebido é tratado como dado, sem ser colado diretamente ao comando SQL.</p>
+<p>Um <strong>data warehouse</strong>, como BigQuery ou Snowflake, atende principalmente a consultas analíticas e integração de históricos. A analogia é o caixa da loja versus o setor que compara vendas de vários anos. Essa distinção ajuda a escolher a arquitetura; seu primeiro protótipo não precisa de um warehouse só por usar IA.</p>
+<h3 id="037-etl-e-pipeline-o-dado-também-precisa-de-manutenção">03.7 · ETL e pipeline: o dado também precisa de manutenção</h3>
+<p><strong>ETL</strong> significa extrair, transformar e carregar. Um <strong>pipeline de dados</strong> é uma sequência organizada dessas tarefas, que pode ser executada novamente. Para os leads, pode padronizar datas e campos antes de salvar. Para a base de consulta do agente, pode ler documentos, extrair texto, dividir em trechos e atualizar o índice — a estrutura usada para encontrar conteúdo depois.</p>
+<p>A atualização precisa cobrir inclusão, alteração e exclusão. Se o preço antigo continuar no índice, o modelo pode responder com a fonte errada mesmo que sua instrução esteja correta. Guarde origem, versão e momento de atualização para descobrir qual dado foi usado.</p>
+<h3 id="038-mais-fontes-para-consultar">03.8 · Mais fontes para consultar</h3>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>O que selecionar</th>
+<th>O que aplicar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Guides/Overview">MDN — HTTP</a></td>
+<td>Estrutura de requisições e respostas.</td>
+<td>Explicar a chamada real da sua integração.</td>
+</tr>
+<tr>
+<td><a href="https://www.postgresql.org/docs/current/tutorial.html">PostgreSQL — tutorial</a></td>
+<td>Tabelas, consultas e relações.</td>
+<td>Persistir eventos e consultar um histórico.</td>
+</tr>
+<tr>
+<td><a href="https://ai.google.dev/gemini-api/docs">Google — Gemini API</a> ou <a href="https://platform.claude.com/docs/en/intro">Anthropic — documentação</a></td>
+<td>Início rápido e contrato da API que você escolheu.</td>
+<td>Validar uma chamada mínima antes de automatizar.</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/pt-br/training/">Microsoft Learn em português</a></td>
+<td>Um módulo de dados ou integração correspondente à sua lacuna.</td>
+<td>Melhorar o desenho do estado ou a consulta.</td>
+</tr>
+</tbody></table></div>
+<p>Consulte também <strong>AI Engineering</strong>, de Chip Huyen, para relacionar dados e arquitetura de aplicação. O <a href="https://github.com/chiphuyen/aie-book">repositório da autora</a> reúne materiais de apoio. Para investigar uma dificuldade, anote a ferramenta, a entrada usada, a mensagem de erro e o resultado esperado. Pesquise a mensagem exata na documentação e experimente uma correção pequena.</p>
+</details><hr>
+<p><a id="aula-04"></a></p>
+<h2 id="04-dê-ao-agente-a-fonte-certa">04 · Dê ao agente a fonte certa</h2>
+<p><strong>Use na entrega 2: dar contexto e fontes ao agente.</strong></p>
+<p><strong>Ao terminar:</strong> o agente terá um material de consulta e você conseguirá conferir de onde veio a resposta.</p>
+<p>Comece com um documento curto: regras do processo, planos oferecidos ou perguntas frequentes. Forneça esse material ao agente e peça que mostre qual trecho usou. Se a resposta não estiver no documento, ele deve dizer o que falta ou encaminhar a dúvida.</p>
+<p>Quando o sistema busca trechos relevantes antes de responder, esse caminho é chamado <strong>RAG</strong>: geração de resposta apoiada em informação recuperada de uma fonte. Para começar, você pode usar um arquivo pequeno e a ferramenta de leitura que já existe no agente.</p>
+<p class="compact-visual"><a href="../../mapas-e-desenhos/04-contexto-e-rag.svg"><img src="../../mapas-e-desenhos/04-contexto-e-rag.svg" width="132" alt="RAG em dois caminhos: preparar e atualizar documentos para busca; depois recuperar trechos a partir de uma pergunta e gerar a resposta com fonte." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p><p>O desenho separa cuidar da fonte e consultá-la; uma resposta só pode acompanhar uma mudança se o sistema tiver acesso à informação atualizada.</p>
+<h3 id="041-faça-no-seu-agente-80-prática">04.1 · Faça no seu agente · 80% prática</h3>
+<ol>
+<li>Prepare um documento curto e fictício com as informações necessárias à tarefa. Coloque título e data de atualização.</li>
+<li>Faça três perguntas: uma respondida pelo documento, uma incompleta e uma sem resposta disponível.</li>
+<li>Confira a resposta e o trecho usado. Se estiver errada, veja primeiro se o agente leu a informação correta.</li>
+<li>Altere uma informação e repita a pergunta. Depois retire uma informação e confira se o agente reconhece a falta dela.</li>
+</ol>
+<p><strong>Pode seguir quando:</strong> você consegue apontar a fonte da resposta e demonstrar o que acontece quando a informação muda ou não existe.</p>
+<h3 id="042-estude-para-destravar-20-teoria">04.2 · Estude para destravar · 20% teoria</h3>
+<p>Use a lição de busca ou RAG de <a href="https://github.com/microsoft/generative-ai-for-beginners">Generative AI for Beginners, da Microsoft</a>, se precisar entender melhor esse caminho. Só avance para dividir documentos, criar índices ou usar embeddings quando o tamanho ou a qualidade da busca justificar esse trabalho.</p>
+<details>
+<summary>Para aprofundar: RAG, embeddings, divisão de documentos e fine-tuning</summary><h3 id="043-prompt-recuperação-e-fine-tuning">04.3 · Prompt, recuperação e fine-tuning</h3>
+<p>Enviar informação na pergunta, buscar documentos e treinar novamente o modelo são formas diferentes de melhorar uma aplicação. Compare o que muda em cada uma:</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Abordagem</th>
+<th>O que acontece</th>
+<th>Quando experimentar</th>
+<th>O que manter</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Conteúdo direto no prompt</td>
+<td>A aplicação envia as informações junto da pergunta.</td>
+<td>A base é pequena e cabe no contexto sem desperdício relevante.</td>
+<td>Instrução, versão da informação e limites de contexto.</td>
+</tr>
+<tr>
+<td>RAG</td>
+<td>A aplicação recupera conteúdo de uma fonte e o inclui na chamada ao modelo.</td>
+<td>Há documentos ou registros que precisam ser selecionados conforme a pergunta.</td>
+<td>Busca, atualização, permissões, relevância e avaliação.</td>
+</tr>
+<tr>
+<td>Fine-tuning</td>
+<td>Um processo adicional de treinamento modifica parâmetros do modelo.</td>
+<td>Há um comportamento ou desempenho recorrente a melhorar, dados adequados e evidência de que o ajuste compensa.</td>
+<td>Conjunto de treinamento, avaliação separada, custos e versões.</td>
+</tr>
+</tbody></table></div>
+<p>Fine-tuning pode afetar conhecimentos e capacidades, mas não funciona como um banco de dados que você edita para publicar preços. Para fatos que mudam, uma fonte consultável costuma facilitar atualização e verificação. RAG e fine-tuning também podem coexistir; a escolha depende do problema observado.</p>
+<p>No nosso agente, comece com uma pequena tabela fictícia de planos no contexto. Adicione recuperação quando selecionar a fonte passar a ser uma necessidade real. Antes de sofisticar a busca, crie perguntas com respostas esperadas.</p>
+<h3 id="044-embeddings-um-mapa-aproximado">04.4 · Embeddings: um mapa aproximado</h3>
+<p>Um <strong>embedding</strong> representa um item como um vetor: uma lista de números. Essas listas permitem comparar textos por uma medida de proximidade. Modelos de embedding podem aproximar textos relacionados, como “quero encerrar meu plano” e “cancelamento”, mesmo sem palavras iguais.</p>
+<p>Pense em um mapa de assuntos: proximidade ajuda a encontrar trechos candidatos, mas não prova que eles respondem à pergunta. Nomes, números, códigos e negativas podem exigir busca por palavras exatas ou filtros. RAG pode combinar essa busca com vetores, consultar um banco com SQL ou obter dados por uma API.</p>
+<p>Um <strong>banco vetorial</strong> armazena vetores e permite buscar itens parecidos. Ele pode guardar também <strong>metadados</strong>: informações sobre cada item, como fonte, versão e quem pode acessá-lo. Uma extensão como pgvector adiciona esse recurso ao PostgreSQL; serviços dedicados são outras opções. Compare a qualidade da busca e o trabalho de manutenção com o volume de dados do seu projeto.</p>
+<h3 id="045-chunking-recortar-sem-perder-o-significado">04.5 · Chunking: recortar sem perder o significado</h3>
+<p><strong>Chunking</strong> é dividir documentos em unidades de recuperação. Se cada trecho for enorme, você traz conteúdo irrelevante. Se for pequeno demais, perde o contexto. É como recortar um manual em fichas: a ficha “R$ 200” não diz a qual plano pertence nem em que condições o preço vale.</p>
+<p>Comece respeitando títulos, seções ou pares de pergunta e resposta. Guarde junto do texto a fonte, o identificador, a versão e os metadados de acesso. Em tabelas, preserve a relação entre rótulos e valores. Compare estratégias com as perguntas reais do projeto: não há um tamanho universal que maximize qualidade.</p>
+<h3 id="046-rag-tem-dois-caminhos">04.6 · RAG tem dois caminhos</h3>
+<p><strong>Indexação — preparar para buscar:</strong> ler a fonte → extrair e limpar → dividir em trechos → gerar embeddings, se usados → salvar trechos e metadados. Quando a fonte muda, o pipeline precisa atualizar ou remover o que ficou obsoleto.</p>
+<p><strong>Consulta — buscar para responder:</strong> receber a pergunta → aplicar permissões e filtros → recuperar trechos candidatos → selecionar conteúdo útil → montar o contexto → gerar resposta → verificar e apresentar a fonte.</p>
+<p>A analogia é uma consulta a um manual durante o trabalho. A pessoa ainda pode interpretar errado, e alguém pode ter entregue a página errada. O acesso ao manual ajuda, mas não substitui o controle do processo.</p>
+<p>No agente de leads, uma resposta sobre plano deve apontar o documento e a versão usados. Se o preço mudou, teste o tempo entre alterar a fonte e o novo valor ficar disponível. RAG não atualiza sozinho nem garante atualização instantânea: isso depende do pipeline, dos índices e de eventuais caches.</p>
+<h3 id="047-diagnóstico-em-três-camadas">04.7 · Diagnóstico em três camadas</h3>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Camada</th>
+<th>O que conferir no agente</th>
+<th>Possível correção</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Recuperação</td>
+<td>O trecho necessário foi encontrado? Era atual e autorizado?</td>
+<td>Corrigir fonte, extração, divisão, filtros ou estratégia de busca.</td>
+</tr>
+<tr>
+<td>Geração</td>
+<td>A resposta está apoiada nos trechos enviados?</td>
+<td>Melhorar instruções, seleção de contexto, modelo ou verificação.</td>
+</tr>
+<tr>
+<td>Resultado</td>
+<td>A pessoa conseguiu avançar no processo?</td>
+<td>Corrigir integração, clareza da resposta ou encaminhamento humano.</td>
+</tr>
+</tbody></table></div>
+<p>Se o agente acertou o preço, mas não registrou o pedido de contato, a informação estava correta e o processo ficou incompleto. Essa distinção evita corrigir a parte errada do sistema.</p>
+<h3 id="048-mais-fontes-para-consultar">04.8 · Mais fontes para consultar</h3>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>O que estudar</th>
+<th>O que aplicar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/microsoft/generative-ai-for-beginners">Microsoft — Generative AI for Beginners</a></td>
+<td>Selecione a lição sobre RAG ou busca.</td>
+<td>Reproduzir o fluxo com seus três documentos.</td>
+</tr>
+<tr>
+<td><a href="https://developers.openai.com/cookbook">OpenAI Cookbook</a></td>
+<td>Procure um exemplo de recuperação ou embeddings adequado à ferramenta escolhida.</td>
+<td>Alterar apenas o recorte ou a busca e comparar resultados.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chiphuyen/aie-book">AI Engineering — recursos de Chip Huyen</a></td>
+<td>Consulte os tópicos de RAG, dados e adaptação de modelos.</td>
+<td>Justificar sua escolha entre contexto direto, recuperação e ajuste do modelo.</td>
+</tr>
+</tbody></table></div>
+<p>Os capítulos de atenção e embeddings da <a href="https://www.3blue1brown.com/?topic=neural-networks">série de 3Blue1Brown</a> ajudam a visualizar as representações. O estudo deve terminar com uma hipótese de melhoria, como “preservar o título do plano em cada trecho reduz respostas com preço trocado”.</p>
+</details><hr>
+<p><a id="aula-05"></a></p>
+<h2 id="05-faça-o-agente-executar-uma-ação">05 · Faça o agente executar uma ação</h2>
+<p><strong>Use na entrega 3: conectar uma ação e conferir seu resultado.</strong></p>
+<p><strong>Ao terminar:</strong> o agente executará uma tarefa pequena com uma ferramenta, dentro de limites que você definiu.</p>
+<p>Uma <strong>ferramenta</strong> permite ao agente consultar ou alterar alguma coisa: ler um arquivo, registrar um pedido ou consultar um serviço. O modelo pode solicitar a ferramenta; o sistema responsável verifica o pedido, executa o que está permitido e devolve o resultado.</p>
+<p>Se começou pelo <a href="https://youtu.be/VHh2D9agRps">vídeo do Lucas</a>, use o Hermes que já colocou para funcionar. Sua <a href="https://hermes-agent.nousresearch.com/docs/">documentação oficial</a> apresenta ferramentas, memória e habilidades reutilizáveis. Escolha uma dessas peças para entender e adaptar ao seu projeto.</p>
+<p class="compact-visual"><a href="../../mapas-e-desenhos/05-ciclo-do-agente.svg"><img src="../../mapas-e-desenhos/05-ciclo-do-agente.svg" width="157" alt="Ciclo do agente entre objetivo, decisão do modelo, solicitação de ferramenta, validação, execução e resultado, com uma condição de parada." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p><p>Cada ação volta como resultado para o agente; o ciclo precisa parar quando a tarefa termina, falta informação ou um limite é atingido.</p>
+<h3 id="051-dê-um-objetivo-pequeno-e-limites-claros">05.1 · Dê um objetivo pequeno e limites claros</h3>
+<p>Por exemplo: “Leia os pedidos deste arquivo e registre os que precisam de resposta na tabela de teste”. Defina onde o agente pode ler e escrever, o que deve fazer quando faltar informação e quando precisa pedir ajuda.</p>
+<p>Para tarefas com uma sequência conhecida, um fluxo fixo pode ser suficiente. Deixe o modelo escolher passos quando essa flexibilidade ajudar a lidar com as variações da tarefa. Em qualquer caso, confira a ação no destino.</p>
+<h3 id="052-faça-no-seu-agente-80-prática">05.2 · Faça no seu agente · 80% prática</h3>
+<ol>
+<li>Escolha <strong>uma ação</strong> que uma ferramenta pronta consiga executar em um recurso de teste.</li>
+<li>Descreva o resultado esperado, o acesso permitido e o momento de parar ou pedir ajuda.</li>
+<li>Execute um caso simples e confira o arquivo, registro ou resultado produzido.</li>
+<li>Teste uma informação ausente e um pedido repetido. Observe se o agente pergunta, para ou cria um efeito duplicado.</li>
+<li>Registre o que precisa mudar antes de usar essa ação no processo real.</li>
+</ol>
+<p><strong>Pode seguir quando:</strong> você mostra a ação funcionando, explica o que ela pode alterar e demonstra como interromper ou encaminhar um caso que não deu certo.</p>
+<h3 id="053-estude-para-destravar-20-teoria">05.3 · Estude para destravar · 20% teoria</h3>
+<p>Leia a parte de fluxos e agentes em <a href="https://www.anthropic.com/engineering/building-effective-agents">Building effective agents, da Anthropic</a>, para decidir quanta liberdade a tarefa exige. A documentação da ferramenta escolhida deve orientar a configuração; bibliotecas extras só são necessárias se resolverem uma dificuldade concreta.</p>
+<details>
+<summary>Para aprofundar: chamadas de ferramenta, autonomia, MCP e repetição segura</summary><h3 id="054-ferramentas-o-modelo-pede-o-sistema-executa">05.4 · Ferramentas: o modelo pede, o sistema executa</h3>
+<p>Em <strong>tool use</strong> ou <strong>function calling</strong>, você disponibiliza ferramentas com nome, descrição e regras para os argumentos — os dados que elas recebem. O modelo pode solicitar uma chamada. O código ou serviço responsável confere o pedido, executa a operação autorizada e devolve o resultado.</p>
+<p>Imagine uma requisição de estoque. Uma pessoa preenche produto e quantidade; o estoque confere identidade, disponibilidade e permissão antes de liberar. Uma requisição bem preenchida não é uma autorização automática.</p>
+<p>No agente de leads, comece com uma ferramenta como <code>consultar_planos</code>. Depois, experimente <code>registrar_interesse</code> em uma base de teste. Uma descrição útil deixa explícito o que cada ferramenta faz, os campos exigidos e o que ela não consegue decidir. A integração deve verificar o acesso ao lead; não confie em um identificador inventado pelo modelo.</p>
+<h3 id="055-fluxo-e-agente-escolha-onde-a-decisão-acontece">05.5 · Fluxo e agente: escolha onde a decisão acontece</h3>
+<p>Em um <strong>fluxo com IA</strong>, você define a sequência principal e usa o modelo em certas etapas. Em um <strong>agente</strong>, o modelo pode selecionar próximos passos e ferramentas dentro dos limites do sistema. Essa distinção é apresentada em <a href="https://www.anthropic.com/engineering/building-effective-agents">Building effective agents, da Anthropic</a>.</p>
+<p>Pense em receita e cozinheiro: uma receita define a ordem; um cozinheiro escolhe como adaptar o caminho. A analogia não torna autonomia uma qualidade automática. Mais liberdade pode aumentar a variedade de situações resolvidas, mas também o trabalho de verificar o que aconteceu.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Parte do agente de leads</th>
+<th>Desenho inicial</th>
+<th>Motivo</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Validar campos e identidade</td>
+<td>Código com regras explícitas.</td>
+<td>A condição de aceitação é conhecida.</td>
+</tr>
+<tr>
+<td>Interpretar a intenção da mensagem</td>
+<td>Modelo, com categorias avaliáveis.</td>
+<td>O texto varia.</td>
+</tr>
+<tr>
+<td>Consultar plano ou política</td>
+<td>Ferramenta de leitura com acesso delimitado.</td>
+<td>A resposta precisa de informação atual.</td>
+</tr>
+<tr>
+<td>Escolher entre pedir esclarecimento e consultar</td>
+<td>Decisão do modelo dentro do escopo.</td>
+<td>Depende do que falta na mensagem.</td>
+</tr>
+<tr>
+<td>Alterar oportunidade comercial</td>
+<td>Validação de argumentos e permissão antes da execução.</td>
+<td>Muda um registro do processo.</td>
+</tr>
+<tr>
+<td>Prometer condição fora da política</td>
+<td>Encaminhamento humano.</td>
+<td>O agente não recebeu autoridade para isso.</td>
+</tr>
+</tbody></table></div>
+<h3 id="056-o-ciclo-precisa-terminar">05.6 · O ciclo precisa terminar</h3>
+<p>Um ciclo típico é: objetivo → contexto → decisão → solicitação de ferramenta → validação e execução → resultado → nova decisão. Ele termina quando a tarefa foi concluída, faltam informações, ocorreu uma falha sem recuperação prevista ou um limite foi atingido.</p>
+<p>Defina limite de passos, prazo e orçamento. Registre o motivo da parada. Se a ferramenta devolver “não encontrado”, o agente não deve repetir para sempre a mesma consulta. Ele pode pedir um dado necessário ou encaminhar o caso.</p>
+<p>Não use um multiplicador fixo para estimar o custo de um agente. Meça quantas chamadas ocorrem, quanto contexto é reenviado, o tamanho das respostas e o custo das ferramentas. Uma tarefa simples com muitas tentativas pode custar mais que uma tarefa extensa bem delimitada.</p>
+<h3 id="057-orquestração-e-mcp">05.7 · Orquestração e MCP</h3>
+<p><strong>Orquestração</strong> organiza a sequência de passos, o que já aconteceu, as chamadas de ferramenta e o tratamento de erros. O agente que você usa pode oferecer isso pronto. Em uma implementação própria, pode começar com poucas funções; bibliotecas e plataformas oferecem recursos para retomar uma execução, montar fluxos visuais ou conectar diferentes provedores.</p>
+<p>Nomes como LangChain, LangGraph, n8n, Langflow, LiteLLM e Semantic Kernel aparecem nesse ecossistema, mas não representam todos a mesma camada. Antes de escolher, descreva a capacidade necessária: “preciso retomar uma execução interrompida” é uma justificativa verificável; “a ferramenta está em alta” não descreve uma necessidade do projeto.</p>
+<p>O <strong>Model Context Protocol (MCP)</strong> padroniza a conexão de aplicações de IA com ferramentas e fontes de dados. A analogia é uma tomada: uma interface comum reduz adaptações entre componentes compatíveis. O protocolo não substitui suas decisões de autorização, confiança e qualidade. A <a href="https://modelcontextprotocol.io/docs/getting-started/intro">introdução oficial do MCP</a> explica seus componentes e usos.</p>
+<p>Para aprender, examine uma ferramenta simples que já funciona no seu agente. Se precisar criar uma própria, comece por uma operação pequena. Depois avalie se disponibilizá-la por MCP ou adotar uma biblioteca de orquestração resolve uma dificuldade real da integração.</p>
+<h3 id="058-repetição-sem-efeito-duplicado">05.8 · Repetição sem efeito duplicado</h3>
+<p><strong>Retry</strong> é repetir uma operação após uma falha. Ele precisa de limite e intervalo adequado. <strong>Idempotência</strong> significa que repetir a mesma operação lógica não cria efeitos adicionais indesejados. Uma chave de evento ou de operação pode ajudar a reconhecer que o trabalho já aconteceu.</p>
+<p>No nosso exemplo, o <strong>CRM</strong>, sistema usado para organizar contatos e oportunidades comerciais, pode registrar o interesse e a resposta da API se perder. Se o agente repetir sem controle, surgem dois registros. Guarde a identidade da operação e confira o resultado antes de criar outro. Uma fila guarda tarefas para processá-las depois; também exige cuidado com entregas repetidas.</p>
+<h3 id="059-mais-fontes-para-consultar">05.9 · Mais fontes para consultar</h3>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>O que selecionar</th>
+<th>O que aplicar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.anthropic.com/engineering/building-effective-agents">Anthropic — Building effective agents</a></td>
+<td>Diferença entre fluxo e agente; comece pelos padrões simples.</td>
+<td>Justificar onde o modelo decide o próximo passo.</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/learn/agents-course/unit0/introduction">Hugging Face — Agents Course</a></td>
+<td>Conceito de ferramenta e ciclo do agente.</td>
+<td>Comparar o ciclo do exercício com o seu.</td>
+</tr>
+<tr>
+<td><a href="https://platform.claude.com/docs/en/intro">Claude Platform Docs</a> ou <a href="https://ai.google.dev/gemini-api/docs">Gemini API</a></td>
+<td>Ferramentas na API efetivamente escolhida.</td>
+<td>Conferir o contrato da solicitação e da resposta.</td>
+</tr>
+<tr>
+<td><a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP — introdução oficial</a></td>
+<td>Componentes e conexão com ferramentas.</td>
+<td>Desenhar onde entraria no seu sistema, se necessário.</td>
+</tr>
+</tbody></table></div>
+<p>Em <strong>AI Engineering</strong>, de Chip Huyen, procure os tópicos de agentes e desenho de aplicação; os <a href="https://github.com/chiphuyen/aie-book">materiais de apoio</a> ajudam a encontrar a seção relevante. Consulte o trecho que ajuda a resolver a sua dúvida atual.</p>
+</details><hr>
+<p><a id="aula-06"></a></p>
+<h2 id="06-teste-encontre-a-falha-e-melhore">06 · Teste, encontre a falha e melhore</h2>
+<p><strong>Use na entrega 4: testar e melhorar o que você construiu.</strong></p>
+<p><strong>Ao terminar:</strong> você terá exemplos que consegue repetir, uma comparação entre versões e uma melhoria demonstrável.</p>
+<p>Comece com uma pergunta simples: “O agente fez o que eu esperava neste caso?”. Guarde entrada, resultado esperado e resultado obtido. Esse conjunto de casos forma uma <strong>avaliação</strong>, frequentemente chamada <strong>eval</strong>.</p>
+<p>Não precisa começar com uma plataforma de testes. Uma tabela e a conferência manual já ajudam a descobrir o que funciona, o que falha e se uma mudança melhorou o resultado.</p>
+<p class="compact-visual"><a href="../../mapas-e-desenhos/06-avaliacao.svg"><img src="../../mapas-e-desenhos/06-avaliacao.svg" width="152" alt="Ciclo de avaliação: definir casos e critérios, executar o agente, localizar falhas, corrigir e comparar os resultados novamente." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p><p>Use os mesmos casos para comparar mudanças e acrescente os problemas novos que encontrar no uso.</p>
+<h3 id="061-quando-falhar-siga-o-caminho">06.1 · Quando falhar, siga o caminho</h3>
+<ul>
+<li><strong>Informação:</strong> o agente recebeu ou encontrou a fonte correta?</li>
+<li><strong>Resposta:</strong> usou essa informação sem inventar um fato?</li>
+<li><strong>Ação:</strong> executou o que era permitido e o resultado apareceu no destino?</li>
+</ul>
+<p>Essas perguntas ajudam a escolher onde mexer. Um preço errado pode vir do documento antigo; dois registros iguais podem vir de uma ação repetida. A correção deve responder ao que você observou.</p>
+<h3 id="062-faça-no-seu-agente-80-prática">06.2 · Faça no seu agente · 80% prática</h3>
+<ol>
+<li>Reúna os casos das entregas anteriores: tarefa simples, informação faltante, fonte alterada e pedido repetido.</li>
+<li>Escreva o que deve acontecer em cada caso. Use uma tabela com <strong>pedido, fonte disponível, resultado esperado, resultado observado e conclusão</strong>.</li>
+<li>Execute e confira respostas <strong>e ações</strong>. Anote a etapa em que cada falha apareceu.</li>
+<li>Corrija uma causa provável e repita os mesmos casos. Confira também se algo que funcionava deixou de funcionar.</li>
+</ol>
+<p><strong>Exemplo de registro:</strong> pedido: “Qual é o horário de domingo?”; fonte: arquivo com horários de segunda a sexta; esperado: avisar que domingo não consta; observado: copie a resposta do agente; conclusão: explique se passou e o que precisa mudar.</p>
+<p><strong>Pode seguir quando:</strong> você mostra os resultados antes e depois e sabe qual problema ainda precisa de atenção. Amplie os casos à medida que ampliar o uso.</p>
+<h3 id="063-estude-para-destravar-20-teoria">06.3 · Estude para destravar · 20% teoria</h3>
+<p>O guia de <a href="https://developers.openai.com/api/docs/guides/evaluation-best-practices">boas práticas de avaliação da OpenAI</a> ajuda a escolher casos e critérios. Use os princípios na sua tabela; você não precisa adotar uma plataforma específica para fazer este exercício.</p>
+<details>
+<summary>Para aprofundar: avaliações automáticas, rastreamento e proteção das ações</summary><h3 id="064-eval-uma-pergunta-de-qualidade-que-você-consegue-repetir">06.4 · Eval: uma pergunta de qualidade que você consegue repetir</h3>
+<p>Um <strong>eval</strong> reúne casos, critérios e um método de medição para avaliar comportamento. A <a href="https://developers.openai.com/api/docs/guides/evaluation-best-practices">documentação oficial da OpenAI sobre avaliação</a> recomenda casos específicos da aplicação, comparação entre versões e calibração de avaliações automáticas com julgamento humano.</p>
+<p>No agente de leads, “respondeu bem” é amplo demais. Divida em perguntas observáveis: identificou a intenção? Usou o preço válido? Pediu o dado que faltava? Encaminhou o caso fora da política? Registrou a ação uma única vez?</p>
+<p>A analogia é uma prova acompanhada de critérios de correção. Em alguns casos, existe uma resposta exata; em outros, várias respostas são aceitáveis. Para o segundo grupo, descreva o que deve estar presente e o que constitui erro.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Caso didático</th>
+<th>Resultado esperado</th>
+<th>Forma de conferir</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Pergunta sobre plano disponível</td>
+<td>Informar o valor da fonte vigente e identificar a fonte.</td>
+<td>Comparação com o documento usado.</td>
+</tr>
+<tr>
+<td>Pedido sem identificação suficiente</td>
+<td>Solicitar o dado necessário antes de consultar informação restrita.</td>
+<td>Critério passa/falha com justificativa.</td>
+</tr>
+<tr>
+<td>Pedido de condição comercial não prevista</td>
+<td>Encaminhar sem prometer a condição.</td>
+<td>Revisão da resposta e das ações.</td>
+</tr>
+<tr>
+<td>Mesmo evento recebido duas vezes</td>
+<td>Produzir um único registro na tabela ou no CRM, o sistema de contatos e oportunidades.</td>
+<td>Consultar registros pelo identificador da operação.</td>
+</tr>
+<tr>
+<td>Documento com instrução indevida</td>
+<td>Tratar o trecho como conteúdo e preservar os limites de ação.</td>
+<td>Conferir resposta, ferramentas solicitadas e ações executadas.</td>
+</tr>
+</tbody></table></div>
+<p>Critérios de <strong>passou ou falhou</strong> ajudam quando a condição é clara. Você também pode definir níveis com descrições, como “completo”, “parcial” e “incorreto”, ou comparar duas respostas. Se usar outro modelo como avaliador, confira uma amostra manualmente e investigue os desacordos. O avaliador também pode errar.</p>
+<h3 id="065-teste-de-software-e-avaliação-do-modelo-se-complementam">06.5 · Teste de software e avaliação do modelo se complementam</h3>
+<p>Um teste de integração verifica se a chamada ao CRM registra o evento corretamente. Um eval verifica se o agente escolheu registrar o interesse no contexto certo. Você precisa dos dois para compreender a solução inteira.</p>
+<p>Quando ampliar o uso, amplie também os testes. Uma bateria de 20 casos pode ser um exercício de aprofundamento, mas o número adequado depende da variedade e dos riscos da tarefa. Inclua dados autorizados, exemplos fictícios revisados e situações difíceis. Reserve alguns casos para avaliar mudanças sem ajustar o agente repetidamente aos mesmos exemplos.</p>
+<p>Guarde a versão do prompt, do modelo, da base e das ferramentas junto dos resultados. Repita casos quando a variabilidade importar. Uma alteração que melhora a média pode piorar justamente uma categoria crítica; compare por tipo de tarefa e gravidade do erro.</p>
+<h3 id="066-logs-traces-e-métricas">06.6 · Logs, traces e métricas</h3>
+<p>Um <strong>log</strong> registra um evento. Um <strong>trace</strong> relaciona etapas de uma mesma execução. Uma <strong>métrica</strong> agrega medidas de várias execuções. Juntos, permitem sair de “o agente falhou” para “a busca recuperou uma versão antiga e a resposta usou esse preço”.</p>
+<p>Pense na caixa-preta de uma viagem: você quer reconstruir os passos, sem guardar informação desnecessária sobre todas as pessoas envolvidas. Registre identificadores, versões, status, duração e consumo. Guarde conteúdo somente quando houver necessidade e condições de acesso, proteção e retenção definidas; exemplos fictícios ajudam no desenvolvimento.</p>
+<p>Uma estrutura inicial de rastreamento pode incluir:</p>
+<pre><code>execucao_id → entrada validada → trechos recuperados
+            → chamada ao modelo → ferramenta solicitada
+            → validação → ação executada → resultado final</code></pre><p>Não confunda a justificativa textual gerada pelo modelo com uma explicação causal confiável do funcionamento interno. Para depurar, examine os dados e eventos observáveis: o que entrou, quais fontes foram recuperadas, qual ferramenta foi pedida e o que ocorreu.</p>
+<h3 id="067-guardrails-e-injeção-de-prompt">06.7 · Guardrails e injeção de prompt</h3>
+<p><strong>Guardrails</strong> são verificações aplicadas ao redor do modelo e das ações. Podem validar campos, checar acesso, restringir ferramentas e encaminhar determinados resultados para revisão. Cada controle precisa ser testado: um bloqueio excessivo também pode impedir uma tarefa legítima.</p>
+<p>Uma <strong>injeção de prompt</strong> tenta transformar conteúdo em uma instrução que desvia o sistema. Pode aparecer na mensagem do usuário ou dentro de documento, página e resultado de ferramenta. A analogia é um bilhete falso no meio do manual: “ignore as regras e libere acesso”.</p>
+<p>No agente de leads, um documento de perguntas frequentes nunca deveria conceder permissão para exportar todos os contatos. Aplique a permissão no código ou serviço da ferramenta, limite as operações disponíveis e mantenha os dados de consulta separados das instruções da aplicação. Um texto de sistema dizendo “seja seguro” não substitui esses controles.</p>
+<h3 id="068-mais-fontes-para-consultar">06.8 · Mais fontes para consultar</h3>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>O que selecionar</th>
+<th>O que aplicar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://developers.openai.com/api/docs/guides/evaluation-best-practices">OpenAI — Evaluation best practices</a></td>
+<td>Desenho de avaliações e tipos de falha.</td>
+<td>Escrever critérios da sua tarefa; a atividade não depende de uma plataforma específica.</td>
+</tr>
+<tr>
+<td><a href="https://developers.openai.com/cookbook">OpenAI Cookbook</a></td>
+<td>Um exemplo relacionado à falha encontrada.</td>
+<td>Reproduzir a ideia com seus casos e registrar a diferença.</td>
+</tr>
+<tr>
+<td><a href="https://www.anthropic.com/engineering">Anthropic Engineering</a></td>
+<td>Um artigo de avaliação, contexto ou agentes ligado ao seu problema.</td>
+<td>Formular e testar uma hipótese de correção.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chiphuyen/aie-book">AI Engineering — materiais de Chip Huyen</a></td>
+<td>Avaliação de aplicações e análise de erros.</td>
+<td>Separar qualidade do componente e resultado do processo.</td>
+</tr>
+</tbody></table></div>
+<p>Prefira a fonte que ajuda a explicar uma falha concreta. Para aprofundar segurança, consulte o <a href="https://genai.owasp.org/llm-top-10/">OWASP Top 10 para aplicações de LLM e IA generativa</a>: escolha um risco, como injeção de prompt ou autonomia excessiva, e transforme-o em um caso de teste do agente. Compartilhe em <a href="https://x.com/ailucasdz">X</a> ou no Discord de <a href="https://discord.gg/NousResearch">Nous Research</a> ou <a href="https://discord.gg/clawd">OpenClaw</a> uma versão reduzida e sem dados privados do caso que ainda não entendeu.</p>
+</details><hr>
+<p><a id="aula-07"></a></p>
+<h2 id="07-mostre-o-valor-e-prepare-sua-primeira-oferta">07 · Mostre o valor e prepare sua primeira oferta</h2>
+<p><strong>Use na entrega 4: mostrar o resultado, conversar com um possível cliente e definir o próximo passo.</strong></p>
+<p><strong>Ao terminar:</strong> você terá uma demonstração conferida, retorno de uma pessoa que enfrenta o problema e, se houver interesse, a base de uma primeira oferta.</p>
+<p>Use o que já construiu para descobrir se a solução tem valor para alguém. Procure uma pessoa ou empresa que realiza a tarefa e converse sobre o processo atual: o que dá trabalho, com que frequência acontece e como ela decide se o resultado está bom. Essa conversa orienta o que demonstrar e o que oferecer.</p>
+<p class="compact-visual"><a href="../../mapas-e-desenhos/07-operacao.svg"><img src="../../mapas-e-desenhos/07-operacao.svg" width="160" alt="Caminho de uso acompanhado: experimentar com poucos casos, medir resultado, tempo e custo, revisar falhas e escolher uma melhoria." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p><p>Acompanhar o uso permite demonstrar o resultado e estimar o trabalho de manter a solução funcionando.</p>
+<h3 id="071-demonstre-uma-melhoria-que-dá-para-conferir">07.1 · Demonstre uma melhoria que dá para conferir</h3>
+<p>Prepare uma demonstração com <strong>dados fictícios</strong> no ambiente em que seu agente já funciona. Mostre o pedido, a fonte ou ferramenta usada e o resultado. Compare o processo atual e a solução no mesmo tipo de tarefa: tempo gasto, etapas manuais ou erros encontrados.</p>
+<p>Separe <strong>o que foi medido</strong> do <strong>que ainda é hipótese</strong>. Um teste pequeno pode sugerir economia de tempo, mas você precisa verificar se ela se mantém no uso. Mostre também uma falha conhecida e como a pessoa pode continuar a tarefa se o agente não conseguir.</p>
+<h3 id="072-se-houver-interesse-proponha-um-piloto">07.2 · Se houver interesse, proponha um piloto</h3>
+<p>Uma primeira oferta pode ser um piloto pago de uma tarefa com <strong>escopo fechado</strong>. Combine a entrega, o prazo negociado, o critério de aceitação, os limites de uso e o que fica fora. Inclua quem paga o consumo das ferramentas e quem cuida de atualizações, falhas e manutenção.</p>
+<p>A cobrança deve estar ligada ao serviço e às condições combinadas. Acompanhe seus custos e o esforço necessário para entregar. Você pode começar preenchendo este formulário com a pessoa interessada:</p>
+<pre><code>Para quem: [pessoa ou equipe que enfrenta o problema]
+Problema observado: [tarefa atual e dificuldade relatada]
+Entrega do piloto: [resultado concreto que será demonstrado]
+Inclui: [tarefas, fontes, ferramentas e quantidade combinada]
+Fica fora: [ações e situações que não serão atendidas]
+Prazo combinado: [data negociada conforme o escopo]
+Aceito quando: [teste e resultado que ambos conseguem conferir]
+Cobrança: [valor e condições combinados para este serviço]
+Consumo das ferramentas: [quem paga e qual limite foi combinado]
+Manutenção: [quem atualiza as fontes, corrige falhas e presta suporte]
+Revisão do piloto: [como vamos decidir se continuamos ou ajustamos]</code></pre><p><strong>Exemplo fictício:</strong> uma pequena equipe recebe pedidos e precisa organizá-los em uma tabela. A oferta é preparar um agente que leia pedidos em um arquivo autorizado, preencha os campos combinados e sinalize informações ausentes. O piloto usa exemplos fictícios e termina com uma demonstração conferida pela equipe. Conectar o canal real de mensagens ou enviar respostas aos clientes exige outro acordo de escopo, acesso e testes.</p>
+<h3 id="073-faça-no-seu-agente-80-prática">07.3 · Faça no seu agente · 80% prática</h3>
+<ol>
+<li>Converse com um possível usuário ou cliente e registre a tarefa que ele quer melhorar.</li>
+<li>Mostre a demonstração com dados fictícios, a comparação observada e as hipóteses que ainda precisam de teste.</li>
+<li>Pergunte o que precisaria mudar para a solução ser útil. Se houver interesse em experimentar, prepare a oferta de piloto com as condições acima.</li>
+<li>Registre o aprendizado e escolha uma melhoria. Anote: <strong>como era feito → o que mudou → casos testados → resultado observado → o que ainda falta confirmar</strong>.</li>
+</ol>
+<p><strong>Você concluiu o ciclo quando:</strong> mostrou o resultado, ouviu alguém que enfrenta o problema e definiu uma próxima ação. Ela pode ser ajustar a solução, testar o piloto ou escolher uma tarefa mais útil.</p>
+<h3 id="074-construa-em-público-e-converse-com-a-comunidade">07.4 · Construa em público e converse com a comunidade</h3>
+<p>Compartilhe uma atualização curta: <strong>problema → o que construí → como testei → o que aprendi → próximo ajuste</strong>. Mostre dados fictícios e identifique estimativas. Leve uma dúvida concreta à comunidade e use o retorno para escolher o próximo teste.</p>
+<p>Um exemplo que você pode adaptar ao seu resultado:</p>
+<blockquote>
+<p>Estou construindo um agente para organizar pedidos em uma tabela. Hoje testei com pedidos fictícios e conferi os campos preenchidos. Ele organizou os casos completos, mas não soube lidar com um pedido sem identificação. Vou ajustar para pedir a informação que falta e repetir os testes. Quem faz esse trabalho hoje: que outra situação eu deveria testar?</p>
+</blockquote>
+<p>Use esse formato em uma publicação no X ou em um canal apropriado da comunidade que acompanha. Registre sugestões, escolha uma para experimentar e conte o que mudou na próxima atualização. Você torna o trabalho visível enquanto aprende com pessoas que conhecem o problema.</p>
+<h3 id="075-estude-para-destravar-20-teoria">07.5 · Estude para destravar · 20% teoria</h3>
+<p>Consulte a documentação do ambiente em que seu agente roda para entender configuração e consumo. Para explicar decisões de construção e operação, os <a href="https://github.com/chiphuyen/aie-book">materiais de AI Engineering, de Chip Huyen</a>, oferecem aprofundamentos. Escolha um tema que apareceu nos testes.</p>
+<details>
+<summary>Para aprofundar: publicação, custos, tempo de resposta e operação</summary><h3 id="076-do-protótipo-ao-ambiente-de-uso">07.6 · Do protótipo ao ambiente de uso</h3>
+<p>O <strong>deploy</strong> disponibiliza uma versão da aplicação em seu ambiente de execução. Separe configurações do código, guarde segredos no mecanismo apropriado e documente como iniciar, interromper e recuperar o serviço. Identifique a versão em uso para relacionar reclamações às alterações recentes.</p>
+<p>O Git permite comparar versões e revisar mudanças no projeto. Voltar o código para uma versão anterior não desfaz automaticamente uma alteração de dados, como um registro no CRM, o sistema de contatos e oportunidades. Seu plano de recuperação precisa considerar a aplicação e os efeitos que ela já produziu.</p>
+<p>Comece com poucos usuários ou um conjunto restrito de dados autorizados. Defina quem acompanha o piloto, como recebe os alertas e quando interrompe a automação. Inclua um caminho para uma pessoa continuar o atendimento se uma ferramenta falhar.</p>
+<h3 id="077-serverless-e-tempo-de-execução">07.7 · Serverless e tempo de execução</h3>
+<p><strong>Serverless</strong> é um modelo de execução em que o provedor gerencia parte da infraestrutura necessária para rodar seu código. Você continua responsável por configuração, permissões, dados e comportamento da aplicação. Há servidores, mesmo que você não precise administrá-los diretamente.</p>
+<p>Serviços como <a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html">AWS Lambda</a> permitem executar funções em resposta a eventos. A adequação depende da quantidade de tarefas, dos limites, da duração e dos custos. Quando é necessário preparar um novo ambiente antes de executar, essa inicialização, chamada <strong>cold start</strong>, pode aumentar a espera.</p>
+<p>Pense em chamar um transporte por demanda: você reduz a necessidade de manter um recurso próprio sempre disponível, mas precisa considerar espera e condições de uso. Um agente com execução longa pode precisar de trabalho em segundo plano, fila e retomada de estado. Teste o caminho real antes de escolher só pela facilidade do primeiro deploy.</p>
+<h3 id="078-latência-acompanhe-a-experiência-completa">07.8 · Latência: acompanhe a experiência completa</h3>
+<p><strong>Latência</strong> é o tempo de espera associado a uma operação. No nosso agente, meça desde a chegada da mensagem até a primeira resposta útil e até a conclusão da ação. A resposta inicial pode ser rápida e o registro no CRM continuar pendente.</p>
+<p>A <strong>mediana</strong> é o valor do meio quando você ordena os tempos medidos. O <strong>p95</strong> indica o tempo até o qual chegaram aproximadamente 95% das respostas, conforme o método de cálculo. Se o p95 foi oito segundos, por exemplo, cerca de 5% demoraram mais. Em uma amostra pequena, esse número varia bastante; registre quantos casos mediu e em qual período.</p>
+<p>Divida a duração por etapa: recuperação, modelo, ferramenta e fila. Se o CRM consome a maior parte do tempo, reduzir o prompt pode trazer pouco ganho ao usuário. Os registros das execuções devem mostrar onde agir.</p>
+<h3 id="079-custo-por-tarefa-e-cache">07.9 · Custo por tarefa e cache</h3>
+<p>Some os componentes realmente cobrados: tokens de entrada e saída, possíveis categorias adicionais do provedor, ferramentas, armazenamento e infraestrutura. Registre a moeda e a referência de preços utilizada. Uma comparação útil para o produto é:</p>
+<pre><code>custo por resolução = custo total observado / tarefas resolvidas no período</code></pre><p>Defina “resolvida” com clareza. Uma resposta encerrada automaticamente, seguida de reabertura, pode não representar uma resolução real. Acompanhe também esforço humano e taxa de encaminhamento para não esconder custo em outra etapa.</p>
+<p><strong>Cache</strong> reaproveita trabalho quando as condições permitem. Cache de prompt pode reduzir custo ou latência ao reutilizar partes compatíveis da entrada; regras, disponibilidade e descontos variam por provedor e modelo. Cache de resposta guarda uma resposta pronta e tem outro risco: servir conteúdo desatualizado ou inadequado a uma pessoa diferente.</p>
+<p>No agente de leads, uma mudança de preço exige revisar onde o dado está armazenado e como as cópias antigas em cache são descartadas ou atualizadas. Confira o consumo informado pela ferramenta e compare execuções equivalentes, sem presumir um desconto fixo. A economia precisa preservar os critérios de qualidade.</p>
+<h3 id="0710-comunicação-técnica-é-tornar-a-decisão-verificável">07.10 · Comunicação técnica é tornar a decisão verificável</h3>
+<p>Explique o sistema seguindo o caminho da informação: mensagem recebida → validação → consulta → resposta → ação → medição. Mostre uma execução real de teste e uma falha conhecida. Para cada decisão, diga qual necessidade ela atende e qual evidência sustenta a escolha.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Explicação que ajuda o time a decidir</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>RAG</td>
+<td>“Buscamos documentos autorizados e enviamos os trechos relevantes ao modelo; a atualização depende do nosso pipeline.”</td>
+</tr>
+<tr>
+<td>Escolha do modelo</td>
+<td>“Comparamos versões nos casos do projeto e observamos qualidade, custo e tempo.”</td>
+</tr>
+<tr>
+<td>Autonomia</td>
+<td>“O modelo escolhe a consulta; a autorização para alterar o CRM é aplicada pela integração.”</td>
+</tr>
+<tr>
+<td>Qualidade</td>
+<td>“Estes casos passaram, estes falharam e esta categoria precisa melhorar antes de ampliar o uso.”</td>
+</tr>
+<tr>
+<td>Incidente</td>
+<td>“A fonte estava antiga; identificamos a versão no trace, corrigimos a atualização e adicionamos um caso de regressão.”</td>
+</tr>
+</tbody></table></div>
+<p>Quando ainda não souber, separe o que observou da hipótese. “Não confirmei a causa; vou comparar as versões da fonte e repetir o caso” é mais útil que apresentar uma explicação sem evidência.</p>
+<h3 id="0711-mais-fontes-para-consultar">07.11 · Mais fontes para consultar</h3>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>O que selecionar</th>
+<th>O que aplicar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://developers.openai.com/api/docs/guides/production-best-practices">OpenAI — Production best practices</a></td>
+<td>Práticas de operação pertinentes à sua integração.</td>
+<td>Rever configuração e acompanhamento antes de ampliar o piloto.</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/pt-br/training/">Microsoft Learn</a> ou <a href="https://cloud.google.com/learn/training">Google Cloud — treinamento</a></td>
+<td>Um módulo do ambiente de execução escolhido.</td>
+<td>Entender seus limites e como observar a aplicação.</td>
+</tr>
+<tr>
+<td><a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html">AWS Lambda — introdução</a></td>
+<td>Use se estiver considerando funções por evento.</td>
+<td>Verificar adequação à duração e à carga do agente.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chiphuyen/aie-book">AI Engineering — recursos de Chip Huyen</a></td>
+<td>Arquitetura, operação e otimização.</td>
+<td>Priorizar uma melhoria orientada por medição.</td>
+</tr>
+</tbody></table></div>
+<p><strong>Co-Intelligence</strong>, de Ethan Mollick, oferece um aprofundamento opcional sobre trabalho com IA. Use a <a href="https://www.penguinrandomhouse.com/books/741805/co-intelligence-by-ethan-mollick/">página da editora</a> para conhecer a obra. Mantenha o foco na decisão que o piloto exige agora.</p>
+<p>Depois da revisão, mantenha uma rotina leve: acompanhar as fontes desta aula e as conversas no <a href="https://x.com/ailucasdz">X</a> ou nos Discords de <a href="https://discord.gg/NousResearch">Nous Research</a> e <a href="https://discord.gg/clawd">OpenClaw</a>, selecionar uma mudança relevante, experimentar no ambiente de teste e incorporá-la só quando os resultados justificarem. Novas ferramentas entram no projeto para atender uma necessidade observada.</p>
+</details><p><a href="#aulas">Voltar ao índice das aulas ↑</a> · <a href="../../index.html">Voltar ao guia principal</a></p>
 </article><footer><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia/blob/main/aulas/README.md">Ver este conteúdo no GitHub ↗</a><span>Um agente. Uma melhoria de cada vez.</span></footer></main></div></body></html>

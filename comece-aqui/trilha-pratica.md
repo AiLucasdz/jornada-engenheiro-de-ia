@@ -6,7 +6,7 @@
 
 O foco inicial é usar modelos e ferramentas existentes para resolver uma tarefa pequena. As aulas explicam o essencial e oferecem aprofundamentos para quando precisar. **80% do tempo construindo e testando, 20% estudando.**
 
-![Quatro entregas: começar com Hermes, dar contexto, conectar uma ação e testar e demonstrar.](../mapas-e-desenhos/panorama.svg)
+<p class="compact-visual"><a href="../mapas-e-desenhos/panorama.svg"><img src="../mapas-e-desenhos/panorama.svg" width="135" alt="Quatro entregas: começar com Hermes, dar contexto, conectar uma ação e testar e demonstrar." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p>
 
 ## 1 · Coloque seu primeiro agente para funcionar
 
@@ -18,7 +18,7 @@ O foco inicial é usar modelos e ferramentas existentes para resolver uma tarefa
 
 **Está pronto quando:** o agente executa uma tarefa simples e você consegue explicar o que pediu e o que recebeu.
 
-[Entender modelo e agente](../aulas/02-modelos-e-aprendizado.md) · [Escolher um problema](../aulas/01-historia-e-problemas.md) · [Anotar sua ideia](../pratique/ficha-do-projeto.md)
+[Entender modelo e agente](../aulas/README.md#aula-02) · [Escolher um problema](../aulas/README.md#aula-01) · [Anotar sua ideia](../pratique/ficha-do-projeto.md)
 
 ## 2 · Dê contexto e fontes ao agente
 
@@ -30,7 +30,7 @@ O foco inicial é usar modelos e ferramentas existentes para resolver uma tarefa
 
 **Está pronto quando:** você consegue localizar a fonte das respostas e identificar uma falha para corrigir. Se o agente inventar uma informação, ajuste a instrução ou a fonte e teste novamente.
 
-[Aprender a usar fontes](../aulas/04-contexto-e-rag.md) · [Guardar o que aconteceu](../pratique/experimento.md)
+[Aprender a usar fontes](../aulas/README.md#aula-04) · [Guardar o que aconteceu](../pratique/experimento.md)
 
 ## 3 · Conecte uma ação útil
 
@@ -42,7 +42,7 @@ O foco inicial é usar modelos e ferramentas existentes para resolver uma tarefa
 
 **Está pronto quando:** a ação produz o resultado esperado, você sabe onde conferir o efeito e consegue interromper a execução. Peça confirmação antes de ações que afetem outras pessoas.
 
-[Entender ferramentas e ações](../aulas/05-agentes-e-ferramentas.md) · [Consultar integrações quando precisar](../aulas/03-integracoes-e-dados.md)
+[Entender ferramentas e ações](../aulas/README.md#aula-05) · [Consultar integrações quando precisar](../aulas/README.md#aula-03)
 
 ## 4 · Teste, melhore e mostre
 
@@ -52,7 +52,7 @@ O foco inicial é usar modelos e ferramentas existentes para resolver uma tarefa
 
 **Está pronto quando:** você consegue mostrar a tarefa funcionando, explicar uma melhoria e dizer quando o agente precisa de ajuda. Registre o feedback e escolha a próxima melhoria. Cinco casos são um começo; aumente a cobertura conforme o uso crescer.
 
-[Testar com exemplos](../pratique/casos-de-avaliacao.md) · [Investigar erros](../aulas/06-avaliacao-e-confiabilidade.md) · [Preparar um pequeno piloto](../aulas/07-operacao-e-comunicacao.md)
+[Testar com exemplos](../pratique/casos-de-avaliacao.md) · [Investigar erros](../aulas/README.md#aula-06) · [Preparar um pequeno piloto](../aulas/README.md#aula-07)
 
 ## Organize sem complicar
 

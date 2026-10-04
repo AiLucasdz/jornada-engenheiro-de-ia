@@ -1,76 +1,130 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jornada do Engenheiro de IA · Jornada IA</title><meta name="description" content="Construa seu primeiro agente de IA em quatro entregas, com aulas curtas, desenhos, exercícios e fontes. Aprenda no seu ritmo."><link rel="stylesheet" href="assets/site.css"><script defer src="assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a  href="leitura/comece-aqui/index.html">Começar</a><a  href="leitura/aulas/index.html">Aulas</a><a  href="leitura/pratique/index.html">Praticar</a><a  href="leitura/mapas-e-desenhos/index.html">Mapas</a><a  href="leitura/comece-aqui/fontes-e-comunidade.html">Onde estudar</a><a  href="leitura/comece-aqui/comunidades.html">Comunidade</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">EXPLORE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="Hermes, fontes, testes…" data-index="assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#o-que-tem-aqui-dentro">O que tem aqui dentro</a><a href="#o-que-você-vai-aprender-e-construir">O que você vai aprender e construir</a><a href="#comece-por-aqui">Comece por aqui</a><a href="#sete-aulas-para-consultar-enquanto-constrói">Sete aulas para consultar enquanto constrói</a><a href="#aprenda-praticando-no-seu-ritmo">Aprenda praticando, no seu ritmo</a><a href="#onde-estudar-e-com-quem-trocar">Onde estudar e com quem trocar</a><a href="#o-que-fica-pronto-ao-final">O que fica pronto ao final</a></nav><a class="study-note" href="leitura/comece-aqui/trilha-pratica.html"><strong>4 entregas.<br>No seu ritmo.</strong><span>80% construindo e testando.<br>20% aprendendo o necessário.</span></a></aside><main id="conteudo"><article><p><img src="assets/capa.svg" alt="Do problema real ao sistema em operação — aprenda construindo" loading="lazy"></p>
-<h1 id="jornada-do-engenheiro-de-ia">Jornada do Engenheiro de IA</h1>
-<p><strong>Aprenda como a IA funciona e construa um agente que resolve um problema real.</strong></p>
-<p>Esta é uma trilha prática para começar a desenvolver as habilidades de um <strong>Engenheiro de IA</strong> usando um agente desde o início. Você encontra <strong>4 entregas para construir, 7 aulas de apoio, diagramas, exercícios e indicações de onde estudar</strong>. Comece com o Hermes ou com uma base que já tenha e aprenda conforme o projeto pede.</p>
-<p><strong>O que você vai construir:</strong> um agente capaz de receber uma solicitação, consultar informações, usar ferramentas e registrar o resultado. Você também vai aprender a investigar erros, medir custo e tempo de resposta e demonstrar suas decisões.</p>
-<p><strong>4 entregas · 7 aulas de apoio · 80% prática / 20% teoria · No seu ritmo</strong></p>
-<p><a href="leitura/comece-aqui/index.html"><strong>Começar a jornada →</strong></a> · <a href="leitura/aulas/index.html">Ver as aulas</a> · <a href="">Abrir o guia online ↗</a></p>
-<h2 id="o-que-tem-aqui-dentro">O que tem aqui dentro</h2>
-<div class="link-cards"><p><strong><a href="leitura/comece-aqui/index.html">🧭 Comece aqui</a></strong><br>
-Escolha como iniciar, entenda o projeto e encontre sua próxima entrega.</p>
-<p><strong><a href="leitura/aulas/index.html">📚 Aprenda nas aulas</a></strong><br>
-História da IA, modelos, dados, agentes e operação: explicação, desenho, fonte e exercício juntos.</p>
-<p><strong><a href="leitura/pratique/index.html">🛠️ Coloque em prática</a></strong><br>
-Dê forma à ideia, teste uma mudança e acompanhe seu progresso com exemplos preenchidos.</p>
-<p><strong><a href="leitura/mapas-e-desenhos/index.html">🎨 Entenda pelos desenhos</a></strong><br>
-Veja o caminho completo, o funcionamento de um agente e os fluxos de dados, busca e avaliação.</p>
-</div><p><strong>Para quem é:</strong> quem quer sair das primeiras experiências com IA e aprender a construir soluções. Você pode começar com o Hermes do vídeo ou com uma base que já tenha. Você aprende a orientar o agente, usar fontes, conectar uma ferramenta e conferir o resultado. Conceitos técnicos mais detalhados ficam em trechos opcionais dentro das aulas.</p>
-<h2 id="o-que-você-vai-aprender-e-construir">O que você vai aprender e construir</h2>
-<figure class="lesson-figure"><a href="mapas-e-desenhos/panorama.svg" target="_blank" rel="noopener"><img src="mapas-e-desenhos/panorama.svg" alt="Quatro entregas no mesmo agente: começar, dar contexto, conectar uma ação e testar e mostrar." loading="lazy" class="lesson-diagram"><span>Ampliar o desenho ↗</span></a></figure>
-<p>O mesmo projeto acompanha todo o caminho. Pode ser um agente de pesquisa, atendimento, organização de tarefas ou outro processo do seu dia a dia. Nas aulas, usamos o exemplo de uma pessoa interessada em um serviço que precisa de informação e acompanhamento.</p>
-<ol>
-<li><strong>Coloque para funcionar:</strong> inicie seu agente e escolha uma tarefa pequena.</li>
-<li><strong>Dê contexto:</strong> acrescente informações e fontes para respostas melhores.</li>
-<li><strong>Conecte uma ação:</strong> permita consultar ou alterar algo em um ambiente de teste.</li>
-<li><strong>Teste e mostre:</strong> corrija uma falha, repita os testes e demonstre o resultado.</li>
-</ol>
-<p>→ <a href="leitura/comece-aqui/projeto-central.html">Conhecer o projeto e suas entregas</a> · <a href="mapa.html">Explorar o mapa interativo feito com Archify</a></p>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jornada do Engenheiro de IA · Jornada IA</title><meta name="description" content="Construa agentes de IA, aprenda em comunidade, mostre seu trabalho e prepare uma oferta de serviço. Percurso completo, exemplos e exercícios na mesma página."><link rel="stylesheet" href="assets/site.css"><script defer src="assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a aria-current="page" href="index.html">Guia completo</a><a  href="leitura/aulas/index.html">Aulas completas</a><a  href="index.html#comunidades-aprenda-na-oficina-de-quem-está-construindo">Comunidades</a><a  href="index.html#como-transformar-o-projeto-em-um-serviço-pago">Primeira oferta</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">EXPLORE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="Hermes, fontes, testes…" data-index="assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#mentalidade-de-ia-aprenda-a-enxergar-possibilidades">Mentalidade de IA: aprenda a enxergar possibilidades</a><a href="#llm-agente-e-hermes-o-motor-e-o-carro">LLM, agente e Hermes: o motor e o carro</a><a href="#comece-por-aqui">Comece por aqui</a><a href="#quatro-entregas-um-projeto-que-ganha-valor">Quatro entregas, um projeto que ganha valor</a><a href="#teoria-na-hora-em-que-ela-ajuda">Teoria na hora em que ela ajuda</a><a href="#comunidades-aprenda-na-oficina-de-quem-está-construindo">Comunidades: aprenda na oficina de quem está construindo</a><a href="#build-in-public-mostre-o-trabalho-enquanto-constrói">Build in public: mostre o trabalho enquanto constrói</a><a href="#como-transformar-o-projeto-em-um-serviço-pago">Como transformar o projeto em um serviço pago</a><a href="#seu-próximo-movimento">Seu próximo movimento</a></nav><a class="study-note" href="index.html#quatro-entregas-um-projeto-que-ganha-valor"><strong>4 entregas.<br>No seu ritmo.</strong><span>80% construindo e testando.<br>20% aprendendo o necessário.</span></a></aside><main id="conteudo"><article class="guide-home"><h1 id="jornada-do-engenheiro-de-ia">Jornada do Engenheiro de IA</h1>
+<p><strong>Construa com IA. Mostre o que funciona. Aprenda a transformar isso em um serviço pago.</strong></p>
+<p>Da primeira automação à primeira oferta: conecte <strong>mentalidade de IA, teoria, prática, comunidades e construção em público</strong>. Use um agente desde o início e avance em <strong>quatro entregas</strong>.</p>
+<p class="compact-visual"><a href="mapas-e-desenhos/ciclo-de-valor.svg"><img src="mapas-e-desenhos/ciclo-de-valor.svg" width="548" alt="Ciclo que conecta mentalidade de IA, teoria, prática, comunidade, construção em público e uma oferta baseada em resultado demonstrado e interesse do cliente." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p><p><strong>80% prática · 20% teoria · Sem prazo fixo · Um projeto que pode virar uma oferta</strong></p>
+<p>Pedidos sem retorno. Relatórios montados à mão. Informação espalhada que ninguém encontra. Escolha um desses problemas, construa uma solução pequena e mostre a melhoria para quem vive aquela dificuldade.</p>
+<p>O percurso principal está inteiro nesta página: explicações, exemplos, exercícios, fontes e roteiro de oferta. Use o índice para ir direto ao ponto.</p>
+<p><a href="#comece-por-aqui"><strong>Começar com meu agente</strong></a> · <a href="#quatro-entregas-um-projeto-que-ganha-valor">Fazer as quatro entregas</a> · <a href="#build-in-public-mostre-o-trabalho-enquanto-constrói">Construir em público</a> · <a href="#como-transformar-o-projeto-em-um-serviço-pago">Preparar uma oferta</a></p>
+<h2 id="mentalidade-de-ia-aprenda-a-enxergar-possibilidades">Mentalidade de IA: aprenda a enxergar possibilidades</h2>
+<p>Pense no agente como alguém que acabou de chegar para ajudar no trabalho. Essa pessoa precisa entender a tarefa, encontrar as informações certas, conhecer as ferramentas e saber quando chamar você. Com IA, essas perguntas também orientam a construção.</p>
+<p>Ao ver uma atividade repetitiva, investigue: <strong>o que entra, o que precisa ser decidido, qual ação vem depois e como alguém confere o resultado?</strong> Você começa a perceber oportunidades quando observa o processo inteiro.</p>
+<p>Conhecer projetos de outras pessoas amplia seu repertório. Experimente uma possibilidade que hoje parece fora do seu alcance: peça ajuda à IA, faça uma versão pequena e veja onde precisa melhorar. A confiança cresce com os testes e com as entregas.</p>
+<p><strong>Exercício de hoje:</strong> anote três tarefas que se repetem na sua rotina ou na de alguém próximo. Para cada uma, escreva quem faz, o que dá trabalho e como você observaria uma melhora. Escolha a tarefa para a qual consiga obter exemplos e conversar com quem a executa.</p>
+<blockquote>
+<p><strong>Pergunta que acompanha a jornada:</strong> quem teria um dia de trabalho melhor se esta tarefa funcionasse bem?</p>
+</blockquote>
+<h2 id="llm-agente-e-hermes-o-motor-e-o-carro">LLM, agente e Hermes: o motor e o carro</h2>
+<p>Um <strong>LLM é como o motor</strong>: uma peça central que oferece capacidade ao conjunto. Ele interpreta o contexto e gera respostas ou pedidos de uso de ferramentas.</p>
+<p>Um <strong>agente é como o carro montado</strong>: reúne o modelo, as instruções, o contexto, as ferramentas e o ciclo de execução. O <strong>Hermes Agent</strong> oferece essa estrutura pronta para você configurar e usar.</p>
+<p class="compact-visual"><a href="mapas-e-desenhos/motor-e-carro.svg"><img src="mapas-e-desenhos/motor-e-carro.svg" width="640" alt="Analogia entre LLM e motor, Hermes e carro, contexto e mapa, tarefa e destino, ferramentas e transmissão, verificações e painel e freios." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p><ul>
+<li><strong>O destino é a tarefa:</strong> “organizar os pedidos recebidos”, por exemplo.</li>
+<li><strong>O mapa é o contexto:</strong> documentos, regras e informações disponíveis para aquela tarefa.</li>
+<li><strong>As rodas e a transmissão são as ferramentas:</strong> levam a decisão até uma ação, como ler um arquivo ou salvar um registro.</li>
+<li><strong>O painel e os freios são as verificações e os limites:</strong> mostram o que aconteceu e permitem interromper uma ação.</li>
+<li><strong>Você escolhe a viagem:</strong> define objetivo, acesso e limites e confere se o resultado corresponde ao pedido.</li>
+</ul>
+<p>É uma analogia para entender as peças. No agente, o modelo também pode participar da escolha dos próximos passos. Um modelo mais capaz ajuda, mas a qualidade da solução depende de contexto, ferramentas e testes. Consulte a <a href="https://hermes-agent.nousresearch.com/docs/">documentação oficial do Hermes</a> quando precisar configurar uma dessas partes.</p>
 <h2 id="comece-por-aqui">Comece por aqui</h2>
-<p><strong>Abra a mente para o que você pode construir com IA.</strong> Seu repertório atual é um ponto de partida. Conheça projetos, imagine aplicações no seu dia a dia e dê uma chance às ideias que ainda não sabe executar. A confiança cresce quando você transforma uma possibilidade em um experimento.</p>
 <h3 id="minha-recomendação-lucas">Minha recomendação — Lucas</h3>
-<p><strong>Se puder investir em um curso agora</strong>, recomendo o curso e a comunidade do <strong>Bruno Okamoto, no <a href="https://pixelaihub.pixeleducacao.com.br/">Pixel AI Hub</a></strong>. Considero um ótimo início e o Bruno um ótimo mentor. Comece por lá e continue aqui, aplicando o aprendizado nas entregas da trilha.</p>
+<p><strong>Se puder investir em um curso agora</strong>, recomendo o curso e a comunidade do <strong>Bruno Okamoto, no <a href="https://pixelaihub.pixeleducacao.com.br/">Pixel AI Hub</a></strong>. Considero um ótimo início e o Bruno um ótimo mentor. Comece por lá e continue a construção nesta jornada.</p>
 <blockquote>
 <p><strong>Não tenho nenhuma parceria com o Bruno Okamoto.</strong> Essa é uma recomendação pessoal, porque considero o trabalho dele um ótimo ponto de partida.</p>
 </blockquote>
-<p><strong>Se estiver sem orçamento para um curso</strong>, assista ao meu vídeo <strong><a href="https://youtu.be/VHh2D9agRps">Crie seu Agente de IA Hermes em menos de 20 minutos</a></strong>. Coloque seu agente para funcionar e siga construindo a partir dele com as aulas daqui.</p>
-<p><strong>Depois, dê seu primeiro passo na trilha:</strong> escolha uma tarefa que o agente deve ajudar a resolver, preencha <a href="leitura/pratique/ficha-do-projeto.html">a ideia do seu projeto</a> e siga <a href="leitura/comece-aqui/trilha-pratica.html">a primeira entrega</a>. <a href="leitura/comece-aqui/como-estudar.html#comece-com-uma-base-e-evolua-com-ela">Veja como continuar com a base que já tem</a>.</p>
-<h3 id="llm-agente-e-hermes-o-que-muda">LLM, agente e Hermes: o que muda?</h3>
+<p><strong>Se estiver sem orçamento para um curso</strong>, assista ao meu vídeo <strong><a href="https://youtu.be/VHh2D9agRps">Crie seu Agente de IA Hermes em menos de 20 minutos</a></strong>. Coloque seu agente para funcionar e use essa base nos exercícios abaixo. O vídeo é aberto; o uso de modelos, ferramentas e hospedagem pode ter custos conforme a configuração escolhida.</p>
+<p><strong>Já tem um agente funcionando?</strong> Comece pela primeira entrega abaixo com uma tarefa sua. Você vai melhorar o mesmo projeto, observar resultados, mostrar o trabalho e investigar se ele pode ajudar um cliente.</p>
+<h2 id="quatro-entregas-um-projeto-que-ganha-valor">Quatro entregas, um projeto que ganha valor</h2>
+<p>Vamos acompanhar um exemplo: <strong>um prestador de serviços recebe perguntas sobre horários, opções e documentos necessários para um orçamento</strong>. Você quer ajudá-lo a responder com informação correta e organizar os pedidos.</p>
+<p>Adapte esse exemplo para uma tarefa que conhece. Faça cada entrega até conseguir mostrar o resultado e explicar o que verificou.</p>
+<h3 id="1-faça-uma-tarefa-funcionar">1 · Faça uma tarefa funcionar</h3>
+<p>Escolha uma tarefa pequena e descreva o resultado esperado. Antes de mexer nas ferramentas, preencha:</p>
 <ul>
-<li><strong>LLM</strong> é o modelo de linguagem: interpreta o contexto e gera respostas ou pedidos de uso de ferramentas.</li>
-<li><strong>Agente de IA</strong> combina o modelo com instruções, contexto, ferramentas e um ciclo de execução. O modelo pode escolher os próximos passos; o sistema executa as ações permitidas.</li>
-<li><strong>Hermes Agent</strong> é um projeto da <strong>Nous Research</strong> que oferece essa estrutura, com ferramentas, memória e habilidades reutilizáveis. Você configura um modelo e usa a base para construir seu agente.</li>
+<li><strong>Quem precisa disso:</strong></li>
+<li><strong>O que essa pessoa faz hoje:</strong></li>
+<li><strong>Qual parte o agente vai ajudar a fazer:</strong></li>
+<li><strong>Como vou conferir o resultado:</strong></li>
 </ul>
-<p>Por exemplo: o modelo pode sugerir como organizar uma pesquisa; um agente com as ferramentas adequadas pode consultar fontes e salvar um relatório. <a href="leitura/aulas/02-modelos-e-aprendizado.html">Veja a explicação ilustrada</a> e a <a href="https://hermes-agent.nousresearch.com/docs/">documentação oficial do Hermes</a>.</p>
-<h2 id="sete-aulas-para-consultar-enquanto-constrói">Sete aulas para consultar enquanto constrói</h2>
-<p>Abra a aula ligada à dúvida da sua entrega. Cada uma tem <strong>explicação curta, desenho, exercício e fontes</strong>. História e fundamentos fazem parte do material; os trechos “Para aprofundar” permitem conhecer os detalhes quando quiser.</p>
-<div class="link-cards"><p><strong><a href="leitura/aulas/01-historia-e-problemas.html">01 · Descubra um problema que vale resolver</a></strong><br>
-Conheça a história da IA, escolha uma tarefa útil e crie um primeiro teste da ideia.</p>
-<p><strong><a href="leitura/aulas/02-modelos-e-aprendizado.html">02 · Entenda como a IA aprende e responde</a></strong><br>
-Entenda modelo, instrução e contexto; compare duas orientações para a mesma tarefa.</p>
-<p><strong><a href="leitura/aulas/03-integracoes-e-dados.html">03 · Conecte seu agente ao mundo</a></strong><br>
-Receba informações, conecte serviços e guarde os dados de cada execução.</p>
-<p><strong><a href="leitura/aulas/04-contexto-e-rag.html">04 · Ensine seu agente a consultar fontes</a></strong><br>
-Entenda como buscar documentos e usar essa informação para responder — o caminho conhecido como RAG.</p>
-<p><strong><a href="leitura/aulas/05-agentes-e-ferramentas.html">05 · Transforme respostas em ações</a></strong><br>
-Conecte ferramentas, acompanhe as decisões do agente e defina até onde ele pode agir.</p>
-<p><strong><a href="leitura/aulas/06-avaliacao-e-confiabilidade.html">06 · Descubra o que funciona e o que falha</a></strong><br>
-Crie casos de teste, investigue erros e compare as versões do seu agente.</p>
-<p><strong><a href="leitura/aulas/07-operacao-e-comunicacao.html">07 · Coloque em uso e mostre o resultado</a></strong><br>
-Acompanhe tempo, custo e qualidade, rode um piloto e explique suas decisões.</p>
-</div><p>→ <a href="leitura/aulas/index.html">Escolher a aula que ajuda na sua entrega</a></p>
-<h2 id="aprenda-praticando-no-seu-ritmo">Aprenda praticando, no seu ritmo</h2>
-<p><strong>Avance pelas entregas, sem prazo fixo.</strong> Reserve cerca de 80% do tempo para construir e testar e 20% para estudar o que ajuda na próxima mudança. Você pode começar pela tarefa simples do vídeo e aumentar o desafio aos poucos.</p>
-<p><strong>Estude uma ideia → faça uma mudança → teste → registre o que aprendeu.</strong> Repita no mesmo agente. Em uma sessão de uma hora, uma sugestão é usar 12 minutos para estudar e 48 para aplicar.</p>
-<p><a href="leitura/comece-aqui/como-estudar.html">Organizar minha rotina</a> · <a href="leitura/comece-aqui/trilha-pratica.html">Ver as quatro entregas</a> · <a href="leitura/pratique/experimento.html">Registrar meu primeiro experimento</a></p>
-<h2 id="onde-estudar-e-com-quem-trocar">Onde estudar e com quem trocar</h2>
-<p>As aulas apontam para conteúdos da <a href="leitura/comece-aqui/fontes-e-comunidade.html#openai">OpenAI</a>, <a href="leitura/comece-aqui/fontes-e-comunidade.html#anthropic">Anthropic</a>, <a href="leitura/comece-aqui/fontes-e-comunidade.html#google">Google</a>, <a href="leitura/comece-aqui/fontes-e-comunidade.html#github">GitHub</a>, <a href="leitura/comece-aqui/fontes-e-comunidade.html#microsoft">Microsoft</a> e outras referências. Há livros, vídeos, artigos e exemplos para consultar conforme sua dúvida.</p>
+<p>No exemplo, comece pedindo ao agente que identifique a dúvida de uma mensagem e sugira a próxima pergunta. Dê objetivo, contexto e formato de resposta. Uma instrução inicial poderia ser:</p>
+<pre><code>Ajude a organizar pedidos de orçamento.
+Identifique o serviço procurado e a informação que ainda falta.
+Use apenas os dados da mensagem.
+Responda com: serviço, dúvida principal e próxima pergunta.
+Quando algo não estiver claro, indique a dúvida.</code></pre><p>Experimente uma mensagem completa, uma incompleta e outra fora do assunto. Compare duas versões da instrução com os mesmos exemplos.</p>
+<p><strong>Entrega:</strong> três testes registrados e uma instrução que você consegue explicar. Anote uma falha e o próximo ajuste.</p>
+<h3 id="2-dê-informação-confiável-ao-agente">2 · Dê informação confiável ao agente</h3>
+<p>Prepare um documento curto com serviços, horários, perguntas frequentes e data de atualização. Oriente o agente a usar esse material e indicar de onde tirou a resposta.</p>
+<p>O documento funciona como um <strong>manual de consulta</strong>: a qualidade da resposta depende do que está escrito e de o agente realmente consultar o trecho certo. Quando o sistema busca informação relevante antes de responder, esse caminho é conhecido como <strong>RAG</strong>.</p>
+<p>Faça três perguntas: uma respondida pelo material, uma sem resposta e uma ambígua. Depois, altere uma informação do documento e repita o teste. Confira se a mudança apareceu na resposta.</p>
+<p><strong>Entrega:</strong> uma resposta com fonte que você consegue conferir, um exemplo de informação ausente e um teste de atualização. Se o agente inventar um dado, investigue o material consultado e a instrução antes de adicionar novas ferramentas.</p>
+<h3 id="3-conecte-uma-ação-útil">3 · Conecte uma ação útil</h3>
+<p>Use uma ferramenta que o agente já oferece. Comece consultando um arquivo; depois, permita salvar um resumo ou organizar um pedido em uma tabela de teste.</p>
+<p>Pense na ferramenta como a <strong>chave de uma sala</strong>: ela dá acesso a um lugar e a determinadas ações. Defina quais arquivos ou registros podem ser lidos e alterados. Teste primeiro com dados fictícios.</p>
+<p>No exemplo, o agente registra serviço procurado, dúvida e informação pendente. Confira o registro no destino. Envie o mesmo pedido novamente e veja se ele cria uma duplicata indesejada. Retire um dado necessário e observe se pede ajuda.</p>
+<p><strong>Entrega:</strong> uma ação que deixa um resultado verificável, com limites claros e uma forma de interromper. A mensagem “feito” precisa corresponder ao que aconteceu no arquivo ou na tabela.</p>
+<h3 id="4-teste-melhore-e-demonstre">4 · Teste, melhore e demonstre</h3>
+<p>Prepare cinco situações: uma pergunta comum, uma informação ausente, um pedido ambíguo, uma ação repetida e uma ferramenta indisponível. Registre <strong>pedido → resultado esperado → resultado observado → ajuste necessário</strong>.</p>
+<p>Corrija uma falha e repita os mesmos testes. Mostre a tarefa completa para alguém que conhece o problema. Observe onde essa pessoa precisa de ajuda e pergunte o que tornaria o agente útil no trabalho dela.</p>
+<p>Compare o processo atual e o teste: tempo gasto, etapas manuais, correções necessárias e qualidade da resposta. Registre o que mediu e o que ainda é uma hipótese.</p>
+<p><strong>Entrega:</strong> uma demonstração, os testes, uma melhoria e o retorno de um possível usuário. Esses exemplos iniciam a avaliação; amplie a cobertura conforme o uso crescer. Havendo interesse, use o roteiro de oferta mais abaixo.</p>
+<h2 id="teoria-na-hora-em-que-ela-ajuda">Teoria na hora em que ela ajuda</h2>
+<p>A teoria é como um <strong>mapa de estrada</strong>: ajuda a escolher o caminho e entender um desvio. Volte ao mapa quando surgir uma dúvida e aplique o que aprendeu na próxima tentativa.</p>
+<p><strong>80% prática e 20% teoria</strong> é a referência. Em uma sessão de uma hora, você pode usar 12 minutos para estudar, 28 para construir, 15 para testar e 5 para registrar o aprendizado. Ajuste a distribuição conforme a tarefa.</p>
+<p>Para escolher o que estudar agora:</p>
 <ul>
-<li><strong>Para escolher uma leitura:</strong> <a href="leitura/comece-aqui/fontes-e-comunidade.html">fontes recomendadas por etapa</a>.</li>
-<li><strong>Para pesquisar uma dúvida:</strong> <a href="leitura/comece-aqui/como-pesquisar.html">buscas no Google e nas documentações</a>.</li>
-<li><strong>Para acompanhar e conversar:</strong> <a href="https://x.com/ailucasdz">@ailucasdz no X</a>, <a href="https://x.com/ailucasdz/following">os perfis que acompanha</a> e os Discords de <a href="https://discord.gg/NousResearch">Nous Research</a> e <a href="https://discord.gg/clawd">OpenClaw</a>. O <a href="leitura/comece-aqui/comunidades.html">guia de comunidades</a> ajuda a participar.</li>
+<li><strong>Não entendi uma configuração do Hermes:</strong> consulte a <a href="https://hermes-agent.nousresearch.com/docs/">documentação do projeto</a>.</li>
+<li><strong>Quero orientar melhor o modelo:</strong> explore uma atividade da <a href="https://academy.claude.com/">Claude Academy</a>.</li>
+<li><strong>Preciso de um exemplo de implementação:</strong> procure a tarefa no <a href="https://developers.openai.com/cookbook">OpenAI Cookbook</a>, na <a href="https://platform.claude.com/docs/en/intro">documentação do Claude</a> ou na <a href="https://ai.google.dev/gemini-api/docs">documentação do Gemini</a>, conforme a ferramenta que usa.</li>
+<li><strong>Quero entender um conceito:</strong> consulte <a href="https://github.com/microsoft/generative-ai-for-beginners">Generative AI for Beginners, da Microsoft</a>, ou os <a href="https://developers.google.com/machine-learning/crash-course?hl=pt-br">fundamentos do Google</a> quando quiser aprofundar.</li>
+<li><strong>Quero guardar e apresentar o projeto:</strong> faça a atividade de <a href="https://github.com/skills/introduction-to-github">introdução ao GitHub</a>.</li>
 </ul>
-<h2 id="o-que-fica-pronto-ao-final">O que fica pronto ao final</h2>
-<p>Um agente que você consegue <strong>demonstrar, testar e explicar</strong>, com uma tarefa definida, fontes conectadas, uma ação útil e testes registrados. Um pequeno piloto com outras pessoas pode ser seu próximo passo. Junto dele, você terá o desenho do funcionamento, os testes, os registros de melhorias e as decisões sobre custo e qualidade.</p>
-<p>Esse conjunto mostra as habilidades que você desenvolveu para atuar com Engenharia de IA e permite continuar evoluindo o projeto.</p>
-<p><strong><a href="leitura/comece-aqui/index.html">Começar agora →</a></strong> · <a href="leitura/CONTRIBUTING.html">Contribuir com a jornada</a></p>
+<p>Na pesquisa, escreva a dúvida concreta. <code>Hermes nome-da-ferramenta mensagem-do-erro</code> ajuda mais do que uma busca ampla por “agentes”. No Google, use <code>site:</code> para procurar no domínio oficial e coloque a mensagem exata do erro entre aspas. Confira a versão e teste a orientação num exemplo pequeno.</p>
+<p><strong>História e base técnica continuam no material:</strong> a <a href="leitura/aulas/index.html">página de aulas completas</a> reúne os sete temas, com exemplos e aprofundamentos na mesma página. Você pode consultar uma explicação e retornar ao projeto.</p>
+<h2 id="comunidades-aprenda-na-oficina-de-quem-está-construindo">Comunidades: aprenda na oficina de quem está construindo</h2>
+<p>Pense na comunidade como uma <strong>oficina compartilhada</strong>. Você observa soluções, mostra uma peça que não funcionou e recebe ideias de quem já enfrentou algo parecido. O valor aumenta quando leva uma pergunta concreta e volta para contar o resultado.</p>
+<ul>
+<li><strong>No X:</strong> acompanhe <a href="https://x.com/ailucasdz">@ailucasdz</a> e explore <a href="https://x.com/ailucasdz/following">os perfis que acompanha</a>. Escolha uma ideia para experimentar no seu projeto.</li>
+<li><strong>No Discord da <a href="https://discord.gg/NousResearch">Nous Research</a>:</strong> acompanhe discussões sobre Hermes, ferramentas e configuração.</li>
+<li><strong>No Discord do <a href="https://discord.gg/clawd">OpenClaw</a>:</strong> veja experiências de integração e uso de agentes.</li>
+<li><strong>No curso e na comunidade do Bruno</strong>, se participar: leve dúvidas da construção e teste no seu agente o que aprender.</li>
+</ul>
+<p>Para pedir ajuda, escreva: <strong>“Quero fazer X. Usei Y. Esperava Z. Aconteceu W. Já tentei isto. Minha dúvida é esta.”</strong> Inclua um exemplo pequeno, sem dados privados. Depois, registre o que resolveu.</p>
+<p>Conversa com outros construtores ajuda na implementação. Para descobrir valor comercial, converse também com quem executa a tarefa no dia a dia e poderia contratar a solução.</p>
+<h2 id="build-in-public-mostre-o-trabalho-enquanto-constrói">Build in public: mostre o trabalho enquanto constrói</h2>
+<p><strong>Construir em público</strong> é tornar visíveis suas tentativas, decisões e resultados. Funciona como uma <strong>vitrine com a oficina à vista</strong>: a pessoa vê o que você entrega e como confere a qualidade.</p>
+<p>A cada entrega, publique algo concreto: uma demonstração curta, um desenho do processo, um antes e depois ou uma falha que conseguiu corrigir. Use dados fictícios ou autorizados e indique o que foi medido.</p>
+<p>Um exemplo de atualização:</p>
+<blockquote>
+<p>Estou construindo um agente para organizar pedidos de orçamento. Nesta versão, ele consulta um documento e registra a informação que falta. Testei cinco situações; uma pergunta ambígua ainda gerou um registro errado. Ajustei a instrução e vou repetir os testes. Quem organiza pedidos assim hoje: qual informação costuma faltar?</p>
+</blockquote>
+<p>No GitHub, descreva <strong>o problema, como executar o projeto, uma demonstração, os testes e os limites conhecidos</strong>. No X ou no Discord, mostre o trecho do trabalho que rende uma conversa. Adapte ao espaço e às regras da comunidade.</p>
+<p>Ao receber retorno, escolha uma mudança e mostre o resultado dela. A publicação ajuda outras pessoas a conhecer seu trabalho; a conversa sobre uma necessidade concreta é o que permite investigar uma oportunidade de serviço.</p>
+<h2 id="como-transformar-o-projeto-em-um-serviço-pago">Como transformar o projeto em um serviço pago</h2>
+<p>Seu primeiro objetivo comercial é descobrir se existe alguém disposto a pagar pela melhoria que você consegue entregar. Comece por uma tarefa delimitada e por uma pessoa que possa avaliar o resultado.</p>
+<h3 id="três-exemplos-de-primeira-oferta">Três exemplos de primeira oferta</h3>
+<p><strong>Assistente para dúvidas de um serviço.</strong> Você organiza uma base aprovada pelo cliente, configura o agente, testa respostas e define quando encaminhar a uma pessoa. A entrega pode incluir instruções de uso e de atualização. Confira a correção das respostas e o esforço de revisão.</p>
+<p><strong>Organização de pedidos.</strong> Você configura a leitura de uma entrada autorizada e o registro dos campos combinados numa tabela. Testa dados ausentes e duplicatas. Confira o tempo da tarefa e a quantidade de correções manuais.</p>
+<p><strong>Relatório com fontes.</strong> Você configura um fluxo que lê arquivos fornecidos e prepara um relatório no formato combinado, indicando as fontes. Confira se as informações estão corretas e quanto trabalho de revisão permanece.</p>
+<p>Esses exemplos são pontos de partida para conversar com um cliente. A tarefa escolhida, o acesso aos dados e o resultado observado determinam o que faz sentido oferecer.</p>
+<h3 id="da-conversa-à-proposta">Da conversa à proposta</h3>
+<ol>
+<li><strong>Entenda a rotina.</strong> Peça para a pessoa mostrar como faz a tarefa, com que frequência e onde perde tempo ou comete erros.</li>
+<li><strong>Mostre uma demonstração relevante.</strong> Use exemplos fictícios semelhantes ao processo dela. Peça que confira a utilidade e indique o que falta.</li>
+<li><strong>Se houver interesse, proponha um piloto pago.</strong> Combine uma tarefa, um período de teste negociado e critérios para aceitar a entrega.</li>
+<li><strong>Entregue e acompanhe.</strong> Confira o resultado com o cliente, documente o uso e ajuste o que foi combinado.</li>
+<li><strong>Converse sobre continuidade.</strong> Atualização de fontes, revisão de erros e suporte podem compor um serviço recorrente quando houver esse trabalho e interesse do cliente.</li>
+</ol>
+<h3 id="escreva-sua-primeira-oferta-nesta-estrutura">Escreva sua primeira oferta nesta estrutura</h3>
+<pre><code>Para quem: [pessoa ou equipe e processo atual]
+Problema: [tarefa e dificuldade observada]
+Entrega: [o que o agente fará e onde]
+Limites: [o que fica fora e quando haverá ajuda humana]
+Teste de aceitação: [casos e resultado que o cliente vai conferir]
+Prazo do piloto: [combinado com o cliente]
+Valor e pagamento: [condições propostas para o serviço]
+Consumo de ferramentas: [quem paga e qual limite será acompanhado]
+Acompanhamento: [o que inclui e por quanto tempo]
+Continuidade: [quem atualiza fontes, corrige falhas e dá suporte]</code></pre><p>Para formar o preço, estime seu trabalho de configuração, testes, ajustes, documentação e acompanhamento. Separe esses itens do consumo de modelos, ferramentas e hospedagem. Defina o que uma mudança fora do escopo exige renegociar. A proposta precisa caber no esforço que você consegue assumir e fazer sentido para o cliente.</p>
+<p><strong>Exemplo de escopo:</strong> “Configurar um assistente para responder sobre este catálogo aprovado e organizar os pedidos nesta tabela de teste. A entrega inclui os casos combinados, uma demonstração e instruções de atualização. Decisões fora do catálogo serão encaminhadas à pessoa responsável.” Preencha prazo, valor, consumo e acompanhamento depois de entender o trabalho.</p>
+<h2 id="seu-próximo-movimento">Seu próximo movimento</h2>
+<p>Escolha <strong>uma pessoa, uma tarefa e uma melhoria que possa demonstrar</strong>. Coloque o agente para trabalhar, registre o que acontece e publique uma entrega. Use a teoria e a comunidade para resolver o próximo bloqueio. Converse com quem vive o problema e transforme o interesse em uma proposta concreta.</p>
+<p><strong><a href="#quatro-entregas-um-projeto-que-ganha-valor">Voltar à primeira entrega</a></strong> · <a href="leitura/aulas/index.html">Aulas completas, na mesma página</a> · <a href="leitura/CONTRIBUTING.html">Contribuir com o material</a></p>
 </article><footer><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia/blob/main/README.md">Ver este conteúdo no GitHub ↗</a><span>Um agente. Uma melhoria de cada vez.</span></footer></main></div></body></html>
