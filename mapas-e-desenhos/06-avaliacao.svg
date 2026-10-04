@@ -1,87 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1340" viewBox="0 0 640 1340" role="img" aria-labelledby="title desc">
-<title id="title">O ciclo de avaliação transforma erros em evidências</title><desc id="desc">Defina casos, execute o sistema, compare com critérios esperados, investigue a causa de falhas, altere uma variável e repita os testes. Use os mesmos casos e registre versão, qualidade, tempo e custo para comparar antes e depois.</desc>
-<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L9 4.5 L0 9Z" fill="#007969"/></marker><marker id="arrow-coral" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L9 4.5 L0 9Z" fill="#b95432"/></marker></defs>
-<rect width="640" height="1340" rx="24" fill="#f5f8f7"/>
-<rect x="32" y="30" width="8" height="42" rx="4" fill="#007969" stroke="#007969" stroke-width="2"/>
-<text x="54" y="60" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#007969" text-anchor="start">
-<tspan x="54" dy="0">AULA 06 · AVALIAÇÃO</tspan>
-</text>
-<text x="32" y="115" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="32" dy="0">Melhore com evidências</tspan>
-</text>
-<text x="32" y="158" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="32" dy="0">Use os mesmos casos para comparar versões.</tspan>
-</text>
-<rect x="40" y="195" width="512" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,223)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<path d="M9 4H32L43 15V48H9Z M32 4V15H43 M17 24H35 M17 33H35 M17 41H28"/>
-</g>
-<text x="132" y="238" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Definir casos</tspan>
-</text>
-<text x="132" y="277" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">Entradas e critérios de sucesso</tspan>
-</text>
-<path d="M296 311V336" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="40" y="345" width="512" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,373)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<path d="M36 5A14 14 0 0 0 19 22L5 36A7 7 0 0 0 15 46L30 31A14 14 0 0 0 47 14L38 23L29 14Z"/>
-</g>
-<text x="132" y="388" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Executar</tspan>
-</text>
-<text x="132" y="427" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">Mesmas condições de teste</tspan>
-</text>
-<path d="M296 461V486" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="40" y="495" width="512" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,523)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<rect x="5" y="5" width="43" height="43" rx="10"/><path d="M14 27L23 36L40 18"/>
-</g>
-<text x="132" y="538" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Comparar</tspan>
-</text>
-<text x="132" y="577" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">Resultado × critério esperado</tspan>
-</text>
-<path d="M296 611V636" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="40" y="645" width="512" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,673)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<circle cx="22" cy="22" r="15"/><path d="M33 33L47 47"/>
-</g>
-<text x="132" y="688" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Investigar o erro</tspan>
-</text>
-<text x="132" y="727" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">Fonte, contexto, modelo ou ação</tspan>
-</text>
-<path d="M296 761V786" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="40" y="795" width="512" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,823)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<path d="M36 5A14 14 0 0 0 19 22L5 36A7 7 0 0 0 15 46L30 31A14 14 0 0 0 47 14L38 23L29 14Z"/>
-</g>
-<text x="132" y="838" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Alterar uma variável</tspan>
-</text>
-<text x="132" y="877" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">Mudança com hipótese clara</tspan>
-</text>
-<path d="M296 911V936" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="40" y="945" width="512" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,973)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<path d="M6 5V47H49 M16 38V28 M28 38V17 M40 38V7"/>
-</g>
-<text x="132" y="988" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Testar novamente</tspan>
-</text>
-<text x="132" y="1027" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">Verifique ganho e regressões</tspan>
-</text>
-<path d="M557 1000H602V398H561" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="32" y="1120" width="576" height="143" rx="18" fill="#e0f0eb" stroke="#e0f0eb" stroke-width="2"/>
-<text x="52" y="1156" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#102236" text-anchor="start">
-<tspan x="52" dy="0">Guarde a versão e os resultados.</tspan>
-<tspan x="52" dy="35">Compare qualidade, tempo e custo.</tspan>
-<tspan x="52" dy="35">Uma melhora precisa de evidência.</tspan>
-</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc"><title id="title">COMO SABER SE MELHOROU</title><desc id="desc">Compare versões usando os mesmos casos. 1 · Definir o esperado: Escolha os pedidos. O que deve acontecer?; 2 · Executar e comparar: Guarde o resultado. Onde houve diferença?; 3 · Encontrar a causa: Fonte, pedido ou ação? Mude uma coisa.; 4 · Repetir os casos: A falha foi corrigida? Outro caso piorou?. Compare qualidade, tempo e custo nas mesmas condições.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#00816d"/></marker></defs>
+<rect width="640" height="420" rx="16" fill="#f5faf8"/>
+<g font-family="system-ui,Segoe UI,sans-serif">
+<text x="24" y="36" font-size="24" font-weight="750" fill="#183448">COMO SABER SE MELHOROU</text>
+<text x="24" y="64" font-size="18" font-weight="400" fill="#526b7b">Compare versões usando os mesmos casos.</text>
+<rect x="24" y="88" width="272" height="120" rx="12" fill="#ffffff" stroke="#ccdfd8"/>
+<text x="40" y="119" font-size="22" font-weight="720" fill="#183448">1 · Definir o esperado</text>
+<text x="40" y="153" font-size="21" font-weight="400" fill="#183448">Escolha os pedidos.</text>
+<text x="40" y="182" font-size="21" font-weight="400" fill="#183448">O que deve acontecer?</text>
+<rect x="344" y="88" width="272" height="120" rx="12" fill="#e5f5ef" stroke="#ccdfd8"/>
+<text x="360" y="119" font-size="22" font-weight="720" fill="#183448">2 · Executar e comparar</text>
+<text x="360" y="153" font-size="21" font-weight="400" fill="#183448">Guarde o resultado.</text>
+<text x="360" y="182" font-size="21" font-weight="400" fill="#183448">Onde houve diferença?</text>
+<rect x="24" y="240" width="272" height="120" rx="12" fill="#ffffff" stroke="#ccdfd8"/>
+<text x="40" y="271" font-size="22" font-weight="720" fill="#183448">3 · Encontrar a causa</text>
+<text x="40" y="305" font-size="21" font-weight="400" fill="#183448">Fonte, pedido ou ação?</text>
+<text x="40" y="334" font-size="21" font-weight="400" fill="#183448">Mude uma coisa.</text>
+<rect x="344" y="240" width="272" height="120" rx="12" fill="#e5f5ef" stroke="#ccdfd8"/>
+<text x="360" y="271" font-size="22" font-weight="720" fill="#183448">4 · Repetir os casos</text>
+<text x="360" y="305" font-size="21" font-weight="400" fill="#183448">A falha foi corrigida?</text>
+<text x="360" y="334" font-size="21" font-weight="400" fill="#183448">Outro caso piorou?</text>
+<g stroke="#00816d" stroke-width="2.3" fill="none" marker-end="url(#arrow)"><path d="M 301 148 H 337"/><path d="M 480 211 V 225 H 160 V 233"/><path d="M 301 300 H 337"/></g>
+<text x="24" y="397" font-size="18" font-weight="500" fill="#365c55">Compare qualidade, tempo e custo nas mesmas condições.</text>
+</g></svg>

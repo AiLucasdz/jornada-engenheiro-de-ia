@@ -1,94 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1280" viewBox="0 0 640 1280" role="img" aria-labelledby="title desc">
-<title id="title">Operar um agente: configurar, testar um piloto, medir e decidir</title><desc id="desc">Configure versão, acesso e recuperação. Faça um piloto acompanhado, meça qualidade, tempo, custo e esforço humano, e decida ajustar, ampliar ou parar. Ajustes voltam ao teste; ampliação depende das evidências observadas.</desc>
-<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L9 4.5 L0 9Z" fill="#007969"/></marker><marker id="arrow-coral" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L9 4.5 L0 9Z" fill="#b95432"/></marker></defs>
-<rect width="640" height="1280" rx="24" fill="#f5f8f7"/>
-<rect x="32" y="30" width="8" height="42" rx="4" fill="#007969" stroke="#007969" stroke-width="2"/>
-<text x="54" y="60" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#007969" text-anchor="start">
-<tspan x="54" dy="0">AULA 07 · OPERAÇÃO</tspan>
-</text>
-<text x="32" y="115" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="32" dy="0">Colocar em uso é acompanhar</tspan>
-</text>
-<text x="32" y="158" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="32" dy="0">Comece pequeno e decida com os resultados.</tspan>
-</text>
-<rect x="40" y="195" width="560" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,223)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<path d="M36 5A14 14 0 0 0 19 22L5 36A7 7 0 0 0 15 46L30 31A14 14 0 0 0 47 14L38 23L29 14Z"/>
-</g>
-<text x="132" y="238" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Configurar</tspan>
-</text>
-<text x="132" y="277" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">Versão, acesso e recuperação</tspan>
-</text>
-<path d="M320 314V340" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="40" y="350" width="560" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,378)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<path d="M9 49V4 M10 6H44L35 18L44 29H10"/>
-</g>
-<text x="132" y="393" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Piloto acompanhado</tspan>
-</text>
-<text x="132" y="432" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">Poucos casos e responsável</tspan>
-</text>
-<path d="M320 469V495" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="40" y="505" width="560" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,533)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<path d="M6 5V47H49 M16 38V28 M28 38V17 M40 38V7"/>
-</g>
-<text x="132" y="548" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Medir</tspan>
-</text>
-<text x="132" y="587" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">Qualidade, tempo e custo</tspan>
-</text>
-<path d="M320 624V650" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="40" y="660" width="560" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,688)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<rect x="5" y="5" width="43" height="43" rx="10"/><path d="M14 27L23 36L40 18"/>
-</g>
-<text x="132" y="703" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Decidir</tspan>
-</text>
-<text x="132" y="742" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">Compare com a linha de base</tspan>
-</text>
-<path d="M320 777V820H130V843" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<path d="M320 820V843" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<path d="M320 820H510V843" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="40" y="852" width="180" height="160" rx="18" fill="#e0f0eb" stroke="#e0f0eb" stroke-width="2"/>
-<text x="130" y="899" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="middle">
-<tspan x="130" dy="0">Ajustar</tspan>
-</text>
-<text x="130" y="946" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#102236" text-anchor="middle">
-<tspan x="130" dy="0">Corrigir</tspan>
-<tspan x="130" dy="34">e retestar</tspan>
-</text>
-<rect x="230" y="852" width="180" height="160" rx="18" fill="#e0f0eb" stroke="#e0f0eb" stroke-width="2"/>
-<text x="320" y="899" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="middle">
-<tspan x="320" dy="0">Ampliar</tspan>
-</text>
-<text x="320" y="946" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#102236" text-anchor="middle">
-<tspan x="320" dy="0">Avançar com</tspan>
-<tspan x="320" dy="34">evidências</tspan>
-</text>
-<rect x="420" y="852" width="180" height="160" rx="18" fill="#fff0e9" stroke="#fff0e9" stroke-width="2"/>
-<text x="510" y="899" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="middle">
-<tspan x="510" dy="0">Parar</tspan>
-</text>
-<text x="510" y="946" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#102236" text-anchor="middle">
-<tspan x="510" dy="0">Interromper</tspan>
-<tspan x="510" dy="34">e revisar</tspan>
-</text>
-<rect x="32" y="1050" width="576" height="143" rx="18" fill="#e0f0eb" stroke="#e0f0eb" stroke-width="2"/>
-<text x="52" y="1086" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#102236" text-anchor="start">
-<tspan x="52" dy="0">Ajustou? Repita o piloto e meça.</tspan>
-<tspan x="52" dy="35">Mantenha logs, fontes atualizadas</tspan>
-<tspan x="52" dy="35">e um caminho de atendimento humano.</tspan>
-</text>
-<text x="32" y="1225" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="32" dy="0">Explique o que funcionou e o que falhou.</tspan>
-</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc"><title id="title">DO PROTÓTIPO AO USO</title><desc id="desc">O piloto mostra o que funciona na rotina. 1 · Combinar: Tarefa, acesso e aceite. Quem acompanha?; 2 · Experimentar: Poucos casos reais. Suporte e interrupção.; 3 · Medir: Tempo, qualidade, custo. Compare com o início.; 4 · Decidir: Ajustar, ampliar ou parar. Registre o motivo.. Fontes, erros e suporte continuam depois da entrega.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#00816d"/></marker></defs>
+<rect width="640" height="420" rx="16" fill="#f5faf8"/>
+<g font-family="system-ui,Segoe UI,sans-serif">
+<text x="24" y="36" font-size="24" font-weight="750" fill="#183448">DO PROTÓTIPO AO USO</text>
+<text x="24" y="64" font-size="18" font-weight="400" fill="#526b7b">O piloto mostra o que funciona na rotina.</text>
+<rect x="24" y="88" width="272" height="120" rx="12" fill="#ffffff" stroke="#ccdfd8"/>
+<text x="40" y="119" font-size="22" font-weight="720" fill="#183448">1 · Combinar</text>
+<text x="40" y="153" font-size="21" font-weight="400" fill="#183448">Tarefa, acesso e aceite.</text>
+<text x="40" y="182" font-size="21" font-weight="400" fill="#183448">Quem acompanha?</text>
+<rect x="344" y="88" width="272" height="120" rx="12" fill="#e5f5ef" stroke="#ccdfd8"/>
+<text x="360" y="119" font-size="22" font-weight="720" fill="#183448">2 · Experimentar</text>
+<text x="360" y="153" font-size="21" font-weight="400" fill="#183448">Poucos casos reais.</text>
+<text x="360" y="182" font-size="21" font-weight="400" fill="#183448">Suporte e interrupção.</text>
+<rect x="24" y="240" width="272" height="120" rx="12" fill="#ffffff" stroke="#ccdfd8"/>
+<text x="40" y="271" font-size="22" font-weight="720" fill="#183448">3 · Medir</text>
+<text x="40" y="305" font-size="21" font-weight="400" fill="#183448">Tempo, qualidade, custo.</text>
+<text x="40" y="334" font-size="21" font-weight="400" fill="#183448">Compare com o início.</text>
+<rect x="344" y="240" width="272" height="120" rx="12" fill="#e5f5ef" stroke="#ccdfd8"/>
+<text x="360" y="271" font-size="22" font-weight="720" fill="#183448">4 · Decidir</text>
+<text x="360" y="305" font-size="21" font-weight="400" fill="#183448">Ajustar, ampliar ou parar.</text>
+<text x="360" y="334" font-size="21" font-weight="400" fill="#183448">Registre o motivo.</text>
+<g stroke="#00816d" stroke-width="2.3" fill="none" marker-end="url(#arrow)"><path d="M 301 148 H 337"/><path d="M 480 211 V 225 H 160 V 233"/><path d="M 301 300 H 337"/></g>
+<text x="24" y="397" font-size="18" font-weight="500" fill="#365c55">Fontes, erros e suporte continuam depois da entrega.</text>
+</g></svg>

@@ -1,8 +1,8 @@
 # Dê forma à sua ideia
 
-[← Pratique](README.md) · [Ver as quatro entregas](../comece-aqui/trilha-pratica.md)
+[← Guia principal](../README.md)
 
-Comece com uma tarefa pequena que você consiga observar. Preencha estas quatro linhas antes de mudar a configuração do seu agente.
+Descreva a tarefa que quer resolver e como vai conferir o resultado.
 
 ## Preencha agora
 
@@ -13,15 +13,15 @@ Comece com uma tarefa pequena que você consiga observar. Preencha estas quatro 
 
 ## Um exemplo preenchido
 
-**Quem vai usar:** uma pessoa que atende interessados em um curso.
+**Quem vai usar:** uma pessoa que recebe pedidos de orçamento para instalação e manutenção.
 
-**Tarefa:** responder dúvidas sobre horários e conteúdo usando um documento de perguntas frequentes.
+**Tarefa inicial:** identificar serviço procurado, dúvida principal e próxima pergunta em uma mensagem.
 
-**Informações:** um arquivo de teste com perguntas e respostas, sem dados pessoais.
+**Informações:** somente os dados da mensagem recebida.
 
-**Como verificar:** fazer cinco perguntas e conferir se as respostas correspondem ao documento. Quando faltar informação, o agente deve avisar.
+**Como verificar:** comparar duas instruções com três mensagens: uma completa para classificar, uma incompleta e uma fora do assunto. Conferir se identifica o pedido e pergunta o que falta, sem inventar preço ou disponibilidade.
 
-Esse exemplo pode virar um agente de pesquisa, organização de tarefas ou atendimento. Troque o contexto pelo seu e mantenha o primeiro teste pequeno.
+Na segunda entrega, acrescente o catálogo aprovado de serviços e condições de atendimento, com data de atualização. O agente passa a consultar esse material e indicar a fonte das respostas.
 
 ## Complete conforme o projeto cresce
 
@@ -46,5 +46,3 @@ Um **piloto** é um uso limitado da solução para aprender com uma tarefa real.
 Compare o resultado observado com a situação inicial. Os números do seu projeto orientam a próxima decisão.
 
 </details>
-
-→ [Fazer seu primeiro experimento](experimento.md)

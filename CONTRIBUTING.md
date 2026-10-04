@@ -8,7 +8,7 @@ Para sugerir uma correção ou uma fonte de estudo, abra uma issue com o trecho,
 
 - `README.md`: entrada principal da jornada no GitHub e no site.
 - `comece-aqui/`: método, trilha, fontes, pesquisa, comunidades e projeto.
-- `aulas/README.md`: as sete aulas completas, com explicações, fontes, exercícios e aprofundamentos na mesma página. Edite este arquivo como fonte única das aulas.
+- `aulas/README.md`: sete capítulos de fundamentos aplicados, com explicações, exemplos, exercícios e fontes. Edite este arquivo como fonte única das aulas.
 - `materiais/`: redirecionamentos de endereços anteriores para as aulas.
 - `pratique/`: guias com exemplos para anotar a ideia, experimentar e testar.
 - `mapas-e-desenhos/`: ilustrações das aulas e índice visual.
@@ -28,7 +28,7 @@ npm run check
 
 O gerador mantém os Markdown como origem, atualiza `index.html` e `leitura/`, reconstrói a busca e preserva os redirecionamentos de endereços antigos. Revise as mudanças e inclua os arquivos gerados no mesmo commit. O GitHub Pages publica os arquivos estáticos da branch `main`.
 
-Os blocos `<!-- cards:start -->` e `<!-- cards:end -->` transformam os parágrafos entre eles em cartões no site. No GitHub, continuam como links com descrição. Use `<details>` com linhas em branco para manter aprofundamentos opcionais legíveis nos dois lugares.
+Os blocos `<!-- cards:start -->` e `<!-- cards:end -->` transformam os parágrafos entre eles em cartões no site. No GitHub, continuam como links com descrição. Use `<details>` com linhas em branco para aprofundar uma pergunta por bloco. Mantenha a explicação essencial visível. As tabelas viram cartões com os nomes das colunas no celular; prefira duas ou três colunas.
 
 As figuras usam uma prévia com altura de até 320 px e link para o SVG completo. Preserve o atributo `width` nos elementos `<img>` para manter o tamanho compacto também no GitHub.
 

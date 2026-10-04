@@ -1,83 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1220" viewBox="0 0 640 1220" role="img" aria-labelledby="title desc">
-<title id="title">Da entrada ao histórico: uma integração verificável</title><desc id="desc">A entrada é validada, registrada e usada em uma consulta ou ação autorizada; o resultado é incluído no histórico. Falhas de validação ou execução seguem tratamento explícito, com erro registrado, pedido de correção ou repetição limitada.</desc>
-<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L9 4.5 L0 9Z" fill="#007969"/></marker><marker id="arrow-coral" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L9 4.5 L0 9Z" fill="#b95432"/></marker></defs>
-<rect width="640" height="1220" rx="24" fill="#f5f8f7"/>
-<rect x="32" y="30" width="8" height="42" rx="4" fill="#007969" stroke="#007969" stroke-width="2"/>
-<text x="54" y="60" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#007969" text-anchor="start">
-<tspan x="54" dy="0">AULA 03 · INTEGRAÇÕES</tspan>
-</text>
-<text x="32" y="115" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="32" dy="0">Siga o caminho do dado</tspan>
-</text>
-<text x="32" y="158" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="32" dy="0">Uma mensagem precisa chegar com sentido.</tspan>
-</text>
-<rect x="40" y="195" width="510" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,223)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<path d="M7 6H46V36H23L12 47V36H7Z M16 16H37 M16 26H31"/>
-</g>
-<text x="132" y="238" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Entrada</tspan>
-</text>
-<text x="132" y="277" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">Mensagem ou evento</tspan>
-</text>
-<path d="M295 312V338" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="40" y="346" width="510" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,374)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<rect x="5" y="5" width="43" height="43" rx="10"/><path d="M14 27L23 36L40 18"/>
-</g>
-<text x="132" y="389" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Validar</tspan>
-</text>
-<text x="132" y="428" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">Formato, identidade e acesso</tspan>
-</text>
-<path d="M295 463V489" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="40" y="497" width="510" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,525)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<ellipse cx="26" cy="10" rx="20" ry="7"/><path d="M6 10V42C6 51 46 51 46 42V10 M6 26C6 35 46 35 46 26"/>
-</g>
-<text x="132" y="540" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Registrar</tspan>
-</text>
-<text x="132" y="579" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">ID, dados e estado inicial</tspan>
-</text>
-<path d="M295 614V640" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="40" y="648" width="510" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,676)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<path d="M36 5A14 14 0 0 0 19 22L5 36A7 7 0 0 0 15 46L30 31A14 14 0 0 0 47 14L38 23L29 14Z"/>
-</g>
-<text x="132" y="691" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Consultar ou executar</tspan>
-</text>
-<text x="132" y="730" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">API com operação autorizada</tspan>
-</text>
-<path d="M295 765V791" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="40" y="799" width="510" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
-<g transform="translate(59,827)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<path d="M9 4H32L43 15V48H9Z M32 4V15H43 M17 24H35 M17 33H35 M17 41H28"/>
-</g>
-<text x="132" y="842" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="132" dy="0">Histórico</tspan>
-</text>
-<text x="132" y="881" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
-<tspan x="132" dy="0">Resultado e mudança de estado</tspan>
-</text>
-<path d="M552 402H589V1001H568" fill="none" stroke="#b95432" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-coral)"/>
-<path d="M552 704H589" fill="none" stroke="#b95432" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="32" y="954" width="536" height="204" rx="18" fill="#fff0e9" stroke="#fff0e9" stroke-width="2"/>
-<g transform="translate(52,977)" stroke="#b95432" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
-<path d="M17 4H36L49 17V36L36 49H17L4 36V17Z"/><path d="M18 18L35 35 M35 18L18 35"/>
-</g>
-<text x="123" y="994" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
-<tspan x="123" dy="0">Falha tratada</tspan>
-</text>
-<text x="54" y="1044" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#102236" text-anchor="start">
-<tspan x="54" dy="0">Registre a causa. Peça correção</tspan>
-<tspan x="54" dy="35">ou repita com limite, quando</tspan>
-<tspan x="54" dy="35">a repetição for segura.</tspan>
-</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc"><title id="title">O CAMINHO DO PEDIDO</title><desc id="desc">Acompanhe a informação antes de automatizar. 1 · Receber: Mensagem de orçamento. Guarde origem e ID.; 2 · Conferir: Formato e acesso. Qual campo falta?; 3 · Registrar: Dados e estado atual. Evite registro duplicado.; 4 · Acompanhar: O que mudou e por quê? Guarde também a falha.. Uma integração liga os sistemas e deixa um resultado.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#00816d"/></marker></defs>
+<rect width="640" height="420" rx="16" fill="#f5faf8"/>
+<g font-family="system-ui,Segoe UI,sans-serif">
+<text x="24" y="36" font-size="24" font-weight="750" fill="#183448">O CAMINHO DO PEDIDO</text>
+<text x="24" y="64" font-size="18" font-weight="400" fill="#526b7b">Acompanhe a informação antes de automatizar.</text>
+<rect x="24" y="88" width="272" height="120" rx="12" fill="#ffffff" stroke="#ccdfd8"/>
+<text x="40" y="119" font-size="22" font-weight="720" fill="#183448">1 · Receber</text>
+<text x="40" y="153" font-size="21" font-weight="400" fill="#183448">Mensagem de orçamento.</text>
+<text x="40" y="182" font-size="21" font-weight="400" fill="#183448">Guarde origem e ID.</text>
+<rect x="344" y="88" width="272" height="120" rx="12" fill="#e5f5ef" stroke="#ccdfd8"/>
+<text x="360" y="119" font-size="22" font-weight="720" fill="#183448">2 · Conferir</text>
+<text x="360" y="153" font-size="21" font-weight="400" fill="#183448">Formato e acesso.</text>
+<text x="360" y="182" font-size="21" font-weight="400" fill="#183448">Qual campo falta?</text>
+<rect x="24" y="240" width="272" height="120" rx="12" fill="#ffffff" stroke="#ccdfd8"/>
+<text x="40" y="271" font-size="22" font-weight="720" fill="#183448">3 · Registrar</text>
+<text x="40" y="305" font-size="21" font-weight="400" fill="#183448">Dados e estado atual.</text>
+<text x="40" y="334" font-size="21" font-weight="400" fill="#183448">Evite registro duplicado.</text>
+<rect x="344" y="240" width="272" height="120" rx="12" fill="#e5f5ef" stroke="#ccdfd8"/>
+<text x="360" y="271" font-size="22" font-weight="720" fill="#183448">4 · Acompanhar</text>
+<text x="360" y="305" font-size="21" font-weight="400" fill="#183448">O que mudou e por quê?</text>
+<text x="360" y="334" font-size="21" font-weight="400" fill="#183448">Guarde também a falha.</text>
+<g stroke="#00816d" stroke-width="2.3" fill="none" marker-end="url(#arrow)"><path d="M 301 148 H 337"/><path d="M 480 211 V 225 H 160 V 233"/><path d="M 301 300 H 337"/></g>
+<text x="24" y="397" font-size="18" font-weight="500" fill="#365c55">Uma integração liga os sistemas e deixa um resultado.</text>
+</g></svg>

@@ -1,10 +1,8 @@
 # Onde estudar: uma fonte, uma aplicação
 
-[← Comece aqui](README.md) · [Trilha prática](trilha-pratica.md) · [Pesquisar](como-pesquisar.md) · [X e Discord](comunidades.md)
+[← Guia principal](../README.md)
 
-**Escolha a entrega em que está e abra a leitura principal.** Estude o suficiente para experimentar no seu agente. As [aulas](../aulas/README.md) explicam os conceitos; os aprofundamentos ficam disponíveis quando você quiser ir além.
-
-Use **80% do tempo para praticar e 20% para estudar** como referência. Você pode começar com o Hermes e aprender durante o uso, sem estudar programação, matemática ou bancos de dados antes da primeira tarefa.
+**Escolha a entrega em que está e consulte uma fonte para a dúvida atual.** Cada indicação vem acompanhada de uma aplicação; os livros e artigos ficam nos blocos de aprofundamento.
 
 ## Curso ou vídeo para começar
 
@@ -12,20 +10,16 @@ Use **80% do tempo para praticar e 20% para estudar** como referência. Você po
 
 **Se estiver sem orçamento para o curso:** comece pelo vídeo do Lucas [Crie seu Agente de IA Hermes em menos de 20 minutos](https://youtu.be/VHh2D9agRps). O vídeo é aberto; modelos, ferramentas e hospedagem podem ter custos conforme a configuração.
 
-Nos dois caminhos, continue com o mesmo agente nas quatro entregas abaixo. O [guia de estudo](como-estudar.md) ajuda a aproveitar o que você já colocou para funcionar.
-
 ## 1 · Seu primeiro agente e uma tarefa
 
-**Comece por:** [o vídeo do Lucas sobre Hermes](https://youtu.be/VHh2D9agRps). Para conferir um passo da configuração, consulte a [documentação oficial do Hermes Agent](https://hermes-agent.nousresearch.com/docs/).
+**Consulte:** a [documentação oficial do Hermes Agent](https://hermes-agent.nousresearch.com/docs/) para conferir um passo da configuração.
 
-**Aplique:** escolha uma tarefa pequena, como resumir um arquivo de teste. Execute, confira o resultado e anote o que funcionou. Essa é a primeira entrega da [trilha prática](trilha-pratica.md).
+**Aplique:** peça ao agente que classifique uma mensagem de orçamento em serviço procurado, dúvida principal e próxima pergunta, usando somente os dados fornecidos. Compare duas instruções com três mensagens: completa, incompleta e fora do assunto.
 
 **Se quiser entender melhor sua escolha:** a [aula de história e problemas](../aulas/README.md#aula-01) conecta as possibilidades e os limites da IA ao que você quer construir.
 
 <details>
 <summary>Quero aprofundar: história, possibilidades e organização do projeto</summary>
-
-Escolha apenas o recurso que responde à sua curiosidade. Livros e cursos completos são opcionais.
 
 | Sua pergunta | Fonte | O que levar para a prática |
 | --- | --- | --- |
@@ -43,7 +37,7 @@ Escolha apenas o recurso que responde à sua curiosidade. Livros e cursos comple
 
 **Comece por:** [aula de contexto e fontes](../aulas/README.md#aula-04). Leia primeiro como fornecer uma informação junto da pergunta; avance para busca em documentos quando isso ajudar sua tarefa.
 
-**Aplique:** entregue ao agente um arquivo curto e faça perguntas sobre ele. Peça que indique a fonte. Depois faça uma pergunta que o arquivo não responde e confira como o agente lida com a falta de informação.
+**Aplique:** acrescente o catálogo aprovado de serviços e condições de atendimento, com data de atualização. Teste se atende empresas, um preço que não consta na fonte e um pedido ambíguo. Peça a fonte; depois altere uma informação e confira a atualização.
 
 <details>
 <summary>Quero aprofundar: modelos, busca em documentos e aprendizado</summary>
@@ -60,7 +54,7 @@ A [aula sobre modelos](../aulas/README.md#aula-02) explica tokens, contexto e co
 | Por que dados e capacidade de computação importam? | [The Bitter Lesson — Richard Sutton](http://incompleteideas.net/IncIdeas/BitterLesson.html) e [Scaling Laws for Neural Language Models — Kaplan e colaboradores](https://arxiv.org/abs/2001.08361). | Distinguir os argumentos dos textos de uma garantia de resultado no seu projeto. |
 | Quero construir um modelo pequeno por dentro | [Neural Networks: Zero to Hero — Andrej Karpathy](https://karpathy.ai/zero-to-hero.html) e [Build a Large Language Model (From Scratch) — Sebastian Raschka](https://www.manning.com/books/build-a-large-language-model-from-scratch), com [código do autor](https://github.com/rasbt/LLMs-from-scratch). | Explorar uma atividade de tokenização ou uma rede pequena. |
 
-O último caminho é um estudo técnico posterior, com programação e matemática próprias desses materiais. Você pode concluir as quatro entregas usando modelos prontos.
+Construir um modelo por dentro envolve programação e matemática; escolha esse aprofundamento quando quiser estudar o treinamento.
 
 </details>
 
@@ -68,7 +62,7 @@ O último caminho é um estudo técnico posterior, com programação e matemáti
 
 **Comece por:** [aula de agentes e ferramentas](../aulas/README.md#aula-05). Foque em como um pedido do modelo se transforma em uma ação permitida.
 
-**Aplique:** peça ao agente que use as fontes para produzir e salvar um relatório em uma pasta de teste. Confira o arquivo e o caminho usado. Depois adapte a ação à sua tarefa, aumentando o alcance aos poucos.
+**Aplique:** registre serviço procurado, dúvida e informação pendente em uma tabela de teste. Confira o resultado no destino e repita um pedido para investigar duplicatas.
 
 <details>
 <summary>Quero aprofundar: ferramentas, integrações e dados</summary>
@@ -89,7 +83,7 @@ Consulte a [aula de integrações e dados](../aulas/README.md#aula-03) quando pr
 
 **Comece por:** [aula de avaliação](../aulas/README.md#aula-06). Leia como escolher perguntas e resultados esperados para conferir o agente.
 
-**Aplique:** repita as mesmas tarefas, incluindo uma informação ausente e uma ação que falhe. Corrija um problema e teste novamente. Mostre uma tarefa funcionando, uma limitação e a melhoria feita, usando os [registros de prática](../pratique/README.md).
+**Aplique:** teste pergunta comum, informação ausente, pedido ambíguo, ação repetida e ferramenta indisponível. Corrija um problema e repita os mesmos casos. Registre pedido, esperado, observado e ajuste; mostre uma tarefa funcionando e uma limitação.
 
 <details>
 <summary>Quero aprofundar: avaliação, custos e uso contínuo</summary>
@@ -104,13 +98,11 @@ A [aula de operação e comunicação](../aulas/README.md#aula-07) ajuda quando 
 | Quero explorar hospedagem ou monitoramento | [Microsoft Learn](https://learn.microsoft.com/pt-br/training/) ou [treinamento do Google Cloud](https://cloud.google.com/learn/training). | Selecionar apenas o módulo do ambiente que pretende usar. |
 | Como feedback humano participa do treinamento? | [Training language models to follow instructions with human feedback — Ouyang e colaboradores](https://arxiv.org/abs/2203.02155). | Distinguir uma resposta preferida de uma resposta factualmente correta. |
 
-Os artigos de pesquisa são leituras opcionais. Treinar modelos ou implantar serviços em nuvem não é condição para demonstrar seu primeiro agente funcionando.
-
 </details>
 
 ## Consulta rápida por fonte
 
-Use esta lista quando souber o que procura. Para começar, siga a leitura principal da entrega atual.
+Use esta lista para localizar um material pelo fornecedor.
 
 ### OpenAI
 
@@ -136,13 +128,4 @@ Use esta lista quando souber o que procura. Para começar, siga a leitura princi
 
 [Hermes Agent](https://hermes-agent.nousresearch.com/docs/) para configurar e explorar seu agente. Os aprofundamentos das quatro entregas reúnem Hugging Face, MDN, PostgreSQL, livros, vídeos e artigos originais. Abra o bloco ligado à sua dúvida.
 
-## Pesquisa e acompanhamento durante a prática
-
-1. Abra [sua entrega atual](trilha-pratica.md) e escolha a próxima tarefa.
-2. Consulte uma fonte que ajude a executá-la.
-3. Experimente e guarde o resultado no [registro de experimento](../pratique/experimento.md).
-4. Use [X e Discord](comunidades.md) para descobrir ideias e conversar sobre o que testou.
-
-O [guia de pesquisa](como-pesquisar.md) traz exemplos de buscas no Google e nas documentações. Escolha uma ideia e volte ao agente para experimentá-la.
-
-Fontes consultadas em **04/10/2026**. Idioma, acesso e catálogo variam por recurso; escolha o trecho que ajuda a próxima entrega.
+Fontes consultadas em **04/10/2026**. O [guia de pesquisa](como-pesquisar.md) mostra como procurar uma dúvida específica nessas documentações.

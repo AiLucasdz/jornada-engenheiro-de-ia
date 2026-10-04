@@ -1,206 +1,253 @@
 # Jornada do Engenheiro de IA
 
-**Construa com IA. Mostre o que funciona. Aprenda a transformar isso em um serviço pago.**
+**Enxergue um problema. Construa com IA. Prove o valor. Aprenda a oferecer a solução.**
 
-Da primeira automação à primeira oferta: conecte **mentalidade de IA, teoria, prática, comunidades e construção em público**. Use um agente desde o início e avance em **quatro entregas**.
+Uma jornada prática para conectar **mentalidade de IA, processos de negócio, construção e entrega de valor**. Você começa usando um agente, melhora o mesmo projeto em **quatro entregas** e aprende a mostrar o trabalho para quem pode precisar dele.
 
-<p class="compact-visual"><a href="mapas-e-desenhos/ciclo-de-valor.svg"><img src="mapas-e-desenhos/ciclo-de-valor.svg" width="548" alt="Ciclo que conecta mentalidade de IA, teoria, prática, comunidade, construção em público e uma oferta baseada em resultado demonstrado e interesse do cliente." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p>
+<p class="compact-visual"><a href="mapas-e-desenhos/ciclo-de-valor.svg"><img src="mapas-e-desenhos/ciclo-de-valor.svg" width="548" alt="Ciclo que conecta mentalidade de IA, teoria, prática, comunidade, construção em público e uma oferta baseada em resultado demonstrado e interesse do cliente." loading="lazy"></a></p>
 
-**80% prática · 20% teoria · Sem prazo fixo · Um projeto que pode virar uma oferta**
+**80% prática · 20% teoria · Quatro entregas · Sem prazo fixo**
 
-Pedidos sem retorno. Relatórios montados à mão. Informação espalhada que ninguém encontra. Escolha um desses problemas, construa uma solução pequena e mostre a melhoria para quem vive aquela dificuldade.
+[Começar](#comece-por-aqui) · [Construir o projeto](#quatro-entregas-um-projeto-que-ganha-valor) · [Mostrar o trabalho](#build-in-public-mostre-o-trabalho-enquanto-constrói) · [Preparar uma oferta](#como-transformar-o-projeto-em-um-serviço-pago)
 
-O percurso principal está inteiro nesta página: explicações, exemplos, exercícios, fontes e roteiro de oferta. Use o índice para ir direto ao ponto.
+## Mentalidade de IA: veja a tarefa dentro do processo
 
-[**Começar com meu agente**](#comece-por-aqui) · [Fazer as quatro entregas](#quatro-entregas-um-projeto-que-ganha-valor) · [Construir em público](#build-in-public-mostre-o-trabalho-enquanto-constrói) · [Preparar uma oferta](#como-transformar-o-projeto-em-um-serviço-pago)
+Na prática, a IA pode ajudar a **interpretar uma mensagem, extrair informações, comparar opções e preparar uma resposta**. Essas capacidades ganham utilidade quando entram numa tarefa real. Abra espaço para experimentar: observar uma pequena melhoria costuma revelar possibilidades que você ainda não tinha considerado.
 
-## Mentalidade de IA: aprenda a enxergar possibilidades
+Um prestador de serviços recebe pedidos de orçamento por mensagem. Alguns chegam completos; outros dizem apenas “quanto custa?”. Ele precisa descobrir o serviço procurado, consultar suas regras, pedir os dados que faltam e organizar o pedido antes de preparar uma proposta.
 
-Pense no agente como alguém que acabou de chegar para ajudar no trabalho. Essa pessoa precisa entender a tarefa, encontrar as informações certas, conhecer as ferramentas e saber quando chamar você. Com IA, essas perguntas também orientam a construção.
+Esse será o exemplo da jornada. Você pode adaptá-lo ao seu trabalho, mantendo a mesma pergunta: **quem teria um dia melhor se esta tarefa funcionasse bem?**
 
-Ao ver uma atividade repetitiva, investigue: **o que entra, o que precisa ser decidido, qual ação vem depois e como alguém confere o resultado?** Você começa a perceber oportunidades quando observa o processo inteiro.
+Pensar com IA começa por observar possibilidades nesse processo. Um agente pode ajudar a interpretar mensagens diferentes e preparar uma próxima pergunta. Para isso, precisa de informação confiável, acesso às ferramentas certas e critérios para conferir o resultado.
 
-Conhecer projetos de outras pessoas amplia seu repertório. Experimente uma possibilidade que hoje parece fora do seu alcance: peça ajuda à IA, faça uma versão pequena e veja onde precisa melhorar. A confiança cresce com os testes e com as entregas.
+| Parte do processo | No pedido de orçamento | O que investigar |
+| --- | --- | --- |
+| **Entrada** | A mensagem do interessado. | Quais informações costumam faltar? |
+| **Decisão** | Entender o serviço e o próximo passo. | Quando é preciso pedir esclarecimento? |
+| **Ação** | Consultar o catálogo e registrar o pedido. | Onde o dado deve ficar disponível? |
+| **Conferência** | O prestador revisa antes de preparar a proposta. | Como identificar um registro incorreto? |
 
-**Exercício de hoje:** anote três tarefas que se repetem na sua rotina ou na de alguém próximo. Para cada uma, escreva quem faz, o que dá trabalho e como você observaria uma melhora. Escolha a tarefa para a qual consiga obter exemplos e conversar com quem a executa.
+> **Exercício de observação:** converse com alguém que recebe esses pedidos. Peça três exemplos sem dados privados, acompanhe como são tratados e anote onde há espera, repetição ou correção. Escolha uma parte pequena para experimentar.
 
-> **Pergunta que acompanha a jornada:** quem teria um dia de trabalho melhor se esta tarefa funcionasse bem?
+### Traduza a possibilidade em valor para o negócio
+
+“Usar um agente” descreve uma ferramenta. O prestador precisa entender o que melhora no trabalho dele. Comece com uma hipótese que dê para verificar:
+
+| Hoje | O que vamos experimentar | Como conferir |
+| --- | --- | --- |
+| A pessoa relê mensagens para descobrir o serviço. | O agente sugere o serviço procurado e o que falta. | Comparar a sugestão com a revisão do prestador. |
+| As dúvidas se repetem e exigem consultar o catálogo. | O agente prepara respostas apoiadas no catálogo aprovado. | Conferir a fonte e contar as correções necessárias. |
+| Os pedidos ficam espalhados. | O agente organiza os campos combinados numa tabela. | Medir o tempo de organização e verificar registros ausentes ou duplicados. |
+
+Essas melhorias ainda são **hipóteses**. Observe primeiro como a tarefa é feita hoje e guarde alguns exemplos como referência. Mais adiante, você repetirá a tarefa com o agente e comparará os resultados. Isso ajuda a decidir se a solução merece continuar, mudar ou parar.
 
 ## LLM, agente e Hermes: o motor e o carro
 
-Um **LLM é como o motor**: uma peça central que oferece capacidade ao conjunto. Ele interpreta o contexto e gera respostas ou pedidos de uso de ferramentas.
+Um **modelo de linguagem (LLM) é como o motor**: oferece capacidade ao conjunto. Ele interpreta o contexto e gera respostas ou pedidos de uso de ferramentas. Um **agente é como o carro montado**: reúne o modelo, as instruções, o contexto, as ferramentas e o ciclo de execução.
 
-Um **agente é como o carro montado**: reúne o modelo, as instruções, o contexto, as ferramentas e o ciclo de execução. O **Hermes Agent** oferece essa estrutura pronta para você configurar e usar.
+O **Hermes Agent** oferece essa estrutura pronta para configurar e usar. Você pode começar com ela e entender suas peças enquanto melhora o projeto.
 
-<p class="compact-visual"><a href="mapas-e-desenhos/motor-e-carro.svg"><img src="mapas-e-desenhos/motor-e-carro.svg" width="640" alt="Analogia entre LLM e motor, Hermes e carro, contexto e mapa, tarefa e destino, ferramentas e transmissão, verificações e painel e freios." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p>
+<p class="compact-visual"><a href="mapas-e-desenhos/motor-e-carro.svg"><img src="mapas-e-desenhos/motor-e-carro.svg" width="640" alt="LLM como motor, Hermes como carro, contexto como mapa, tarefa como destino, ferramentas como transmissão e verificações como painel e freios." loading="lazy"></a></p>
 
-- **O destino é a tarefa:** “organizar os pedidos recebidos”, por exemplo.
-- **O mapa é o contexto:** documentos, regras e informações disponíveis para aquela tarefa.
-- **As rodas e a transmissão são as ferramentas:** levam a decisão até uma ação, como ler um arquivo ou salvar um registro.
-- **O painel e os freios são as verificações e os limites:** mostram o que aconteceu e permitem interromper uma ação.
-- **Você escolhe a viagem:** define objetivo, acesso e limites e confere se o resultado corresponde ao pedido.
+No nosso exemplo, a analogia fica assim:
 
-É uma analogia para entender as peças. No agente, o modelo também pode participar da escolha dos próximos passos. Um modelo mais capaz ajuda, mas a qualidade da solução depende de contexto, ferramentas e testes. Consulte a [documentação oficial do Hermes](https://hermes-agent.nousresearch.com/docs/) quando precisar configurar uma dessas partes.
+- **Destino:** organizar um pedido para que o prestador prepare o orçamento.
+- **Mapa:** catálogo de serviços, perguntas necessárias e regras aprovadas.
+- **Rodas e transmissão:** ferramentas para consultar o documento e salvar o registro.
+- **Painel e freios:** registros da execução, permissões e condições para interromper ou pedir ajuda.
+
+**Você define a viagem e confere a chegada.** A mensagem “pedido organizado” precisa corresponder ao registro correto. O modelo pode participar da escolha dos próximos passos, mas a qualidade depende também das informações e dos controles ao redor dele. Consulte a [documentação oficial do Hermes](https://hermes-agent.nousresearch.com/docs/) conforme precisar configurar cada parte.
 
 ## Comece por aqui
 
 ### Minha recomendação — Lucas
 
-**Se puder investir em um curso agora**, recomendo o curso e a comunidade do **Bruno Okamoto, no [Pixel AI Hub](https://pixelaihub.pixeleducacao.com.br/)**. Considero um ótimo início e o Bruno um ótimo mentor. Comece por lá e continue a construção nesta jornada.
+**Se puder investir em um curso agora**, recomendo o curso e a comunidade do **Bruno Okamoto, no [Pixel AI Hub](https://pixelaihub.pixeleducacao.com.br/)**. Considero o Bruno um ótimo mentor e seu trabalho um ótimo ponto de partida. Você pode começar por lá e aplicar o aprendizado neste projeto.
 
-> **Não tenho nenhuma parceria com o Bruno Okamoto.** Essa é uma recomendação pessoal, porque considero o trabalho dele um ótimo ponto de partida.
+> **Não tenho nenhuma parceria com o Bruno Okamoto.** Esta é uma recomendação pessoal.
 
-**Se estiver sem orçamento para um curso**, assista ao meu vídeo **[Crie seu Agente de IA Hermes em menos de 20 minutos](https://youtu.be/VHh2D9agRps)**. Coloque seu agente para funcionar e use essa base nos exercícios abaixo. O vídeo é aberto; o uso de modelos, ferramentas e hospedagem pode ter custos conforme a configuração escolhida.
+**Se estiver sem orçamento para um curso**, assista ao meu vídeo **[Crie seu Agente de IA Hermes em menos de 20 minutos](https://youtu.be/VHh2D9agRps)**. Coloque o agente para funcionar e siga a primeira entrega. O vídeo é aberto; modelos, ferramentas e hospedagem podem ter custos conforme a configuração escolhida.
 
-**Já tem um agente funcionando?** Comece pela primeira entrega abaixo com uma tarefa sua. Você vai melhorar o mesmo projeto, observar resultados, mostrar o trabalho e investigar se ele pode ajudar um cliente.
+**Já tem um agente funcionando?** Use-o com os três exemplos de pedido que separou. A primeira meta é observar seu comportamento numa tarefa pequena.
 
 ## Quatro entregas, um projeto que ganha valor
 
-Vamos acompanhar um exemplo: **um prestador de serviços recebe perguntas sobre horários, opções e documentos necessários para um orçamento**. Você quer ajudá-lo a responder com informação correta e organizar os pedidos.
+O projeto será um **agente que ajuda a organizar pedidos de orçamento**. Ele identifica o serviço procurado, consulta informações aprovadas e prepara um registro para revisão. A proposta comercial continua sob responsabilidade do prestador.
 
-Adapte esse exemplo para uma tarefa que conhece. Faça cada entrega até conseguir mostrar o resultado e explicar o que verificou.
+| Entrega | O que muda no projeto | O que você precisa mostrar |
+| --- | --- | --- |
+| **1 · Interpretar** | O agente identifica a necessidade e o dado ausente. | Três mensagens testadas e uma falha compreendida. |
+| **2 · Consultar** | As respostas passam a usar um catálogo aprovado. | Uma resposta com fonte e um teste de informação ausente. |
+| **3 · Registrar** | Uma ferramenta organiza o pedido numa tabela de teste. | O registro correto, sem duplicação indesejada. |
+| **4 · Melhorar** | Você testa o fluxo, corrige uma falha e pede retorno. | Uma demonstração e uma comparação com o trabalho atual. |
 
-### 1 · Faça uma tarefa funcionar
+### 1 · Faça uma tarefa pequena funcionar
 
-Escolha uma tarefa pequena e descreva o resultado esperado. Antes de mexer nas ferramentas, preencha:
+Comece pela interpretação da mensagem. Neste exercício, o prestador recebe pedidos de serviços de instalação. Use estes casos fictícios:
 
-- **Quem precisa disso:**
-- **O que essa pessoa faz hoje:**
-- **Qual parte o agente vai ajudar a fazer:**
-- **Como vou conferir o resultado:**
+| Caso | Mensagem recebida | O que observar |
+| --- | --- | --- |
+| **Com contexto** | “Quero instalar dois ventiladores de teto no escritório. Vocês atendem empresas?” | Identificar o serviço e a dúvida sobre atender empresas, preparando a próxima pergunta. |
+| **Incompleto** | “Quanto custa instalar?” | Perguntar qual serviço a pessoa procura. |
+| **Fora do escopo** | “Qual time ganhou ontem?” | Reconhecer que a mensagem está fora do assunto de orçamento. |
 
-No exemplo, comece pedindo ao agente que identifique a dúvida de uma mensagem e sugira a próxima pergunta. Dê objetivo, contexto e formato de resposta. Uma instrução inicial poderia ser:
+Agora informe ao agente o objetivo, o formato esperado e como lidar com informação insuficiente:
 
 ```text
-Ajude a organizar pedidos de orçamento.
+Ajude um prestador de serviços de instalação.
+Organize os pedidos de orçamento.
 Identifique o serviço procurado e a informação que ainda falta.
 Use apenas os dados da mensagem.
 Responda com: serviço, dúvida principal e próxima pergunta.
 Quando algo não estiver claro, indique a dúvida.
 ```
 
-Experimente uma mensagem completa, uma incompleta e outra fora do assunto. Compare duas versões da instrução com os mesmos exemplos.
+**Experimente:** envie os três casos separadamente. Altere a instrução uma vez e repita as mesmas mensagens para perceber o efeito.
 
-**Entrega:** três testes registrados e uma instrução que você consegue explicar. Anote uma falha e o próximo ajuste.
+> **Como conferir:** no primeiro caso, o serviço é “instalação de dois ventiladores de teto” e a dúvida é “atende empresas?”. Nesta entrega, o agente identifica a necessidade e prepara a próxima pergunta. Responder que o prestador atende empresas exige consultar uma informação aprovada — esse será o próximo passo.
 
-### 2 · Dê informação confiável ao agente
+> **Sua entrega:** você consegue explicar o que orientou o agente, mostrar seus três testes e identificar uma resposta que precisou de correção.
 
-Prepare um documento curto com serviços, horários, perguntas frequentes e data de atualização. Oriente o agente a usar esse material e indicar de onde tirou a resposta.
+### 2 · Dê uma fonte confiável ao agente
 
-O documento funciona como um **manual de consulta**: a qualidade da resposta depende do que está escrito e de o agente realmente consultar o trecho certo. Quando o sistema busca informação relevante antes de responder, esse caminho é conhecido como **RAG**.
+Prepare um catálogo curto com serviços, informações necessárias para o orçamento, regras e data de atualização. Oriente o agente a consultá-lo e indicar o trecho que sustenta a resposta.
 
-Faça três perguntas: uma respondida pelo material, uma sem resposta e uma ambígua. Depois, altere uma informação do documento e repita o teste. Confira se a mudança apareceu na resposta.
+Comece copiando este exemplo fictício para um arquivo chamado `catalogo-servicos.txt` e disponibilize-o ao agente:
 
-**Entrega:** uma resposta com fonte que você consegue conferir, um exemplo de informação ausente e um teste de atualização. Se o agente inventar um dado, investigue o material consultado e a instrução antes de adicionar novas ferramentas.
+```text
+Serviços: instalação de ventiladores de teto e pequenas manutenções.
+Atendimento: residências e empresas.
+Para preparar o orçamento: serviço, quantidade, endereço e disponibilidade.
+Valor e agendamento: confirmados pelo prestador após analisar o pedido.
+Atualização: [data da sua revisão].
+```
+
+Com essa fonte, “Vocês atendem empresas?” pode receber **“Sim, conforme o catálogo de serviços”**. Já “Quanto fica?” exige reunir os dados para o prestador avaliar. A diferença é a informação disponível para sustentar cada resposta.
+
+O catálogo funciona como um **manual de consulta**. Quando o sistema busca trechos relevantes e os fornece ao modelo para responder, esse caminho é chamado **RAG**. A informação precisa existir na fonte e chegar ao modelo; escrever “consulte o catálogo” numa instrução não comprova que a consulta ocorreu.
+
+Faça três verificações:
+
+1. Pergunte algo respondido pelo catálogo e confira a origem da resposta.
+2. Pergunte um preço que o documento não informa e observe se o agente pede ajuda.
+3. Altere uma regra do catálogo e repita a pergunta para verificar a atualização.
+
+> **Sua entrega:** você mostra a resposta e sua fonte, demonstra o comportamento quando falta informação e confirma que a alteração no catálogo foi considerada.
 
 ### 3 · Conecte uma ação útil
 
-Use uma ferramenta que o agente já oferece. Comece consultando um arquivo; depois, permita salvar um resumo ou organizar um pedido em uma tabela de teste.
+Agora o agente vai salvar **serviço procurado, dúvida principal e informação pendente** numa tabela de teste. Use uma ferramenta disponível no ambiente escolhido e dados fictícios para conferir o caminho completo.
 
-Pense na ferramenta como a **chave de uma sala**: ela dá acesso a um lugar e a determinadas ações. Defina quais arquivos ou registros podem ser lidos e alterados. Teste primeiro com dados fictícios.
+Para a mensagem dos dois ventiladores, um registro depois da consulta ao catálogo poderia ser:
 
-No exemplo, o agente registra serviço procurado, dúvida e informação pendente. Confira o registro no destino. Envie o mesmo pedido novamente e veja se ele cria uma duplicata indesejada. Retire um dado necessário e observe se pede ajuda.
+```text
+Pedido: teste-001
+Serviço: instalação de dois ventiladores de teto em um escritório.
+Dúvida: atende empresas? Sim, conforme o catálogo.
+Informação pendente: endereço e disponibilidade para o serviço.
+Situação: aguardando informações; orçamento ainda não preparado.
+```
 
-**Entrega:** uma ação que deixa um resultado verificável, com limites claros e uma forma de interromper. A mensagem “feito” precisa corresponder ao que aconteceu no arquivo ou na tabela.
+Peça ao agente para salvar esse registro no arquivo ou na tabela de teste escolhida. Abra o destino e compare os campos. Se a ferramenta não estiver configurada, use esse exemplo como resultado esperado ao preparar a conexão.
+
+Uma ferramenta se parece com a **chave de uma sala**: concede acesso a determinados recursos e ações. Defina onde o agente pode registrar dados e quando deve parar. Na chamada de ferramenta, o modelo solicita a ação; o sistema responsável precisa validá-la e executá-la.
+
+**Experimente:** envie um pedido, abra a tabela e confira o registro. Repita o mesmo pedido e observe se aparece uma duplicata. Depois, retire um dado necessário ou torne a ferramenta indisponível para conferir o tratamento da falha.
+
+> **Sua entrega:** o “feito” corresponde ao resultado no destino. Você consegue localizar o pedido, explicar os limites de acesso e interromper o fluxo.
 
 ### 4 · Teste, melhore e demonstre
 
-Prepare cinco situações: uma pergunta comum, uma informação ausente, um pedido ambíguo, uma ação repetida e uma ferramenta indisponível. Registre **pedido → resultado esperado → resultado observado → ajuste necessário**.
+Use uma pequena bateria de situações para repetir a avaliação a cada mudança:
 
-Corrija uma falha e repita os mesmos testes. Mostre a tarefa completa para alguém que conhece o problema. Observe onde essa pessoa precisa de ajuda e pergunte o que tornaria o agente útil no trabalho dela.
+| Situação | O que conferir |
+| --- | --- |
+| Pedido comum | Serviço e campos correspondem à mensagem. |
+| Informação ausente | O agente pede o dado necessário. |
+| Pedido ambíguo | A dúvida é esclarecida antes de registrar uma conclusão. |
+| Pedido repetido | A repetição não cria um efeito indesejado. |
+| Ferramenta indisponível | O erro é informado e existe uma forma de continuar o atendimento. |
 
-Compare o processo atual e o teste: tempo gasto, etapas manuais, correções necessárias e qualidade da resposta. Registre o que mediu e o que ainda é uma hipótese.
+Guarde **pedido → resultado esperado → resultado observado → ajuste**. Corrija uma falha e execute os mesmos casos novamente; uma mudança pode melhorar um caso e prejudicar outro.
 
-**Entrega:** uma demonstração, os testes, uma melhoria e o retorno de um possível usuário. Esses exemplos iniciam a avaliação; amplie a cobertura conforme o uso crescer. Havendo interesse, use o roteiro de oferta mais abaixo.
+Demonstre o fluxo ao prestador: mensagem recebida, consulta ao catálogo, pergunta de esclarecimento e registro. Peça que ele confira a utilidade. Compare com a referência inicial: quanto trabalho de organização e correção permaneceu? O registro está mais fácil de usar?
 
-## Teoria na hora em que ela ajuda
+> **Sua entrega:** você apresenta uma execução completa, uma falha conhecida, uma melhoria verificada e o retorno de alguém que faz a tarefa. Os cinco casos iniciam a avaliação; acrescente exemplos conforme descobrir novas situações.
 
-A teoria é como um **mapa de estrada**: ajuda a escolher o caminho e entender um desvio. Volte ao mapa quando surgir uma dúvida e aplique o que aprendeu na próxima tentativa.
+## Fundamentos aplicados: estude a dúvida que apareceu
 
-**80% prática e 20% teoria** é a referência. Em uma sessão de uma hora, você pode usar 12 minutos para estudar, 28 para construir, 15 para testar e 5 para registrar o aprendizado. Ajuste a distribuição conforme a tarefa.
+A história e a base técnica fazem parte das entregas: ajudam a escolher problemas, entender limites e investigar falhas. Você não precisa concluir todas as leituras para iniciar o projeto. Abra a [coleção de aulas](aulas/README.md) quando uma explicação ajudar no próximo passo.
 
-Para escolher o que estudar agora:
+**80/20 é uma referência de trabalho:** numa sessão de uma hora, experimente 12 minutos de estudo, 28 de construção, 15 de testes e 5 de registro. O estudo orienta uma ação; os testes mostram o que precisa ser estudado depois.
 
-- **Não entendi uma configuração do Hermes:** consulte a [documentação do projeto](https://hermes-agent.nousresearch.com/docs/).
-- **Quero orientar melhor o modelo:** explore uma atividade da [Claude Academy](https://academy.claude.com/).
-- **Preciso de um exemplo de implementação:** procure a tarefa no [OpenAI Cookbook](https://developers.openai.com/cookbook), na [documentação do Claude](https://platform.claude.com/docs/en/intro) ou na [documentação do Gemini](https://ai.google.dev/gemini-api/docs), conforme a ferramenta que usa.
-- **Quero entender um conceito:** consulte [Generative AI for Beginners, da Microsoft](https://github.com/microsoft/generative-ai-for-beginners), ou os [fundamentos do Google](https://developers.google.com/machine-learning/crash-course?hl=pt-br) quando quiser aprofundar.
-- **Quero guardar e apresentar o projeto:** faça a atividade de [introdução ao GitHub](https://github.com/skills/introduction-to-github).
+| Sua dúvida agora | Conceito que ajuda | Consulta e fonte recomendada |
+| --- | --- | --- |
+| Vale aplicar IA nesta parte do trabalho? | Escopo, limites e resultado observável. | [História da IA e escolha de problemas](aulas/README.md#aula-01). |
+| Por que a resposta parece boa, mas contém um erro? | [Modelos, aprendizado e contexto](aulas/README.md#aula-02). | [Google — fundamentos de ML](https://developers.google.com/machine-learning/crash-course?hl=pt-br). |
+| Como levar a mensagem até a tabela? | [Integrações, dados e estado](aulas/README.md#aula-03). | Um exemplo do provedor usado: [OpenAI Cookbook](https://developers.openai.com/cookbook), [Claude Docs](https://platform.claude.com/docs/en/intro) ou [Gemini API](https://ai.google.dev/gemini-api/docs). |
+| Por que o agente ignorou ou não encontrou a regra do catálogo? | [Contexto, busca e RAG](aulas/README.md#aula-04). | [Microsoft — Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners). |
+| Como dar uma ferramenta ao agente e definir seus limites? | [Agentes, ferramentas e autonomia](aulas/README.md#aula-05). | [Hermes — documentação](https://hermes-agent.nousresearch.com/docs/) para configurar; [Claude Academy](https://academy.claude.com/) para praticar delegação e revisão. |
+| Como saber se a mudança melhorou o projeto? | Casos repetíveis, comparação e investigação de erros. | [Avaliação e confiabilidade](aulas/README.md#aula-06). |
+| Como outra pessoa usa e acompanha o projeto? | [Operação, registros e comunicação](aulas/README.md#aula-07). | [GitHub Skills — Introduction to GitHub](https://github.com/skills/introduction-to-github) para guardar e apresentar as versões. |
 
-Na pesquisa, escreva a dúvida concreta. `Hermes nome-da-ferramenta mensagem-do-erro` ajuda mais do que uma busca ampla por “agentes”. No Google, use `site:` para procurar no domínio oficial e coloque a mensagem exata do erro entre aspas. Confira a versão e teste a orientação num exemplo pequeno.
-
-**História e base técnica continuam no material:** a [página de aulas completas](aulas/README.md) reúne os sete temas, com exemplos e aprofundamentos na mesma página. Você pode consultar uma explicação e retornar ao projeto.
+Escolha **uma referência por dúvida**. Ao pesquisar no Google, use o nome da ferramenta, a tarefa e a mensagem exata do erro entre aspas. O filtro `site:` ajuda a procurar no domínio oficial. Confira a versão e experimente a orientação num caso pequeno antes de ampliar a mudança.
 
 ## Comunidades: aprenda na oficina de quem está construindo
 
-Pense na comunidade como uma **oficina compartilhada**. Você observa soluções, mostra uma peça que não funcionou e recebe ideias de quem já enfrentou algo parecido. O valor aumenta quando leva uma pergunta concreta e volta para contar o resultado.
+Uma comunidade funciona como uma **oficina compartilhada**: você observa soluções, mostra uma peça que falhou e recebe ideias. Leve uma pergunta concreta e volte para contar o que resolveu.
 
-- **No X:** acompanhe [@ailucasdz](https://x.com/ailucasdz) e explore [os perfis que acompanha](https://x.com/ailucasdz/following). Escolha uma ideia para experimentar no seu projeto.
-- **No Discord da [Nous Research](https://discord.gg/NousResearch):** acompanhe discussões sobre Hermes, ferramentas e configuração.
-- **No Discord do [OpenClaw](https://discord.gg/clawd):** veja experiências de integração e uso de agentes.
-- **No curso e na comunidade do Bruno**, se participar: leve dúvidas da construção e teste no seu agente o que aprender.
+- **X:** acompanhe [@ailucasdz](https://x.com/ailucasdz) e explore [os perfis que acompanha](https://x.com/ailucasdz/following). Escolha uma ideia para experimentar.
+- **Discord da [Nous Research](https://discord.gg/NousResearch):** discussões sobre Hermes, ferramentas e configuração.
+- **Discord do [OpenClaw](https://discord.gg/clawd):** experiências de integração e uso de agentes.
+- **Comunidade do Bruno**, se participar: leve dúvidas do projeto e aplique o que aprender no mesmo agente.
 
-Para pedir ajuda, escreva: **“Quero fazer X. Usei Y. Esperava Z. Aconteceu W. Já tentei isto. Minha dúvida é esta.”** Inclua um exemplo pequeno, sem dados privados. Depois, registre o que resolveu.
+> **Um pedido de ajuda útil:** “Meu agente registra pedidos nesta tabela de teste. Reenviei a mesma mensagem e surgiram duas linhas. Esperava um único registro. Já conferi o identificador do pedido. Como posso investigar onde a repetição acontece?”
 
-Conversa com outros construtores ajuda na implementação. Para descobrir valor comercial, converse também com quem executa a tarefa no dia a dia e poderia contratar a solução.
+Inclua um exemplo pequeno, sem dados privados. Construtores ajudam a investigar a implementação; o prestador ajuda a julgar se ela melhora o trabalho real. Procure os dois tipos de retorno.
 
 ## Build in public: mostre o trabalho enquanto constrói
 
-**Construir em público** é tornar visíveis suas tentativas, decisões e resultados. Funciona como uma **vitrine com a oficina à vista**: a pessoa vê o que você entrega e como confere a qualidade.
+Construir em público torna visíveis suas decisões e resultados. Pense numa **vitrine com a oficina à vista**: quem acompanha consegue ver o que funciona, como foi conferido e o que falta melhorar.
 
-A cada entrega, publique algo concreto: uma demonstração curta, um desenho do processo, um antes e depois ou uma falha que conseguiu corrigir. Use dados fictícios ou autorizados e indique o que foi medido.
+A cada entrega, escolha um registro útil para compartilhar:
 
-Um exemplo de atualização:
+- **Primeira versão:** uma mensagem de teste e a resposta comentada.
+- **Melhoria:** o mesmo caso antes e depois da correção.
+- **Demonstração:** o caminho da mensagem até o registro, com uma limitação conhecida.
 
-> Estou construindo um agente para organizar pedidos de orçamento. Nesta versão, ele consulta um documento e registra a informação que falta. Testei cinco situações; uma pergunta ambígua ainda gerou um registro errado. Ajustei a instrução e vou repetir os testes. Quem organiza pedidos assim hoje: qual informação costuma faltar?
+> **Exemplo de publicação:** “Meu agente já organiza pedidos de orçamento usando um catálogo de teste. Nos cinco casos que separei, um pedido repetido criou duas linhas. Corrigi a identificação e repeti os testes. Quem recebe esses pedidos: quais situações mais dão trabalho na hora de organizar?”
 
-No GitHub, descreva **o problema, como executar o projeto, uma demonstração, os testes e os limites conhecidos**. No X ou no Discord, mostre o trecho do trabalho que rende uma conversa. Adapte ao espaço e às regras da comunidade.
+No **GitHub**, mantenha problema, instruções de uso, demonstração, testes e limites conhecidos. No **X ou Discord**, mostre uma parte do trabalho e abra uma conversa, respeitando as regras do espaço. Use dados fictícios ou autorizados e diferencie o resultado medido da expectativa.
 
-Ao receber retorno, escolha uma mudança e mostre o resultado dela. A publicação ajuda outras pessoas a conhecer seu trabalho; a conversa sobre uma necessidade concreta é o que permite investigar uma oportunidade de serviço.
+A publicação dá visibilidade ao trabalho. O interesse de alguém com uma necessidade concreta permite avançar para uma conversa sobre serviço.
 
 ## Como transformar o projeto em um serviço pago
 
-Seu primeiro objetivo comercial é descobrir se existe alguém disposto a pagar pela melhoria que você consegue entregar. Comece por uma tarefa delimitada e por uma pessoa que possa avaliar o resultado.
+Retome o prestador do início: ele conferiu a demonstração e quer experimentar na sua rotina. A próxima conversa é sobre **uma entrega delimitada, critérios de aceitação e condições de trabalho**.
 
-### Três exemplos de primeira oferta
+1. **Confirme a necessidade.** Observe o processo real, a frequência dos pedidos, as correções e quem usará os registros.
+2. **Combine um piloto.** Se houver interesse, proponha uma tarefa, um período e um valor para validar o uso acompanhado.
+3. **Entregue com evidências.** Execute os casos combinados, demonstre o fluxo e documente como usar e atualizar o catálogo.
+4. **Avalie a continuidade.** Compare os resultados com o cliente. Atualização, correção e suporte podem compor um serviço recorrente quando houver trabalho e interesse que o justifiquem.
 
-**Assistente para dúvidas de um serviço.** Você organiza uma base aprovada pelo cliente, configura o agente, testa respostas e define quando encaminhar a uma pessoa. A entrega pode incluir instruções de uso e de atualização. Confira a correção das respostas e o esforço de revisão.
+### Uma primeira oferta para este projeto
 
-**Organização de pedidos.** Você configura a leitura de uma entrada autorizada e o registro dos campos combinados numa tabela. Testa dados ausentes e duplicatas. Confira o tempo da tarefa e a quantidade de correções manuais.
+| Parte da proposta | Exemplo a adaptar com o cliente |
+| --- | --- |
+| **Problema** | Pedidos incompletos e espalhados exigem organização manual. |
+| **Entrega** | Configurar o agente para consultar o catálogo aprovado e registrar os campos combinados na tabela autorizada. |
+| **Limites** | Preços e condições fora do catálogo são encaminhados; o prestador revisa a proposta comercial. |
+| **Aceitação** | Cliente e responsável pelo projeto conferem os casos combinados, os registros e o tratamento de falhas. |
+| **Prazo e acompanhamento** | Período do piloto, revisões e suporte definidos na proposta. |
+| **Valor e consumo** | Condições do serviço, responsável pelo consumo de ferramentas e limite acompanhado. |
+| **Manutenção** | Responsável por atualizar o catálogo, revisar erros e manter a integração. |
 
-**Relatório com fontes.** Você configura um fluxo que lê arquivos fornecidos e prepara um relatório no formato combinado, indicando as fontes. Confira se as informações estão corretas e quanto trabalho de revisão permanece.
+O preço precisa considerar o trabalho de configuração, testes, ajustes, documentação e acompanhamento. Estime esse esforço e separe-o do consumo de modelos, ferramentas e hospedagem. Combine como tratar mudanças de escopo antes de assumir novas tarefas.
 
-Esses exemplos são pontos de partida para conversar com um cliente. A tarefa escolhida, o acesso aos dados e o resultado observado determinam o que faz sentido oferecer.
+**Sua proposta está clara quando:** o cliente entende o que receberá, como verificará a entrega, o que fica fora e quais custos assumirá.
 
-### Da conversa à proposta
+## Escolha sua primeira entrega
 
-1. **Entenda a rotina.** Peça para a pessoa mostrar como faz a tarefa, com que frequência e onde perde tempo ou comete erros.
-2. **Mostre uma demonstração relevante.** Use exemplos fictícios semelhantes ao processo dela. Peça que confira a utilidade e indique o que falta.
-3. **Se houver interesse, proponha um piloto pago.** Combine uma tarefa, um período de teste negociado e critérios para aceitar a entrega.
-4. **Entregue e acompanhe.** Confira o resultado com o cliente, documente o uso e ajuste o que foi combinado.
-5. **Converse sobre continuidade.** Atualização de fontes, revisão de erros e suporte podem compor um serviço recorrente quando houver esse trabalho e interesse do cliente.
+Separe **três pedidos de orçamento**, configure o agente e teste a instrução da entrega 1. Registre uma falha. Esse registro indica o próximo conceito a estudar, a próxima pergunta à comunidade e a próxima melhoria para mostrar.
 
-### Escreva sua primeira oferta nesta estrutura
-
-```text
-Para quem: [pessoa ou equipe e processo atual]
-Problema: [tarefa e dificuldade observada]
-Entrega: [o que o agente fará e onde]
-Limites: [o que fica fora e quando haverá ajuda humana]
-Teste de aceitação: [casos e resultado que o cliente vai conferir]
-Prazo do piloto: [combinado com o cliente]
-Valor e pagamento: [condições propostas para o serviço]
-Consumo de ferramentas: [quem paga e qual limite será acompanhado]
-Acompanhamento: [o que inclui e por quanto tempo]
-Continuidade: [quem atualiza fontes, corrige falhas e dá suporte]
-```
-
-Para formar o preço, estime seu trabalho de configuração, testes, ajustes, documentação e acompanhamento. Separe esses itens do consumo de modelos, ferramentas e hospedagem. Defina o que uma mudança fora do escopo exige renegociar. A proposta precisa caber no esforço que você consegue assumir e fazer sentido para o cliente.
-
-**Exemplo de escopo:** “Configurar um assistente para responder sobre este catálogo aprovado e organizar os pedidos nesta tabela de teste. A entrega inclui os casos combinados, uma demonstração e instruções de atualização. Decisões fora do catálogo serão encaminhadas à pessoa responsável.” Preencha prazo, valor, consumo e acompanhamento depois de entender o trabalho.
-
-## Seu próximo movimento
-
-Escolha **uma pessoa, uma tarefa e uma melhoria que possa demonstrar**. Coloque o agente para trabalhar, registre o que acontece e publique uma entrega. Use a teoria e a comunidade para resolver o próximo bloqueio. Converse com quem vive o problema e transforme o interesse em uma proposta concreta.
-
-**[Voltar à primeira entrega](#quatro-entregas-um-projeto-que-ganha-valor)** · [Aulas completas, na mesma página](aulas/README.md) · [Contribuir com o material](CONTRIBUTING.md)
+**[Fazer a primeira entrega](#quatro-entregas-um-projeto-que-ganha-valor)** · [Fundamentos aplicados](aulas/README.md) · [Contribuir](CONTRIBUTING.md)

@@ -1,49 +1,44 @@
-# Seu agente, resolvendo uma tarefa de verdade
+# Exemplo: organize pedidos de orçamento
 
-[← Comece aqui](README.md) · [Ver as quatro entregas](trilha-pratica.md) · [Anotar minha ideia](../pratique/ficha-do-projeto.md)
+[← Guia principal](../README.md)
 
-Escolha uma tarefa do seu dia a dia: pesquisar, responder dúvidas, organizar pedidos ou preparar um relatório. Você vai usar o mesmo agente para testar a ideia e melhorar o resultado.
+Um prestador de serviços de instalação e manutenção recebe mensagens sobre atendimento e orçamento. Seu agente ajuda a identificar o pedido, consultar as informações aprovadas e organizar o que precisa de resposta.
 
-**Já começou com o Hermes do vídeo ou com o projeto do curso?** Continue com essa base. As entregas mostram o que aprender a configurar, observar e verificar.
+## Primeiro teste: entenda a mensagem
 
-## Um exemplo para acompanhar
+Comece usando **somente os dados fornecidos na mensagem**. Peça três campos: **serviço procurado, dúvida principal e próxima pergunta**. Quando faltar informação, o agente deve apontar a dúvida.
 
-Imagine uma pessoa interessada em um serviço que pergunta sobre horários e opções. Ela é um **lead**: alguém que demonstrou interesse. Seu agente pode consultar um arquivo de perguntas frequentes, responder com a fonte e registrar o pedido em uma tabela de teste.
+| Mensagem de teste | O que conferir |
+| --- | --- |
+| “Quero instalar dois ventiladores de teto no escritório. Vocês atendem empresas?” | Identifica a instalação de ventiladores e a dúvida sobre atender empresas. Pode perguntar a localização do serviço, sem confirmar atendimento. |
+| “Quanto custa instalar?” | Aponta que falta saber o que será instalado e pergunta qual item a pessoa quer instalar. |
+| “Qual time ganhou ontem?” | Reconhece que está fora da tarefa e pergunta se a pessoa deseja informações sobre um serviço. |
 
-Em uma empresa, esse registro pode ficar em um **CRM**, sistema de acompanhamento de contatos e oportunidades. Para começar, use um arquivo ou uma tabela de teste que você consiga conferir.
+A primeira mensagem traz um pedido completo para classificação; ainda pode faltar uma informação para preparar o orçamento. Compare duas versões da instrução com os mesmos três casos.
 
-**Objetivo do primeiro teste:** responder com informação do documento e avisar quando não encontrar a resposta.
+## Depois: consulte um catálogo aprovado
 
-## Como o projeto ganha capacidade
+Na segunda entrega, forneça o catálogo fictício: **instalação de ventiladores de teto e pequenas manutenções; atendimento a residências e empresas**. Para preparar o orçamento, ele exige **serviço, quantidade, endereço e disponibilidade**. Valor e agendamento são confirmados pelo prestador após analisar o pedido. Inclua a data de atualização; em uso real, confirme o conteúdo com quem responde pelo serviço.
 
-1. **Começar:** configurar o agente e executar um pedido simples.
-2. **Dar contexto:** fornecer o documento, dizer quais fontes usar e conferir as respostas.
-3. **Conectar uma ação:** salvar um resumo ou registrar um pedido em ambiente de teste, com limites definidos.
-4. **Testar e mostrar:** experimentar cinco situações, corrigir uma falha e demonstrar o resultado.
+Agora o agente pode responder se atende empresas quando o catálogo trouxer essa informação. Peça que indique a fonte usada. Teste também uma pergunta sem resposta e uma ambígua; depois altere o catálogo e confira se a mudança aparece na resposta.
 
-<p class="compact-visual"><a href="../mapas-e-desenhos/05-ciclo-do-agente.svg"><img src="../mapas-e-desenhos/05-ciclo-do-agente.svg" width="157" alt="O agente recebe uma tarefa, consulta o modelo, valida uma ferramenta, observa o resultado e decide se continua ou encerra." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p>
+## Registre o pedido e confira a ação
 
-A ferramenta é o meio de consultar ou alterar algo. Confira o efeito da ação no arquivo ou na tabela; uma mensagem dizendo “feito” precisa corresponder ao resultado.
+Na terceira entrega, permita gravar **serviço procurado, dúvida e informação pendente** em uma tabela de teste. Identifique cada pedido para conferir o que acontece quando ele é enviado novamente. Abra a tabela e verifique o resultado.
 
-## Como saber se a primeira versão ajudou
+Em uma empresa, esses registros podem ficar em um **CRM**, sistema de acompanhamento de contatos e oportunidades. Comece com o recurso que já consegue usar e conferir.
 
-- Você consegue demonstrar a tarefa do início ao fim.
-- A resposta usa a fonte combinada e você consegue conferi-la.
-- A ação deixa o resultado esperado no ambiente de teste.
-- Você conhece uma falha e sabe quando pedir ajuda.
-- Os testes e uma melhoria estão registrados.
+## Demonstre o que melhorou
 
-Guarde isso nos [guias de prática](../pratique/README.md). Depois, peça a alguém que conheça a tarefa para experimentar e indicar o que precisa melhorar.
+Reúna cinco situações: pergunta comum, informação ausente, pedido ambíguo, ação repetida e ferramenta indisponível. Compare o esperado com o observado, corrija uma falha e repita os testes.
+
+Mostre o resultado a quem conhece a tarefa. Compare o trabalho manual, as correções e o tempo observado antes e depois. Guarde uma demonstração, os testes e uma limitação conhecida.
 
 <details>
-<summary>Para aprofundar: do exemplo ao piloto</summary>
+<summary>Quando o exemplo virar um piloto real</summary>
 
-Um piloto é um uso limitado para aprender com uma tarefa real. Defina quem participa, quais dados podem ser usados e como interromper o agente.
+Um piloto é um uso limitado para aprender com uma tarefa real. Combine participantes, dados e ações permitidos, custo acompanhado, critérios de aceitação e como interromper o agente. Registre quem atualiza o catálogo e trata falhas.
 
-Compare com a situação inicial: a tarefa ficou mais rápida? A resposta ajudou? Houve erros? Acompanhe o custo indicado pelas ferramentas e amplie os testes conforme o uso crescer.
-
-Se for conectar um CRM ou outro serviço, estude a parte necessária na [aula de integrações](../aulas/README.md#aula-03). Se o problema for avaliar o resultado, consulte a [aula de testes](../aulas/README.md#aula-06). O [guia de operação](../aulas/README.md#aula-07) ajuda a conduzir o piloto.
+Compare os resultados com o processo anterior. Use o que observou para decidir se vale continuar, ajustar ou parar. O roteiro da primeira oferta está no guia principal.
 
 </details>
-
-→ [Escolher minha primeira entrega](trilha-pratica.md)

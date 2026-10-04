@@ -1,6 +1,6 @@
 # Como pesquisar: da dúvida ao experimento
 
-[← Guias](README.md) · [Fontes oficiais](fontes-e-comunidade.md) · [X e Discord](comunidades.md)
+[← Guia principal](../README.md)
 
 Pesquise a pergunta que está impedindo a próxima entrega. Quanto mais concreto o contexto, mais fácil encontrar uma resposta útil.
 
@@ -15,7 +15,7 @@ Pesquise a pergunta que está impedindo a próxima entrega. Quanto mais concreto
 
 ## Buscas prontas para o Google
 
-Copie a consulta e adapte o último termo ao seu problema. Estas são estratégias de busca, não recomendações dos resultados que o Google poderá apresentar.
+Copie a consulta e adapte o último termo ao seu problema.
 
 | Quero pesquisar | Consulta |
 | --- | --- |
@@ -46,6 +46,4 @@ Em repositórios, leia README, exemplos, histórico recente e issues ligadas ao 
 
 ## Registre o que a pesquisa mudou
 
-No [registro de experimento](../pratique/experimento.md), anote o link, a data de consulta, a hipótese e o resultado. Se a busca não destravar o problema, leve o menor exemplo reproduzível à [comunidade](comunidades.md).
-
-→ [Voltar à próxima entrega](trilha-pratica.md)
+Anote **link, data de consulta, hipótese e resultado do teste**. Se a busca não destravar o problema, leve um exemplo pequeno que outra pessoa consiga repetir à [comunidade](comunidades.md).

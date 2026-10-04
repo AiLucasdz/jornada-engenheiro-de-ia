@@ -1,8 +1,8 @@
 # Faça uma mudança e descubra o que acontece
 
-[← Pratique](README.md) · [Ver sua ideia](ficha-do-projeto.md)
+[← Guia principal](../README.md)
 
-Um experimento é uma mudança pequena com um resultado que você vai conferir. Registre em poucas linhas enquanto constrói.
+Use este registro para verificar o efeito de uma mudança na instrução, na fonte ou na ferramenta. Compare os mesmos casos antes e depois.
 
 ## Copie e preencha
 
@@ -17,13 +17,13 @@ Um experimento é uma mudança pequena com um resultado que você vai conferir. 
 
 ## Exemplo: responder quando falta informação
 
-**Quero melhorar:** o agente inventa horários que não estão no documento.
+**Quero melhorar:** depois de adicionar o catálogo aprovado, o agente ainda inventa preços que não estão nele.
 
-**Vou mudar:** acrescentar à instrução que consulte o documento e avise quando a informação estiver ausente.
+**Vou mudar:** acrescentar à instrução que consulte o catálogo e avise quando a informação estiver ausente.
 
-**Espero:** uma resposta que reconheça a ausência e peça ajuda.
+**Espero:** uma resposta que peça os dados necessários e informe que o prestador confirmará o valor após analisar o pedido.
 
-**Vou testar:** perguntar por um horário presente no arquivo e por outro que não aparece.
+**Vou testar:** “Vocês atendem empresas?”, respondida pelo catálogo, e “Quanto custa instalar dois ventiladores de teto?”, cujo preço depende da análise do prestador.
 
 **Resultado de exemplo:** acertou a pergunta com fonte, mas inventou na segunda. Vou revisar o contexto enviado, ajustar a instrução e repetir os dois testes.
 
@@ -35,5 +35,3 @@ Guarde as mesmas entradas de teste para comparar antes e depois. Anote também o
 </details>
 
 Use exemplos sem senhas, tokens, dados pessoais ou conversas privadas.
-
-→ [Montar seus casos de teste](casos-de-avaliacao.md)

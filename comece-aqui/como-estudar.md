@@ -1,56 +1,37 @@
 # Aprenda uma ideia e use no seu agente
 
-[← Comece aqui](README.md) · [Ver as quatro entregas](trilha-pratica.md)
+[← Guia principal](../README.md)
 
-**80% prática · 20% teoria · Sem prazo fixo.** Em cada sessão, faça uma mudança que consiga mostrar e explicar. A próxima dúvida nasce do que você observa no projeto.
+Escolha uma dúvida que apareceu no projeto, estude uma explicação e aplique no agente. Use **80% prática e 20% teoria** como referência para distribuir o tempo.
 
-## Comece com uma base e evolua com ela
-
-A [recomendação do Lucas](../README.md#comece-por-aqui) é começar pelo curso e pela comunidade do [Bruno Okamoto no Pixel AI Hub](https://pixelaihub.pixeleducacao.com.br/), se puder investir. É uma indicação pessoal, sem parceria com o Bruno. Continue aqui aplicando o aprendizado no seu agente.
-
-Se estiver sem orçamento para o curso, comece pelo vídeo [Crie seu Agente de IA Hermes em menos de 20 minutos](https://youtu.be/VHh2D9agRps), do Lucas. Use o agente do vídeo como ponto de partida. O vídeo é aberto; modelos, ferramentas e hospedagem podem ter custos conforme a configuração escolhida.
-
-Depois do primeiro contato:
-
-1. **Escolha uma tarefa pequena.** Pense em algo do seu dia a dia que possa conferir, como resumir um documento ou organizar pedidos.
-2. **Faça um primeiro pedido.** Diga o objetivo, forneça o contexto e descreva a resposta que espera.
-3. **Confira o resultado.** Veja o que acertou, o que faltou e qual mudança vale tentar.
-4. **Siga as quatro entregas.** Dê contexto, conecte uma ação e teste o agente conforme o [caminho prático](trilha-pratica.md).
-
-Aproveite o que já funciona no Hermes ou no projeto do curso. Investigue como as partes prontas se comportam e amplie uma capacidade de cada vez.
+Se ainda precisa configurar seu agente, o [começo do guia](../README.md#comece-por-aqui) reúne a recomendação do Lucas e o vídeo do Hermes.
 
 ## Uma sessão de uma hora
 
-**Exemplo: o agente inventou uma resposta que não estava no documento.**
+Na segunda entrega, você adicionou um catálogo aprovado, mas o agente inventou um preço que não estava nele. Uma sessão para investigar isso pode ser:
 
-1. **12 minutos · Entender.** Leia a explicação curta sobre contexto e fontes na [aula 4](../aulas/README.md#aula-04).
-2. **28 minutos · Construir.** Ajuste a instrução e o material: peça que avise quando não encontrar a informação.
-3. **15 minutos · Verificar.** Rode uma pergunta com resposta no documento, uma sem resposta e uma ambígua.
-4. **5 minutos · Registrar.** Anote o resultado e a próxima mudança em [seu experimento](../pratique/experimento.md).
+1. **12 minutos · Entender.** Leia como fornecer e conferir a fonte na [aula de contexto](../aulas/README.md#aula-04).
+2. **28 minutos · Construir.** Confira o material recebido pelo agente e ajuste a instrução para ele avisar quando faltar informação.
+3. **15 minutos · Verificar.** Faça uma pergunta com resposta no catálogo, uma sem resposta e uma ambígua.
+4. **5 minutos · Registrar.** Anote o que mudou, o resultado observado e o próximo teste.
 
-É uma sugestão de distribuição. Adapte à sua rotina, mantendo mais tempo na construção e nos testes. Instalar, configurar, corrigir e registrar o que aconteceu também fazem parte da prática.
+Adapte os tempos à sua rotina. Instalar, configurar, corrigir e registrar também fazem parte da prática.
 
-## Use as aulas conforme a dúvida
+## Como pedir ajuda à IA
 
-- **Ainda não entendi modelo e agente:** comece pela explicação e pelo desenho na [aula 2](../aulas/README.md#aula-02).
-- **Quero respostas com minhas informações:** vá à [aula 4](../aulas/README.md#aula-04).
-- **Quero que o agente faça uma ação:** abra a [aula 5](../aulas/README.md#aula-05).
-- **Preciso entender uma falha:** consulte a [aula 6](../aulas/README.md#aula-06).
-- **Quero conhecer a história e explorar os detalhes:** abra os blocos “Para aprofundar” nas [aulas](../aulas/README.md).
+Informe **a tarefa, o contexto, o resultado esperado e os limites**. Por exemplo:
 
-Escolha uma fonte principal quando precisar de ajuda. Vídeos, documentação e conversas no [X ou Discord](comunidades.md) entram nos 20% de estudo; transforme uma ideia em um teste no agente.
+```text
+Meu agente organiza pedidos de orçamento usando este catálogo.
+Perguntei quanto custa instalar dois ventiladores de teto.
+O catálogo diz que o prestador confirma o valor após analisar o pedido.
+Esperava que ele pedisse endereço e disponibilidade, mas inventou um preço.
+Ajude a investigar se ele recebeu a fonte correta e proponha uma mudança pequena.
+Quero repetir os mesmos testes depois do ajuste.
+```
 
-## Como pedir ajuda à IA durante a construção
+Inclua a mensagem de erro quando houver e um exemplo sem dados privados. Se receber uma configuração ou código, peça uma explicação e confira o comportamento. Guarde a configuração anterior; com código, use Git para registrar versões.
 
-Informe **o que quer fazer, o contexto, o resultado esperado e os limites**. Peça uma mudança pequena, confira o que mudou e repita os testes. Quando aparecer uma configuração ou um trecho de código, peça uma explicação do que faz e verifique o comportamento.
+## Escolha o próximo passo pelo resultado
 
-Se algo falhar, forneça a mensagem de erro e um exemplo pequeno, sem dados privados. Guarde uma cópia da configuração anterior antes de mudar; quando trabalhar com código, use Git para registrar versões. O [guia de pesquisa](como-pesquisar.md) ajuda a encontrar uma resposta específica.
-
-## Antes de avançar
-
-- Consigo mostrar a tarefa funcionando?
-- Entendi a mudança que fiz?
-- Sei pelo menos uma situação em que o agente falha ou precisa de ajuda?
-- Sei qual é o próximo teste?
-
-→ [Escolher a próxima entrega](trilha-pratica.md)
+Ao terminar, registre três respostas: **o que mudou, como conferi e o que falta resolver?** A próxima leitura deve ajudar nessa última pergunta. Documentação, vídeos e conversas com outras pessoas ganham utilidade quando viram um teste concreto.

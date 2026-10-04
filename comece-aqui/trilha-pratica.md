@@ -1,69 +1,47 @@
-# Do primeiro agente ao primeiro projeto útil
+# As quatro entregas: consulta rápida
 
-[← Comece aqui](README.md) · [Como estudar](como-estudar.md) · [Aulas de apoio](../aulas/README.md) · [Pratique](../pratique/README.md)
+[← Guia principal](../README.md)
 
-**Quatro entregas no mesmo agente.** Comece com a base do Hermes ou com o projeto do curso recomendado. Aprenda o conceito ligado à tarefa que está fazendo e avance quando conseguir mostrar o resultado.
-
-O foco inicial é usar modelos e ferramentas existentes para resolver uma tarefa pequena. As aulas explicam o essencial e oferecem aprofundamentos para quando precisar. **80% do tempo construindo e testando, 20% estudando.**
-
-<p class="compact-visual"><a href="../mapas-e-desenhos/panorama.svg"><img src="../mapas-e-desenhos/panorama.svg" width="135" alt="Quatro entregas: começar com Hermes, dar contexto, conectar uma ação e testar e demonstrar." loading="lazy"></a><br><small>Prévia compacta · clique no desenho para ampliar.</small></p>
+Use esta página para conferir o que falta no projeto. O guia principal traz as explicações e os exemplos completos. As entregas avançam conforme você consegue mostrar o resultado, sem prazo fixo.
 
 ## 1 · Coloque seu primeiro agente para funcionar
 
-**Você faz:** siga o [vídeo do Lucas sobre Hermes](https://youtu.be/VHh2D9agRps) ou aproveite o projeto do [curso recomendado](../README.md#comece-por-aqui). Escolha uma tarefa: resumir documentos, organizar pedidos ou responder dúvidas sobre um serviço.
+Use o agente que configurou no Hermes ou no curso escolhido. Peça que organize uma mensagem de orçamento em **serviço procurado, dúvida principal e próxima pergunta**, usando somente os dados da mensagem.
 
-**Aprenda só o necessário agora:** a diferença entre modelo e agente, como dar um objetivo claro e como conferir uma resposta.
+Compare duas instruções com três casos: uma mensagem completa, uma incompleta e outra fora do assunto.
 
-**Experimente:** escreva uma instrução com objetivo, informação disponível e formato esperado. Rode três pedidos parecidos e observe o que muda.
-
-**Está pronto quando:** o agente executa uma tarefa simples e você consegue explicar o que pediu e o que recebeu.
-
-[Entender modelo e agente](../aulas/README.md#aula-02) · [Escolher um problema](../aulas/README.md#aula-01) · [Anotar sua ideia](../pratique/ficha-do-projeto.md)
+**Guarde:** os três resultados, a instrução escolhida e uma falha para corrigir.
 
 ## 2 · Dê contexto e fontes ao agente
 
-**Você faz:** reúna poucos documentos ou arquivos de teste sobre o assunto. Diga ao agente quais fontes usar, peça a indicação da fonte na resposta e oriente que ele avise quando não encontrar a informação.
+Acrescente o catálogo aprovado de serviços e condições de atendimento, com data de atualização. Peça que o agente indique a fonte e avise quando a resposta não estiver disponível.
 
-**Aprenda só o necessário agora:** contexto é a informação disponível para aquela tarefa; buscar uma fonte ajuda a responder com base no seu material.
+Teste uma pergunta respondida pelo catálogo, uma sem resposta e uma ambígua. Altere uma informação e repita o teste.
 
-**Experimente:** faça uma pergunta respondida no material, outra sem resposta e uma terceira que permita mais de uma interpretação. Confira as respostas nos documentos.
-
-**Está pronto quando:** você consegue localizar a fonte das respostas e identificar uma falha para corrigir. Se o agente inventar uma informação, ajuste a instrução ou a fonte e teste novamente.
-
-[Aprender a usar fontes](../aulas/README.md#aula-04) · [Guardar o que aconteceu](../pratique/experimento.md)
+**Guarde:** uma resposta com fonte, um caso de informação ausente e o resultado da atualização.
 
 ## 3 · Conecte uma ação útil
 
-**Você faz:** escolha uma ferramenta disponível no seu agente. Comece com uma consulta; depois, conecte uma ação pequena e reversível, como salvar um resumo em um arquivo de teste ou registrar um pedido em uma tabela de teste.
+Use uma ferramenta disponível para registrar o pedido em uma tabela de teste. Defina onde o agente pode ler e escrever e quando deve parar ou pedir ajuda.
 
-**Aprenda só o necessário agora:** ferramentas permitem consultar ou alterar algo; o agente precisa de acesso e limites claros para usá-las.
+Confira a tabela após a ação. Repita o pedido para procurar duplicatas e retire um dado necessário para ver como o agente reage.
 
-**Experimente:** execute uma vez, repita o pedido e confira se houve efeito duplicado. Simule uma informação ausente e veja como o agente pede ajuda.
-
-**Está pronto quando:** a ação produz o resultado esperado, você sabe onde conferir o efeito e consegue interromper a execução. Peça confirmação antes de ações que afetem outras pessoas.
-
-[Entender ferramentas e ações](../aulas/README.md#aula-05) · [Consultar integrações quando precisar](../aulas/README.md#aula-03)
+**Guarde:** entrada, registro produzido, limites de acesso e forma de interromper. Combine a autorização antes de usar a ação no processo real.
 
 ## 4 · Teste, melhore e mostre
 
-**Você faz:** escreva cinco situações de teste, incluindo uma dúvida sem resposta e uma falha de ferramenta. Compare o resultado esperado com o observado, corrija uma falha e repita os testes. Demonstre a solução para alguém que conheça a tarefa.
+Reúna cinco situações: pergunta comum, informação ausente, pedido ambíguo, ação repetida e ferramenta indisponível. Compare o esperado com o observado, corrija uma falha e repita os testes.
 
-**Aprenda só o necessário agora:** testar é comparar comportamento com o esperado; melhorar é corrigir algo que você observou. Acompanhe o tempo e o custo disponível no seu ambiente.
+Mostre a tarefa a alguém que conhece o problema. Compare tempo, correções e trabalho manual; diferencie o que mediu do que ainda espera melhorar.
 
-**Está pronto quando:** você consegue mostrar a tarefa funcionando, explicar uma melhoria e dizer quando o agente precisa de ajuda. Registre o feedback e escolha a próxima melhoria. Cinco casos são um começo; aumente a cobertura conforme o uso crescer.
-
-[Testar com exemplos](../pratique/casos-de-avaliacao.md) · [Investigar erros](../aulas/README.md#aula-06) · [Preparar um pequeno piloto](../aulas/README.md#aula-07)
+**Guarde:** demonstração, comparação entre versões, falha conhecida e retorno de um possível usuário. Se houver interesse, prepare uma oferta com escopo e critérios de aceitação.
 
 ## Organize sem complicar
 
-Mantenha três listas: **A fazer → Em andamento → Concluído**. Trabalhe em uma mudança pequena de cada vez.
+Mantenha três listas: **A fazer → Em andamento → Concluído**. Cada item precisa de uma ação pequena e de um jeito de conferir o resultado.
 
-**Exemplo de tarefa:** “Quando não houver informação no documento, o agente deve dizer que não encontrou.” Para concluir, rode uma pergunta sem resposta e confira se ele avisou sem inventar o dado. Guarde o resultado no [registro do experimento](../pratique/experimento.md).
+Exemplo: “Quando perguntarem o preço, o agente deve reunir os dados necessários e informar que o valor depende da análise do prestador.” Conclua o item depois de fazer essa pergunta e verificar a resposta. Registre a mudança e o teste juntos.
 
 ## Quanto tempo dedicar
 
-Use sessões que caibam na sua rotina. Em uma hora, uma sugestão é **12 minutos de estudo e 48 de construção e teste**. A instalação, o acesso às ferramentas e o tamanho da tarefa influenciam o ritmo; avance pelas quatro entregas.
-
-As **sete aulas são apoio durante a construção**. Leia primeiro a explicação curta e faça a prática. Os blocos “Para aprofundar” permitem estudar história, funcionamento dos modelos e decisões técnicas quando surgir curiosidade ou necessidade.
-
-**[Começar pela ideia do projeto →](../pratique/ficha-do-projeto.md)**
+Use sessões que caibam na sua rotina. Reserve a maior parte para construir e conferir; estude o conceito ligado à dificuldade que apareceu. Retome pelo próximo ajuste do projeto.
