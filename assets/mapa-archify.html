@@ -4987,7 +4987,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <!-- Main Diagram -->
     <div class="diagram-container" data-detail-level="read"
          data-preset-badge-editorial-plate="ARCHIFY / PLACA 04">
-      <svg viewBox="0 0 1146 534" data-layout-contract="readable-v2" role="img" lang="pt-BR" aria-labelledby="archify-diagram-title archify-diagram-description" data-preset="classic" data-quality-profile="showcase">
+      <svg viewBox="0 0 1088 408" data-layout-contract="readable-v2" role="img" lang="pt-BR" aria-labelledby="archify-diagram-title archify-diagram-description" data-preset="classic" data-quality-profile="showcase">
         <title id="archify-diagram-title">Jornada do Engenheiro de IA</title>
         <desc id="archify-diagram-description">Um diagrama de fluxo de trabalho gerado pelo Archify.</desc>
         <!-- Definitions -->
@@ -5013,14 +5013,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         <rect width="100%" height="100%" fill="url(#grid)" />
 
         <!-- Swimlanes -->
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-0" x="40" y="52" width="1090" height="106" rx="10" class="c-lane" stroke-width="1"/>
-        <text x="54" y="74" class="t-dim" font-size="10" font-weight="600">01 / FUNDAMENTOS</text>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-0" x="40" y="52" width="1032" height="106" rx="10" class="c-lane" stroke-width="1"/>
+        <text x="54" y="74" class="t-dim" font-size="10" font-weight="600">01 / COMEÇAR</text>
 
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-1" x="40" y="178" width="1090" height="106" rx="10" class="c-lane" stroke-width="1"/>
-        <text x="54" y="200" class="t-dim" font-size="10" font-weight="600">02 / CONSTRUÇÃO</text>
-
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-2" x="40" y="304" width="1090" height="106" rx="10" class="c-lane" stroke-width="1"/>
-        <text x="54" y="326" class="t-dim" font-size="10" font-weight="600">03 / OPERAÇÃO</text>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-1" x="40" y="178" width="1032" height="106" rx="10" class="c-lane" stroke-width="1"/>
+        <text x="54" y="200" class="t-dim" font-size="10" font-weight="600">02 / COLOCAR EM USO</text>
 
         <!-- Phase headers -->
 
@@ -5029,83 +5026,57 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 
         <!-- Edge paths -->
-        <path data-edge-from="agente" data-edge-to="avaliacao" data-edge-key="0" data-edge-id="agente-avaliacao" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="476,246;504,246" d="M 476 246 L 504 246" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
-        <path data-edge-from="avaliacao" data-edge-to="piloto" data-edge-key="1" data-edge-id="avaliacao-piloto" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="604,280;604,338" d="M 604 280 L 604 338" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
-        <path data-edge-from="base" data-edge-to="agente" data-edge-key="2" data-edge-id="base-agente" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="376,154;376,212" d="M 376 154 L 376 212" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
-        <path data-edge-from="piloto" data-edge-to="evolucao" data-edge-key="3" data-edge-id="piloto-evolucao" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="704,372;732,372" d="M 704 372 L 732 372" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
-        <path data-edge-from="problema" data-edge-to="base" data-edge-key="4" data-edge-id="problema-base" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="248,120;276,120" d="M 248 120 L 276 120" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        <path data-edge-from="acao" data-edge-to="demonstrar" data-edge-key="0" data-edge-id="acao-demonstrar" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="516,246;544,246" d="M 516 246 L 544 246" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        <path data-edge-from="contexto" data-edge-to="acao" data-edge-key="1" data-edge-id="contexto-acao" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="406,154;406,212" d="M 406 154 L 406 212" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        <path data-edge-from="hermes" data-edge-to="contexto" data-edge-key="2" data-edge-id="hermes-contexto" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="268,120;296,120" d="M 268 120 L 296 120" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
 
         <!-- Nodes -->
-        <g id="node-problema" data-node-id="problema" data-node-label="Problema real" tabindex="0" role="button" aria-label="Focar Problema real, Semanas 1–3, FUNDAMENTOS" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Semanas 1–3" data-node-tag="Hipótese e métrica" data-node-context="FUNDAMENTOS">
-          <title>Problema real · Semanas 1–3 · FUNDAMENTOS · Hipótese e métrica</title>
-          <rect x="48" y="86" width="200" height="68" rx="6" class="c-mask"/>
-          <rect x="48" y="86" width="200" height="68" rx="6" class="c-backend" stroke-width="1.5"/>
+        <g id="node-hermes" data-node-id="hermes" data-node-label="Começar com Hermes" tabindex="0" role="button" aria-label="Focar Começar com Hermes, Uma tarefa pequena, COMEÇAR" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Uma tarefa pequena" data-node-tag="Execute e observe" data-node-context="COMEÇAR">
+          <title>Começar com Hermes · Uma tarefa pequena · COMEÇAR · Execute e observe</title>
+          <rect x="48" y="86" width="220" height="68" rx="6" class="c-mask"/>
+          <rect x="48" y="86" width="220" height="68" rx="6" class="c-backend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(54 92) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
-          <text data-node-label="" data-detail-anchor="" x="148" y="107" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Problema real</text>
-          <text data-detail="context" x="148" y="124" class="t-muted" font-size="8" text-anchor="middle">Semanas 1–3</text>
-        <text data-detail="fine" x="148" y="142" class="t-backend" font-size="7" text-anchor="middle">Hipótese e métrica</text>
+          <text data-node-label="" data-detail-anchor="" x="158" y="107" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Começar com Hermes</text>
+          <text data-detail="context" x="158" y="124" class="t-muted" font-size="8" text-anchor="middle">Uma tarefa pequena</text>
+        <text data-detail="fine" x="158" y="142" class="t-backend" font-size="7" text-anchor="middle">Execute e observe</text>
         </g>
 
-        <g id="node-base" data-node-id="base" data-node-label="Base técnica" tabindex="0" role="button" aria-label="Focar Base técnica, Semanas 4–6, FUNDAMENTOS" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Semanas 4–6" data-node-tag="Modelo, APIs e dados" data-node-context="FUNDAMENTOS">
-          <title>Base técnica · Semanas 4–6 · FUNDAMENTOS · Modelo, APIs e dados</title>
-          <rect x="276" y="86" width="200" height="68" rx="6" class="c-mask"/>
-          <rect x="276" y="86" width="200" height="68" rx="6" class="c-backend" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(282 92) scale(0.6875)">
+        <g id="node-contexto" data-node-id="contexto" data-node-label="Dar contexto" tabindex="0" role="button" aria-label="Focar Dar contexto, Informações e fontes, COMEÇAR" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Informações e fontes" data-node-tag="Confira a resposta" data-node-context="COMEÇAR">
+          <title>Dar contexto · Informações e fontes · COMEÇAR · Confira a resposta</title>
+          <rect x="296" y="86" width="220" height="68" rx="6" class="c-mask"/>
+          <rect x="296" y="86" width="220" height="68" rx="6" class="c-backend" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(302 92) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
-          <text data-node-label="" data-detail-anchor="" x="376" y="107" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Base técnica</text>
-          <text data-detail="context" x="376" y="124" class="t-muted" font-size="8" text-anchor="middle">Semanas 4–6</text>
-        <text data-detail="fine" x="376" y="142" class="t-backend" font-size="7" text-anchor="middle">Modelo, APIs e dados</text>
+          <text data-node-label="" data-detail-anchor="" x="406" y="107" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Dar contexto</text>
+          <text data-detail="context" x="406" y="124" class="t-muted" font-size="8" text-anchor="middle">Informações e fontes</text>
+        <text data-detail="fine" x="406" y="142" class="t-backend" font-size="7" text-anchor="middle">Confira a resposta</text>
         </g>
 
-        <g id="node-agente" data-node-id="agente" data-node-label="Seu agente" tabindex="0" role="button" aria-label="Focar Seu agente, Semanas 7–8, CONSTRUÇÃO" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Semanas 7–8" data-node-tag="Ferramentas e ações" data-node-context="CONSTRUÇÃO">
-          <title>Seu agente · Semanas 7–8 · CONSTRUÇÃO · Ferramentas e ações</title>
-          <rect x="276" y="212" width="200" height="68" rx="6" class="c-mask"/>
-          <rect x="276" y="212" width="200" height="68" rx="6" class="c-backend" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(282 218) scale(0.6875)">
+        <g id="node-acao" data-node-id="acao" data-node-label="Conectar uma ação" tabindex="0" role="button" aria-label="Focar Conectar uma ação, Uma ferramenta útil, COLOCAR EM USO" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Uma ferramenta útil" data-node-tag="Defina os limites" data-node-context="COLOCAR EM USO">
+          <title>Conectar uma ação · Uma ferramenta útil · COLOCAR EM USO · Defina os limites</title>
+          <rect x="296" y="212" width="220" height="68" rx="6" class="c-mask"/>
+          <rect x="296" y="212" width="220" height="68" rx="6" class="c-backend" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(302 218) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
-          <text data-node-label="" data-detail-anchor="" x="376" y="233" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Seu agente</text>
-          <text data-detail="context" x="376" y="250" class="t-muted" font-size="8" text-anchor="middle">Semanas 7–8</text>
-        <text data-detail="fine" x="376" y="268" class="t-backend" font-size="7" text-anchor="middle">Ferramentas e ações</text>
+          <text data-node-label="" data-detail-anchor="" x="406" y="233" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Conectar uma ação</text>
+          <text data-detail="context" x="406" y="250" class="t-muted" font-size="8" text-anchor="middle">Uma ferramenta útil</text>
+        <text data-detail="fine" x="406" y="268" class="t-backend" font-size="7" text-anchor="middle">Defina os limites</text>
         </g>
 
-        <g id="node-avaliacao" data-node-id="avaliacao" data-node-label="Avaliar e corrigir" tabindex="0" role="button" aria-label="Focar Avaliar e corrigir, Semanas 9–10, CONSTRUÇÃO" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Semanas 9–10" data-node-tag="Testes, logs e custo" data-node-context="CONSTRUÇÃO">
-          <title>Avaliar e corrigir · Semanas 9–10 · CONSTRUÇÃO · Testes, logs e custo</title>
-          <rect x="504" y="212" width="200" height="68" rx="6" class="c-mask"/>
-          <rect x="504" y="212" width="200" height="68" rx="6" class="c-backend" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(510 218) scale(0.6875)">
+        <g id="node-demonstrar" data-node-id="demonstrar" data-node-label="Testar e mostrar" tabindex="0" role="button" aria-label="Focar Testar e mostrar, Corrija uma falha, COLOCAR EM USO" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Corrija uma falha" data-node-tag="Demonstre o resultado" data-node-context="COLOCAR EM USO">
+          <title>Testar e mostrar · Corrija uma falha · COLOCAR EM USO · Demonstre o resultado</title>
+          <rect x="544" y="212" width="220" height="68" rx="6" class="c-mask"/>
+          <rect x="544" y="212" width="220" height="68" rx="6" class="c-backend" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(550 218) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
-          <text data-node-label="" data-detail-anchor="" x="604" y="233" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Avaliar e corrigir</text>
-          <text data-detail="context" x="604" y="250" class="t-muted" font-size="8" text-anchor="middle">Semanas 9–10</text>
-        <text data-detail="fine" x="604" y="268" class="t-backend" font-size="7" text-anchor="middle">Testes, logs e custo</text>
-        </g>
-
-        <g id="node-piloto" data-node-id="piloto" data-node-label="Piloto em uso" tabindex="0" role="button" aria-label="Focar Piloto em uso, Semana 11, OPERAÇÃO" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Semana 11" data-node-tag="Usuários e resultados" data-node-context="OPERAÇÃO">
-          <title>Piloto em uso · Semana 11 · OPERAÇÃO · Usuários e resultados</title>
-          <rect x="504" y="338" width="200" height="68" rx="6" class="c-mask"/>
-          <rect x="504" y="338" width="200" height="68" rx="6" class="c-backend" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(510 344) scale(0.6875)">
-            <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
-          </g>
-          <text data-node-label="" data-detail-anchor="" x="604" y="359" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Piloto em uso</text>
-          <text data-detail="context" x="604" y="376" class="t-muted" font-size="8" text-anchor="middle">Semana 11</text>
-        <text data-detail="fine" x="604" y="394" class="t-backend" font-size="7" text-anchor="middle">Usuários e resultados</text>
-        </g>
-
-        <g id="node-evolucao" data-node-id="evolucao" data-node-label="Evoluir e apresentar" tabindex="0" role="button" aria-label="Focar Evoluir e apresentar, Semana 12, OPERAÇÃO" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Semana 12" data-node-tag="Evidências e limites" data-node-context="OPERAÇÃO">
-          <title>Evoluir e apresentar · Semana 12 · OPERAÇÃO · Evidências e limites</title>
-          <rect x="732" y="338" width="200" height="68" rx="6" class="c-mask"/>
-          <rect x="732" y="338" width="200" height="68" rx="6" class="c-backend" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(738 344) scale(0.6875)">
-            <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
-          </g>
-          <text data-node-label="" data-detail-anchor="" x="832" y="359" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Evoluir e apresentar</text>
-          <text data-detail="context" x="832" y="376" class="t-muted" font-size="8" text-anchor="middle">Semana 12</text>
-        <text data-detail="fine" x="832" y="394" class="t-backend" font-size="7" text-anchor="middle">Evidências e limites</text>
+          <text data-node-label="" data-detail-anchor="" x="654" y="233" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Testar e mostrar</text>
+          <text data-detail="context" x="654" y="250" class="t-muted" font-size="8" text-anchor="middle">Corrija uma falha</text>
+        <text data-detail="fine" x="654" y="268" class="t-backend" font-size="7" text-anchor="middle">Demonstre o resultado</text>
         </g>
 
         <!-- Edge labels -->
@@ -5113,14 +5084,12 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 
 
-
-
         <!-- Legend -->
         <g data-legend="" data-legend-bridge="">
-          <text x="20" y="434" class="t-primary" font-size="12" font-weight="650">Legenda</text>
-          <g data-legend-semantic-kind="backend" data-legend-kind="backend" data-legend-label="Etapa da jornada" data-legend-x="20" data-legend-baseline="454" data-legend-width="113">
-            <rect x="20" y="446" width="14" height="9" rx="2" class="c-backend" stroke-width="1"/>
-            <text x="42" y="454" class="t-muted" font-size="7.5" font-weight="500">Etapa da jornada</text>
+          <text x="20" y="308" class="t-primary" font-size="12" font-weight="650">Legenda</text>
+          <g data-legend-semantic-kind="backend" data-legend-kind="backend" data-legend-label="Etapa da jornada" data-legend-x="20" data-legend-baseline="328" data-legend-width="113">
+            <rect x="20" y="320" width="14" height="9" rx="2" class="c-backend" stroke-width="1"/>
+            <text x="42" y="328" class="t-muted" font-size="7.5" font-weight="500">Etapa da jornada</text>
           </g>
         </g>
       </svg>
@@ -5305,19 +5274,19 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           <h3>80% prática · 20% estudo</h3>
         </div>
         <ul>
-          <li>Construa um único projeto que evolui a cada etapa.</li>
-          <li>Estude os conceitos conforme surgem as decisões.</li>
+          <li>Melhore o mesmo agente a cada entrega.</li>
+          <li>Estude o necessário para o próximo passo.</li>
         </ul>
       </div>
 
       <div class="card">
         <div class="card-header">
           <div class="card-dot emerald"></div>
-          <h3>Avance pelas entregas</h3>
+          <h3>7 aulas para consultar</h3>
         </div>
         <ul>
-          <li>1 hora por dia, 5 dias por semana.</li>
-          <li>12 semanas de referência: ajuste ao seu ritmo.</li>
+          <li>Use os conceitos quando precisar deles.</li>
+          <li>Avance pelo resultado, no seu ritmo.</li>
         </ul>
       </div>
     </div>

@@ -7,10 +7,11 @@ Para sugerir uma correção ou uma fonte de estudo, abra uma issue com o trecho,
 ## Organização
 
 - `README.md`: entrada principal da jornada no GitHub e no site.
-- `docs/`: método, trilha, fontes, pesquisa, comunidades e projeto.
+- `comece-aqui/`: método, trilha, fontes, pesquisa, comunidades e projeto.
 - `aulas/`: conteúdo didático com explicação, fontes, aplicação e exercício.
 - `materiais/`: redirecionamentos de endereços anteriores para as aulas.
-- `modelos/`: modelos para usar no projeto.
+- `pratique/`: guias com exemplos para anotar a ideia, experimentar e testar.
+- `mapas-e-desenhos/`: ilustrações das aulas e índice visual.
 - `assets/`: imagens, estilos e recursos da navegação.
 - `leitura/`: páginas de leitura geradas dos Markdown; edite os arquivos de origem.
 - `mapa.html`: diagrama interativo gerado pelo Archify.
@@ -26,6 +27,8 @@ npm run check
 ```
 
 O gerador mantém os Markdown como origem, atualiza `index.html` e `leitura/`, reconstrói a busca e preserva os redirecionamentos de endereços antigos. Revise as mudanças e inclua os arquivos gerados no mesmo commit. O GitHub Pages publica os arquivos estáticos da branch `main`.
+
+Os blocos `<!-- cards:start -->` e `<!-- cards:end -->` transformam os parágrafos entre eles em cartões no site. No GitHub, continuam como links com descrição. Use `<details>` com linhas em branco para manter aprofundamentos opcionais legíveis nos dois lugares.
 
 ## Recomendar uma fonte
 

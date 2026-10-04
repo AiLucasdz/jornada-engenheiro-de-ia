@@ -46,6 +46,6 @@ Em repositórios, leia README, exemplos, histórico recente e issues ligadas ao 
 
 ## Registre o que a pesquisa mudou
 
-No [modelo de experimento](../modelos/experimento.md), anote o link, a data de consulta, a hipótese e o resultado. Se a busca não destravar o problema, leve o menor exemplo reproduzível à [comunidade](comunidades.md).
+No [registro de experimento](../pratique/experimento.md), anote o link, a data de consulta, a hipótese e o resultado. Se a busca não destravar o problema, leve o menor exemplo reproduzível à [comunidade](comunidades.md).
 
-→ [Voltar à entrega da semana](trilha-12-semanas.md)
+→ [Voltar à próxima entrega](trilha-pratica.md)

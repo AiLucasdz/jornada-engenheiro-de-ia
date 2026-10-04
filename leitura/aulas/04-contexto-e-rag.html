@@ -1,9 +1,24 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>04 · Dê ao agente a fonte certa · Jornada IA</title><meta name="description" content="Uma trilha prática de Engenharia de IA: materiais, fontes oficiais, projetos e comunidades."><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a  href="../../index.html">Início</a><a  href="../docs/trilha-12-semanas.html">Trilha</a><a  href="index.html">Aulas</a><a  href="../docs/fontes-e-comunidade.html">Onde estudar</a><a  href="../docs/comunidades.html">X e Discord</a><a  href="../modelos/index.html">Modelos</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">CONSULTE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="RAG, teoria, Discord…" data-index="../../assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#prompt-recuperação-e-fine-tuning">Prompt, recuperação e fine-tuning</a><a href="#embeddings-um-mapa-aproximado">Embeddings: um mapa aproximado</a><a href="#chunking-recortar-sem-perder-o-significado">Chunking: recortar sem perder o significado</a><a href="#rag-tem-dois-caminhos">RAG tem dois caminhos</a><a href="#diagnóstico-em-três-camadas">Diagnóstico em três camadas</a><a href="#laboratório-80-prática">Laboratório · 80% prática</a><a href="#estudo-guiado-20-teoria">Estudo guiado · 20% teoria</a></nav><a class="study-note" href="../docs/como-estudar.html"><strong>80% prática<br>20% teoria</strong><span>Estude uma ideia.<br>Aplique no seu agente.</span></a></aside><main id="conteudo"><article><h1 id="04-dê-ao-agente-a-fonte-certa">04 · Dê ao agente a fonte certa</h1>
-<p><a href="03-integracoes-e-dados.html">← Aula anterior</a> · <a href="index.html">Aulas</a> · <a href="05-agentes-e-ferramentas.html">Próxima aula →</a></p>
-<p><strong>Quando usar:</strong> semanas 6–7, junto das entregas de dados e do primeiro agente. <strong>Entrega:</strong> uma resposta apoiada em fonte identificável, com atualização e ausência de informação testadas.</p>
-<p>O seu agente de leads precisa consultar regras, planos ou perguntas frequentes. A tarefa de engenharia é selecionar informação autorizada e relevante, colocá-la no contexto e conferir se a resposta se sustenta nela.</p>
-<h2 id="prompt-recuperação-e-fine-tuning">Prompt, recuperação e fine-tuning</h2>
-<p>Há três decisões diferentes que frequentemente aparecem sob a expressão “dar conhecimento à IA”.</p>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>04 · Dê ao agente a fonte certa · Jornada IA</title><meta name="description" content="Construa seu primeiro agente de IA em quatro entregas, com aulas curtas, desenhos, exercícios e fontes. Aprenda no seu ritmo."><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a  href="../comece-aqui/index.html">Começar</a><a  href="index.html">Aulas</a><a  href="../pratique/index.html">Praticar</a><a  href="../mapas-e-desenhos/index.html">Mapas</a><a  href="../comece-aqui/fontes-e-comunidade.html">Onde estudar</a><a  href="../comece-aqui/comunidades.html">Comunidade</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">EXPLORE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="Hermes, fontes, testes…" data-index="../../assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#faça-no-seu-agente-80-prática">Faça no seu agente · 80% prática</a><a href="#estude-para-destravar-20-teoria">Estude para destravar · 20% teoria</a></nav><a class="study-note" href="../comece-aqui/trilha-pratica.html"><strong>4 entregas.<br>No seu ritmo.</strong><span>80% construindo e testando.<br>20% aprendendo o necessário.</span></a></aside><main id="conteudo"><article><h1 id="04-dê-ao-agente-a-fonte-certa">04 · Dê ao agente a fonte certa</h1>
+<p><a href="03-integracoes-e-dados.html">← Consulta anterior</a> · <a href="index.html">Aulas</a> · <a href="05-agentes-e-ferramentas.html">Próxima consulta →</a></p>
+<p><strong>Use na entrega 2: dar contexto e fontes ao agente.</strong></p>
+<p><strong>Ao terminar:</strong> o agente terá um material de consulta e você conseguirá conferir de onde veio a resposta.</p>
+<p>Comece com um documento curto: regras do processo, planos oferecidos ou perguntas frequentes. Forneça esse material ao agente e peça que mostre qual trecho usou. Se a resposta não estiver no documento, ele deve dizer o que falta ou encaminhar a dúvida.</p>
+<p>Quando o sistema busca trechos relevantes antes de responder, esse caminho é chamado <strong>RAG</strong>: geração de resposta apoiada em informação recuperada de uma fonte. Para começar, você pode usar um arquivo pequeno e a ferramenta de leitura que já existe no agente.</p>
+<figure class="lesson-figure"><a href="../../mapas-e-desenhos/04-contexto-e-rag.svg" target="_blank" rel="noopener"><img src="../../mapas-e-desenhos/04-contexto-e-rag.svg" alt="RAG em dois caminhos: preparar e atualizar documentos para busca; depois recuperar trechos a partir de uma pergunta e gerar a resposta com fonte." loading="lazy" class="lesson-diagram"><span>Ampliar o desenho ↗</span></a></figure>
+<p>O desenho separa cuidar da fonte e consultá-la; uma resposta só pode acompanhar uma mudança se o sistema tiver acesso à informação atualizada.</p>
+<h2 id="faça-no-seu-agente-80-prática">Faça no seu agente · 80% prática</h2>
+<ol>
+<li>Prepare um documento curto e fictício com as informações necessárias à tarefa. Coloque título e data de atualização.</li>
+<li>Faça três perguntas: uma respondida pelo documento, uma incompleta e uma sem resposta disponível.</li>
+<li>Confira a resposta e o trecho usado. Se estiver errada, veja primeiro se o agente leu a informação correta.</li>
+<li>Altere uma informação e repita a pergunta. Depois retire uma informação e confira se o agente reconhece a falta dela.</li>
+</ol>
+<p><strong>Pode seguir quando:</strong> você consegue apontar a fonte da resposta e demonstrar o que acontece quando a informação muda ou não existe.</p>
+<h2 id="estude-para-destravar-20-teoria">Estude para destravar · 20% teoria</h2>
+<p>Use a lição de busca ou RAG de <a href="https://github.com/microsoft/generative-ai-for-beginners">Generative AI for Beginners, da Microsoft</a>, se precisar entender melhor esse caminho. Só avance para dividir documentos, criar índices ou usar embeddings quando o tamanho ou a qualidade da busca justificar esse trabalho.</p>
+<details>
+<summary>Para aprofundar: RAG, embeddings, divisão de documentos e fine-tuning</summary><h2 id="prompt-recuperação-e-fine-tuning">Prompt, recuperação e fine-tuning</h2>
+<p>Enviar informação na pergunta, buscar documentos e treinar novamente o modelo são formas diferentes de melhorar uma aplicação. Compare o que muda em cada uma:</p>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
 <thead>
 <tr>
@@ -35,15 +50,15 @@
 <p>Fine-tuning pode afetar conhecimentos e capacidades, mas não funciona como um banco de dados que você edita para publicar preços. Para fatos que mudam, uma fonte consultável costuma facilitar atualização e verificação. RAG e fine-tuning também podem coexistir; a escolha depende do problema observado.</p>
 <p>No nosso agente, comece com uma pequena tabela fictícia de planos no contexto. Adicione recuperação quando selecionar a fonte passar a ser uma necessidade real. Antes de sofisticar a busca, crie perguntas com respostas esperadas.</p>
 <h2 id="embeddings-um-mapa-aproximado">Embeddings: um mapa aproximado</h2>
-<p>Um <strong>embedding</strong> representa um item como um vetor de números. Modelos de embedding podem colocar textos relacionados em regiões próximas desse espaço. “Quero encerrar meu plano” pode ser recuperado ao buscar “cancelamento”, mesmo sem igualdade literal das palavras.</p>
-<p>Pense em um mapa de assuntos: proximidade ajuda a encontrar candidatos, mas não prova que o conteúdo responde à pergunta. Nomes, números, códigos e negativas podem exigir busca lexical, filtros ou outras estratégias. RAG não exige busca vetorial: SQL, texto completo, busca híbrida e APIs também podem recuperar informação.</p>
-<p>Um <strong>banco vetorial</strong> armazena vetores e permite consultas por similaridade, geralmente junto de metadados. Uma extensão como pgvector pode adicionar esse recurso a PostgreSQL; serviços dedicados são outras opções. Escolha por volume, filtros, qualidade e capacidade de manutenção, depois de medir seu caso.</p>
+<p>Um <strong>embedding</strong> representa um item como um vetor: uma lista de números. Essas listas permitem comparar textos por uma medida de proximidade. Modelos de embedding podem aproximar textos relacionados, como “quero encerrar meu plano” e “cancelamento”, mesmo sem palavras iguais.</p>
+<p>Pense em um mapa de assuntos: proximidade ajuda a encontrar trechos candidatos, mas não prova que eles respondem à pergunta. Nomes, números, códigos e negativas podem exigir busca por palavras exatas ou filtros. RAG pode combinar essa busca com vetores, consultar um banco com SQL ou obter dados por uma API.</p>
+<p>Um <strong>banco vetorial</strong> armazena vetores e permite buscar itens parecidos. Ele pode guardar também <strong>metadados</strong>: informações sobre cada item, como fonte, versão e quem pode acessá-lo. Uma extensão como pgvector adiciona esse recurso ao PostgreSQL; serviços dedicados são outras opções. Compare a qualidade da busca e o trabalho de manutenção com o volume de dados do seu projeto.</p>
 <h2 id="chunking-recortar-sem-perder-o-significado">Chunking: recortar sem perder o significado</h2>
 <p><strong>Chunking</strong> é dividir documentos em unidades de recuperação. Se cada trecho for enorme, você traz conteúdo irrelevante. Se for pequeno demais, perde o contexto. É como recortar um manual em fichas: a ficha “R$ 200” não diz a qual plano pertence nem em que condições o preço vale.</p>
 <p>Comece respeitando títulos, seções ou pares de pergunta e resposta. Guarde junto do texto a fonte, o identificador, a versão e os metadados de acesso. Em tabelas, preserve a relação entre rótulos e valores. Compare estratégias com as perguntas reais do projeto: não há um tamanho universal que maximize qualidade.</p>
 <h2 id="rag-tem-dois-caminhos">RAG tem dois caminhos</h2>
-<p><strong>Indexação:</strong> ler a fonte → extrair e limpar → dividir em trechos → gerar representações, se usadas → salvar trechos e metadados. Quando a fonte muda, o pipeline precisa atualizar ou remover o que ficou obsoleto.</p>
-<p><strong>Consulta:</strong> receber a pergunta → aplicar permissões e filtros → recuperar candidatos → selecionar conteúdo útil → montar o contexto → gerar resposta → verificar e apresentar a fonte.</p>
+<p><strong>Indexação — preparar para buscar:</strong> ler a fonte → extrair e limpar → dividir em trechos → gerar embeddings, se usados → salvar trechos e metadados. Quando a fonte muda, o pipeline precisa atualizar ou remover o que ficou obsoleto.</p>
+<p><strong>Consulta — buscar para responder:</strong> receber a pergunta → aplicar permissões e filtros → recuperar trechos candidatos → selecionar conteúdo útil → montar o contexto → gerar resposta → verificar e apresentar a fonte.</p>
 <p>A analogia é uma consulta a um manual durante o trabalho. A pessoa ainda pode interpretar errado, e alguém pode ter entregue a página errada. O acesso ao manual ajuda, mas não substitui o controle do processo.</p>
 <p>No agente de leads, uma resposta sobre plano deve apontar o documento e a versão usados. Se o preço mudou, teste o tempo entre alterar a fonte e o novo valor ficar disponível. RAG não atualiza sozinho nem garante atualização instantânea: isso depende do pipeline, dos índices e de eventuais caches.</p>
 <h2 id="diagnóstico-em-três-camadas">Diagnóstico em três camadas</h2>
@@ -72,19 +87,7 @@
 </tr>
 </tbody></table></div>
 <p>Se o agente acertou o preço, mas não registrou o pedido de contato, a informação estava correta e o processo ficou incompleto. Essa distinção evita corrigir a parte errada do sistema.</p>
-<h2 id="laboratório-80-prática">Laboratório · 80% prática</h2>
-<p>Use uma parte das <strong>4 horas de prática das semanas 6 e 7</strong>. Este exercício substitui uma parte das tarefas de dados e do primeiro agente; não é uma carga extra.</p>
-<ol>
-<li>Crie três documentos curtos e fictícios: planos, regras de atendimento e perguntas frequentes. Inclua título, versão e data de atualização.</li>
-<li>Prepare oito perguntas: diretas, com sinônimos, ambíguas e sem resposta na base. Registre o trecho que deveria sustentar cada resposta.</li>
-<li>Teste primeiro a base inteira no contexto. Guarde resposta e consumo, quando disponíveis.</li>
-<li>Implemente uma recuperação simples. Registre quais trechos foram encontrados <strong>antes</strong> de avaliar a resposta.</li>
-<li>Compare dois recortes de documentos mantendo as perguntas iguais. Observe perda de contexto e trechos irrelevantes.</li>
-<li>Altere um plano e retire uma informação da base. Execute o pipeline e repita as perguntas para confirmar atualização e remoção.</li>
-<li>Provoque ausência de fonte e confira se o agente encaminha a dúvida em vez de inventar uma regra comercial.</li>
-</ol>
-<p><strong>Você concluiu quando:</strong> mostra de onde veio uma resposta, localiza uma falha por camada e demonstra que uma informação removida deixa de aparecer nas consultas.</p>
-<h2 id="estudo-guiado-20-teoria">Estudo guiado · 20% teoria</h2>
+<h2 id="mais-fontes-para-consultar">Mais fontes para consultar</h2>
 <div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
 <thead>
 <tr>
@@ -109,6 +112,6 @@
 <td>Justificar sua escolha entre contexto direto, recuperação e ajuste do modelo.</td>
 </tr>
 </tbody></table></div>
-<p>Os capítulos de atenção e embeddings da <a href="https://www.3blue1brown.com/?topic=neural-networks">série de 3Blue1Brown</a> ajudam a visualizar as representações. Uma hora de estudo deve terminar com uma hipótese de melhoria, como “preservar o título do plano em cada trecho reduz respostas com preço trocado”.</p>
-<p><a href="05-agentes-e-ferramentas.html">Próxima aula: agentes e ferramentas →</a></p>
-</article><footer><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia/blob/main/aulas/04-contexto-e-rag.md">Ver este conteúdo no GitHub ↗</a><span>Um projeto. Aprendizado contínuo.</span></footer></main></div></body></html>
+<p>Os capítulos de atenção e embeddings da <a href="https://www.3blue1brown.com/?topic=neural-networks">série de 3Blue1Brown</a> ajudam a visualizar as representações. O estudo deve terminar com uma hipótese de melhoria, como “preservar o título do plano em cada trecho reduz respostas com preço trocado”.</p>
+</details><p><a href="05-agentes-e-ferramentas.html">Conectar uma ação ao agente →</a></p>
+</article><footer><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia/blob/main/aulas/04-contexto-e-rag.md">Ver este conteúdo no GitHub ↗</a><span>Um agente. Uma melhoria de cada vez.</span></footer></main></div></body></html>

@@ -1,36 +1,69 @@
-# 02 · Entenda o modelo antes de confiar na resposta
+# 02 · Entenda o modelo dentro do seu agente
 
-[← Aula anterior](01-historia-e-problemas.md) · [Aulas](README.md) · [Próxima aula →](03-integracoes-e-dados.md)
+[← Consulta anterior](01-historia-e-problemas.md) · [Aulas](README.md) · [Próxima consulta →](03-integracoes-e-dados.md)
 
-**Quando usar:** semana 4. **Entrega:** comparar regras e LLM na mesma tarefa, explicando seus resultados e limites.
+**Use nas entregas 1 e 2: entender o agente e dar a ele as informações certas.**
 
-O seu agente vai usar um modelo como parte do sistema. Entender como esse componente aprende e gera respostas ajuda a formular tarefas, estimar consumo e reconhecer quando uma resposta precisa de verificação.
+**Ao terminar:** você saberá separar modelo, instrução e contexto — e terá comparado duas maneiras de pedir a mesma tarefa.
+
+Um **LLM** é um modelo de linguagem: ele recebe uma entrada e produz uma resposta. O **agente** é o sistema que usa esse modelo junto de instruções, dados e ferramentas. O Hermes oferece uma estrutura pronta para reunir essas peças, como você verá também na [consulta sobre ferramentas](05-agentes-e-ferramentas.md).
+
+![Modelo de linguagem dentro do sistema agente, acompanhado por instruções, dados, ferramentas e memória; Hermes representa uma estrutura que reúne essas peças.](../mapas-e-desenhos/02-modelo-e-agente.svg)
+
+O modelo participa das decisões; o sistema ao redor permite consultar dados, executar ações e guardar resultados.
+
+## Três ideias para usar agora
+
+- **Prompt é o que orienta a resposta.** Diga qual é a tarefa, qual resultado espera e o que fazer se faltar informação.
+- **Contexto é a informação disponível nessa interação.** Inclui a conversa, documentos e resultados de ferramentas que o sistema fornece ao modelo.
+- **Uma resposta convincente pode estar errada.** Quando o modelo apresenta informação incorreta ou sem apoio de forma plausível, chamamos isso de alucinação. Confira os fatos e as ações.
+
+Corrigir uma informação na conversa não é treinar novamente o modelo. O produto pode guardar histórico ou memória para reutilizar depois; isso também não significa que seus parâmetros foram alterados.
+
+## Faça no seu agente · 80% prática
+
+1. Escolha a tarefa da primeira entrega e escreva um pedido curto.
+2. Execute o pedido e guarde a resposta.
+3. Melhore o pedido com o resultado esperado, um exemplo ou uma informação que estava faltando.
+4. Repita com os mesmos casos e compare: ficou mais útil, correto e fácil de conferir?
+
+**Pode seguir quando:** você reconhece o que mudou no pedido e mostra o efeito na resposta. Se usar IA para programar, peça uma mudança pequena e confira o resultado antes da próxima.
+
+## Estude para destravar · 20% teoria
+
+A introdução de [Generative AI for Beginners, da Microsoft](https://github.com/microsoft/generative-ai-for-beginners), ajuda a entender modelos de linguagem. Use uma lição ligada à dúvida que apareceu no exercício. A matemática e a construção de modelos podem ficar para quando você quiser abrir essa parte do sistema.
+
+<details>
+<summary>Para aprofundar: treinamento, tokens, atenção e limites do modelo</summary>
 
 ## Rede neural, treinamento e inferência
 
-Uma rede neural transforma entradas em saídas usando operações organizadas em camadas e parâmetros ajustáveis. Imagine uma mesa de som com muitos controles: cada ajuste muda como os sinais se combinam. A analogia ajuda a visualizar os parâmetros, mas uma rede não é uma coleção de fatos guardados em gavetas.
+Uma **rede neural** transforma entradas em saídas usando operações organizadas em camadas. Seus **parâmetros** são valores numéricos ajustados durante o treinamento. Imagine uma mesa de som com muitos controles: cada ajuste muda como os sinais se combinam.
 
-No **treinamento**, exemplos e um objetivo de aprendizagem orientam o ajuste desses parâmetros. Uma função de perda quantifica o erro em relação ao objetivo. A **retropropagação**, ou backpropagation, calcula gradientes: como pequenas mudanças nos parâmetros afetam essa perda. Um otimizador usa essa informação para realizar ajustes. Não é uma atribuição humana de culpa nem uma prova de compreensão.
+No **treinamento**, exemplos e um objetivo orientam o ajuste desses parâmetros. A **função de perda** mede o erro em relação ao objetivo. A **retropropagação**, ou *backpropagation*, calcula gradientes: medidas de como pequenas mudanças nos parâmetros afetam essa perda. Um **otimizador** usa essas medidas para ajustar os parâmetros e tentar reduzir o erro.
 
-As GPUs se tornaram importantes porque realizam muitas operações numéricas em paralelo. A combinação entre métodos, dados e capacidade de processamento permitiu treinar redes maiores. A história de AlexNet e ImageNet, na [aula anterior](01-historia-e-problemas.md), mostra essas peças trabalhando juntas. A série de [3Blue1Brown sobre retropropagação](https://www.3blue1brown.com/lessons/backpropagation/) oferece uma explicação visual desses ajustes.
+As GPUs, processadores capazes de realizar muitas operações numéricas em paralelo, ajudam nesse trabalho. Métodos, dados e capacidade de processamento permitiram treinar redes maiores. A história de AlexNet e ImageNet, na [aula anterior](01-historia-e-problemas.md), mostra essas peças trabalhando juntas. A série de [3Blue1Brown sobre retropropagação](https://www.3blue1brown.com/lessons/backpropagation/) oferece uma explicação visual dos ajustes.
 
 Na **inferência**, usamos os parâmetros aprendidos para produzir uma saída. Uma conversa comum não atualiza automaticamente os pesos do modelo a cada mensagem. O produto pode manter histórico ou memória, e o fornecedor pode ter políticas específicas de uso de dados; isso é diferente de o modelo aprender imediatamente com cada correção.
 
+
 ## Escala e pós-treinamento
 
-As **leis de escala** descrevem relações empíricas entre tamanho do modelo, quantidade de dados, computação e uma medida de erro de previsão. O estudo de [Kaplan e colaboradores](https://arxiv.org/abs/2001.08361) encontrou regularidades nessas relações. Isso ajuda a planejar recursos de treinamento dentro das condições estudadas; não garante que um modelo maior resolva melhor qualquer tarefa da sua aplicação. Para escolher um modelo para o agente, compare qualidade, custo e tempo nos seus próprios casos.
+As **leis de escala** descrevem relações observadas em experimentos entre tamanho do modelo, quantidade de dados, capacidade de processamento e erro de previsão. O estudo de [Kaplan e colaboradores](https://arxiv.org/abs/2001.08361) encontrou regularidades nessas relações. Elas ajudam a planejar o treinamento nas condições estudadas. Para escolher um modelo para o agente, ainda é necessário comparar qualidade, custo e tempo nos seus próprios casos.
 
 O **pós-treinamento** adapta um modelo já treinado a comportamentos desejados, como seguir instruções. No trabalho do [InstructGPT](https://arxiv.org/abs/2203.02155), pesquisadores usaram demonstrações humanas para um ajuste supervisionado e avaliações de preferência para uma etapa de **RLHF**: aprendizado por reforço com feedback humano. Esse processo melhorou a preferência pelas respostas nas condições do estudo, mas os modelos continuaram cometendo erros. Uma resposta prestativa e uma resposta factual precisam de verificações próprias.
 
 No projeto, essa distinção orienta uma decisão concreta: você pode usar um modelo já preparado para seguir instruções e concentrar o trabalho em contexto, ferramentas e avaliação. Corrigir uma informação no prompt não é executar essas etapas de treinamento novamente.
 
+
 ## O que um LLM faz
 
-Um modelo de linguagem estima continuações para uma sequência de tokens. Repetindo esse processo, produz textos, código e outros formatos de saída compatíveis com o sistema. O treinamento pode levar o modelo a representar regularidades da linguagem e conhecimentos; sua resposta, porém, não vem automaticamente de uma consulta a uma fonte atualizada.
+Um modelo de linguagem estima continuações para uma sequência de pequenas unidades chamadas **tokens**, explicadas a seguir. Repetindo esse processo, produz textos, código e outros formatos de saída. O treinamento permite representar padrões da linguagem e conhecimentos; a resposta não vem automaticamente de uma consulta a uma fonte atualizada.
 
 A **data de corte do conhecimento**, quando informada, orienta sobre a cobertura temporal de parte do treinamento. Não garante que o modelo saiba tudo antes dessa data. Busca e ferramentas podem trazer dados atuais durante uma execução, desde que o sistema realmente as use.
 
 No agente de leads, pergunte separadamente: “o modelo interpreta esta mensagem?” e “o sistema tem a tabela de preços válida?”. A primeira é uma capacidade do modelo; a segunda exige uma fonte e um caminho de acesso.
+
 
 ## Tokens e janela de contexto
 
@@ -40,38 +73,25 @@ A **janela de contexto** é o limite do que o modelo pode considerar em uma exec
 
 Pense no contexto como uma mesa de trabalho. Você seleciona o que colocar sobre ela. Uma mesa maior permite incluir mais material, mas não garante que todo detalhe seja usado corretamente. Se a aplicação omite um dado importante ou o dilui em conteúdo irrelevante, a resposta pode piorar.
 
+
 ## Transformer e atenção
 
 O Transformer, apresentado em [Attention Is All You Need](https://arxiv.org/abs/1706.03762), usa mecanismos de atenção para combinar informações de posições diferentes de uma sequência. Em “o cliente pediu a proposta porque ele estava com pressa”, as relações entre “ele”, “cliente” e o restante ajudam a construir uma representação da frase.
 
-A arquitetura favoreceu paralelismo no treinamento e ganhou grande importância em modelos de linguagem. Isso não significa que todos os modelos tenham a mesma arquitetura, nem que uma janela longa elimine falhas de atenção. Na geração autoregressiva, a produção da continuação continua condicionada ao que veio antes.
+A arquitetura permitiu realizar mais operações em paralelo durante o treinamento e ganhou grande importância em modelos de linguagem. Ainda existem outras arquiteturas, e uma janela longa não garante o uso correto de todos os detalhes. Na geração **autoregressiva**, cada novo token depende da sequência que já existe.
+
 
 ## Prompt, temperatura e respostas sem fundamento
 
-O **prompt** reúne as entradas que orientam o modelo. Instruções de sistema ou de desenvolvedor definem comportamento conforme a API; a mensagem do usuário traz a tarefa; documentos e ferramentas oferecem contexto. Versione as instruções importantes: mudar o prompt pode mudar o comportamento do produto.
+O **prompt** reúne as entradas que orientam o modelo. Instruções de sistema ou de desenvolvedor definem o comportamento esperado; a mensagem do usuário traz a tarefa; documentos e ferramentas oferecem contexto. Guarde versões das instruções importantes: mudar o prompt pode mudar o comportamento do produto. A forma de enviar cada parte depende da interface usada para acessar o modelo.
 
-A **temperatura**, quando disponível, altera a distribuição usada para escolher a continuação. Valores menores tendem a reduzir variação, mas não garantem saídas idênticas nem fatos corretos. Alguns modelos não expõem esse controle. Consulte a documentação do modelo escolhido e teste com as mesmas entradas.
+A **temperatura**, quando disponível, ajusta as probabilidades usadas para escolher a continuação. Valores menores tendem a reduzir a variedade de respostas, mas não garantem saídas idênticas nem fatos corretos. Alguns modelos não oferecem esse controle. Consulte a documentação do modelo escolhido e teste com as mesmas entradas.
 
 Uma **alucinação** é uma saída incorreta ou sem apoio suficiente apresentada de maneira plausível. Exigir uma resposta objetiva não basta para evitá-la. Forneça fontes, permita sinalizar ausência de informação e verifique o resultado. Um campo JSON válido também pode conter uma informação falsa.
 
-## Laboratório · 80% prática
 
-Reserve **4 horas** para testar a classificação de mensagens do mesmo agente:
+## Mais fontes para consultar
 
-1. Separe ao menos dez mensagens com a categoria esperada: dúvida, interesse comercial ou encaminhamento humano. Inclua ambiguidades e informação insuficiente.
-2. Construa uma versão de regras simples. Por exemplo, detectar palavras frequentes. Guarde seus resultados como referência.
-3. Escreva uma instrução para o LLM contendo tarefa, categorias, formato esperado e como agir sem informação suficiente. Evite colocar as respostas esperadas junto das mensagens de teste.
-4. Execute os mesmos casos nas duas versões. Registre acertos, erros, tempo e consumo informado pela ferramenta, quando disponível.
-5. Altere uma variável: exemplos no prompt, instrução de recusa ou temperatura suportada. Repita e compare.
-6. Faça uma pergunta sobre preço usando uma tabela fictícia; depois remova a tabela. Observe se o modelo admite a falta de base ou inventa um valor.
-
-Se usar uma IA para programar, peça uma alteração pequena com critérios de aceitação. Leia a diferença entre versões, execute os exemplos e peça explicação sobre o trecho que não entendeu. Você deve conseguir verificar o efeito da alteração.
-
-**Você concluiu quando:** explica por que cada abordagem acertou ou falhou, distingue contexto de treinamento e demonstra um caso em que fluência não foi suficiente.
-
-## Estudo guiado · 20% teoria
-
-Escolha uma fonte para a **1 hora de estudo** da semana. Use as outras quando surgir uma dúvida específica.
 
 | Recurso | Trecho ou atividade | Retorno ao projeto |
 | --- | --- | --- |
@@ -80,6 +100,8 @@ Escolha uma fonte para a **1 hora de estudo** da semana. Use as outras quando su
 | [Microsoft — Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) | Lição introdutória de IA generativa e modelos. | Reproduzir uma atividade usando mensagens do seu agente. |
 | [OpenAI — Learn](https://developers.openai.com/learn) | Selecione uma introdução compatível com a tarefa escolhida. | Conferir a forma recomendada de implementar essa tarefa. |
 
-Para aprofundar depois, **The Hundred-Page Machine Learning Book**, de Andriy Burkov, organiza fundamentos; **Build a Large Language Model (From Scratch)**, de Sebastian Raschka, e **Neural Networks: Zero to Hero**, de Andrej Karpathy, ajudam a construir modelos pequenos. Consulte os [links e percursos de aprofundamento](../docs/fontes-e-comunidade.md) sem transformar a semana em uma maratona de cursos.
+Para aprofundar depois, **The Hundred-Page Machine Learning Book**, de Andriy Burkov, organiza fundamentos; **Build a Large Language Model (From Scratch)**, de Sebastian Raschka, e **Neural Networks: Zero to Hero**, de Andrej Karpathy, ajudam a construir modelos pequenos. Consulte os [links e percursos de aprofundamento](../comece-aqui/fontes-e-comunidade.md) conforme surgir a necessidade de aprofundamento.
 
-[Próxima aula: integrações e dados →](03-integracoes-e-dados.md)
+</details>
+
+[Dar fontes e contexto ao agente →](04-contexto-e-rag.md) · [Entender as conexões →](03-integracoes-e-dados.md)

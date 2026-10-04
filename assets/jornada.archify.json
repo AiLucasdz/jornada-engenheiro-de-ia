@@ -4,7 +4,7 @@
   "meta": {
     "title": "Jornada do Engenheiro de IA",
     "quality_profile": "showcase",
-    "output": ".archify/workflow-jornada-20260928/jornada.html",
+    "output": ".archify/workflow-jornada-pratica-20261004/jornada.html",
     "locale": "pt-BR",
     "translations": {
       "page.title": "Diagrama {title}",
@@ -449,117 +449,79 @@
   },
   "lanes": [
     {
-      "id": "planejar",
-      "label": "FUNDAMENTOS"
+      "id": "comecar",
+      "label": "COMEÇAR"
     },
     {
-      "id": "construir",
-      "label": "CONSTRUÇÃO"
-    },
-    {
-      "id": "operar",
-      "label": "OPERAÇÃO"
+      "id": "usar",
+      "label": "COLOCAR EM USO"
     }
   ],
   "mainPath": [
-    "problema",
-    "base",
-    "agente",
-    "avaliacao",
-    "piloto",
-    "evolucao"
+    "hermes",
+    "contexto",
+    "acao",
+    "demonstrar"
   ],
   "nodes": [
     {
-      "id": "problema",
-      "lane": "planejar",
+      "id": "hermes",
+      "lane": "comecar",
       "col": 0,
       "type": "backend",
-      "label": "Problema real",
-      "sublabel": "Semanas 1–3",
-      "tag": "Hipótese e métrica",
-      "width": 200
+      "label": "Começar com Hermes",
+      "sublabel": "Uma tarefa pequena",
+      "tag": "Execute e observe",
+      "width": 220
     },
     {
-      "id": "base",
-      "lane": "planejar",
+      "id": "contexto",
+      "lane": "comecar",
       "col": 1,
       "type": "backend",
-      "label": "Base técnica",
-      "sublabel": "Semanas 4–6",
-      "tag": "Modelo, APIs e dados",
-      "width": 200
+      "label": "Dar contexto",
+      "sublabel": "Informações e fontes",
+      "tag": "Confira a resposta",
+      "width": 220
     },
     {
-      "id": "agente",
-      "lane": "construir",
+      "id": "acao",
+      "lane": "usar",
       "col": 1,
       "type": "backend",
-      "label": "Seu agente",
-      "sublabel": "Semanas 7–8",
-      "tag": "Ferramentas e ações",
-      "width": 200
+      "label": "Conectar uma ação",
+      "sublabel": "Uma ferramenta útil",
+      "tag": "Defina os limites",
+      "width": 220
     },
     {
-      "id": "avaliacao",
-      "lane": "construir",
+      "id": "demonstrar",
+      "lane": "usar",
       "col": 2,
       "type": "backend",
-      "label": "Avaliar e corrigir",
-      "sublabel": "Semanas 9–10",
-      "tag": "Testes, logs e custo",
-      "width": 200
-    },
-    {
-      "id": "piloto",
-      "lane": "operar",
-      "col": 2,
-      "type": "backend",
-      "label": "Piloto em uso",
-      "sublabel": "Semana 11",
-      "tag": "Usuários e resultados",
-      "width": 200
-    },
-    {
-      "id": "evolucao",
-      "lane": "operar",
-      "col": 3,
-      "type": "backend",
-      "label": "Evoluir e apresentar",
-      "sublabel": "Semana 12",
-      "tag": "Evidências e limites",
-      "width": 200
+      "label": "Testar e mostrar",
+      "sublabel": "Corrija uma falha",
+      "tag": "Demonstre o resultado",
+      "width": 220
     }
   ],
   "edges": [
     {
-      "id": "problema-base",
-      "from": "problema",
-      "to": "base",
+      "id": "hermes-contexto",
+      "from": "hermes",
+      "to": "contexto",
       "variant": "emphasis"
     },
     {
-      "id": "base-agente",
-      "from": "base",
-      "to": "agente",
+      "id": "contexto-acao",
+      "from": "contexto",
+      "to": "acao",
       "variant": "emphasis"
     },
     {
-      "id": "agente-avaliacao",
-      "from": "agente",
-      "to": "avaliacao",
-      "variant": "emphasis"
-    },
-    {
-      "id": "avaliacao-piloto",
-      "from": "avaliacao",
-      "to": "piloto",
-      "variant": "emphasis"
-    },
-    {
-      "id": "piloto-evolucao",
-      "from": "piloto",
-      "to": "evolucao",
+      "id": "acao-demonstrar",
+      "from": "acao",
+      "to": "demonstrar",
       "variant": "emphasis"
     }
   ],
@@ -568,16 +530,16 @@
       "dot": "cyan",
       "title": "80% prática · 20% estudo",
       "items": [
-        "Construa um único projeto que evolui a cada etapa.",
-        "Estude os conceitos conforme surgem as decisões."
+        "Melhore o mesmo agente a cada entrega.",
+        "Estude o necessário para o próximo passo."
       ]
     },
     {
       "dot": "emerald",
-      "title": "Avance pelas entregas",
+      "title": "7 aulas para consultar",
       "items": [
-        "1 hora por dia, 5 dias por semana.",
-        "12 semanas de referência: ajuste ao seu ritmo."
+        "Use os conceitos quando precisar deles.",
+        "Avance pelo resultado, no seu ritmo."
       ]
     }
   ]

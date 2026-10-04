@@ -29,7 +29,7 @@ O X pode exigir login para exibir posts ou a lista de perfis seguidos. Esta tril
 
 ### Rotina sugerida
 
-- Escolha um tema da sua semana, como ferramentas, contexto ou avaliação.
+- Escolha um tema da sua entrega, como ferramentas, contexto ou avaliação.
 - Salve no máximo três ideias com o link da fonte original.
 - Escolha uma para testar. Registre **alegação → fonte → teste → resultado**.
 - Compartilhe uma descoberta com contexto: o que tentou, o que aconteceu e o que ainda não sabe.
@@ -67,4 +67,4 @@ Em uma semana com 1 hora de estudo, uma sugestão é **35 minutos de material e 
 
 Uma contribuição útil por semana é suficiente para começar: uma pergunta bem preparada, um teste reproduzível, uma resposta ou um relato do que você aprendeu.
 
-→ [Registrar uma ideia como experimento](../modelos/experimento.md)
+→ [Registrar uma ideia como experimento](../pratique/experimento.md)

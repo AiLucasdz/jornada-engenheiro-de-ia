@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1300" viewBox="0 0 640 1300" role="img" aria-labelledby="title desc">
+<title id="title">Ciclo do agente com validação, execução e parada</title><desc id="desc">O objetivo e o contexto chegam ao modelo. Se ele solicitar ferramenta, o sistema valida argumentos e permissão, executa a operação e devolve o resultado ao modelo. A cada passo verifica conclusão, falta de informação, falha e limites de tempo, passos e custo para encerrar ou encaminhar.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L9 4.5 L0 9Z" fill="#007969"/></marker><marker id="arrow-coral" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L9 4.5 L0 9Z" fill="#b95432"/></marker></defs>
+<rect width="640" height="1300" rx="24" fill="#f5f8f7"/>
+<rect x="32" y="30" width="8" height="42" rx="4" fill="#007969" stroke="#007969" stroke-width="2"/>
+<text x="54" y="60" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#007969" text-anchor="start">
+<tspan x="54" dy="0">AULA 05 · AGENTES</tspan>
+</text>
+<text x="32" y="115" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="32" dy="0">Decidir, agir e observar</tspan>
+</text>
+<text x="32" y="158" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="32" dy="0">O modelo pede; o sistema executa.</tspan>
+</text>
+<rect x="40" y="195" width="512" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<g transform="translate(59,223)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M9 49V4 M10 6H44L35 18L44 29H10"/>
+</g>
+<text x="132" y="238" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="132" dy="0">Objetivo + contexto</tspan>
+</text>
+<text x="132" y="277" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="132" dy="0">Tarefa, dados e limites</tspan>
+</text>
+<path d="M296 311V336" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="345" width="512" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<g transform="translate(59,373)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<rect x="8" y="8" width="36" height="36" rx="9"/><path d="M18 1V8 M34 1V8 M18 44V51 M34 44V51 M1 18H8 M1 34H8 M44 18H51 M44 34H51"/><circle cx="20" cy="23" r="2"/><circle cx="33" cy="23" r="2"/><path d="M18 34H34"/>
+</g>
+<text x="132" y="388" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="132" dy="0">Modelo</tspan>
+</text>
+<text x="132" y="427" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="132" dy="0">Responde ou solicita ferramenta</tspan>
+</text>
+<path d="M296 461V486" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="495" width="512" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<g transform="translate(59,523)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<rect x="5" y="5" width="43" height="43" rx="10"/><path d="M14 27L23 36L40 18"/>
+</g>
+<text x="132" y="538" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="132" dy="0">Validar ferramenta</tspan>
+</text>
+<text x="132" y="577" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="132" dy="0">Argumentos e permissão</tspan>
+</text>
+<path d="M296 611V636" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="645" width="512" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<g transform="translate(59,673)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M36 5A14 14 0 0 0 19 22L5 36A7 7 0 0 0 15 46L30 31A14 14 0 0 0 47 14L38 23L29 14Z"/>
+</g>
+<text x="132" y="688" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="132" dy="0">Executar</tspan>
+</text>
+<text x="132" y="727" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="132" dy="0">Operação autorizada</tspan>
+</text>
+<path d="M296 761V786" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="795" width="512" height="112" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<g transform="translate(59,823)" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M9 4H32L43 15V48H9Z M32 4V15H43 M17 24H35 M17 33H35 M17 41H28"/>
+</g>
+<text x="132" y="838" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="132" dy="0">Resultado</tspan>
+</text>
+<text x="132" y="877" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="132" dy="0">Dado ou erro observado</tspan>
+</text>
+<path d="M557 851H602V398H561" fill="none" stroke="#007969" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="40" y="960" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#007969" text-anchor="start">
+<tspan x="40" dy="0">Resultado → novo contexto → modelo</tspan>
+</text>
+<rect x="32" y="996" width="576" height="244" rx="18" fill="#fff0e9" stroke="#fff0e9" stroke-width="2"/>
+<g transform="translate(54,1018)" stroke="#b95432" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M17 4H36L49 17V36L36 49H17L4 36V17Z"/><path d="M18 18L35 35 M35 18L18 35"/>
+</g>
+<text x="125" y="1045" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="125" dy="0">Verificar quando parar</tspan>
+</text>
+<text x="55" y="1098" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#102236" text-anchor="start">
+<tspan x="55" dy="0">Tarefa concluída ou falta de dados.</tspan>
+<tspan x="55" dy="35">Falha sem recuperação prevista.</tspan>
+<tspan x="55" dy="35">Limite de passos, tempo ou custo.</tspan>
+<tspan x="55" dy="35">Registre o motivo e encaminhe.</tspan>
+</text>
+</svg>

@@ -1,14 +1,38 @@
 # 04 · Dê ao agente a fonte certa
 
-[← Aula anterior](03-integracoes-e-dados.md) · [Aulas](README.md) · [Próxima aula →](05-agentes-e-ferramentas.md)
+[← Consulta anterior](03-integracoes-e-dados.md) · [Aulas](README.md) · [Próxima consulta →](05-agentes-e-ferramentas.md)
 
-**Quando usar:** semanas 6–7, junto das entregas de dados e do primeiro agente. **Entrega:** uma resposta apoiada em fonte identificável, com atualização e ausência de informação testadas.
+**Use na entrega 2: dar contexto e fontes ao agente.**
 
-O seu agente de leads precisa consultar regras, planos ou perguntas frequentes. A tarefa de engenharia é selecionar informação autorizada e relevante, colocá-la no contexto e conferir se a resposta se sustenta nela.
+**Ao terminar:** o agente terá um material de consulta e você conseguirá conferir de onde veio a resposta.
+
+Comece com um documento curto: regras do processo, planos oferecidos ou perguntas frequentes. Forneça esse material ao agente e peça que mostre qual trecho usou. Se a resposta não estiver no documento, ele deve dizer o que falta ou encaminhar a dúvida.
+
+Quando o sistema busca trechos relevantes antes de responder, esse caminho é chamado **RAG**: geração de resposta apoiada em informação recuperada de uma fonte. Para começar, você pode usar um arquivo pequeno e a ferramenta de leitura que já existe no agente.
+
+![RAG em dois caminhos: preparar e atualizar documentos para busca; depois recuperar trechos a partir de uma pergunta e gerar a resposta com fonte.](../mapas-e-desenhos/04-contexto-e-rag.svg)
+
+O desenho separa cuidar da fonte e consultá-la; uma resposta só pode acompanhar uma mudança se o sistema tiver acesso à informação atualizada.
+
+## Faça no seu agente · 80% prática
+
+1. Prepare um documento curto e fictício com as informações necessárias à tarefa. Coloque título e data de atualização.
+2. Faça três perguntas: uma respondida pelo documento, uma incompleta e uma sem resposta disponível.
+3. Confira a resposta e o trecho usado. Se estiver errada, veja primeiro se o agente leu a informação correta.
+4. Altere uma informação e repita a pergunta. Depois retire uma informação e confira se o agente reconhece a falta dela.
+
+**Pode seguir quando:** você consegue apontar a fonte da resposta e demonstrar o que acontece quando a informação muda ou não existe.
+
+## Estude para destravar · 20% teoria
+
+Use a lição de busca ou RAG de [Generative AI for Beginners, da Microsoft](https://github.com/microsoft/generative-ai-for-beginners), se precisar entender melhor esse caminho. Só avance para dividir documentos, criar índices ou usar embeddings quando o tamanho ou a qualidade da busca justificar esse trabalho.
+
+<details>
+<summary>Para aprofundar: RAG, embeddings, divisão de documentos e fine-tuning</summary>
 
 ## Prompt, recuperação e fine-tuning
 
-Há três decisões diferentes que frequentemente aparecem sob a expressão “dar conhecimento à IA”.
+Enviar informação na pergunta, buscar documentos e treinar novamente o modelo são formas diferentes de melhorar uma aplicação. Compare o que muda em cada uma:
 
 | Abordagem | O que acontece | Quando experimentar | O que manter |
 | --- | --- | --- | --- |
@@ -20,13 +44,15 @@ Fine-tuning pode afetar conhecimentos e capacidades, mas não funciona como um b
 
 No nosso agente, comece com uma pequena tabela fictícia de planos no contexto. Adicione recuperação quando selecionar a fonte passar a ser uma necessidade real. Antes de sofisticar a busca, crie perguntas com respostas esperadas.
 
+
 ## Embeddings: um mapa aproximado
 
-Um **embedding** representa um item como um vetor de números. Modelos de embedding podem colocar textos relacionados em regiões próximas desse espaço. “Quero encerrar meu plano” pode ser recuperado ao buscar “cancelamento”, mesmo sem igualdade literal das palavras.
+Um **embedding** representa um item como um vetor: uma lista de números. Essas listas permitem comparar textos por uma medida de proximidade. Modelos de embedding podem aproximar textos relacionados, como “quero encerrar meu plano” e “cancelamento”, mesmo sem palavras iguais.
 
-Pense em um mapa de assuntos: proximidade ajuda a encontrar candidatos, mas não prova que o conteúdo responde à pergunta. Nomes, números, códigos e negativas podem exigir busca lexical, filtros ou outras estratégias. RAG não exige busca vetorial: SQL, texto completo, busca híbrida e APIs também podem recuperar informação.
+Pense em um mapa de assuntos: proximidade ajuda a encontrar trechos candidatos, mas não prova que eles respondem à pergunta. Nomes, números, códigos e negativas podem exigir busca por palavras exatas ou filtros. RAG pode combinar essa busca com vetores, consultar um banco com SQL ou obter dados por uma API.
 
-Um **banco vetorial** armazena vetores e permite consultas por similaridade, geralmente junto de metadados. Uma extensão como pgvector pode adicionar esse recurso a PostgreSQL; serviços dedicados são outras opções. Escolha por volume, filtros, qualidade e capacidade de manutenção, depois de medir seu caso.
+Um **banco vetorial** armazena vetores e permite buscar itens parecidos. Ele pode guardar também **metadados**: informações sobre cada item, como fonte, versão e quem pode acessá-lo. Uma extensão como pgvector adiciona esse recurso ao PostgreSQL; serviços dedicados são outras opções. Compare a qualidade da busca e o trabalho de manutenção com o volume de dados do seu projeto.
+
 
 ## Chunking: recortar sem perder o significado
 
@@ -34,15 +60,17 @@ Um **banco vetorial** armazena vetores e permite consultas por similaridade, ger
 
 Comece respeitando títulos, seções ou pares de pergunta e resposta. Guarde junto do texto a fonte, o identificador, a versão e os metadados de acesso. Em tabelas, preserve a relação entre rótulos e valores. Compare estratégias com as perguntas reais do projeto: não há um tamanho universal que maximize qualidade.
 
+
 ## RAG tem dois caminhos
 
-**Indexação:** ler a fonte → extrair e limpar → dividir em trechos → gerar representações, se usadas → salvar trechos e metadados. Quando a fonte muda, o pipeline precisa atualizar ou remover o que ficou obsoleto.
+**Indexação — preparar para buscar:** ler a fonte → extrair e limpar → dividir em trechos → gerar embeddings, se usados → salvar trechos e metadados. Quando a fonte muda, o pipeline precisa atualizar ou remover o que ficou obsoleto.
 
-**Consulta:** receber a pergunta → aplicar permissões e filtros → recuperar candidatos → selecionar conteúdo útil → montar o contexto → gerar resposta → verificar e apresentar a fonte.
+**Consulta — buscar para responder:** receber a pergunta → aplicar permissões e filtros → recuperar trechos candidatos → selecionar conteúdo útil → montar o contexto → gerar resposta → verificar e apresentar a fonte.
 
 A analogia é uma consulta a um manual durante o trabalho. A pessoa ainda pode interpretar errado, e alguém pode ter entregue a página errada. O acesso ao manual ajuda, mas não substitui o controle do processo.
 
 No agente de leads, uma resposta sobre plano deve apontar o documento e a versão usados. Se o preço mudou, teste o tempo entre alterar a fonte e o novo valor ficar disponível. RAG não atualiza sozinho nem garante atualização instantânea: isso depende do pipeline, dos índices e de eventuais caches.
+
 
 ## Diagnóstico em três camadas
 
@@ -54,21 +82,8 @@ No agente de leads, uma resposta sobre plano deve apontar o documento e a versã
 
 Se o agente acertou o preço, mas não registrou o pedido de contato, a informação estava correta e o processo ficou incompleto. Essa distinção evita corrigir a parte errada do sistema.
 
-## Laboratório · 80% prática
 
-Use uma parte das **4 horas de prática das semanas 6 e 7**. Este exercício substitui uma parte das tarefas de dados e do primeiro agente; não é uma carga extra.
-
-1. Crie três documentos curtos e fictícios: planos, regras de atendimento e perguntas frequentes. Inclua título, versão e data de atualização.
-2. Prepare oito perguntas: diretas, com sinônimos, ambíguas e sem resposta na base. Registre o trecho que deveria sustentar cada resposta.
-3. Teste primeiro a base inteira no contexto. Guarde resposta e consumo, quando disponíveis.
-4. Implemente uma recuperação simples. Registre quais trechos foram encontrados **antes** de avaliar a resposta.
-5. Compare dois recortes de documentos mantendo as perguntas iguais. Observe perda de contexto e trechos irrelevantes.
-6. Altere um plano e retire uma informação da base. Execute o pipeline e repita as perguntas para confirmar atualização e remoção.
-7. Provoque ausência de fonte e confira se o agente encaminha a dúvida em vez de inventar uma regra comercial.
-
-**Você concluiu quando:** mostra de onde veio uma resposta, localiza uma falha por camada e demonstra que uma informação removida deixa de aparecer nas consultas.
-
-## Estudo guiado · 20% teoria
+## Mais fontes para consultar
 
 | Recurso | O que estudar | O que aplicar |
 | --- | --- | --- |
@@ -76,6 +91,8 @@ Use uma parte das **4 horas de prática das semanas 6 e 7**. Este exercício sub
 | [OpenAI Cookbook](https://developers.openai.com/cookbook) | Procure um exemplo de recuperação ou embeddings adequado à ferramenta escolhida. | Alterar apenas o recorte ou a busca e comparar resultados. |
 | [AI Engineering — recursos de Chip Huyen](https://github.com/chiphuyen/aie-book) | Consulte os tópicos de RAG, dados e adaptação de modelos. | Justificar sua escolha entre contexto direto, recuperação e ajuste do modelo. |
 
-Os capítulos de atenção e embeddings da [série de 3Blue1Brown](https://www.3blue1brown.com/?topic=neural-networks) ajudam a visualizar as representações. Uma hora de estudo deve terminar com uma hipótese de melhoria, como “preservar o título do plano em cada trecho reduz respostas com preço trocado”.
+Os capítulos de atenção e embeddings da [série de 3Blue1Brown](https://www.3blue1brown.com/?topic=neural-networks) ajudam a visualizar as representações. O estudo deve terminar com uma hipótese de melhoria, como “preservar o título do plano em cada trecho reduz respostas com preço trocado”.
 
-[Próxima aula: agentes e ferramentas →](05-agentes-e-ferramentas.md)
+</details>
+
+[Conectar uma ação ao agente →](05-agentes-e-ferramentas.md)

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1330" viewBox="0 0 640 1330" role="img" aria-labelledby="title desc">
+<title id="title">Marcos da IA e decisões de projeto</title><desc id="desc">Linha do tempo: Turing em 1950, Dartmouth em 1956, sistemas especialistas nos anos 1980, popularização da retropropagação em 1986, AlexNet em 2012, Transformer em 2017 e agentes hoje. Avanços convivem com limites: o progresso não segue uma linha reta.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L9 4.5 L0 9Z" fill="#007969"/></marker><marker id="arrow-coral" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L9 4.5 L0 9Z" fill="#b95432"/></marker></defs>
+<rect width="640" height="1330" rx="24" fill="#f5f8f7"/>
+<rect x="32" y="30" width="8" height="42" rx="4" fill="#007969" stroke="#007969" stroke-width="2"/>
+<text x="54" y="60" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#007969" text-anchor="start">
+<tspan x="54" dy="0">AULA 01 · HISTÓRIA</tspan>
+</text>
+<text x="32" y="115" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="32" dy="0">Marcos, avanços e limites</tspan>
+</text>
+<text x="32" y="158" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="32" dy="0">Use a história para fazer boas perguntas.</tspan>
+</text>
+<path d="M64 226V1090" fill="none" stroke="#c8d9d5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="64" cy="226" r="10" fill="#007969" stroke="none" stroke-width="3"/>
+<rect x="94" y="190" width="514" height="111" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<text x="115" y="225" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#007969" text-anchor="start">
+<tspan x="115" dy="0">1950</tspan>
+</text>
+<text x="115" y="259" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="115" dy="0">Turing</tspan>
+</text>
+<text x="115" y="289" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="115" dy="0">Como avaliar uma máquina?</tspan>
+</text>
+<circle cx="64" cy="356" r="10" fill="#007969" stroke="none" stroke-width="3"/>
+<rect x="94" y="320" width="514" height="111" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<text x="115" y="355" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#007969" text-anchor="start">
+<tspan x="115" dy="0">1956</tspan>
+</text>
+<text x="115" y="389" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="115" dy="0">Dartmouth</tspan>
+</text>
+<text x="115" y="419" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="115" dy="0">O campo recebe um nome.</tspan>
+</text>
+<circle cx="64" cy="486" r="10" fill="#007969" stroke="none" stroke-width="3"/>
+<rect x="94" y="450" width="514" height="111" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<text x="115" y="485" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#007969" text-anchor="start">
+<tspan x="115" dy="0">1980s</tspan>
+</text>
+<text x="115" y="519" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="115" dy="0">Sistemas especialistas</tspan>
+</text>
+<text x="115" y="549" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="115" dy="0">Conhecimento vira regras.</tspan>
+</text>
+<circle cx="64" cy="616" r="10" fill="#007969" stroke="none" stroke-width="3"/>
+<rect x="94" y="580" width="514" height="111" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<text x="115" y="615" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#007969" text-anchor="start">
+<tspan x="115" dy="0">1986</tspan>
+</text>
+<text x="115" y="649" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="115" dy="0">Backpropagation</tspan>
+</text>
+<text x="115" y="679" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="115" dy="0">O método ganha projeção.</tspan>
+</text>
+<circle cx="64" cy="746" r="10" fill="#007969" stroke="none" stroke-width="3"/>
+<rect x="94" y="710" width="514" height="111" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<text x="115" y="745" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#007969" text-anchor="start">
+<tspan x="115" dy="0">2012</tspan>
+</text>
+<text x="115" y="779" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="115" dy="0">AlexNet</tspan>
+</text>
+<text x="115" y="809" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="115" dy="0">Redes + dados + GPUs.</tspan>
+</text>
+<circle cx="64" cy="876" r="10" fill="#007969" stroke="none" stroke-width="3"/>
+<rect x="94" y="840" width="514" height="111" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<text x="115" y="875" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#007969" text-anchor="start">
+<tspan x="115" dy="0">2017</tspan>
+</text>
+<text x="115" y="909" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="115" dy="0">Transformer</tspan>
+</text>
+<text x="115" y="939" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="115" dy="0">Atenção muda a arquitetura.</tspan>
+</text>
+<circle cx="64" cy="1006" r="10" fill="#007969" stroke="none" stroke-width="3"/>
+<rect x="94" y="970" width="514" height="111" rx="18" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<text x="115" y="1005" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#007969" text-anchor="start">
+<tspan x="115" dy="0">Hoje</tspan>
+</text>
+<text x="115" y="1039" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#102236" text-anchor="start">
+<tspan x="115" dy="0">Agentes</tspan>
+</text>
+<text x="115" y="1069" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#435866" text-anchor="start">
+<tspan x="115" dy="0">Modelos usam ferramentas.</tspan>
+</text>
+<rect x="32" y="1125" width="576" height="143" rx="18" fill="#fff0e9" stroke="#fff0e9" stroke-width="2"/>
+<text x="52" y="1161" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" fill="#102236" text-anchor="start">
+<tspan x="52" dy="0">O progresso não é uma linha reta.</tspan>
+<tspan x="52" dy="35">Métodos, dados e computação</tspan>
+<tspan x="52" dy="35">avançam com oportunidades e limites.</tspan>
+</text>
+</svg>

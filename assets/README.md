@@ -1,9 +1,7 @@
-# Recursos visuais
+# Recursos do guia online
 
-[← Voltar à jornada](../README.md)
+[← Início](../README.md) · [Ver os mapas e desenhos](../mapas-e-desenhos/README.md)
 
-- [Capa](capa.svg): abertura visual do README.
-- [Mapa da jornada](jornada.svg): visão geral das etapas.
-- [Mapa interativo](https://ailucasdz.github.io/jornada-engenheiro-de-ia/mapa.html): versão navegável criada com [Archify](https://github.com/tt-a1i/archify).
+Para estudar pelas imagens, abra [a galeria ilustrada](../mapas-e-desenhos/README.md). Ela reúne os desenhos das aulas e o [mapa interativo criado com Archify](https://ailucasdz.github.io/jornada-engenheiro-de-ia/mapa.html).
 
-O arquivo `jornada.archify.json` guarda a especificação do diagrama; `jornada.validacao.json` registra as verificações da versão publicada. Os demais recursos apoiam a navegação do guia online.
+Esta pasta guarda a capa, o mapa exportado, os estilos e os recursos de navegação do site. Para atualizar esses arquivos, consulte [como contribuir](../CONTRIBUTING.md).

@@ -16,3 +16,18 @@ if(input)input.addEventListener('input',async()=>{
   for(const hit of hits.slice(0,10)){const li=document.createElement('li');const a=document.createElement('a');a.href=new URL(hit.url,rootUrl).href;a.textContent=hit.title;li.append(a);results.append(li)}
  }catch{status.textContent='Não foi possível carregar a busca. Use os links do menu.';indexPromise=undefined;}
 });
+
+// An anchor may point to a heading inside an optional deep dive.
+function revealSection(hash=location.hash){
+ if(!hash)return;
+ let id;try{id=decodeURIComponent(hash.slice(1))}catch{return}
+ const target=document.getElementById(id);if(!target)return;
+ let parent=target.parentElement;
+ while(parent){if(parent.tagName==='DETAILS')parent.open=true;parent=parent.parentElement}
+ target.scrollIntoView({block:'start'});
+}
+window.addEventListener('hashchange',()=>revealSection());
+document.addEventListener('click',event=>{
+ const anchor=event.target.closest('a[href^="#"]');if(anchor)revealSection(anchor.hash);
+});
+if(location.hash)window.addEventListener('load',()=>revealSection());

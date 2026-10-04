@@ -1,309 +1,76 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jornada do Engenheiro de IA · Jornada IA</title><meta name="description" content="Uma trilha prática de Engenharia de IA: materiais, fontes oficiais, projetos e comunidades."><link rel="stylesheet" href="assets/site.css"><script defer src="assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a aria-current="page" href="index.html">Início</a><a  href="leitura/docs/trilha-12-semanas.html">Trilha</a><a  href="leitura/aulas/index.html">Aulas</a><a  href="leitura/docs/fontes-e-comunidade.html">Onde estudar</a><a  href="leitura/docs/comunidades.html">X e Discord</a><a  href="leitura/modelos/index.html">Modelos</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">CONSULTE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="RAG, teoria, Discord…" data-index="assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#comece-por-aqui">Comece por aqui</a><a href="#encontre-o-que-precisa">Encontre o que precisa</a><a href="#80-prática-20-teoria-toda-semana">80% prática. 20% teoria. Toda semana.</a><a href="#seu-próximo-passo-construir">Seu próximo passo: construir</a><a href="#o-que-você-vai-aprender-a-fazer">O que você vai aprender a fazer</a><a href="#seu-caminho-em-um-mapa">Seu caminho em um mapa</a><a href="#como-a-jornada-funciona">Como a jornada funciona</a><a href="#um-agente-próprio-do-problema-ao-piloto">Um agente próprio, do problema ao piloto</a><a href="#comece-sua-jornada">Comece sua jornada</a><a href="#aprenda-o-conceito-e-aplique-no-projeto">Aprenda o conceito e aplique no projeto</a><a href="#onde-estudar-e-se-manter-atualizado">Onde estudar e se manter atualizado</a><a href="#o-que-você-leva-ao-concluir">O que você leva ao concluir</a><a href="#navegue-pelas-pastas">Navegue pelas pastas</a></nav><a class="study-note" href="leitura/docs/como-estudar.html"><strong>80% prática<br>20% teoria</strong><span>Estude uma ideia.<br>Aplique no seu agente.</span></a></aside><main id="conteudo"><article><p><img src="assets/capa.svg" alt="Do problema real ao sistema em operação — aprenda construindo" loading="lazy"></p>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jornada do Engenheiro de IA · Jornada IA</title><meta name="description" content="Construa seu primeiro agente de IA em quatro entregas, com aulas curtas, desenhos, exercícios e fontes. Aprenda no seu ritmo."><link rel="stylesheet" href="assets/site.css"><script defer src="assets/site.js"></script></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal"><a  href="leitura/comece-aqui/index.html">Começar</a><a  href="leitura/aulas/index.html">Aulas</a><a  href="leitura/pratique/index.html">Praticar</a><a  href="leitura/mapas-e-desenhos/index.html">Mapas</a><a  href="leitura/comece-aqui/fontes-e-comunidade.html">Onde estudar</a><a  href="leitura/comece-aqui/comunidades.html">Comunidade</a><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia">GitHub ↗</a></nav></header><div class="page-shell"><aside class="sidebar"><p class="eyebrow">EXPLORE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="Hermes, fontes, testes…" data-index="assets/busca.json"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul><nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong><a href="#o-que-tem-aqui-dentro">O que tem aqui dentro</a><a href="#o-que-você-vai-aprender-e-construir">O que você vai aprender e construir</a><a href="#comece-por-aqui">Comece por aqui</a><a href="#sete-aulas-para-consultar-enquanto-constrói">Sete aulas para consultar enquanto constrói</a><a href="#aprenda-praticando-no-seu-ritmo">Aprenda praticando, no seu ritmo</a><a href="#onde-estudar-e-com-quem-trocar">Onde estudar e com quem trocar</a><a href="#o-que-fica-pronto-ao-final">O que fica pronto ao final</a></nav><a class="study-note" href="leitura/comece-aqui/trilha-pratica.html"><strong>4 entregas.<br>No seu ritmo.</strong><span>80% construindo e testando.<br>20% aprendendo o necessário.</span></a></aside><main id="conteudo"><article><p><img src="assets/capa.svg" alt="Do problema real ao sistema em operação — aprenda construindo" loading="lazy"></p>
 <h1 id="jornada-do-engenheiro-de-ia">Jornada do Engenheiro de IA</h1>
-<p><strong>Aprenda a construir, testar e operar sistemas de IA que resolvem problemas reais.</strong></p>
-<p>Uma trilha prática para desenvolver as habilidades de um Engenheiro de IA, conectando negócio, fundamentos técnicos e construção de um agente próprio.</p>
-<p><strong>12 semanas de referência · 1 hora por dia · 80% prática · Um projeto do início à operação</strong></p>
-<p><a href=""><strong>Abrir o guia online ↗</strong></a> · <a href="leitura/docs/trilha-12-semanas.html">Trilha</a> · <a href="leitura/docs/fontes-e-comunidade.html">Onde estudar</a> · <a href="leitura/docs/comunidades.html">X e Discord</a></p>
-<hr>
+<p><strong>Aprenda como a IA funciona e construa um agente que resolve um problema real.</strong></p>
+<p>Esta é uma trilha prática para começar a desenvolver as habilidades de um <strong>Engenheiro de IA</strong> usando um agente desde o início. Você encontra <strong>4 entregas para construir, 7 aulas de apoio, diagramas, exercícios e indicações de onde estudar</strong>. Comece com o Hermes ou com uma base que já tenha e aprenda conforme o projeto pede.</p>
+<p><strong>O que você vai construir:</strong> um agente capaz de receber uma solicitação, consultar informações, usar ferramentas e registrar o resultado. Você também vai aprender a investigar erros, medir custo e tempo de resposta e demonstrar suas decisões.</p>
+<p><strong>4 entregas · 7 aulas de apoio · 80% prática / 20% teoria · No seu ritmo</strong></p>
+<p><a href="leitura/comece-aqui/index.html"><strong>Começar a jornada →</strong></a> · <a href="leitura/aulas/index.html">Ver as aulas</a> · <a href="">Abrir o guia online ↗</a></p>
+<h2 id="o-que-tem-aqui-dentro">O que tem aqui dentro</h2>
+<div class="link-cards"><p><strong><a href="leitura/comece-aqui/index.html">🧭 Comece aqui</a></strong><br>
+Escolha como iniciar, entenda o projeto e encontre sua próxima entrega.</p>
+<p><strong><a href="leitura/aulas/index.html">📚 Aprenda nas aulas</a></strong><br>
+História da IA, modelos, dados, agentes e operação: explicação, desenho, fonte e exercício juntos.</p>
+<p><strong><a href="leitura/pratique/index.html">🛠️ Coloque em prática</a></strong><br>
+Dê forma à ideia, teste uma mudança e acompanhe seu progresso com exemplos preenchidos.</p>
+<p><strong><a href="leitura/mapas-e-desenhos/index.html">🎨 Entenda pelos desenhos</a></strong><br>
+Veja o caminho completo, o funcionamento de um agente e os fluxos de dados, busca e avaliação.</p>
+</div><p><strong>Para quem é:</strong> quem quer sair das primeiras experiências com IA e aprender a construir soluções. Você pode começar com o Hermes do vídeo ou com uma base que já tenha. Você aprende a orientar o agente, usar fontes, conectar uma ferramenta e conferir o resultado. Conceitos técnicos mais detalhados ficam em trechos opcionais dentro das aulas.</p>
+<h2 id="o-que-você-vai-aprender-e-construir">O que você vai aprender e construir</h2>
+<figure class="lesson-figure"><a href="mapas-e-desenhos/panorama.svg" target="_blank" rel="noopener"><img src="mapas-e-desenhos/panorama.svg" alt="Quatro entregas no mesmo agente: começar, dar contexto, conectar uma ação e testar e mostrar." loading="lazy" class="lesson-diagram"><span>Ampliar o desenho ↗</span></a></figure>
+<p>O mesmo projeto acompanha todo o caminho. Pode ser um agente de pesquisa, atendimento, organização de tarefas ou outro processo do seu dia a dia. Nas aulas, usamos o exemplo de uma pessoa interessada em um serviço que precisa de informação e acompanhamento.</p>
+<ol>
+<li><strong>Coloque para funcionar:</strong> inicie seu agente e escolha uma tarefa pequena.</li>
+<li><strong>Dê contexto:</strong> acrescente informações e fontes para respostas melhores.</li>
+<li><strong>Conecte uma ação:</strong> permita consultar ou alterar algo em um ambiente de teste.</li>
+<li><strong>Teste e mostre:</strong> corrija uma falha, repita os testes e demonstre o resultado.</li>
+</ol>
+<p>→ <a href="leitura/comece-aqui/projeto-central.html">Conhecer o projeto e suas entregas</a> · <a href="mapa.html">Explorar o mapa interativo feito com Archify</a></p>
 <h2 id="comece-por-aqui">Comece por aqui</h2>
-<p><strong>Abra a mente para o que você pode construir com IA.</strong> Seu repertório atual é um ponto de partida. Conheça projetos, imagine aplicações no seu dia a dia e dê uma chance às ideias que ainda não sabe executar. A confiança cresce quando você transforma uma possibilidade em um experimento e vê o que consegue construir.</p>
+<p><strong>Abra a mente para o que você pode construir com IA.</strong> Seu repertório atual é um ponto de partida. Conheça projetos, imagine aplicações no seu dia a dia e dê uma chance às ideias que ainda não sabe executar. A confiança cresce quando você transforma uma possibilidade em um experimento.</p>
 <h3 id="minha-recomendação-lucas">Minha recomendação — Lucas</h3>
-<p><strong>1 · Se puder investir em um curso agora</strong></p>
-<p>Recomendo o curso e a comunidade do <strong>Bruno Okamoto, no <a href="https://pixelaihub.pixeleducacao.com.br/">Pixel AI Hub</a></strong>. Considero um ótimo início e o Bruno um ótimo mentor. Comece por lá e continue aqui, aplicando o aprendizado nas entregas da trilha.</p>
+<p><strong>Se puder investir em um curso agora</strong>, recomendo o curso e a comunidade do <strong>Bruno Okamoto, no <a href="https://pixelaihub.pixeleducacao.com.br/">Pixel AI Hub</a></strong>. Considero um ótimo início e o Bruno um ótimo mentor. Comece por lá e continue aqui, aplicando o aprendizado nas entregas da trilha.</p>
 <blockquote>
 <p><strong>Não tenho nenhuma parceria com o Bruno Okamoto.</strong> Essa é uma recomendação pessoal, porque considero o trabalho dele um ótimo ponto de partida.</p>
 </blockquote>
-<p><strong>2 · Se estiver sem orçamento para um curso</strong></p>
-<p>Assista ao meu vídeo <strong><a href="https://youtu.be/VHh2D9agRps">Crie seu Agente de IA Hermes em menos de 20 minutos</a></strong> e coloque seu primeiro agente para funcionar. Use esse Hermes como ponto de partida e siga construindo com as aulas e os exercícios daqui.</p>
-<p>Nos dois caminhos, você continua com <strong>um agente que evolui junto com seu aprendizado</strong>. <a href="leitura/docs/como-estudar.html#comece-com-uma-base-e-evolua-com-ela">Veja como aproveitar sua base na trilha</a>.</p>
+<p><strong>Se estiver sem orçamento para um curso</strong>, assista ao meu vídeo <strong><a href="https://youtu.be/VHh2D9agRps">Crie seu Agente de IA Hermes em menos de 20 minutos</a></strong>. Coloque seu agente para funcionar e siga construindo a partir dele com as aulas daqui.</p>
+<p><strong>Depois, dê seu primeiro passo na trilha:</strong> escolha uma tarefa que o agente deve ajudar a resolver, preencha <a href="leitura/pratique/ficha-do-projeto.html">a ideia do seu projeto</a> e siga <a href="leitura/comece-aqui/trilha-pratica.html">a primeira entrega</a>. <a href="leitura/comece-aqui/como-estudar.html#comece-com-uma-base-e-evolua-com-ela">Veja como continuar com a base que já tem</a>.</p>
 <h3 id="llm-agente-e-hermes-o-que-muda">LLM, agente e Hermes: o que muda?</h3>
 <ul>
 <li><strong>LLM</strong> é o modelo de linguagem: interpreta o contexto e gera respostas ou pedidos de uso de ferramentas.</li>
-<li><strong>Agente de IA</strong> é um sistema que combina o modelo com instruções, contexto, ferramentas e um ciclo de execução para realizar tarefas. O modelo pode escolher os próximos passos; o sistema executa as ações permitidas.</li>
-<li><strong>Hermes Agent</strong> é um projeto da <strong>Nous Research</strong> que já reúne essa estrutura, com ferramentas, memória e habilidades reutilizáveis. Você configura um modelo e usa essa base para construir seu agente.</li>
+<li><strong>Agente de IA</strong> combina o modelo com instruções, contexto, ferramentas e um ciclo de execução. O modelo pode escolher os próximos passos; o sistema executa as ações permitidas.</li>
+<li><strong>Hermes Agent</strong> é um projeto da <strong>Nous Research</strong> que oferece essa estrutura, com ferramentas, memória e habilidades reutilizáveis. Você configura um modelo e usa a base para construir seu agente.</li>
 </ul>
-<p>Por exemplo: o modelo pode sugerir como organizar uma pesquisa; um agente com as ferramentas adequadas pode consultar as fontes e salvar um relatório. Consulte a <a href="https://hermes-agent.nousresearch.com/docs/">documentação oficial do Hermes</a> e aprofunde na <a href="leitura/aulas/05-agentes-e-ferramentas.html">aula de agentes e ferramentas</a>.</p>
-<h2 id="encontre-o-que-precisa">Encontre o que precisa</h2>
-<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
-<thead>
-<tr>
-<th>Quero…</th>
-<th>Acesse</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Começar hoje</strong></td>
-<td><a href="leitura/docs/como-estudar.html">Como estudar: 80% prática e 20% teoria</a></td>
-</tr>
-<tr>
-<td><strong>Saber o que fazer em cada semana</strong></td>
-<td><a href="leitura/docs/trilha-12-semanas.html">Trilha de 12 semanas, com entregas e fontes</a></td>
-</tr>
-<tr>
-<td><strong>Aprender os conceitos da etapa</strong></td>
-<td><a href="leitura/aulas/index.html">Aulas: explicação, fontes e prática no mesmo lugar</a></td>
-</tr>
-<tr>
-<td><strong>Estudar nas fontes oficiais</strong></td>
-<td><a href="leitura/docs/fontes-e-comunidade.html">OpenAI, Anthropic, Google, GitHub, Microsoft e outras referências</a></td>
-</tr>
-<tr>
-<td><strong>Pesquisar uma dúvida</strong></td>
-<td><a href="leitura/docs/como-pesquisar.html">Como pesquisar no Google e nas documentações</a></td>
-</tr>
-<tr>
-<td><strong>Acompanhar novidades e trocar experiências</strong></td>
-<td><a href="leitura/docs/comunidades.html">X, Discord e comunidades</a></td>
-</tr>
-<tr>
-<td><strong>Trabalhar no meu agente</strong></td>
-<td><a href="leitura/docs/projeto-central.html">Projeto central</a> e <a href="leitura/modelos/index.html">modelos para preencher</a></td>
-</tr>
-</tbody></table></div>
-<p><strong>Leia tudo no navegador:</strong> o <a href="">guia online</a> reúne aulas, exercícios, fontes e busca por assunto. Aqui no GitHub, cada pasta tem um índice com o que ler e por onde começar.</p>
-<h2 id="80-prática-20-teoria-toda-semana">80% prática. 20% teoria. Toda semana.</h2>
-<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
-<thead>
-<tr>
-<th>Construir · 4 horas por semana</th>
-<th>Estudar · 1 hora por semana</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Implementar, integrar, testar, depurar e melhorar o mesmo agente.</td>
-<td>Ler fundamentos, consultar documentação e acompanhar X e Discord com uma pergunta concreta.</td>
-</tr>
-<tr>
-<td><strong>Saída:</strong> uma entrega verificável e seu resultado registrado.</td>
-<td><strong>Saída:</strong> um conceito entendido e uma decisão para aplicar no projeto.</td>
-</tr>
-</tbody></table></div>
-<p>Em uma sessão de uma hora, use <strong>12 minutos para estudar e 48 para aplicar</strong>. Ajuste a distribuição quando precisar: vale a proporção ao longo da semana. A leitura prepara a próxima mudança; o teste mostra o que estudar depois.</p>
-<p>→ <a href="leitura/docs/como-estudar.html">Ver uma sessão de exemplo e o ritmo semanal</a></p>
-<h2 id="seu-próximo-passo-construir">Seu próximo passo: construir</h2>
-<p>Escolha um problema real e acompanhe sua solução ganhar forma. Ao longo da jornada, você vai desenhar um fluxo, conectar dados e ferramentas, construir um agente e descobrir o que precisa melhorar para colocá-lo em uso.</p>
-<p>Cada etapa combina uma entrega prática com os conceitos que ajudam a tomar decisões. Você estuda, aplica, observa o resultado e volta ao projeto com mais repertório.</p>
-<blockquote>
-<p><strong>O projeto cresce junto com você.</strong> A mesma solução evolui durante a trilha, da primeira hipótese ao piloto com resultados e limites documentados.</p>
-</blockquote>
-<h2 id="o-que-você-vai-aprender-a-fazer">O que você vai aprender a fazer</h2>
-<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
-<thead>
-<tr>
-<th>Habilidade</th>
-<th>Como ela aparece na prática</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Escolher um problema que vale resolver</strong></td>
-<td>Entender um processo, definir uma hipótese e medir o resultado de negócio.</td>
-</tr>
-<tr>
-<td><strong>Desenhar a solução</strong></td>
-<td>Organizar fluxos, dados, integrações, permissões e pontos de intervenção humana.</td>
-</tr>
-<tr>
-<td><strong>Conduzir a construção com IA</strong></td>
-<td>Orientar um agente de código e verificar se a implementação atende ao comportamento esperado.</td>
-</tr>
-<tr>
-<td><strong>Construir um agente com ferramentas</strong></td>
-<td>Conectar o modelo a fontes de informação e ações com limites definidos.</td>
-</tr>
-<tr>
-<td><strong>Avaliar e corrigir</strong></td>
-<td>Testar respostas, investigar falhas e acompanhar qualidade, custo e latência.</td>
-</tr>
-<tr>
-<td><strong>Colocar em uso e evoluir</strong></td>
-<td>Rodar um piloto, comparar resultados e decidir o próximo passo com evidências.</td>
-</tr>
-</tbody></table></div>
-<h2 id="seu-caminho-em-um-mapa">Seu caminho em um mapa</h2>
-<p><a href="mapa.html"><img src="assets/jornada.svg" alt="Mapa da jornada: fundamentos, construção e operação" loading="lazy"></a></p>
-<p><a href="mapa.html"><strong>Explorar o mapa interativo ↗</strong></a> · Diagrama criado com <a href="https://github.com/tt-a1i/archify">Archify</a>.</p>
-<h2 id="como-a-jornada-funciona">Como a jornada funciona</h2>
-<p>O ritmo de referência é <strong>1 hora por dia, 5 dias por semana</strong>: cerca de 4 horas de prática e 1 hora de estudo. A proporção 80/20 orienta o trabalho; ajuste o ritmo conforme as dificuldades do projeto.</p>
-<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
-<thead>
-<tr>
-<th>Etapa</th>
-<th>Foco</th>
-<th>O que você constrói</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Semanas 1–3 · Entender e planejar</strong></td>
-<td>Problema, negócio, produto e métodos ágeis</td>
-<td>Um primeiro protótipo, com hipótese, métrica e entregas priorizadas.</td>
-</tr>
-<tr>
-<td><strong>Semanas 4–6 · Criar a base</strong></td>
-<td>Fundamentos de IA, integrações e dados</td>
-<td>Uma comparação entre regras e LLM, uma entrada de dados e um histórico de execução.</td>
-</tr>
-<tr>
-<td><strong>Semanas 7–8 · Dar capacidade de ação</strong></td>
-<td>Agentes, ferramentas e automação confiável</td>
-<td>Um agente que consulta informações e executa uma ação em ambiente de teste.</td>
-</tr>
-<tr>
-<td><strong>Semanas 9–10 · Verificar e melhorar</strong></td>
-<td>Avaliação e observabilidade</td>
-<td>Casos de teste e registros para investigar erros, custo e tempo de resposta.</td>
-</tr>
-<tr>
-<td><strong>Semanas 11–12 · Operar e aprender</strong></td>
-<td>Piloto, feedback e melhoria</td>
-<td>Uma demonstração com resultados, decisões e limitações documentadas.</td>
-</tr>
-</tbody></table></div>
-<p><strong>Avance pelas entregas, no seu ritmo.</strong> As 12 semanas são uma referência. Quando uma etapa revelar uma lacuna, use o projeto para aprofundar o aprendizado.</p>
-<p>→ <a href="leitura/docs/trilha-12-semanas.html">Ver o plano completo de 12 semanas</a></p>
-<h2 id="um-agente-próprio-do-problema-ao-piloto">Um agente próprio, do problema ao piloto</h2>
-<p>Você escolhe o contexto: atendimento, pesquisa, operação, análise comercial ou outro processo ao qual tenha acesso. A trilha usa <strong>qualificação de leads</strong> como exemplo para mostrar como cada decisão se transforma em implementação.</p>
-<p>A evolução do projeto passa por seis entregas:</p>
-<ol>
-<li><strong>Mapear e registrar</strong> — receber uma entrada, validar os dados e salvar o histórico.</li>
-<li><strong>Classificar</strong> — comparar regras simples e modelo para identificar a intenção.</li>
-<li><strong>Responder com fonte</strong> — consultar informação confiável e encaminhar o que não tem base.</li>
-<li><strong>Agir com limite</strong> — conectar uma ferramenta com permissões e intervenção humana definidas.</li>
-<li><strong>Tratar falhas</strong> — lidar com duplicatas, indisponibilidade e execuções incompletas.</li>
-<li><strong>Medir e revisar</strong> — avaliar o comportamento e comparar o resultado com a situação inicial.</li>
-</ol>
-<p>→ <a href="leitura/docs/projeto-central.html">Explorar o projeto central</a></p>
-<h2 id="comece-sua-jornada">Comece sua jornada</h2>
-<p>Parta do curso ou do <a href="https://youtu.be/VHh2D9agRps">vídeo do Hermes</a> e aproveite o que já colocou para funcionar:</p>
-<ol>
-<li><strong>Escolha um processo real.</strong> Leia <a href="leitura/docs/trilha-12-semanas.html">o plano da trilha</a> e identifique um problema que você consiga observar.</li>
-<li><strong>Dê forma à ideia.</strong> Preencha <a href="leitura/modelos/ficha-do-projeto.html">a ficha do projeto</a> com a hipótese, o escopo e a métrica principal.</li>
-<li><strong>Construa a primeira entrega.</strong> Use <a href="leitura/docs/projeto-central.html">o projeto central</a> como referência e adapte ao seu contexto.</li>
-<li><strong>Registre o que aprendeu.</strong> Documente <a href="leitura/modelos/experimento.html">os experimentos</a> e mantenha <a href="leitura/modelos/casos-de-avaliacao.html">os casos de avaliação</a> atualizados.</li>
-</ol>
-<h2 id="aprenda-o-conceito-e-aplique-no-projeto">Aprenda o conceito e aplique no projeto</h2>
-<p>Cada etapa traz a explicação que você precisa, uma leitura recomendada e um exercício no seu agente. História, fundamentos e decisões técnicas fazem parte desse caminho.</p>
-<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
-<thead>
-<tr>
-<th>Na etapa de…</th>
-<th>Você aprende…</th>
-<th>Comece pela aula</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Escolher o problema</strong></td>
-<td>Como a IA evoluiu, quais promessas falharam e como definir um escopo útil.</td>
-<td><a href="leitura/aulas/01-historia-e-problemas.html">História e problemas</a></td>
-</tr>
-<tr>
-<td><strong>Entender o modelo</strong></td>
-<td>Redes neurais, treinamento, atenção, tokens, contexto e alucinação.</td>
-<td><a href="leitura/aulas/02-modelos-e-aprendizado.html">Modelos e aprendizado</a></td>
-</tr>
-<tr>
-<td><strong>Conectar a solução</strong></td>
-<td>APIs, dados, estado e atualização das fontes.</td>
-<td><a href="leitura/aulas/03-integracoes-e-dados.html">Integrações e dados</a></td>
-</tr>
-<tr>
-<td><strong>Responder com informação</strong></td>
-<td>Embeddings, busca, RAG e quando considerar fine-tuning.</td>
-<td><a href="leitura/aulas/04-contexto-e-rag.html">Contexto e RAG</a></td>
-</tr>
-<tr>
-<td><strong>Dar capacidade de ação</strong></td>
-<td>Ferramentas, agentes, MCP e limites de autonomia.</td>
-<td><a href="leitura/aulas/05-agentes-e-ferramentas.html">Agentes e ferramentas</a></td>
-</tr>
-<tr>
-<td><strong>Verificar o resultado</strong></td>
-<td>Avaliação, diagnóstico, observabilidade e confiabilidade.</td>
-<td><a href="leitura/aulas/06-avaliacao-e-confiabilidade.html">Avaliação e confiabilidade</a></td>
-</tr>
-<tr>
-<td><strong>Colocar em uso</strong></td>
-<td>Custo, latência, operação e explicação das decisões.</td>
-<td><a href="leitura/aulas/07-operacao-e-comunicacao.html">Operação e comunicação</a></td>
-</tr>
-</tbody></table></div>
-<p>→ <a href="leitura/aulas/index.html">Navegar por todas as aulas</a></p>
-<h2 id="onde-estudar-e-se-manter-atualizado">Onde estudar e se manter atualizado</h2>
-<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
-<thead>
-<tr>
-<th>Fonte</th>
-<th>Use para</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="leitura/docs/fontes-e-comunidade.html#openai">OpenAI — Learn e Cookbook</a></td>
-<td>Guias, exemplos de implementação e avaliações.</td>
-</tr>
-<tr>
-<td><a href="leitura/docs/fontes-e-comunidade.html#anthropic">Anthropic — Academy e Engineering</a></td>
-<td>Colaboração com IA, ferramentas e desenho de agentes.</td>
-</tr>
-<tr>
-<td><a href="leitura/docs/fontes-e-comunidade.html#google">Google — fundamentos e Gemini</a></td>
-<td>Entender modelos e experimentar integrações.</td>
-</tr>
-<tr>
-<td><a href="leitura/docs/fontes-e-comunidade.html#github">GitHub — Learn e Skills</a></td>
-<td>Versionar, revisar e organizar o projeto.</td>
-</tr>
-<tr>
-<td><a href="leitura/docs/fontes-e-comunidade.html#microsoft">Microsoft — Learn e cursos abertos</a></td>
-<td>Estudar conceitos e reproduzir exercícios de IA generativa.</td>
-</tr>
-<tr>
-<td><a href="leitura/docs/fontes-e-comunidade.html#outras-bases">Outras bases técnicas</a></td>
-<td>Hugging Face, HTTP, SQL, Lean e métodos ágeis.</td>
-</tr>
-</tbody></table></div>
-<p>Escolha <strong>uma leitura principal por etapa</strong>. O <a href="leitura/docs/fontes-e-comunidade.html">guia de fontes</a> associa cada recomendação a uma aplicação no agente; o <a href="leitura/docs/como-pesquisar.html">guia de pesquisa</a> traz buscas prontas para aprofundar dúvidas.</p>
-<h3 id="acompanhe-converse-e-experimente">Acompanhe, converse e experimente</h3>
+<p>Por exemplo: o modelo pode sugerir como organizar uma pesquisa; um agente com as ferramentas adequadas pode consultar fontes e salvar um relatório. <a href="leitura/aulas/02-modelos-e-aprendizado.html">Veja a explicação ilustrada</a> e a <a href="https://hermes-agent.nousresearch.com/docs/">documentação oficial do Hermes</a>.</p>
+<h2 id="sete-aulas-para-consultar-enquanto-constrói">Sete aulas para consultar enquanto constrói</h2>
+<p>Abra a aula ligada à dúvida da sua entrega. Cada uma tem <strong>explicação curta, desenho, exercício e fontes</strong>. História e fundamentos fazem parte do material; os trechos “Para aprofundar” permitem conhecer os detalhes quando quiser.</p>
+<div class="link-cards"><p><strong><a href="leitura/aulas/01-historia-e-problemas.html">01 · Descubra um problema que vale resolver</a></strong><br>
+Conheça a história da IA, escolha uma tarefa útil e crie um primeiro teste da ideia.</p>
+<p><strong><a href="leitura/aulas/02-modelos-e-aprendizado.html">02 · Entenda como a IA aprende e responde</a></strong><br>
+Entenda modelo, instrução e contexto; compare duas orientações para a mesma tarefa.</p>
+<p><strong><a href="leitura/aulas/03-integracoes-e-dados.html">03 · Conecte seu agente ao mundo</a></strong><br>
+Receba informações, conecte serviços e guarde os dados de cada execução.</p>
+<p><strong><a href="leitura/aulas/04-contexto-e-rag.html">04 · Ensine seu agente a consultar fontes</a></strong><br>
+Entenda como buscar documentos e usar essa informação para responder — o caminho conhecido como RAG.</p>
+<p><strong><a href="leitura/aulas/05-agentes-e-ferramentas.html">05 · Transforme respostas em ações</a></strong><br>
+Conecte ferramentas, acompanhe as decisões do agente e defina até onde ele pode agir.</p>
+<p><strong><a href="leitura/aulas/06-avaliacao-e-confiabilidade.html">06 · Descubra o que funciona e o que falha</a></strong><br>
+Crie casos de teste, investigue erros e compare as versões do seu agente.</p>
+<p><strong><a href="leitura/aulas/07-operacao-e-comunicacao.html">07 · Coloque em uso e mostre o resultado</a></strong><br>
+Acompanhe tempo, custo e qualidade, rode um piloto e explique suas decisões.</p>
+</div><p>→ <a href="leitura/aulas/index.html">Escolher a aula que ajuda na sua entrega</a></p>
+<h2 id="aprenda-praticando-no-seu-ritmo">Aprenda praticando, no seu ritmo</h2>
+<p><strong>Avance pelas entregas, sem prazo fixo.</strong> Reserve cerca de 80% do tempo para construir e testar e 20% para estudar o que ajuda na próxima mudança. Você pode começar pela tarefa simples do vídeo e aumentar o desafio aos poucos.</p>
+<p><strong>Estude uma ideia → faça uma mudança → teste → registre o que aprendeu.</strong> Repita no mesmo agente. Em uma sessão de uma hora, uma sugestão é usar 12 minutos para estudar e 48 para aplicar.</p>
+<p><a href="leitura/comece-aqui/como-estudar.html">Organizar minha rotina</a> · <a href="leitura/comece-aqui/trilha-pratica.html">Ver as quatro entregas</a> · <a href="leitura/pratique/experimento.html">Registrar meu primeiro experimento</a></p>
+<h2 id="onde-estudar-e-com-quem-trocar">Onde estudar e com quem trocar</h2>
+<p>As aulas apontam para conteúdos da <a href="leitura/comece-aqui/fontes-e-comunidade.html#openai">OpenAI</a>, <a href="leitura/comece-aqui/fontes-e-comunidade.html#anthropic">Anthropic</a>, <a href="leitura/comece-aqui/fontes-e-comunidade.html#google">Google</a>, <a href="leitura/comece-aqui/fontes-e-comunidade.html#github">GitHub</a>, <a href="leitura/comece-aqui/fontes-e-comunidade.html#microsoft">Microsoft</a> e outras referências. Há livros, vídeos, artigos e exemplos para consultar conforme sua dúvida.</p>
 <ul>
-<li><strong>X:</strong> comece por <a href="https://x.com/ailucasdz">@ailucasdz</a> e explore <a href="https://x.com/ailucasdz/following">os perfis que acompanha</a>. Guarde até três ideias por semana e transforme uma delas em experimento.</li>
-<li><strong>Discord:</strong> participe de <a href="https://discord.gg/NousResearch">Nous Research</a> e <a href="https://discord.gg/clawd">OpenClaw</a> para acompanhar projetos, discutir implementação e investigar bloqueios.</li>
-<li><strong>Rotina:</strong> inclua esse acompanhamento nos 20% de estudo e leve uma pergunta, um resultado ou uma falha reproduzível para a conversa.</li>
+<li><strong>Para escolher uma leitura:</strong> <a href="leitura/comece-aqui/fontes-e-comunidade.html">fontes recomendadas por etapa</a>.</li>
+<li><strong>Para pesquisar uma dúvida:</strong> <a href="leitura/comece-aqui/como-pesquisar.html">buscas no Google e nas documentações</a>.</li>
+<li><strong>Para acompanhar e conversar:</strong> <a href="https://x.com/ailucasdz">@ailucasdz no X</a>, <a href="https://x.com/ailucasdz/following">os perfis que acompanha</a> e os Discords de <a href="https://discord.gg/NousResearch">Nous Research</a> e <a href="https://discord.gg/clawd">OpenClaw</a>. O <a href="leitura/comece-aqui/comunidades.html">guia de comunidades</a> ajuda a participar.</li>
 </ul>
-<p>→ <a href="leitura/docs/comunidades.html">Abrir o guia de X e Discord</a></p>
-<h2 id="o-que-você-leva-ao-concluir">O que você leva ao concluir</h2>
-<p>Um agente demonstrável em um processo real ou ambiente de teste representativo, acompanhado de:</p>
-<ul>
-<li>Mapa do fluxo e critérios de aceitação.</li>
-<li>Casos de avaliação com resultados registrados.</li>
-<li>Métricas antes e depois do piloto.</li>
-<li>Decisões técnicas e falhas conhecidas documentadas.</li>
-</ul>
-<p>Esse conjunto permite mostrar <strong>o que você construiu, por que escolheu esse caminho e como verificou o resultado</strong>.</p>
-<blockquote>
-<p>Conduzir a construção exige entender o comportamento esperado, os limites do sistema e as evidências de que ele funciona. Quando precisar ler código, logs ou SQL, aprenda o necessário e aplique no projeto.</p>
-</blockquote>
-<h2 id="navegue-pelas-pastas">Navegue pelas pastas</h2>
-<div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de consulta"><table>
-<thead>
-<tr>
-<th>Pasta</th>
-<th>O que você encontra</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="leitura/docs/index.html">docs/</a></td>
-<td>Roteiro, método de estudo, projeto, fontes, pesquisa e comunidades.</td>
-</tr>
-<tr>
-<td><a href="leitura/aulas/index.html">aulas/</a></td>
-<td>Conteúdo da formação integrado às referências e aos exercícios.</td>
-</tr>
-<tr>
-<td><a href="leitura/modelos/index.html">modelos/</a></td>
-<td>Ficha do projeto, experimentos e casos de avaliação.</td>
-</tr>
-<tr>
-<td><a href="leitura/assets/index.html">assets/</a></td>
-<td>Capa e mapa visual usados neste guia.</td>
-</tr>
-</tbody></table></div>
-<p>Para colaborar com os textos e atualizar o site, consulte <a href="leitura/CONTRIBUTING.html">o guia de contribuição</a>.</p>
-</article><footer><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia/blob/main/README.md">Ver este conteúdo no GitHub ↗</a><span>Um projeto. Aprendizado contínuo.</span></footer></main></div></body></html>
+<h2 id="o-que-fica-pronto-ao-final">O que fica pronto ao final</h2>
+<p>Um agente que você consegue <strong>demonstrar, testar e explicar</strong>, com uma tarefa definida, fontes conectadas, uma ação útil e testes registrados. Um pequeno piloto com outras pessoas pode ser seu próximo passo. Junto dele, você terá o desenho do funcionamento, os testes, os registros de melhorias e as decisões sobre custo e qualidade.</p>
+<p>Esse conjunto mostra as habilidades que você desenvolveu para atuar com Engenharia de IA e permite continuar evoluindo o projeto.</p>
+<p><strong><a href="leitura/comece-aqui/index.html">Começar agora →</a></strong> · <a href="leitura/CONTRIBUTING.html">Contribuir com a jornada</a></p>
+</article><footer><a href="https://github.com/AiLucasdz/jornada-engenheiro-de-ia/blob/main/README.md">Ver este conteúdo no GitHub ↗</a><span>Um agente. Uma melhoria de cada vez.</span></footer></main></div></body></html>
