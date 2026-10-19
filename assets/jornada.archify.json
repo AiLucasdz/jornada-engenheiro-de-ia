@@ -4,7 +4,7 @@
   "meta": {
     "title": "Jornada do Engenheiro de IA",
     "quality_profile": "showcase",
-    "output": ".archify/workflow-jornada-pratica-20261004/jornada.html",
+    "output": ".archify/workflow-guia-20261019/jornada.html",
     "locale": "pt-BR",
     "translations": {
       "page.title": "Diagrama {title}",
@@ -445,101 +445,180 @@
       "viewer.rail.collapse": "Recolher painel lateral",
       "viewer.rail.bottom": "Mover painel para baixo do diagrama",
       "viewer.rail.right": "Mover painel para o lado do diagrama"
+    },
+    "legend": {
+      "mode": "hidden"
     }
   },
   "lanes": [
     {
-      "id": "comecar",
-      "label": "COMEÇAR"
+      "id": "conhecer",
+      "label": "CONHECER"
     },
     {
-      "id": "usar",
-      "label": "COLOCAR EM USO"
+      "id": "construir",
+      "label": "CONSTRUIR E MOSTRAR"
+    },
+    {
+      "id": "acompanhar",
+      "label": "ACOMPANHAR EM PARALELO"
+    }
+  ],
+  "phases": [
+    {
+      "id": "base",
+      "label": "Ler uma vez",
+      "fromCol": 0,
+      "toCol": 1
+    },
+    {
+      "id": "ciclo",
+      "label": "Construir em ciclo",
+      "fromCol": 2,
+      "toCol": 4,
+      "variant": "emphasis"
+    },
+    {
+      "id": "valor",
+      "label": "Mostrar",
+      "fromCol": 5,
+      "toCol": 5
     }
   ],
   "mainPath": [
-    "hermes",
-    "contexto",
-    "acao",
-    "demonstrar"
+    "historia",
+    "fundamentos",
+    "pratica",
+    "entrevista"
   ],
   "nodes": [
     {
-      "id": "hermes",
-      "lane": "comecar",
+      "id": "historia",
+      "lane": "conhecer",
       "col": 0,
-      "type": "backend",
-      "label": "Começar com Hermes",
-      "sublabel": "Uma tarefa pequena",
-      "tag": "Execute e observe",
-      "width": 220
+      "type": "database",
+      "label": "1 · História",
+      "sublabel": "Marcos e 5 lições",
+      "tag": "Cai em entrevista",
+      "width": 210
     },
     {
-      "id": "contexto",
-      "lane": "comecar",
+      "id": "fundamentos",
+      "lane": "conhecer",
       "col": 1,
-      "type": "backend",
-      "label": "Dar contexto",
-      "sublabel": "Informações e fontes",
-      "tag": "Confira a resposta",
-      "width": 220
+      "type": "database",
+      "label": "2 · Fundamentos",
+      "sublabel": "27 conceitos",
+      "tag": "Explique em 1 frase",
+      "width": 210
     },
     {
-      "id": "acao",
-      "lane": "usar",
-      "col": 1,
-      "type": "backend",
-      "label": "Conectar uma ação",
-      "sublabel": "Uma ferramenta útil",
-      "tag": "Defina os limites",
-      "width": 220
-    },
-    {
-      "id": "demonstrar",
-      "lane": "usar",
+      "id": "pratica",
+      "lane": "construir",
       "col": 2,
       "type": "backend",
-      "label": "Testar e mostrar",
-      "sublabel": "Corrija uma falha",
-      "tag": "Demonstre o resultado",
+      "label": "3 · Prática",
+      "sublabel": "Problema real, 4 entregas",
+      "tag": "Teste e demonstre",
+      "width": 220
+    },
+    {
+      "id": "comunidade",
+      "lane": "acompanhar",
+      "col": 2,
+      "type": "external",
+      "label": "4 · Comunidade",
+      "sublabel": "X, Discord, Dizevolv",
+      "tag": "Build in public",
+      "width": 210
+    },
+    {
+      "id": "ecossistema",
+      "lane": "acompanhar",
+      "col": 3,
+      "type": "cloud",
+      "label": "5 · Ecossistema",
+      "sublabel": "Ferramentas por camada",
+      "tag": "Situe o nome novo",
+      "width": 210
+    },
+    {
+      "id": "buscar",
+      "lane": "acompanhar",
+      "col": 4,
+      "type": "messagebus",
+      "label": "6 · Onde buscar",
+      "sublabel": "Fonte primária primeiro",
+      "tag": "Docs, papers, repos",
+      "width": 210
+    },
+    {
+      "id": "entrevista",
+      "lane": "construir",
+      "col": 5,
+      "type": "frontend",
+      "label": "7 · Entrevista e mercado",
+      "sublabel": "9 perguntas e oferta",
+      "tag": "Prometa o número",
       "width": 220
     }
   ],
   "edges": [
     {
-      "id": "hermes-contexto",
-      "from": "hermes",
-      "to": "contexto",
+      "id": "historia-fundamentos",
+      "from": "historia",
+      "to": "fundamentos",
       "variant": "emphasis"
     },
     {
-      "id": "contexto-acao",
-      "from": "contexto",
-      "to": "acao",
+      "id": "fundamentos-pratica",
+      "from": "fundamentos",
+      "to": "pratica",
       "variant": "emphasis"
     },
     {
-      "id": "acao-demonstrar",
-      "from": "acao",
-      "to": "demonstrar",
+      "id": "pratica-entrevista",
+      "from": "pratica",
+      "to": "entrevista",
       "variant": "emphasis"
+    },
+    {
+      "id": "pratica-comunidade",
+      "from": "pratica",
+      "to": "comunidade",
+      "variant": "dashed",
+      "label": "publique"
+    },
+    {
+      "id": "pratica-ecossistema",
+      "from": "pratica",
+      "to": "ecossistema",
+      "variant": "dashed",
+      "label": "escolha"
+    },
+    {
+      "id": "pratica-buscar",
+      "from": "pratica",
+      "to": "buscar",
+      "variant": "dashed",
+      "label": "pesquise"
     }
   ],
   "cards": [
     {
       "dot": "cyan",
-      "title": "80% prática · 20% estudo",
+      "title": "Um guia, não um curso",
       "items": [
-        "Melhore o mesmo agente a cada entrega.",
-        "Estude o necessário para o próximo passo."
+        "Cada foco aponta para onde aprender.",
+        "80% construindo, 20% estudando."
       ]
     },
     {
       "dot": "emerald",
-      "title": "7 aulas para consultar",
+      "title": "Comece por aqui",
       "items": [
-        "Use os conceitos quando precisar deles.",
-        "Avance pelo resultado, no seu ritmo."
+        "Comunidade e curso Dizevolv.",
+        "Ou o vídeo gratuito do Hermes."
       ]
     }
   ]
