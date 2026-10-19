@@ -1,7 +1,5 @@
-# Recursos do guia online
+# Recursos do site
 
-[← Início](../README.md) · [Ver os mapas e desenhos](../mapas-e-desenhos/README.md)
+[← Guia principal](../README.md)
 
-Para estudar pelas imagens, abra [a galeria ilustrada](../mapas-e-desenhos/README.md). Ela reúne os desenhos das aulas e o [mapa interativo criado com Archify](https://ailucasdz.github.io/jornada-engenheiro-de-ia/mapa.html).
-
-Esta pasta guarda a capa, o mapa exportado, os estilos e os recursos de navegação do site. Para atualizar esses arquivos, consulte [como contribuir](../CONTRIBUTING.md).
+Esta pasta guarda a capa, os estilos, o script de busca e o índice gerado (`busca.json`). Os diagramas usados nos guias ficam em [`mapas-e-desenhos/`](../mapas-e-desenhos/ciclo-de-valor.svg). Para atualizar o site, consulte [como contribuir](../CONTRIBUTING.md).

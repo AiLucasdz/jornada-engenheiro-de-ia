@@ -7,7 +7,7 @@ const publicBase='https://ailucasdz.github.io/jornada-engenheiro-de-ia/';
 const repo='https://github.com/AiLucasdz/jornada-engenheiro-de-ia';
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const slug=s=>s.toLowerCase().replace(/<[^>]*>/g,'').replace(/[^\p{L}\p{N}\s_-]/gu,'').trim().replace(/\s+/g,'-');
-const sources=['README.md','CONTRIBUTING.md',...['comece-aqui','aulas','pratique','mapas-e-desenhos','assets'].flatMap(dir=>fs.readdirSync(dir).filter(f=>f.endsWith('.md')).map(f=>dir+'/'+f))];
+const sources=['README.md','CONTRIBUTING.md',...['guia','materiais','assets'].flatMap(dir=>fs.readdirSync(dir).filter(f=>f.endsWith('.md')).map(f=>dir+'/'+f))];
 const targets=new Map(sources.map(s=>[s,s==='README.md'?'index.html':'leitura/'+s.replace(/README\.md$/,'index.html').replace(/\.md$/,'.html')]));
 const rel=(from,to)=>path.posix.relative(path.posix.dirname(from),to)||path.posix.basename(to);
 function urlFor(href,source,target){
@@ -19,7 +19,7 @@ function urlFor(href,source,target){
  return encodeURI(rel(target,targets.get(resolved)||resolved))+(hash?'#'+hash:'');
 }
 function header(target){
- const routes=[['A jornada','index.html'],['Estudar e construir','leitura/aulas/index.html'],['Comunidades','index.html#comunidades-aprenda-na-oficina-de-quem-está-construindo'],['Valor profissional','index.html#como-transformar-o-projeto-em-um-serviço-pago']];
+ const routes=[['O guia','index.html'],['Conhecimento','leitura/guia/historia.html'],['Prática','leitura/guia/pratica.html'],['Comunidade','leitura/guia/comunidade.html'],['Ecossistema','leitura/guia/ecossistema.html'],['Entrevista','leitura/guia/entrevista-e-mercado.html']];
  return `<a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="${rel(target,'index.html')}"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal">${routes.map(([label,dest])=>`<a ${dest===target?'aria-current="page"':''} href="${rel(target,dest)}">${label}</a>`).join('')}<a href="${repo}">GitHub ↗</a></nav></header>`;
 }
 const index=[];
@@ -44,38 +44,32 @@ for(const source of sources){
  const title=(markdown.match(/^# (.+)$/m)?.[1]||'Jornada').replace(/\*|`/g,'');
  const sectionLinks=toc.map(x=>`<a href="#${esc(x.id)}">${esc(x.text)}</a>`).join('');
  const mobileIndex=`<details class="mobile-toc"><summary>Explore este percurso</summary><nav aria-label="Etapas do conteúdo">${sectionLinks}</nav></details>`;
- const content=`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · Jornada IA</title><meta name="description" content="Construa agentes de IA, aprenda em comunidade, mostre seu trabalho e prepare uma oferta de serviço. Da capacidade da IA ao processo de negócio: exemplos, exercícios e fundamentos aplicados."><link rel="stylesheet" href="${rel(target,'assets/site.css')}"><script defer src="${rel(target,'assets/site.js')}"></script></head><body>${header(target)}<div class="page-shell"><aside class="sidebar"><p class="eyebrow">EXPLORE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="Hermes, fontes, testes…" data-index="${rel(target,'assets/busca.json')}"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul>${mobileIndex}<nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong>${sectionLinks}</nav><a class="study-note" href="${rel(target,'index.html#quatro-entregas-um-projeto-que-ganha-valor')}"><strong>4 entregas.<br>No seu ritmo.</strong><span>80% construindo e testando.<br>20% aprendendo o necessário.</span></a></aside><main id="conteudo"><article${source==='README.md'?' class="guide-home"':source==='aulas/README.md'?' class="guide-lessons"':''}>${body}</article><footer><a href="${repo}/blob/main/${encodeURI(source)}">Ver este conteúdo no GitHub ↗</a><span>Um agente. Uma melhoria de cada vez.</span></footer></main></div></body></html>`;
+ const content=`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · Jornada IA</title><meta name="description" content="Guia de direção para se tornar Engenheiro de IA: o que saber de história e fundamentos, o que construir, onde buscar, com quem aprender e como se preparar para entrevistas."><link rel="stylesheet" href="${rel(target,'assets/site.css')}"><script defer src="${rel(target,'assets/site.js')}"></script></head><body>${header(target)}<div class="page-shell"><aside class="sidebar"><p class="eyebrow">EXPLORE A JORNADA</p><label for="busca">Buscar por assunto</label><input id="busca" type="search" placeholder="RAG, MCP, eval, história…" data-index="${rel(target,'assets/busca.json')}"><p id="busca-status" class="search-status" role="status"></p><ul id="resultados" aria-label="Resultados da busca"></ul>${mobileIndex}<nav class="toc" aria-label="Nesta página"><strong>Nesta página</strong>${sectionLinks}</nav><a class="study-note" href="${rel(target,'index.html#como-usar-este-guia')}"><strong>Um guia, não um curso.</strong><span>80% construindo e testando.<br>20% estudando o que o projeto pediu.</span></a></aside><main id="conteudo"><article${source==='README.md'?' class="guide-home"':''}>${body}</article><footer><a href="${repo}/blob/main/${encodeURI(source)}">Ver este conteúdo no GitHub ↗</a><span>Saiba para onde ir. Aprenda construindo.</span></footer></main></div></body></html>`;
  fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,content);
  index.push({title,url:target,text:body.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ')});
 }
-// Keep old bookmarks working; the course content now lives inside the lessons.
-const redirects=[
- ['materiais/historia-da-ia-material-de-formacao.html','leitura/aulas/index.html#aula-01',{
-  conceitos:'leitura/aulas/index.html#aula-02',trilha:'leitura/comece-aqui/fontes-e-comunidade.html'
- }],
- ['materiais/Base Técnica de IA.html','leitura/aulas/index.html#aula-02',{
-  'bloco-1':'leitura/aulas/index.html#aula-02','bloco-2':'leitura/aulas/index.html#aula-04',
-  'bloco-3':'leitura/aulas/index.html#aula-05','bloco-4':'leitura/aulas/index.html#aula-03',
-  'bloco-5':'leitura/aulas/index.html#aula-06','bloco-6':'leitura/aulas/index.html#aula-07'
- }],
- ['leitura/materiais/index.html','leitura/aulas/index.html',{}]
-];
+// Keep old bookmarks working: the former course pages now point to the matching guide page.
+const G='leitura/guia/';
+const lessonMap={'aula-01':G+'historia.html','aula-02':G+'fundamentos.html#bloco-1','aula-03':G+'fundamentos.html#bloco-4','aula-04':G+'fundamentos.html#bloco-2','aula-05':G+'fundamentos.html#bloco-3','aula-06':G+'pratica.html','aula-07':G+'entrevista-e-mercado.html'};
+const redirects=[['leitura/aulas/index.html',G+'historia.html',lessonMap],['leitura/mapas-e-desenhos/index.html','index.html',{}]];
 const oldLessons=['01-historia-e-problemas','02-modelos-e-aprendizado','03-integracoes-e-dados','04-contexto-e-rag','05-agentes-e-ferramentas','06-avaliacao-e-confiabilidade','07-operacao-e-comunicacao'];
 for(const lesson of oldLessons){
- redirects.push(['leitura/aulas/'+lesson+'.html','leitura/aulas/index.html#aula-'+lesson.slice(0,2),{}]);
+ const [file,hash]=lessonMap['aula-'+lesson.slice(0,2)].split('#');
+ redirects.push(['leitura/aulas/'+lesson+'.html',file,hash?{'':file+'#'+hash}:{}]);
 }
-for(const [oldDir,newDir] of [['docs','comece-aqui'],['modelos','pratique']]){
- for(const source of sources.filter(s=>s.startsWith(newDir+'/'))){
-  const filename=source.split('/').at(-1).replace('trilha-pratica.md','trilha-12-semanas.md');
-  const legacy='leitura/'+oldDir+'/'+filename.replace('README.md','index.html').replace(/\.md$/,'.html');
-  redirects.push([legacy,targets.get(source),{}]);
- }
+const oldPages={
+ 'index':'index.html','como-estudar':G+'pratica.html','como-pesquisar':G+'onde-buscar.html','comunidades':G+'comunidade.html',
+ 'fontes-e-comunidade':G+'onde-buscar.html','projeto-central':G+'pratica.html','trilha-pratica':G+'pratica.html','trilha-12-semanas':G+'pratica.html',
+ 'ficha-do-projeto':G+'pratica.html','experimento':G+'pratica.html','casos-de-avaliacao':G+'pratica.html'
+};
+for(const [dir,pages] of [['comece-aqui',['index','como-estudar','como-pesquisar','comunidades','fontes-e-comunidade','projeto-central','trilha-pratica']],['docs',['index','como-estudar','como-pesquisar','comunidades','fontes-e-comunidade','projeto-central','trilha-12-semanas']],['pratique',['index','ficha-do-projeto','experimento','casos-de-avaliacao']],['modelos',['index','ficha-do-projeto','experimento','casos-de-avaliacao']]]){
+ for(const page of pages) redirects.push(['leitura/'+dir+'/'+page+'.html',page==='index'&&dir.match(/pratique|modelos/)?G+'pratica.html':oldPages[page],{}]);
 }
 for(const [legacy,destination,sections] of redirects){
- const routes=Object.fromEntries(Object.entries(sections).map(([key,value])=>[key,rel(legacy,value)]));
- const fallback=rel(legacy,destination);
+ const routes=Object.fromEntries(Object.entries(sections).map(([key,value])=>[key,rel(legacy,value.split('#')[0])+(value.includes('#')?'#'+value.split('#')[1]:'')]));
+ const fallback=routes['']||rel(legacy,destination);
  fs.mkdirSync(path.dirname(legacy),{recursive:true});
- fs.writeFileSync(legacy,`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Continue na aula · Jornada IA</title><link rel="canonical" href="${publicBase+destination}"><meta name="robots" content="noindex"><script>const sections=${JSON.stringify(routes)};location.replace(sections[location.hash.slice(1)]||${JSON.stringify(fallback)});</script></head><body><h1>Este conteúdo agora faz parte das aulas</h1><p>Conceitos, referências de estudo e exercícios estão reunidos na mesma etapa da jornada.</p><p><a href="${esc(fallback)}">Continuar na aula</a> · <a href="${rel(legacy,'leitura/aulas/index.html')}">Ver todas as aulas</a></p></body></html>`);
+ fs.writeFileSync(legacy,`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Esta página mudou de lugar · Jornada IA</title><link rel="canonical" href="${publicBase+destination}"><meta name="robots" content="noindex"><script>const sections=${JSON.stringify(routes)};location.replace(sections[location.hash.slice(1)]||${JSON.stringify(fallback)});</script></head><body><h1>Esta página mudou de lugar</h1><p>A jornada virou um guia de direção, organizado em sete focos.</p><p><a href="${esc(fallback)}">Continuar</a> · <a href="${rel(legacy,'index.html')}">Ver o guia</a></p></body></html>`);
 }
 fs.writeFileSync('assets/busca.json',JSON.stringify(index));
 console.log(`Geradas ${sources.length} páginas de leitura; ${index.length} documentos no índice de busca.`);

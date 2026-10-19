@@ -1,7 +1,7 @@
 {
   "diagram_type": "workflow",
-  "specification_sha256": "a55963cd2a3a5831cb15737c84a4a87f79aea4c073254ffd62f2a2f85af3a7bf",
-  "artifact_sha256": "ddb71dfc45907544ac8d60bcdafcd9646d918c48d37583d895c740b9e628b151",
+  "specification_sha256": "977888637ad1bdb2ff7df6e6a1b59b29eace75b5c74a74893f8f8e6b10a1f305",
+  "artifact_sha256": "d89af91ec1927c812e369837a94888bc08fa63f11dac6ea0112e4caf153b1fb3",
   "gates": {
     "validate": "pass",
     "deliver": "pass",
@@ -19,9 +19,9 @@
   "browser_evidence": "passed",
   "generator": "Archify 3.0.1",
   "visual_review": "passed",
-  "visual_review_detail": "SVG exportado e capturas do HTML em 1440x900 claro e 2048x1320 escuro revisados; sem cortes, cruzamentos ou sobreposição de rótulos.",
-  "correction_rounds": 1,
-  "export_svg_sha256": "3abcb187566f709920d11ae3293470c605b6e7b9a18812f2f384e0dd2f3429ed",
-  "updated_at": "2026-10-04",
-  "source_artifact": ".archify/workflow-jornada-pratica-20261004/jornada.html"
+  "visual_review_detail": "SVG exportado e capturas do HTML em 1440x900 e 2048x1320, claro e escuro, revisados; sem cortes, cruzamentos ou sobreposição de rótulos.",
+  "correction_rounds": 2,
+  "export_svg_sha256": "aa6f53ce47857b0769b2c81ae7a58f01b4bc567d5604a5800674001f38c96f68",
+  "updated_at": "2026-10-19",
+  "source_artifact": ".archify/workflow-guia-20261019/jornada.html"
 }
