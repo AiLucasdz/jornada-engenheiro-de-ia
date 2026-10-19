@@ -4,7 +4,7 @@
   "meta": {
     "title": "Jornada do Engenheiro de IA",
     "quality_profile": "showcase",
-    "output": ".archify/workflow-guia-20261019/jornada.html",
+    "output": ".archify/workflow-guia-20261020/jornada.html",
     "locale": "pt-BR",
     "translations": {
       "page.title": "Diagrama {title}",
@@ -528,8 +528,8 @@
       "col": 2,
       "type": "external",
       "label": "4 · Comunidade",
-      "sublabel": "X, Discord, Dizevolv",
-      "tag": "Build in public",
+      "sublabel": "Dizevolv e build in public",
+      "tag": "Publique o progresso",
       "width": 210
     },
     {
@@ -538,8 +538,8 @@
       "col": 3,
       "type": "cloud",
       "label": "5 · Ecossistema",
-      "sublabel": "Ferramentas por camada",
-      "tag": "Situe o nome novo",
+      "sublabel": "Quem seguir no X e Discord",
+      "tag": "Esteja onde acontece",
       "width": 210
     },
     {
@@ -558,8 +558,8 @@
       "col": 5,
       "type": "frontend",
       "label": "7 · Entrevista e mercado",
-      "sublabel": "9 perguntas e oferta",
-      "tag": "Prometa o número",
+      "sublabel": "Pontos mais cobrados",
+      "tag": "O que vem pela frente",
       "width": 220
     }
   ],
@@ -594,7 +594,7 @@
       "from": "pratica",
       "to": "ecossistema",
       "variant": "dashed",
-      "label": "escolha"
+      "label": "acompanhe"
     },
     {
       "id": "pratica-buscar",

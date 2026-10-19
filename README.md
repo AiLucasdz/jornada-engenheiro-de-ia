@@ -25,10 +25,10 @@ A maior parte do trabalho é **processo, dado, integração e avaliação**. O m
 | [**1 · História**](#historia) | Contar como a IA chegou até aqui e as cinco lições que se repetem. Cai em entrevista. |
 | [**2 · Fundamentos**](#fundamentos) | Explicar em uma frase cada um dos 27 conceitos básicos. |
 | [**3 · Prática**](#pratica) | Ter um agente resolvendo um problema real, testado e demonstrado. |
-| [**4 · Comunidade**](#comunidade) | Estar onde as coisas acontecem e construir em público. |
-| [**5 · Ecossistema**](#ecossistema) | Saber em que camada cada ferramenta atua. |
+| [**4 · Comunidade**](#comunidade) | Participar de uma comunidade e construir em público. |
+| [**5 · Ecossistema**](#ecossistema) | Saber quem seguir no X e onde conversar no Discord. |
 | [**6 · Onde buscar**](#onde-buscar) | Ir direto à fonte certa. |
-| [**7 · Entrevista e mercado**](#entrevista) | Responder às perguntas que mais aparecem e transformar o projeto em oferta. |
+| [**7 · Entrevista e mercado**](#entrevista) | Dominar os pontos mais cobrados e o que vai importar daqui pra frente. |
 
 [![Mapa dos sete focos: conhecer, construir e mostrar, e acompanhar em paralelo.](assets/jornada.svg)](https://ailucasdz.github.io/jornada-engenheiro-de-ia/mapa.html)
 
@@ -272,17 +272,11 @@ Comece com cinco situações: caso comum, informação ausente, pedido ambíguo,
 
 ## 4 · Comunidade e build in public
 
-**Por que isso é parte do estudo:** o que acabou de sair ainda não está nos modelos, e às vezes nem bem indexado na busca. Quem constrói publica primeiro no X, no Discord e no GitHub.
+**Por que isso é parte do estudo:** aprender junto acelera, e mostrar o que você constrói transforma estudo em reputação. Cada post com um teste real vira portfólio.
 
-**Pronto quando:** você acompanha um punhado de pessoas que constroem, participa de pelo menos uma comunidade e publica o seu progresso com regularidade.
+**Pronto quando:** você participa de uma comunidade, publica o seu progresso com regularidade e já recebeu, e deu, ajuda num problema concreto.
 
-| Lugar | Para quê |
-| --- | --- |
-| **[Comunidade Dizevolv](https://comunidade.dizevolv.com/)** | Minha comunidade: curso de agentes, troca com quem implementa IA em empresas e suporte do nosso time. O melhor lugar para levar as dúvidas do seu projeto. |
-| **[X: quem eu sigo](https://x.com/ailucasdz/following)** | Pesquisadores e construtores publicam novidades enquanto o trabalho acontece. Comece seguindo dez perfis daqui, mais os oficiais: [OpenAI Developers](https://x.com/OpenAIDevs), [Anthropic](https://x.com/AnthropicAI), [Google DeepMind](https://x.com/GoogleDeepMind), [Hugging Face](https://x.com/huggingface) e [Nous Research](https://x.com/NousResearch). |
-| **[Discord da Nous Research](https://discord.gg/NousResearch)** | Hermes Agent e modelos abertos. |
-| **[Discord do OpenClaw](https://discord.gg/clawd)** | Experiências de agentes, integrações e operação. |
-| **GitHub** | Issues e discussions dos projetos que você usa. É o registro público do que você constrói. |
+**Onde começar:** a [Comunidade Dizevolv](https://comunidade.dizevolv.com/), que é a minha comunidade. Lá estão o curso de agentes, a troca com quem implementa IA em empresas e o suporte do nosso time. É o melhor lugar para levar as dúvidas do seu projeto desta jornada. Para saber quem seguir e onde mais conversar, veja o [ecossistema](#ecossistema).
 
 **Como publicar:** use sempre o formato **problema → o que construí → como testei → o que aprendi → próximo passo**.
 
@@ -309,33 +303,38 @@ Antes de perguntar, procure se o assunto já foi discutido. Depois de resolver, 
 
 <a id="ecossistema"></a>
 
-## 5 · Ecossistema: quem é quem e em que camada
+## 5 · Ecossistema: quem seguir e onde conversar
 
-**A ideia central:** as ferramentas mudam todo mês, mas as camadas não. Saiba situar qualquer nome novo numa camada e você não se perde mais.
+**Por que importa:** o que acabou de sair ainda não está nos modelos, e às vezes nem bem indexado na busca. Pesquisadores e construtores publicam primeiro no X e discutem no Discord. Quem está perto dessas pessoas fica sabendo antes, entende o contexto e encontra oportunidades.
 
-| Camada | Nomes que você vai ouvir |
+**Pronto quando:** você acompanha um grupo pequeno de pessoas que constroem, está em pelo menos um Discord ativo e sabe onde perguntar quando algo novo aparece.
+
+**Comece pela minha lista:** [quem eu sigo no X](https://x.com/ailucasdz/following). Escolha dez perfis ligados ao que você está construindo.
+
+| No X | Perfis | Por que seguir |
+| --- | --- | --- |
+| **Laboratórios** | [@OpenAI](https://x.com/OpenAI), [@OpenAIDevs](https://x.com/OpenAIDevs), [@AnthropicAI](https://x.com/AnthropicAI), [@claudeai](https://x.com/claudeai), [@GoogleDeepMind](https://x.com/GoogleDeepMind), [@xai](https://x.com/xai), [@AIatMeta](https://x.com/AIatMeta) | Lançamentos de modelos e recursos, direto da fonte. |
+| **Modelos abertos** | [@huggingface](https://x.com/huggingface), [@NousResearch](https://x.com/NousResearch), [@deepseek_ai](https://x.com/deepseek_ai), [@Alibaba_Qwen](https://x.com/Alibaba_Qwen), [@MistralAI](https://x.com/MistralAI) | Pesos abertos e novos modelos toda semana. |
+| **Pesquisa e ensino** | [@karpathy](https://x.com/karpathy), [@ylecun](https://x.com/ylecun), [@demishassabis](https://x.com/demishassabis), [@AndrewYNg](https://x.com/AndrewYNg), [@fchollet](https://x.com/fchollet), [@rasbt](https://x.com/rasbt), [@lilianweng](https://x.com/lilianweng) | Como os modelos funcionam e para onde a pesquisa vai. |
+| **Construção e aplicação** | [@simonw](https://x.com/simonw), [@swyx](https://x.com/swyx), [@hwchase17](https://x.com/hwchase17), [@jerryjliu0](https://x.com/jerryjliu0), [@steipete](https://x.com/steipete), [@chipro](https://x.com/chipro), [@emollick](https://x.com/emollick) | Agentes, ferramentas e uso real de IA no trabalho. |
+| **Artigos do dia** | [@_akhaliq](https://x.com/_akhaliq) | Os artigos que a comunidade está discutindo. |
+
+| No Discord e em fóruns | Para quê |
 | --- | --- |
-| **Modelos de fronteira** | OpenAI (GPT), Anthropic (Claude), Google (Gemini), xAI (Grok) |
-| **Modelos de pesos abertos** | Meta (Llama), DeepSeek, Alibaba (Qwen), Mistral, Nous Research (Hermes) |
-| **Acesso e execução** | OpenRouter, LiteLLM, Hugging Face, Ollama, llama.cpp, vLLM |
-| **Agentes prontos** | Hermes Agent, OpenClaw |
-| **Agentes de código** | Claude Code, OpenAI Codex, Gemini CLI, Cursor |
-| **Frameworks de agentes** | LangChain/LangGraph, OpenAI Agents SDK, Claude Agent SDK, Google ADK, Microsoft Agent Framework, CrewAI, Pydantic AI |
-| **Automação visual** | n8n, Langflow, Make, Zapier |
-| **Protocolos** | MCP (modelo ↔ ferramentas e dados), A2A (agente ↔ agente) |
-| **Dados e RAG** | Postgres + pgvector, Supabase, Pinecone, Qdrant, Weaviate, Chroma |
-| **Avaliação e observabilidade** | Langfuse, LangSmith, Braintrust, Arize Phoenix, promptfoo |
-| **Infraestrutura** | AWS Lambda, Cloudflare Workers, Vercel, Google Cloud Run, containers |
-| **Segurança** | [OWASP Top 10 para LLM](https://genai.owasp.org/llm-top-10/): injeção de prompt, autonomia excessiva |
+| **[Nous Research](https://discord.gg/NousResearch)** | Hermes Agent e modelos abertos. |
+| **[OpenClaw](https://discord.gg/clawd)** | Agentes pessoais, integrações e operação. |
+| **[Claude](https://www.anthropic.com/discord)** | Comunidade de quem desenvolve com Claude e Claude Code. |
+| **[Hugging Face](https://hf.co/join/discord)** | Modelos abertos, cursos e projetos da comunidade. |
+| **[Ollama](https://discord.gg/ollama)** | Rodar modelos no seu computador. |
+| **[Fórum da OpenAI](https://community.openai.com/) e [fórum do n8n](https://community.n8n.io/)** | Dúvidas de API e de automação, com histórico pesquisável. |
+| **[r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) e [Hacker News](https://news.ycombinator.com/)** | Discussões técnicas e lançamentos comentados. |
 
-**Como escolher:**
+**Como acompanhar sem se afogar:**
 
-- **Comece pelo que você já consegue operar.** Um agente pronto ou n8n resolvem a maioria dos primeiros projetos. Passe para código quando precisar de controle fino.
-- **Framework é a parte que menos importa e a que mais muda.** Escolha pelo que o time consegue manter.
-- **Escolha o modelo pelo seu eval**, pelo custo por tarefa resolvida, não por ranking geral.
-- **Nome novo?** Em que camada está, quem mantém, que problema seu resolve, se tem exemplo oficial que roda em dez minutos e o que dizem as issues.
-
-**Para acompanhar, uma vez por semana basta:** changelogs dos provedores, [Artificial Analysis](https://artificialanalysis.ai/) para preço e desempenho, [Hugging Face Papers](https://huggingface.co/papers) para artigos, [GitHub Trending](https://github.com/trending) para projetos e a [comunidade](#comunidade) para o que está sendo testado agora. Escolha **uma** novidade que toca o seu projeto e teste; o resto é ruído.
+1. **Siga poucos e bons.** Silencie quem só repete notícia.
+2. **Da notícia ao teste:** vá ao post original, abra a demonstração ou o repositório, teste no seu projeto e publique o resultado citando a fonte.
+3. **Uma vez por semana, escolha uma novidade** que toca o seu projeto. O resto é ruído.
+4. **Participe.** Comente uma demonstração com uma pergunta específica ou um resultado seu. É assim que quem constrói passa a conhecer você.
 
 <a id="onde-buscar"></a>
 
@@ -387,57 +386,33 @@ Use modos com busca para assuntos recentes e **abra os links citados** antes de 
 
 ## 7 · Entrevista e mercado
 
-**O objetivo:** transformar o que você aprendeu e construiu em uma vaga, um projeto ou um cliente. O que convence é mostrar critério e evidência.
+**Pronto quando:** você fala com segurança sobre cada ponto abaixo e tem um projeto com números para mostrar.
 
-**Pronto quando:** você responde às nove perguntas abaixo com segurança, tem um projeto com números para mostrar e consegue escrever uma oferta com escopo e critério de aceite.
+**Os pontos mais cobrados:**
 
-| Pergunta | Resposta que marca |
-| --- | --- |
-| **1. O que é RAG?** | Buscar os trechos na base e colocá-los no prompt; o modelo não aprende nada. Tem dois momentos, indexar e consultar, e a maioria dos problemas está no primeiro. |
-| **2. Quando usar fine-tuning?** | Para comportamento e formato, não conhecimento. A ordem é prompt → RAG → fine-tuning, e cada degrau custa mais. |
-| **3. Como lidar com alucinação?** | Reduzir dando a fonte e instruindo a recusar; detectar comparando com a fonte. A verificação automática não substitui a amostragem humana. |
-| **4. Como saber se está bom?** | Eval com casos reais, resultado binário, rodado a cada mudança e travando o deploy. Em produção, reabertura e escalonamento. |
-| **5. Chatbot × agente?** | O agente decide a sequência e usa ferramentas. Por isso precisa de parada, limite de passos, ponto humano e orçamento: são cerca de 4× mais tokens. |
-| **6. As respostas estão ruins. O que fazer?** | Isolar a camada: recuperação, geração ou processo. É diagnóstico, e vale mais que listar frameworks. |
-| **7. Como controlar custo?** | Custo por resolução, não por chamada. As alavancas são contexto menor, cache de prompt (que falha em silêncio) e modelo menor onde dá. |
-| **8. Segurança e dados sensíveis?** | Conteúdo externo é entrada não confiável; limite o que a ferramenta executa. Gravar conversas é decisão de LGPD. Cite o OWASP Top 10 para LLM. |
-| **9. Conte um problema real.** | Contexto → o que quebrou → como descobriu → o que fez → o que mudou no número → o que faria diferente. Um caso pequeno e honesto vence um grande e genérico. |
+1. **RAG:** como funciona e por que a qualidade depende mais da recuperação que do modelo.
+2. **RAG × fine-tuning:** quando usar cada um.
+3. **Alucinação:** como reduzir e como detectar.
+4. **Avaliação:** como provar que o sistema está bom e que uma mudança melhorou.
+5. **Chatbot × agente:** o que muda quando o modelo decide os passos.
+6. **Diagnóstico:** o que fazer quando as respostas estão ruins.
+7. **Custo e latência:** custo por resolução, cache e o modelo certo para cada tarefa.
+8. **Segurança:** injeção de prompt, permissões e dados sensíveis.
+9. **Um problema real que você resolveu**, com números.
 
-| Denuncia iniciante | Credencia |
-| --- | --- |
-| "A gente treina a IA com os dados do cliente." | "A gente dá acesso ao dado na consulta, via RAG." |
-| "Com um prompt bom ele para de alucinar." | "O prompt reduz a frequência; verificar contra a fonte dá segurança." |
-| "Usei o melhor modelo do mercado." | "Escolhi pelo custo por tarefa resolvida no meu eval." |
-| "Funcionou muito bem nos testes." | "Passou em 28 de 30 casos; os dois que falharam são do mesmo tipo." |
-| "Montei um agente que faz tudo sozinho." | "Deixei determinístico onde dava e dei autonomia onde pagava." |
+As respostas comentadas estão no bloco 6 da [Base técnica de IA](materiais/Base%20Técnica%20de%20IA.html).
 
-**Quando não souber:** seja honesto com direção ("nunca usei Snowflake; uso Postgres e pego a sintaxe rápido"), redirecione para o mecanismo ("o problema que ela resolve é X, e a decisão que importa é Y") ou pergunte de volta ("como vocês resolvem isso hoje?"). **Nunca invente familiaridade.**
+**O que mais vai importar daqui pra frente:**
 
-**Se você vem de negócio ou processos, já está na frente** em escolher o caso de uso, desenhar o fluxo, definir o sucesso antes e traduzir para o cliente. A frase que amarra:
+- **Agentes com autonomia controlada:** permissões, limites, ponto humano e auditoria vão estar no centro do trabalho.
+- **Avaliação e observabilidade:** saber medir vai separar quem entrega de quem só demonstra.
+- **Contexto e dados:** dar ao modelo a informação certa vai pesar mais que o modelo escolhido.
+- **Integração com sistemas e processos:** MCP, APIs e os dados da empresa são onde está o valor.
+- **Segurança de agentes:** injeção de prompt e ações indevidas crescem junto com a autonomia.
+- **Custo por resultado:** os modelos barateiam, mas os agentes consomem mais. Quem controla o custo por tarefa resolvida vende melhor.
+- **Escolher o problema e provar o retorno:** a tecnologia virou commodity; entender o negócio, não.
 
-> "Meu ponto forte é ligar o problema de negócio ao desenho técnico: escolher onde a IA entra, qual métrica ela move e como a gente prova que moveu. Da construção, conheço o suficiente para tomar decisões de arquitetura e conversar de igual para igual com quem implementa."
-
-**O que mostrar:** o repositório com a ficha, os experimentos e os casos de avaliação; uma demonstração gravada em poucos minutos; números de antes e depois, separando o **medido** do **estimado**; e os posts de build in public.
-
-<details>
-<summary>Do projeto à oferta: o piloto pago</summary>
-
-<p class="compact-visual"><a href="mapas-e-desenhos/07-operacao.svg"><img src="mapas-e-desenhos/07-operacao.svg" width="487" alt="Do protótipo ao uso: combinar, experimentar com poucos casos reais, medir e decidir entre ajustar, ampliar ou parar." loading="lazy"></a></p>
-
-| Campo | O que escrever |
-| --- | --- |
-| **Problema e para quem** | O processo específico e quem o executa hoje. |
-| **Entrega** | O que o agente faz, em uma frase. |
-| **Fica fora** | O que continua com uma pessoa, como preço, decisão final ou envio sem revisão. |
-| **Critério de aceite** | Os casos combinados que precisam passar. |
-| **Métrica** | O número de hoje e a meta, e o que não pode piorar. |
-| **Prazo e valor** | O que foi combinado para esse escopo. |
-| **Consumo e manutenção** | Quem paga modelos e ferramentas, quem atualiza as fontes e quem trata as falhas. |
-| **Próxima decisão** | Continuar, ajustar ou encerrar após revisar os resultados. |
-
-</details>
-
-**Prometa o número que você mediu, não uma transformação.** Entregar 15% depois de prometer 15% é sucesso; entregar os mesmos 15% depois de prometer transformação queima a confiança.
+**O que mostrar:** o repositório do projeto, uma demonstração curta, números de antes e depois e os posts de build in public.
 
 ---
 
