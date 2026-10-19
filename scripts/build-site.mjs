@@ -7,7 +7,7 @@ const publicBase='https://ailucasdz.github.io/jornada-engenheiro-de-ia/';
 const repo='https://github.com/AiLucasdz/jornada-engenheiro-de-ia';
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const slug=s=>s.toLowerCase().replace(/<[^>]*>/g,'').replace(/[^\p{L}\p{N}\s_-]/gu,'').trim().replace(/\s+/g,'-');
-const sources=['README.md','CONTRIBUTING.md',...['guia','materiais','assets'].flatMap(dir=>fs.readdirSync(dir).filter(f=>f.endsWith('.md')).map(f=>dir+'/'+f))];
+const sources=['README.md','CONTRIBUTING.md',...['materiais','assets'].flatMap(dir=>fs.readdirSync(dir).filter(f=>f.endsWith('.md')).map(f=>dir+'/'+f))];
 const targets=new Map(sources.map(s=>[s,s==='README.md'?'index.html':'leitura/'+s.replace(/README\.md$/,'index.html').replace(/\.md$/,'.html')]));
 const rel=(from,to)=>path.posix.relative(path.posix.dirname(from),to)||path.posix.basename(to);
 function urlFor(href,source,target){
@@ -19,7 +19,7 @@ function urlFor(href,source,target){
  return encodeURI(rel(target,targets.get(resolved)||resolved))+(hash?'#'+hash:'');
 }
 function header(target){
- const routes=[['O guia','index.html'],['Conhecimento','leitura/guia/historia.html'],['Prática','leitura/guia/pratica.html'],['Comunidade','leitura/guia/comunidade.html'],['Ecossistema','leitura/guia/ecossistema.html'],['Entrevista','leitura/guia/entrevista-e-mercado.html']];
+ const routes=[['O guia','index.html'],['História','index.html#historia'],['Fundamentos','index.html#fundamentos'],['Prática','index.html#pratica'],['Comunidade','index.html#comunidade'],['Entrevista','index.html#entrevista']];
  return `<a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><a class="brand" href="${rel(target,'index.html')}"><span class="brand-mark">J</span> Jornada do Engenheiro de IA</a><nav aria-label="Navegação principal">${routes.map(([label,dest])=>`<a ${dest===target?'aria-current="page"':''} href="${rel(target,dest)}">${label}</a>`).join('')}<a href="${repo}">GitHub ↗</a></nav></header>`;
 }
 const index=[];
@@ -48,26 +48,24 @@ for(const source of sources){
  fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,content);
  index.push({title,url:target,text:body.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ')});
 }
-// Keep old bookmarks working: the former course pages now point to the matching guide page.
-const G='leitura/guia/';
-const lessonMap={'aula-01':G+'historia.html','aula-02':G+'fundamentos.html#bloco-1','aula-03':G+'fundamentos.html#bloco-4','aula-04':G+'fundamentos.html#bloco-2','aula-05':G+'fundamentos.html#bloco-3','aula-06':G+'pratica.html','aula-07':G+'entrevista-e-mercado.html'};
-const redirects=[['leitura/aulas/index.html',G+'historia.html',lessonMap],['leitura/mapas-e-desenhos/index.html','index.html',{}]];
-const oldLessons=['01-historia-e-problemas','02-modelos-e-aprendizado','03-integracoes-e-dados','04-contexto-e-rag','05-agentes-e-ferramentas','06-avaliacao-e-confiabilidade','07-operacao-e-comunicacao'];
-for(const lesson of oldLessons){
- const [file,hash]=lessonMap['aula-'+lesson.slice(0,2)].split('#');
- redirects.push(['leitura/aulas/'+lesson+'.html',file,hash?{'':file+'#'+hash}:{}]);
+// Keep old bookmarks working: every former page now points to its section of the guide (index.html).
+const home=id=>'index.html#'+id;
+const redirects=[];
+const guidePages={historia:'historia',fundamentos:'fundamentos',pratica:'pratica',comunidade:'comunidade',ecossistema:'ecossistema','onde-buscar':'onde-buscar','entrevista-e-mercado':'entrevista'};
+for(const [page,id] of Object.entries(guidePages)) redirects.push(['leitura/guia/'+page+'.html',home(id),{}]);
+const lessonMap={'aula-01':home('historia'),'aula-02':home('fundamentos'),'aula-03':home('fundamentos'),'aula-04':home('fundamentos'),'aula-05':home('fundamentos'),'aula-06':home('pratica'),'aula-07':home('entrevista')};
+redirects.push(['leitura/aulas/index.html',home('historia'),lessonMap],['leitura/mapas-e-desenhos/index.html','index.html',{}]);
+for(const lesson of ['01-historia-e-problemas','02-modelos-e-aprendizado','03-integracoes-e-dados','04-contexto-e-rag','05-agentes-e-ferramentas','06-avaliacao-e-confiabilidade','07-operacao-e-comunicacao']){
+ redirects.push(['leitura/aulas/'+lesson+'.html',lessonMap['aula-'+lesson.slice(0,2)],{}]);
 }
-const oldPages={
- 'index':'index.html','como-estudar':G+'pratica.html','como-pesquisar':G+'onde-buscar.html','comunidades':G+'comunidade.html',
- 'fontes-e-comunidade':G+'onde-buscar.html','projeto-central':G+'pratica.html','trilha-pratica':G+'pratica.html','trilha-12-semanas':G+'pratica.html',
- 'ficha-do-projeto':G+'pratica.html','experimento':G+'pratica.html','casos-de-avaliacao':G+'pratica.html'
-};
+const oldPages={index:'index.html','como-estudar':home('pratica'),'como-pesquisar':home('onde-buscar'),comunidades:home('comunidade'),'fontes-e-comunidade':home('onde-buscar'),'projeto-central':home('pratica'),'trilha-pratica':home('pratica'),'trilha-12-semanas':home('pratica'),'ficha-do-projeto':home('pratica'),experimento:home('pratica'),'casos-de-avaliacao':home('pratica')};
 for(const [dir,pages] of [['comece-aqui',['index','como-estudar','como-pesquisar','comunidades','fontes-e-comunidade','projeto-central','trilha-pratica']],['docs',['index','como-estudar','como-pesquisar','comunidades','fontes-e-comunidade','projeto-central','trilha-12-semanas']],['pratique',['index','ficha-do-projeto','experimento','casos-de-avaliacao']],['modelos',['index','ficha-do-projeto','experimento','casos-de-avaliacao']]]){
- for(const page of pages) redirects.push(['leitura/'+dir+'/'+page+'.html',page==='index'&&dir.match(/pratique|modelos/)?G+'pratica.html':oldPages[page],{}]);
+ for(const page of pages) redirects.push(['leitura/'+dir+'/'+page+'.html',page==='index'&&(dir==='pratique'||dir==='modelos')?home('pratica'):oldPages[page],{}]);
 }
+const relWithHash=(from,to)=>{const [file,hash]=to.split('#');return rel(from,file)+(hash?'#'+hash:'');};
 for(const [legacy,destination,sections] of redirects){
- const routes=Object.fromEntries(Object.entries(sections).map(([key,value])=>[key,rel(legacy,value.split('#')[0])+(value.includes('#')?'#'+value.split('#')[1]:'')]));
- const fallback=routes['']||rel(legacy,destination);
+ const routes=Object.fromEntries(Object.entries(sections).map(([key,value])=>[key,relWithHash(legacy,value)]));
+ const fallback=relWithHash(legacy,destination);
  fs.mkdirSync(path.dirname(legacy),{recursive:true});
  fs.writeFileSync(legacy,`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Esta página mudou de lugar · Jornada IA</title><link rel="canonical" href="${publicBase+destination}"><meta name="robots" content="noindex"><script>const sections=${JSON.stringify(routes)};location.replace(sections[location.hash.slice(1)]||${JSON.stringify(fallback)});</script></head><body><h1>Esta página mudou de lugar</h1><p>A jornada virou um guia de direção, organizado em sete focos.</p><p><a href="${esc(fallback)}">Continuar</a> · <a href="${rel(legacy,'index.html')}">Ver o guia</a></p></body></html>`);
 }
