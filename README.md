@@ -1,5 +1,7 @@
 # Jornada do Engenheiro de IA
 
+**Amplie o que você imagina. Construa o que faz diferença. Mostre o valor do seu trabalho.**
+
 **Um guia de direção, não um curso.** Nesta página está o que você precisa saber, o que construir, onde aprender e com quem conversar. O aprendizado acontece fora daqui: nas fontes certas, na comunidade e no seu projeto.
 
 <p class="compact-visual"><a href="mapas-e-desenhos/ciclo-de-valor.svg"><img src="mapas-e-desenhos/ciclo-de-valor.svg" width="548" alt="Ciclo de evolução profissional: mentalidade de IA, teoria, prática, comunidade, construção em público e entrega de valor. Resultados e conversas alimentam o próximo desafio." loading="lazy"></a></p>
@@ -9,6 +11,20 @@
 **Liga um problema de negócio a uma solução técnica que funciona e prova que funcionou.** Escolhe onde a IA entra, constrói com modelo, dados e ferramentas, testa com casos reais e explica o resultado para quem vai usar.
 
 A maior parte do trabalho é **processo, dado, integração e avaliação**. O modelo é a última peça a escolher, não a primeira.
+
+<a id="mentalidade"></a>
+
+## Mentalidade de IA: quem não acredita imagina pouco
+
+**A primeira barreira não é técnica.** Quem não acredita no que a IA consegue fazer testa pouco, pede pouco e, por isso, imagina pouco. A descrença vira um teto: você só enxerga como possível o que já viu funcionar. Quem usa IA todos os dias amplia o repertório e começa a enxergar processos inteiros que podem mudar.
+
+- **Use antes de opinar.** Tente com IA o trabalho que você faria sozinho: pesquisa, código, documento, planilha, análise. Você descobre o que funciona testando, não lendo opinião.
+- **Peça mais do que acha possível.** Se der certo, você descobriu uma possibilidade. Se falhar, descobriu um limite e o motivo. As duas coisas viram repertório.
+- **O limite de hoje não é o de daqui a seis meses.** O que falhou no mês passado pode funcionar no próximo modelo. Refaça os seus testes a cada lançamento.
+- **Pense em processos, não em tarefas.** Troque "a IA escreve este texto?" por "que parte deste processo um agente poderia assumir?".
+- **Acredite no potencial e confira o resultado.** Mente aberta não é confiança cega: imagine grande e meça o que foi entregue.
+
+**Pronto quando:** você usa IA todos os dias no seu trabalho e consegue apontar três processos à sua volta que um agente poderia melhorar.
 
 ## Comece por aqui
 
@@ -24,9 +40,9 @@ A maior parte do trabalho é **processo, dado, integração e avaliação**. O m
 | --- | --- |
 | [**1 · História**](#historia) | Contar como a IA chegou até aqui e as cinco lições que se repetem. Cai em entrevista. |
 | [**2 · Fundamentos**](#fundamentos) | Explicar em uma frase cada um dos 27 conceitos básicos. |
-| [**3 · Prática**](#pratica) | Ter um agente resolvendo um problema real, testado e demonstrado. |
-| [**4 · Comunidade**](#comunidade) | Participar de uma comunidade e construir em público. |
-| [**5 · Ecossistema**](#ecossistema) | Saber quem seguir no X e onde conversar no Discord. |
+| [**3 · Agentes: use, crie e pratique**](#pratica) | Usar agentes todos os dias, criar os seus e ter um resolvendo um problema real, testado e demonstrado. |
+| [**4 · Comunidade e build in public**](#comunidade) | Rodar o ciclo construir → publicar → conversar → conectar, que gera feedback e networking. |
+| [**5 · Ecossistema**](#ecossistema) | Saber quem seguir no X e onde conversar no Discord, e participar. |
 | [**6 · Onde buscar**](#onde-buscar) | Ir direto à fonte certa. |
 | [**7 · Entrevista e mercado**](#entrevista) | Dominar os pontos mais cobrados e o que vai importar daqui pra frente. |
 
@@ -35,7 +51,7 @@ A maior parte do trabalho é **processo, dado, integração e avaliação**. O m
 ## Como usar este guia
 
 - **80% construindo, 20% estudando.** Estude o que o projeto pediu agora, não tudo de uma vez.
-- **Ordem:** leia História e Fundamentos uma vez para ter o mapa na cabeça. A Prática é contínua, com Comunidade, Ecossistema e Onde buscar em paralelo. Passe para Entrevista e mercado quando tiver algo para mostrar.
+- **Ordem:** comece a usar IA hoje. Leia História e Fundamentos uma vez para ter o mapa na cabeça. Depois, rode o ciclo sem parar: construa agentes, publique, converse na comunidade e no ecossistema e busque na fonte certa quando travar. Passe para Entrevista e mercado quando tiver algo para mostrar.
 - **Os blocos recolhidos (▸)** trazem o detalhe. Abra quando precisar.
 
 ## O que ter sempre em mente
@@ -47,6 +63,7 @@ A maior parte do trabalho é **processo, dado, integração e avaliação**. O m
 5. **Fluxo antes de agente.** Dê autonomia só onde a variabilidade do problema justifica.
 6. **O modelo pede; o seu código executa.** Permissão e segurança ficam fora do prompt.
 7. **Sem eval, "melhorou" é opinião.** Casos reais, resultado binário, rodados a cada mudança.
+8. **Construir em público é um ciclo, não um post.** Cada volta traz feedback, reputação e networking.
 
 ---
 
@@ -199,13 +216,54 @@ São 27 conceitos, divididos em cinco blocos, na ordem em que precisam ser apren
 
 <a id="pratica"></a>
 
-## 3 · Prática: um problema real, quatro entregas
+## 3 · Agentes: use, crie e pratique
 
-**A regra:** escolha um problema real, construa um agente para ele e melhore o mesmo projeto em quatro entregas. Você aprende o que o projeto pede, na hora em que ele pede.
+**A regra:** agente se aprende em três frentes ao mesmo tempo: **usando** no dia a dia, **criando** os seus e **praticando** num problema real. Uma alimenta a outra. Quem usa sabe o que pedir, quem cria entende por que falha e quem pratica prova que funciona.
 
-**Pronto quando:** você mostra a quem faz o trabalho uma solução testada, com números de antes e depois e uma limitação conhecida.
+**Pronto quando:** você usa agentes todos os dias, já criou um com ferramentas e mostrou a quem faz o trabalho um agente testado, com números de antes e depois e uma limitação conhecida.
+
+### Use agentes todos os dias
+
+Usando, você aprende o que um agente faz bem, onde erra e como pedir. Delegue uma tarefa real por dia e anote o que precisou corrigir.
+
+| Tipo | Exemplos | Use para |
+| --- | --- | --- |
+| **Agentes de código** | [Claude Code](https://code.claude.com/docs/en/overview), [Codex](https://github.com/openai/codex), [Cursor](https://cursor.com/docs) e [Gemini CLI](https://geminicli.com/docs/) | Criar scripts, automações e protótipos, mesmo sem ser programador. É o jeito mais rápido de ver um agente usando ferramentas. |
+| **Assistentes com ferramentas** | Claude, ChatGPT e Gemini com pesquisa, arquivos e conectores; [Claude Cowork](https://claude.com/product/cowork) | Pesquisa aprofundada, análise de planilhas e documentos e tarefas no computador. |
+| **Agentes pessoais** | [Hermes Agent](https://hermes-agent.nousresearch.com/docs/) e [OpenClaw](https://github.com/openclaw/openclaw) | Um agente rodando o tempo todo, ligado ao seu chat, e-mail e agenda. |
+| **Automação** | [n8n](https://docs.n8n.io/build/integrate-ai) | Colocar um agente dentro de um processo, com gatilho, ferramentas e registro. |
+
+### Crie os seus, um degrau por vez
+
+Todo agente tem as mesmas seis peças: **modelo, instruções, ferramentas, contexto, critério de parada e limites**. Saber nomeá-las já organiza qualquer projeto.
+
+| Degrau | O que construir | Onde aprender |
+| --- | --- | --- |
+| **1 · Sem código** | Um agente com uma ferramenta, no n8n, no Hermes ou no curso da Dizevolv. | [Curso da Dizevolv](https://comunidade.dizevolv.com/) · [vídeo do Hermes](https://youtu.be/VHh2D9agRps) |
+| **2 · Com código** | O ciclo de tool use via API: modelo, duas ferramentas e critério de parada. | [Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview) · [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) · [Google ADK](https://adk.dev/) |
+| **3 · Conectado** | Um servidor MCP que dá ao agente acesso a um sistema seu: planilha, CRM ou banco. | [Criar um servidor MCP](https://modelcontextprotocol.io/docs/develop/build-server) |
+| **4 · Com habilidades** | Skills e subagentes para tarefas maiores, com o contexto certo em cada etapa. | [Agent Skills](https://agentskills.io/) · [Context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) |
+| **5 · Em produção** | Registro de cada passo, eval, limite de custo e ponto humano. | [Langfuse](https://langfuse.com/docs) · [Demystifying evals](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) |
+
+**Comece com fluxo e dê autonomia aos poucos.** Um agente que faz uma coisa bem vale mais que um que tenta tudo.
+
+### Pratique num problema real: quatro entregas
+
+Escolha um problema real, construa um agente para ele e melhore o mesmo projeto em quatro entregas. Você aprende o que o projeto pede, na hora em que ele pede.
 
 **Escolha o problema certo.** Procure um processo **específico, repetitivo e caro**. "Melhorar o atendimento" não serve; "organizar pedidos de orçamento que chegam por mensagem" serve. Pergunte a quem faz o trabalho: *mostre o último caso*, *onde você precisa perguntar de novo*, *o que acontece quando um caso se perde* e *como saberíamos que ajudou*. Anote a **linha de base**: tempo por caso, retrabalho e erros.
+
+<details>
+<summary>Ideias de problemas para praticar</summary>
+
+- **Orçamentos:** lê o pedido que chega por mensagem, extrai os dados, pergunta o que falta e registra no CRM.
+- **Triagem de e-mails:** classifica, resume e sugere a resposta, com uma pessoa aprovando o envio.
+- **Documentos internos:** responde dúvidas da equipe citando o trecho do manual ou da política.
+- **Relatório semanal:** lê uma planilha ou um banco e escreve o resumo com os números que mudaram.
+- **Pesquisa:** busca em várias fontes, compara e entrega um relatório com links.
+- **Suporte:** consulta o status de pedidos por API e responde o cliente.
+
+</details>
 
 **Antes de construir, cinco perguntas:**
 
@@ -266,15 +324,25 @@ Comece com cinco situações: caso comum, informação ausente, pedido ambíguo,
 
 </details>
 
-**Para aprofundar:** [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) · [Boas práticas de avaliação da OpenAI](https://developers.openai.com/api/docs/guides/evaluation-best-practices) · [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) · [GitHub Skills](https://github.com/skills/introduction-to-github)
+**Para aprofundar:** [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) · [Writing tools for agents](https://www.anthropic.com/engineering/writing-tools-for-agents) · [Boas práticas de avaliação da OpenAI](https://developers.openai.com/api/docs/guides/evaluation-best-practices) · [Agents Course, da Hugging Face](https://huggingface.co/learn/agents-course/unit0/introduction) · [GitHub Skills](https://github.com/skills/introduction-to-github)
 
 <a id="comunidade"></a>
 
-## 4 · Comunidade e build in public
+## 4 · Comunidade e build in public: o ciclo que gera networking
 
-**Por que isso é parte do estudo:** aprender junto acelera, e mostrar o que você constrói transforma estudo em reputação. Cada post com um teste real vira portfólio.
+**Isto não é um extra, é metade da jornada.** Comunidade, ecossistema e build in public formam um ciclo contínuo, que começa no primeiro dia e não termina:
 
-**Pronto quando:** você participa de uma comunidade, publica o seu progresso com regularidade e já recebeu, e deu, ajuda num problema concreto.
+| Etapa do ciclo | O que você faz | O que ganha |
+| --- | --- | --- |
+| **Construa** | Um teste, uma entrega ou um erro resolvido no seu projeto. | Assunto real para mostrar. |
+| **Publique** | Post no X ou no LinkedIn, mensagem na comunidade, repositório aberto. | Registro do progresso e portfólio. |
+| **Converse** | Responda comentários, comente o trabalho de outros e ajude quem está um passo atrás. | Feedback e aprendizado mais rápido. |
+| **Conecte** | Quem viu o seu trabalho passa a reconhecer você, e você passa a conhecer quem constrói. | Networking: parcerias, indicações, clientes e vagas. |
+| **Volte a construir** | Leve o feedback e as conversas para o próximo teste. | Um projeto melhor e uma rede maior. |
+
+**O networking vem do trabalho mostrado, não de pedir contato.** Quem publica com constância e ajuda os outros é lembrado quando aparece uma vaga, um projeto ou um cliente.
+
+**Pronto quando:** você publica o seu progresso toda semana, participa de uma comunidade, já recebeu e deu ajuda num problema concreto e conhece pelo nome pessoas que constroem o mesmo que você.
 
 **Onde começar:** a [Comunidade Dizevolv](https://comunidade.dizevolv.com/), que é a minha comunidade. Lá estão o curso de agentes, a troca com quem implementa IA em empresas e o suporte do nosso time. É o melhor lugar para levar as dúvidas do seu projeto desta jornada. Para saber quem seguir e onde mais conversar, veja o [ecossistema](#ecossistema).
 
@@ -283,6 +351,16 @@ Comece com cinco situações: caso comum, informação ausente, pedido ambíguo,
 > Estou construindo um agente que organiza pedidos de orçamento. Rodei 12 casos de teste: acertou 9. Os 3 erros foram do mesmo tipo: ele não pedia o endereço quando faltava. Ajustei a instrução e vou repetir os testes. Quem atende esse tipo de pedido: que outra situação eu deveria testar?
 
 Funciona porque traz números, mostra uma falha honesta e termina com uma pergunta que alguém consegue responder. Remova dados de clientes antes de publicar.
+
+**Como transformar presença em networking:**
+
+1. **Publique toda semana, mesmo que seja pouco.** Constância vale mais que o post perfeito.
+2. **Comente com substância:** um resultado seu ou uma pergunta específica.
+3. **Ajude quem está um passo atrás.** Responder dúvidas é o jeito mais rápido de ser lembrado.
+4. **Mande mensagem com algo concreto.** "Testei o que você publicou e aconteceu isto" abre mais portas que "vamos trocar uma ideia?".
+5. **Apareça ao vivo:** lives, meetups, hackathons e encontros da comunidade.
+6. **Contribua com projetos abertos:** uma issue bem escrita, uma correção na documentação, um exemplo.
+7. **Volte e conte o resultado.** Quem ajudou você gosta de saber que funcionou.
 
 <details>
 <summary>Como pedir ajuda e ser respondido</summary>
@@ -305,9 +383,9 @@ Antes de perguntar, procure se o assunto já foi discutido. Depois de resolver, 
 
 ## 5 · Ecossistema: quem seguir e onde conversar
 
-**Por que importa:** o que acabou de sair ainda não está nos modelos, e às vezes nem bem indexado na busca. Pesquisadores e construtores publicam primeiro no X e discutem no Discord. Quem está perto dessas pessoas fica sabendo antes, entende o contexto e encontra oportunidades.
+**Por que importa:** o que acabou de sair ainda não está nos modelos, e às vezes nem bem indexado na busca. Pesquisadores e construtores publicam primeiro no X e discutem no Discord. Quem está perto dessas pessoas fica sabendo antes, entende o contexto e encontra oportunidades. É aqui que o [ciclo de build in public](#comunidade) ganha escala.
 
-**Pronto quando:** você acompanha um grupo pequeno de pessoas que constroem, está em pelo menos um Discord ativo e sabe onde perguntar quando algo novo aparece.
+**Pronto quando:** você acompanha um grupo pequeno de pessoas que constroem, participa de pelo menos um Discord ativo e sabe onde perguntar quando algo novo aparece.
 
 **Comece pela minha lista:** [quem eu sigo no X](https://x.com/ailucasdz/following). Escolha dez perfis ligados ao que você está construindo.
 
@@ -412,7 +490,7 @@ As respostas comentadas estão no bloco 6 da [Base técnica de IA](materiais/Bas
 - **Custo por resultado:** os modelos barateiam, mas os agentes consomem mais. Quem controla o custo por tarefa resolvida vende melhor.
 - **Escolher o problema e provar o retorno:** a tecnologia virou commodity; entender o negócio, não.
 
-**O que mostrar:** o repositório do projeto, uma demonstração curta, números de antes e depois e os posts de build in public.
+**O que mostrar:** o repositório do projeto, uma demonstração curta, números de antes e depois e os posts de build in public. Muitas oportunidades chegam antes da entrevista, por quem já acompanha o seu trabalho.
 
 ---
 

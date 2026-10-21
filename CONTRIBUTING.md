@@ -10,7 +10,7 @@ Para sugerir uma correção ou uma fonte, abra uma issue com o trecho, o motivo 
 
 ## Organização
 
-- `README.md`: o guia inteiro. Tem o mapa, os princípios e os sete focos (história, fundamentos, prática, comunidade, ecossistema, onde buscar, e entrevista e mercado), cada um com "pronto quando", o essencial e onde aprofundar. As seções têm âncoras fixas (`#historia`, `#fundamentos`, `#pratica`, `#comunidade`, `#ecossistema`, `#onde-buscar`, `#entrevista`); preserve-as.
+- `README.md`: o guia inteiro. Tem a mentalidade de IA, o mapa, os princípios e os sete focos (história, fundamentos, agentes, comunidade e build in public, ecossistema, onde buscar, e entrevista e mercado), cada um com "pronto quando", o essencial e onde aprofundar. As seções têm âncoras fixas (`#mentalidade`, `#historia`, `#fundamentos`, `#pratica`, `#comunidade`, `#ecossistema`, `#onde-buscar`, `#entrevista`); preserve-as.
 - `materiais/`: os dois materiais de formação completos, em HTML, que servem de fonte para os guias de história e fundamentos.
 - `mapas-e-desenhos/`: diagramas SVG usados nos guias.
 - `assets/`: estilos, busca e recursos do site.

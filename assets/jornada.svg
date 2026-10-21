@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 1201 534" data-layout-contract="readable-v2" role="img" lang="pt-BR" aria-labelledby="archify-diagram-title archify-diagram-description" data-preset="classic" data-quality-profile="showcase" style="width: 1201px; height: 534px; min-width: 0px;" width="1201" height="534" xmlns="http://www.w3.org/2000/svg"><style>
+<svg viewBox="0 0 1195 534" data-layout-contract="readable-v2" role="img" lang="pt-BR" aria-labelledby="archify-diagram-title archify-diagram-description" data-preset="classic" data-quality-profile="showcase" style="width: 1195px; height: 534px; min-width: 0px;" width="1195" height="534" xmlns="http://www.w3.org/2000/svg"><style>
 /*
 JetBrains Mono variable WOFF2 subsets from Google Fonts service revision v24.
 These fixed bytes are shared by the viewer and its SVG/raster exports.
@@ -407,7 +407,7 @@ svg[data-preset="editorial"][data-animation="trace"] [data-animate="node"] { ani
 svg[data-theme="light"] { --bg: #f4f5f7; --grid: #e9edf2; --canvas-dot: #d9dee5; --text: #111827; --text-muted: #5b6474; --text-dim: #9aa3b2; --text-faint: #6b7280; --panel: #ffffff; --panel-border: #e5e7eb; --lane-fill: rgba(248, 250, 252, 0.65); --lane-stroke: #cbd5e1; --arrow: #94a3b8; --arrow-emphasis: #059669; --mask: #ffffff; --frontend-fill: rgba(34, 211, 238, 0.15); --frontend-stroke: #0891b2; --backend-fill: rgba(52, 211, 153, 0.18); --backend-stroke: #059669; --database-fill: rgba(167, 139, 250, 0.2); --database-stroke: #7c3aed; --cloud-fill: rgba(251, 191, 36, 0.18); --cloud-stroke: #d97706; --security-fill: rgba(251, 113, 133, 0.15); --security-stroke: #e11d48; --messagebus-fill: rgba(251, 146, 60, 0.15); --messagebus-stroke: #ea580c; --external-fill: rgba(148, 163, 184, 0.18); --external-stroke: #64748b; --toolbar-bg: rgba(255, 255, 255, 0.92); --toolbar-border: #cbd5e1; --toolbar-text: #334155; --toolbar-hover: #ffffff; --toolbar-menu-bg: #ffffff; }
 svg[data-theme="dark"] { --bg: #020617; --grid: #1e293b; --canvas-dot: rgba(148, 163, 184, 0.16); --text: #ffffff; --text-muted: #94a3b8; --text-dim: #475569; --text-faint: #7d8da1; --panel: rgba(15, 23, 42, 0.5); --panel-border: #1e293b; --lane-fill: rgba(15, 23, 42, 0.22); --lane-stroke: #334155; --arrow: #64748b; --arrow-emphasis: #34d399; --mask: #0f172a; --frontend-fill: rgba(8, 51, 68, 0.4); --frontend-stroke: #22d3ee; --backend-fill: rgba(6, 78, 59, 0.4); --backend-stroke: #34d399; --database-fill: rgba(76, 29, 149, 0.4); --database-stroke: #a78bfa; --cloud-fill: rgba(120, 53, 15, 0.3); --cloud-stroke: #fbbf24; --security-fill: rgba(136, 19, 55, 0.4); --security-stroke: #fb7185; --messagebus-fill: rgba(251, 146, 60, 0.3); --messagebus-stroke: #fb923c; --external-fill: rgba(30, 41, 59, 0.5); --external-stroke: #94a3b8; --toolbar-bg: rgba(15, 23, 42, 0.8); --toolbar-border: #334155; --toolbar-text: #e2e8f0; --toolbar-hover: rgba(15, 23, 42, 0.95); --toolbar-menu-bg: #0f172a; }
 rect.c-bg-rect { fill: var(--bg); }
-</style><rect x="0" y="0" width="1201" height="534" class="c-bg-rect"/>
+</style><rect x="0" y="0" width="1195" height="534" class="c-bg-rect"/>
         <title id="archify-diagram-title">Jornada do Engenheiro de IA</title>
         <desc id="archify-diagram-description">Um diagrama de fluxo de trabalho gerado pelo Archify.</desc>
         <!-- Definitions -->
@@ -433,145 +433,165 @@ rect.c-bg-rect { fill: var(--bg); }
         <rect width="100%" height="100%" fill="url(#grid)"/>
 
         <!-- Swimlanes -->
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-0" x="40" y="52" width="1145" height="106" rx="10" class="c-lane" stroke-width="1"/>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-0" x="40" y="52" width="1139" height="106" rx="10" class="c-lane" stroke-width="1"/>
         <text x="54" y="74" class="t-dim" font-size="10" font-weight="600">01 / CONHECER</text>
 
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-1" x="40" y="178" width="1145" height="106" rx="10" class="c-lane" stroke-width="1"/>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-1" x="40" y="178" width="1139" height="106" rx="10" class="c-lane" stroke-width="1"/>
         <text x="54" y="200" class="t-dim" font-size="10" font-weight="600">02 / CONSTRUIR E MOSTRAR</text>
 
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-2" x="40" y="304" width="1145" height="106" rx="10" class="c-lane" stroke-width="1"/>
-        <text x="54" y="326" class="t-dim" font-size="10" font-weight="600">03 / ACOMPANHAR EM PARALELO</text>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-2" x="40" y="304" width="1139" height="106" rx="10" class="c-lane" stroke-width="1"/>
+        <text x="54" y="326" class="t-dim" font-size="10" font-weight="600">03 / PUBLICAR E CONECTAR</text>
 
         <!-- Phase headers -->
-        <line x1="107" y1="35" x2="437" y2="35" class="a-default" stroke-width="1.1"/>
-        <rect x="107" y="27" width="330" height="16" rx="4" class="c-mask"/>
-        <text x="272" y="39" class="t-muted" font-size="8" font-weight="600" text-anchor="middle">Ler uma vez</text>
-        <line x1="465" y1="35" x2="993" y2="35" class="a-emphasis" stroke-width="1.1"/>
-        <rect x="465" y="27" width="528" height="16" rx="4" class="c-mask"/>
-        <text x="729" y="39" class="t-backend" font-size="8" font-weight="600" text-anchor="middle">Construir em ciclo</text>
-        <line x1="1021" y1="35" x2="1113" y2="35" class="a-default" stroke-width="1.1"/>
-        <rect x="1021" y="27" width="92" height="16" rx="4" class="c-mask"/>
-        <text x="1067" y="39" class="t-muted" font-size="8" font-weight="600" text-anchor="middle">Mostrar</text>
+        <line x1="100" y1="35" x2="615" y2="35" class="a-default" stroke-width="1.1"/>
+        <rect x="100" y="27" width="515" height="16" rx="4" class="c-mask"/>
+        <text x="357.5" y="39" class="t-muted" font-size="8" font-weight="600" text-anchor="middle">Base</text>
+        <line x1="643" y1="35" x2="991.6" y2="35" class="a-emphasis" stroke-width="1.1"/>
+        <rect x="643" y="27" width="348.6" height="16" rx="4" class="c-mask"/>
+        <text x="817.3" y="39" class="t-backend" font-size="8" font-weight="600" text-anchor="middle">Ciclo contínuo</text>
+        <line x1="1019.5999999999999" y1="35" x2="1111.6" y2="35" class="a-default" stroke-width="1.1"/>
+        <rect x="1019.5999999999999" y="27" width="92" height="16" rx="4" class="c-mask"/>
+        <text x="1065.6" y="39" class="t-muted" font-size="8" font-weight="600" text-anchor="middle">Mostrar</text>
 
         <!-- Workflow groups -->
 
 
         <!-- Edge paths -->
-        <path data-edge-from="fundamentos" data-edge-to="pratica" data-edge-key="0" data-edge-id="fundamentos-pratica" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="391,154;391,246;401,246" d="M 391 154 L 391 246 L 401 246" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
-        <path data-edge-from="historia" data-edge-to="fundamentos" data-edge-key="1" data-edge-id="historia-fundamentos" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="258,120;286,120" d="M 258 120 L 286 120" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
-        <path data-edge-from="pratica" data-edge-to="buscar" data-edge-label="pesquise" data-edge-key="2" data-edge-id="pratica-buscar" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="621,246;947,246;947,338" d="M 621 246 L 947 246 L 947 338" class="a-dashed" stroke-width="1.4" marker-end="url(#arrowhead-dashed)"/>
-        <path data-edge-from="pratica" data-edge-to="comunidade" data-edge-label="publique" data-edge-key="3" data-edge-id="pratica-comunidade" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="511,280;511,338" d="M 511 280 L 511 338" class="a-dashed" stroke-width="1.4" marker-end="url(#arrowhead-dashed)"/>
-        <path data-edge-from="pratica" data-edge-to="ecossistema" data-edge-label="acompanhe" data-edge-key="4" data-edge-id="pratica-ecossistema" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="621,260;637,260;637,294;729,294;729,338" d="M 621 260 L 637 260 L 637 294 L 729 294 L 729 338" class="a-dashed" stroke-width="1.4" marker-end="url(#arrowhead-dashed)"/>
-        <path data-edge-from="pratica" data-edge-to="entrevista" data-edge-key="5" data-edge-id="pratica-entrevista" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="511,212;511,196;1067,196;1067,212" d="M 511 212 L 511 196 L 1067 196 L 1067 212" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        <path data-edge-from="comunidade" data-edge-to="ecossistema" data-edge-label="conecte" data-edge-key="0" data-edge-id="comunidade-ecossistema" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="789,372;840.6,372" d="M 789 372 L 840.6 372" class="a-dashed" stroke-width="1.4" marker-end="url(#arrowhead-dashed)"/>
+        <path data-edge-from="ecossistema" data-edge-to="pratica" data-edge-label="feedback" data-edge-key="1" data-edge-id="ecossistema-pratica" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="945.6,338;945.6,253;794,253" d="M 945.6 338 L 945.6 253 L 794 253" class="a-dashed" stroke-width="1.4" marker-end="url(#arrowhead-dashed)"/>
+        <path data-edge-from="fundamentos" data-edge-to="pratica" data-edge-key="2" data-edge-id="fundamentos-pratica" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="569,154;569,246;584,246" d="M 569 154 L 569 246 L 584 246" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        <path data-edge-from="historia" data-edge-to="fundamentos" data-edge-key="3" data-edge-id="historia-fundamentos" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="448,120;476,120" d="M 448 120 L 476 120" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        <path data-edge-from="mentalidade" data-edge-to="historia" data-edge-key="4" data-edge-id="mentalidade-historia" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="244,120;272,120" d="M 244 120 L 272 120" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        <path data-edge-from="pratica" data-edge-to="buscar" data-edge-label="pesquise" data-edge-key="5" data-edge-id="pratica-buscar" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="689,212;689,120;845.6,120" d="M 689 212 L 689 120 L 845.6 120" class="a-dashed" stroke-width="1.4" marker-end="url(#arrowhead-dashed)"/>
+        <path data-edge-from="pratica" data-edge-to="comunidade" data-edge-label="publique" data-edge-key="6" data-edge-id="pratica-comunidade" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="689,280;689,338" d="M 689 280 L 689 338" class="a-dashed" stroke-width="1.4" marker-end="url(#arrowhead-dashed)"/>
+        <path data-edge-from="pratica" data-edge-to="entrevista" data-edge-key="7" data-edge-id="pratica-entrevista" data-composition-routing="workflow-v2-auto" data-edge-role="" data-composition-points="701,212;701,196;1065.6,196;1065.6,212" d="M 701 212 L 701 196 L 1065.6 196 L 1065.6 212" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
 
         <!-- Nodes -->
-        <g id="node-historia" data-node-id="historia" data-node-label="1 · História" tabindex="0" role="button" aria-label="Focar 1 · História, Marcos e 5 lições, CONHECER › Ler uma vez" aria-pressed="false" data-node-kind="database" data-node-sublabel="Marcos e 5 lições" data-node-tag="Cai em entrevista" data-node-context="CONHECER › Ler uma vez">
-          <title>1 · História · Marcos e 5 lições · CONHECER › Ler uma vez · Cai em entrevista</title>
-          <rect x="48" y="86" width="210" height="68" rx="6" class="c-mask"/>
-          <rect x="48" y="86" width="210" height="68" rx="6" class="c-database" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(54 92) scale(0.6875)">
+        <g id="node-mentalidade" data-node-id="mentalidade" data-node-label="Mentalidade de IA" tabindex="0" role="button" aria-label="Focar Mentalidade de IA, Acredite e imagine grande, CONHECER › Base" aria-pressed="false" data-node-kind="security" data-node-sublabel="Acredite e imagine grande" data-node-tag="Use IA todo dia" data-node-context="CONHECER › Base">
+          <title>Mentalidade de IA · Acredite e imagine grande · CONHECER › Base · Use IA todo dia</title>
+          <rect x="48" y="86" width="196" height="68" rx="6" class="c-mask"/>
+          <rect x="48" y="86" width="196" height="68" rx="6" class="c-security" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="security" class="semantic-sigil s-security" transform="translate(54 92) scale(0.6875)">
+            <path d="M8 2.2 13 4v3.5c0 3.1-1.8 5.4-5 6.5-3.2-1.1-5-3.4-5-6.5V4Z"/>
+            <path d="m5.8 8 1.5 1.5 3-3"/>
+          </g>
+          <text data-node-label="" x="146" y="107" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Mentalidade de IA</text>
+          <text x="146" y="124" class="t-muted" font-size="8" text-anchor="middle">Acredite e imagine grande</text>
+        <text x="146" y="142" class="t-security" font-size="7" text-anchor="middle">Use IA todo dia</text>
+        </g>
+
+        <g id="node-historia" data-node-id="historia" data-node-label="1 · História" tabindex="0" role="button" aria-label="Focar 1 · História, Marcos e 5 lições, CONHECER › Base" aria-pressed="false" data-node-kind="database" data-node-sublabel="Marcos e 5 lições" data-node-tag="Cai em entrevista" data-node-context="CONHECER › Base">
+          <title>1 · História · Marcos e 5 lições · CONHECER › Base · Cai em entrevista</title>
+          <rect x="272" y="86" width="176" height="68" rx="6" class="c-mask"/>
+          <rect x="272" y="86" width="176" height="68" rx="6" class="c-database" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(278 92) scale(0.6875)">
             <ellipse cx="8" cy="4" rx="5" ry="2"/>
             <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
           </g>
-          <text data-node-label="" x="153" y="107" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">1 · História</text>
-          <text x="153" y="124" class="t-muted" font-size="8" text-anchor="middle">Marcos e 5 lições</text>
-        <text x="153" y="142" class="t-database" font-size="7" text-anchor="middle">Cai em entrevista</text>
+          <text data-node-label="" x="360" y="107" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">1 · História</text>
+          <text x="360" y="124" class="t-muted" font-size="8" text-anchor="middle">Marcos e 5 lições</text>
+        <text x="360" y="142" class="t-database" font-size="7" text-anchor="middle">Cai em entrevista</text>
         </g>
 
-        <g id="node-fundamentos" data-node-id="fundamentos" data-node-label="2 · Fundamentos" tabindex="0" role="button" aria-label="Focar 2 · Fundamentos, 27 conceitos, CONHECER › Ler uma vez" aria-pressed="false" data-node-kind="database" data-node-sublabel="27 conceitos" data-node-tag="Explique em 1 frase" data-node-context="CONHECER › Ler uma vez">
-          <title>2 · Fundamentos · 27 conceitos · CONHECER › Ler uma vez · Explique em 1 frase</title>
-          <rect x="286" y="86" width="210" height="68" rx="6" class="c-mask"/>
-          <rect x="286" y="86" width="210" height="68" rx="6" class="c-database" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(292 92) scale(0.6875)">
+        <g id="node-fundamentos" data-node-id="fundamentos" data-node-label="2 · Fundamentos" tabindex="0" role="button" aria-label="Focar 2 · Fundamentos, 27 conceitos, CONHECER › Base" aria-pressed="false" data-node-kind="database" data-node-sublabel="27 conceitos" data-node-tag="Explique em 1 frase" data-node-context="CONHECER › Base">
+          <title>2 · Fundamentos · 27 conceitos · CONHECER › Base · Explique em 1 frase</title>
+          <rect x="476" y="86" width="186" height="68" rx="6" class="c-mask"/>
+          <rect x="476" y="86" width="186" height="68" rx="6" class="c-database" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(482 92) scale(0.6875)">
             <ellipse cx="8" cy="4" rx="5" ry="2"/>
             <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
           </g>
-          <text data-node-label="" x="391" y="107" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">2 · Fundamentos</text>
-          <text x="391" y="124" class="t-muted" font-size="8" text-anchor="middle">27 conceitos</text>
-        <text x="391" y="142" class="t-database" font-size="7" text-anchor="middle">Explique em 1 frase</text>
+          <text data-node-label="" x="569" y="107" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">2 · Fundamentos</text>
+          <text x="569" y="124" class="t-muted" font-size="8" text-anchor="middle">27 conceitos</text>
+        <text x="569" y="142" class="t-database" font-size="7" text-anchor="middle">Explique em 1 frase</text>
         </g>
 
-        <g id="node-pratica" data-node-id="pratica" data-node-label="3 · Prática" tabindex="0" role="button" aria-label="Focar 3 · Prática, Problema real, 4 entregas, CONSTRUIR E MOSTRAR › Construir em ciclo" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Problema real, 4 entregas" data-node-tag="Teste e demonstre" data-node-context="CONSTRUIR E MOSTRAR › Construir em ciclo">
-          <title>3 · Prática · Problema real, 4 entregas · CONSTRUIR E MOSTRAR › Construir em ciclo · Teste e demonstre</title>
-          <rect x="401" y="212" width="220" height="68" rx="6" class="c-mask"/>
-          <rect x="401" y="212" width="220" height="68" rx="6" class="c-backend" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(407 218) scale(0.6875)">
-            <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
-          </g>
-          <text data-node-label="" x="511" y="233" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">3 · Prática</text>
-          <text x="511" y="250" class="t-muted" font-size="8" text-anchor="middle">Problema real, 4 entregas</text>
-        <text x="511" y="268" class="t-backend" font-size="7" text-anchor="middle">Teste e demonstre</text>
-        </g>
-
-        <g id="node-entrevista" data-node-id="entrevista" data-node-label="7 · Entrevista e mercado" tabindex="0" role="button" aria-label="Focar 7 · Entrevista e mercado, Pontos mais cobrados, CONSTRUIR E MOSTRAR › Mostrar" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="Pontos mais cobrados" data-node-tag="O que vem pela frente" data-node-context="CONSTRUIR E MOSTRAR › Mostrar">
-          <title>7 · Entrevista e mercado · Pontos mais cobrados · CONSTRUIR E MOSTRAR › Mostrar · O que vem pela frente</title>
-          <rect x="957" y="212" width="220" height="68" rx="6" class="c-mask"/>
-          <rect x="957" y="212" width="220" height="68" rx="6" class="c-frontend" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(963 218) scale(0.6875)">
-            <rect x="2" y="3" width="12" height="10" rx="2"/>
-            <path d="M2 6.5h12"/>
-            <circle cx="4.1" cy="4.8" r=".7" class="sigil-fill"/>
-            <circle cx="6.3" cy="4.8" r=".7" class="sigil-fill"/>
-          </g>
-          <text data-node-label="" x="1067" y="233" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">7 · Entrevista e mercado</text>
-          <text x="1067" y="250" class="t-muted" font-size="8" text-anchor="middle">Pontos mais cobrados</text>
-        <text x="1067" y="268" class="t-frontend" font-size="7" text-anchor="middle">O que vem pela frente</text>
-        </g>
-
-        <g id="node-comunidade" data-node-id="comunidade" data-node-label="4 · Comunidade" tabindex="0" role="button" aria-label="Focar 4 · Comunidade, Dizevolv e build in public, ACOMPANHAR EM PARALELO › Construir em ciclo" aria-pressed="false" data-node-kind="external" data-node-sublabel="Dizevolv e build in public" data-node-tag="Publique o progresso" data-node-context="ACOMPANHAR EM PARALELO › Construir em ciclo">
-          <title>4 · Comunidade · Dizevolv e build in public · ACOMPANHAR EM PARALELO › Construir em ciclo · Publique o progresso</title>
-          <rect x="406" y="338" width="210" height="68" rx="6" class="c-mask"/>
-          <rect x="406" y="338" width="210" height="68" rx="6" class="c-external" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(412 344) scale(0.6875)">
-            <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
-            <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
-          </g>
-          <text data-node-label="" x="511" y="359" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">4 · Comunidade</text>
-          <text x="511" y="376" class="t-muted" font-size="8" text-anchor="middle">Dizevolv e build in public</text>
-        <text x="511" y="394" class="t-external" font-size="7" text-anchor="middle">Publique o progresso</text>
-        </g>
-
-        <g id="node-ecossistema" data-node-id="ecossistema" data-node-label="5 · Ecossistema" tabindex="0" role="button" aria-label="Focar 5 · Ecossistema, Quem seguir no X e Discord, ACOMPANHAR EM PARALELO › Construir em ciclo" aria-pressed="false" data-node-kind="cloud" data-node-sublabel="Quem seguir no X e Discord" data-node-tag="Esteja onde acontece" data-node-context="ACOMPANHAR EM PARALELO › Construir em ciclo">
-          <title>5 · Ecossistema · Quem seguir no X e Discord · ACOMPANHAR EM PARALELO › Construir em ciclo · Esteja onde acontece</title>
-          <rect x="624" y="338" width="210" height="68" rx="6" class="c-mask"/>
-          <rect x="624" y="338" width="210" height="68" rx="6" class="c-cloud" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="cloud" class="semantic-sigil s-cloud" transform="translate(630 344) scale(0.6875)">
-            <path d="M4.3 12.5h7.3a2.4 2.4 0 0 0 .2-4.8 4 4 0 0 0-7.5-1.3A3.1 3.1 0 0 0 4.3 12.5Z"/>
-          </g>
-          <text data-node-label="" x="729" y="359" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">5 · Ecossistema</text>
-          <text x="729" y="376" class="t-muted" font-size="8" text-anchor="middle">Quem seguir no X e Discord</text>
-        <text x="729" y="394" class="t-cloud" font-size="7" text-anchor="middle">Esteja onde acontece</text>
-        </g>
-
-        <g id="node-buscar" data-node-id="buscar" data-node-label="6 · Onde buscar" tabindex="0" role="button" aria-label="Focar 6 · Onde buscar, Fonte primária primeiro, ACOMPANHAR EM PARALELO › Construir em ciclo" aria-pressed="false" data-node-kind="messagebus" data-node-sublabel="Fonte primária primeiro" data-node-tag="Docs, papers, repos" data-node-context="ACOMPANHAR EM PARALELO › Construir em ciclo">
-          <title>6 · Onde buscar · Fonte primária primeiro · ACOMPANHAR EM PARALELO › Construir em ciclo · Docs, papers, repos</title>
-          <rect x="842" y="338" width="210" height="68" rx="6" class="c-mask"/>
-          <rect x="842" y="338" width="210" height="68" rx="6" class="c-messagebus" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="messagebus" class="semantic-sigil s-messagebus" transform="translate(848 344) scale(0.6875)">
+        <g id="node-buscar" data-node-id="buscar" data-node-label="6 · Onde buscar" tabindex="0" role="button" aria-label="Focar 6 · Onde buscar, Fonte primária primeiro, CONHECER › Ciclo contínuo" aria-pressed="false" data-node-kind="messagebus" data-node-sublabel="Fonte primária primeiro" data-node-tag="Docs, papers, repos" data-node-context="CONHECER › Ciclo contínuo">
+          <title>6 · Onde buscar · Fonte primária primeiro · CONHECER › Ciclo contínuo · Docs, papers, repos</title>
+          <rect x="845.6" y="86" width="200" height="68" rx="6" class="c-mask"/>
+          <rect x="845.6" y="86" width="200" height="68" rx="6" class="c-messagebus" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="messagebus" class="semantic-sigil s-messagebus" transform="translate(851.6 92) scale(0.6875)">
             <path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/>
             <circle cx="5" cy="4.5" r="1" class="sigil-fill"/>
             <circle cx="10.5" cy="8" r="1" class="sigil-fill"/>
             <circle cx="7" cy="11.5" r="1" class="sigil-fill"/>
           </g>
-          <text data-node-label="" x="947" y="359" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">6 · Onde buscar</text>
-          <text x="947" y="376" class="t-muted" font-size="8" text-anchor="middle">Fonte primária primeiro</text>
-        <text x="947" y="394" class="t-messagebus" font-size="7" text-anchor="middle">Docs, papers, repos</text>
+          <text data-node-label="" x="945.6" y="107" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">6 · Onde buscar</text>
+          <text x="945.6" y="124" class="t-muted" font-size="8" text-anchor="middle">Fonte primária primeiro</text>
+        <text x="945.6" y="142" class="t-messagebus" font-size="7" text-anchor="middle">Docs, papers, repos</text>
+        </g>
+
+        <g id="node-pratica" data-node-id="pratica" data-node-label="3 · Agentes" tabindex="0" role="button" aria-label="Focar 3 · Agentes, Use, crie e pratique, CONSTRUIR E MOSTRAR › Ciclo contínuo" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Use, crie e pratique" data-node-tag="Problema real, 4 entregas" data-node-context="CONSTRUIR E MOSTRAR › Ciclo contínuo">
+          <title>3 · Agentes · Use, crie e pratique · CONSTRUIR E MOSTRAR › Ciclo contínuo · Problema real, 4 entregas</title>
+          <rect x="584" y="212" width="210" height="68" rx="6" class="c-mask"/>
+          <rect x="584" y="212" width="210" height="68" rx="6" class="c-backend" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(590 218) scale(0.6875)">
+            <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
+          </g>
+          <text data-node-label="" x="689" y="233" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">3 · Agentes</text>
+          <text x="689" y="250" class="t-muted" font-size="8" text-anchor="middle">Use, crie e pratique</text>
+        <text x="689" y="268" class="t-backend" font-size="7" text-anchor="middle">Problema real, 4 entregas</text>
+        </g>
+
+        <g id="node-entrevista" data-node-id="entrevista" data-node-label="7 · Entrevista e mercado" tabindex="0" role="button" aria-label="Focar 7 · Entrevista e mercado, Pontos mais cobrados, CONSTRUIR E MOSTRAR › Mostrar" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="Pontos mais cobrados" data-node-tag="O que vem pela frente" data-node-context="CONSTRUIR E MOSTRAR › Mostrar">
+          <title>7 · Entrevista e mercado · Pontos mais cobrados · CONSTRUIR E MOSTRAR › Mostrar · O que vem pela frente</title>
+          <rect x="960.5999999999999" y="212" width="210" height="68" rx="6" class="c-mask"/>
+          <rect x="960.5999999999999" y="212" width="210" height="68" rx="6" class="c-frontend" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(966.5999999999999 218) scale(0.6875)">
+            <rect x="2" y="3" width="12" height="10" rx="2"/>
+            <path d="M2 6.5h12"/>
+            <circle cx="4.1" cy="4.8" r=".7" class="sigil-fill"/>
+            <circle cx="6.3" cy="4.8" r=".7" class="sigil-fill"/>
+          </g>
+          <text data-node-label="" x="1065.6" y="233" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">7 · Entrevista e mercado</text>
+          <text x="1065.6" y="250" class="t-muted" font-size="8" text-anchor="middle">Pontos mais cobrados</text>
+        <text x="1065.6" y="268" class="t-frontend" font-size="7" text-anchor="middle">O que vem pela frente</text>
+        </g>
+
+        <g id="node-comunidade" data-node-id="comunidade" data-node-label="4 · Comunidade" tabindex="0" role="button" aria-label="Focar 4 · Comunidade, Build in public, PUBLICAR E CONECTAR › Ciclo contínuo" aria-pressed="false" data-node-kind="external" data-node-sublabel="Build in public" data-node-tag="Gera networking" data-node-context="PUBLICAR E CONECTAR › Ciclo contínuo">
+          <title>4 · Comunidade · Build in public · PUBLICAR E CONECTAR › Ciclo contínuo · Gera networking</title>
+          <rect x="589" y="338" width="200" height="68" rx="6" class="c-mask"/>
+          <rect x="589" y="338" width="200" height="68" rx="6" class="c-external" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(595 344) scale(0.6875)">
+            <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
+            <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
+          </g>
+          <text data-node-label="" x="689" y="359" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">4 · Comunidade</text>
+          <text x="689" y="376" class="t-muted" font-size="8" text-anchor="middle">Build in public</text>
+        <text x="689" y="394" class="t-external" font-size="7" text-anchor="middle">Gera networking</text>
+        </g>
+
+        <g id="node-ecossistema" data-node-id="ecossistema" data-node-label="5 · Ecossistema" tabindex="0" role="button" aria-label="Focar 5 · Ecossistema, Quem seguir no X e Discord, PUBLICAR E CONECTAR › Ciclo contínuo" aria-pressed="false" data-node-kind="cloud" data-node-sublabel="Quem seguir no X e Discord" data-node-tag="Participe das conversas" data-node-context="PUBLICAR E CONECTAR › Ciclo contínuo">
+          <title>5 · Ecossistema · Quem seguir no X e Discord · PUBLICAR E CONECTAR › Ciclo contínuo · Participe das conversas</title>
+          <rect x="840.6" y="338" width="210" height="68" rx="6" class="c-mask"/>
+          <rect x="840.6" y="338" width="210" height="68" rx="6" class="c-cloud" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="cloud" class="semantic-sigil s-cloud" transform="translate(846.6 344) scale(0.6875)">
+            <path d="M4.3 12.5h7.3a2.4 2.4 0 0 0 .2-4.8 4 4 0 0 0-7.5-1.3A3.1 3.1 0 0 0 4.3 12.5Z"/>
+          </g>
+          <text data-node-label="" x="945.6" y="359" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">5 · Ecossistema</text>
+          <text x="945.6" y="376" class="t-muted" font-size="8" text-anchor="middle">Quem seguir no X e Discord</text>
+        <text x="945.6" y="394" class="t-cloud" font-size="7" text-anchor="middle">Participe das conversas</text>
         </g>
 
         <!-- Edge labels -->
+        <g data-edge-from="comunidade" data-edge-to="ecossistema" data-edge-label="conecte" data-edge-key="0" data-edge-id="comunidade-ecossistema">
+          <rect x="793" y="352" width="43.6" height="14" rx="3" class="c-mask"/>
+          <text x="814.8" y="362" class="t-edge-dashed" font-size="8" text-anchor="middle">conecte</text>
+        </g>
+        <g data-edge-from="ecossistema" data-edge-to="pratica" data-edge-label="feedback" data-edge-key="1" data-edge-id="ecossistema-pratica">
+          <rect x="845.5999999999999" y="233" width="48.4" height="14" rx="3" class="c-mask"/>
+          <text x="869.8" y="243" class="t-edge-dashed" font-size="8" text-anchor="middle">feedback</text>
+        </g>
 
 
-        <g data-edge-from="pratica" data-edge-to="buscar" data-edge-label="pesquise" data-edge-key="2" data-edge-id="pratica-buscar">
-          <rect x="759.8" y="226" width="48.4" height="14" rx="3" class="c-mask"/>
-          <text x="784" y="236" class="t-edge-dashed" font-size="8" text-anchor="middle">pesquise</text>
+
+        <g data-edge-from="pratica" data-edge-to="buscar" data-edge-label="pesquise" data-edge-key="5" data-edge-id="pratica-buscar">
+          <rect x="743.0999999999999" y="100" width="48.4" height="14" rx="3" class="c-mask"/>
+          <text x="767.3" y="110" class="t-edge-dashed" font-size="8" text-anchor="middle">pesquise</text>
         </g>
-        <g data-edge-from="pratica" data-edge-to="comunidade" data-edge-label="publique" data-edge-key="3" data-edge-id="pratica-comunidade">
-          <rect x="486.8" y="299" width="48.4" height="14" rx="3" class="c-mask"/>
-          <text x="511" y="309" class="t-edge-dashed" font-size="8" text-anchor="middle">publique</text>
-        </g>
-        <g data-edge-from="pratica" data-edge-to="ecossistema" data-edge-label="acompanhe" data-edge-key="4" data-edge-id="pratica-ecossistema">
-          <rect x="656.4" y="274" width="53.199999999999996" height="14" rx="3" class="c-mask"/>
-          <text x="683" y="284" class="t-edge-dashed" font-size="8" text-anchor="middle">acompanhe</text>
+        <g data-edge-from="pratica" data-edge-to="comunidade" data-edge-label="publique" data-edge-key="6" data-edge-id="pratica-comunidade">
+          <rect x="664.8" y="299" width="48.4" height="14" rx="3" class="c-mask"/>
+          <text x="689" y="309" class="t-edge-dashed" font-size="8" text-anchor="middle">publique</text>
         </g>
 
 
