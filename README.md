@@ -30,9 +30,9 @@ A maior parte do trabalho é **processo, dado, integração e avaliação**. O m
 
 | Seu momento | Por onde ir |
 | --- | --- |
-| **Quer um caminho guiado, com suporte e comunidade** | **[Comunidade e curso da Dizevolv](https://comunidade.dizevolv.com/)**: curso *Construa seu próprio agente de IA*, comunidade fechada com quem está implementando IA em empresas e suporte do nosso time. É a minha comunidade, onde acompanho de perto quem segue esta jornada. |
-| **Quer começar sem investir** | [Meu vídeo: crie um agente Hermes em menos de 20 minutos](https://youtu.be/VHh2D9agRps). O vídeo é aberto; o consumo de modelos e hospedagem depende da configuração. |
-| **Já tem um agente funcionando** | Vá direto para a [prática](#pratica) com um problema real. |
+| **Quer criar o seu primeiro agente** | [Meu vídeo: crie um agente Hermes em menos de 20 minutos](https://youtu.be/VHh2D9agRps). O vídeo é aberto; o consumo de modelos e hospedagem depende da configuração. |
+| **Quer aprender junto com outras pessoas** | A [comunidade Dizevolv](https://comunidade.dizevolv.com/), onde acompanho quem segue esta jornada. |
+| **Já tem um agente funcionando** | Vá direto para os [agentes](#pratica) com um problema real. |
 
 ## O mapa: sete focos
 
@@ -218,38 +218,15 @@ São 27 conceitos, divididos em cinco blocos, na ordem em que precisam ser apren
 
 ## 3 · Agentes: use, crie e pratique
 
-**A regra:** agente se aprende em três frentes ao mesmo tempo: **usando** no dia a dia, **criando** os seus e **praticando** num problema real. Uma alimenta a outra. Quem usa sabe o que pedir, quem cria entende por que falha e quem pratica prova que funciona.
+**A regra:** agente se aprende em três frentes ao mesmo tempo: **usando** no dia a dia, **criando** o seu e **praticando** num problema real. Uma alimenta a outra.
 
-**Pronto quando:** você usa agentes todos os dias, já criou um com ferramentas e mostrou a quem faz o trabalho um agente testado, com números de antes e depois e uma limitação conhecida.
+**Pronto quando:** você usa agentes todos os dias, já criou o seu e mostrou a quem faz o trabalho um agente testado, com números de antes e depois e uma limitação conhecida.
 
-### Use agentes todos os dias
+**Use todos os dias.** Entregue a um agente uma tarefa real por dia: uma pesquisa, um script, uma planilha, um documento. Anote o que ele acertou e o que você precisou corrigir. É usando que você aprende o que pedir e onde ele costuma errar.
 
-Usando, você aprende o que um agente faz bem, onde erra e como pedir. Delegue uma tarefa real por dia e anote o que precisou corrigir.
+**Crie o seu.** Comece com um objetivo claro e uma única ferramenta, e aumente a autonomia aos poucos. Todo agente tem as mesmas seis peças: **modelo, instruções, ferramentas, contexto, critério de parada e limites**. Quando algo der errado, a causa está em uma delas. Se travar, leve a dúvida para a [comunidade](https://comunidade.dizevolv.com/).
 
-| Tipo | Exemplos | Use para |
-| --- | --- | --- |
-| **Agentes de código** | [Claude Code](https://code.claude.com/docs/en/overview), [Codex](https://github.com/openai/codex), [Cursor](https://cursor.com/docs) e [Gemini CLI](https://geminicli.com/docs/) | Criar scripts, automações e protótipos, mesmo sem ser programador. É o jeito mais rápido de ver um agente usando ferramentas. |
-| **Assistentes com ferramentas** | Claude, ChatGPT e Gemini com pesquisa, arquivos e conectores; [Claude Cowork](https://claude.com/product/cowork) | Pesquisa aprofundada, análise de planilhas e documentos e tarefas no computador. |
-| **Agentes pessoais** | [Hermes Agent](https://hermes-agent.nousresearch.com/docs/) e [OpenClaw](https://github.com/openclaw/openclaw) | Um agente rodando o tempo todo, ligado ao seu chat, e-mail e agenda. |
-| **Automação** | [n8n](https://docs.n8n.io/build/integrate-ai) | Colocar um agente dentro de um processo, com gatilho, ferramentas e registro. |
-
-### Crie os seus, um degrau por vez
-
-Todo agente tem as mesmas seis peças: **modelo, instruções, ferramentas, contexto, critério de parada e limites**. Saber nomeá-las já organiza qualquer projeto.
-
-| Degrau | O que construir | Onde aprender |
-| --- | --- | --- |
-| **1 · Sem código** | Um agente com uma ferramenta, no n8n, no Hermes ou no curso da Dizevolv. | [Curso da Dizevolv](https://comunidade.dizevolv.com/) · [vídeo do Hermes](https://youtu.be/VHh2D9agRps) |
-| **2 · Com código** | O ciclo de tool use via API: modelo, duas ferramentas e critério de parada. | [Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview) · [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) · [Google ADK](https://adk.dev/) |
-| **3 · Conectado** | Um servidor MCP que dá ao agente acesso a um sistema seu: planilha, CRM ou banco. | [Criar um servidor MCP](https://modelcontextprotocol.io/docs/develop/build-server) |
-| **4 · Com habilidades** | Skills e subagentes para tarefas maiores, com o contexto certo em cada etapa. | [Agent Skills](https://agentskills.io/) · [Context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) |
-| **5 · Em produção** | Registro de cada passo, eval, limite de custo e ponto humano. | [Langfuse](https://langfuse.com/docs) · [Demystifying evals](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) |
-
-**Comece com fluxo e dê autonomia aos poucos.** Um agente que faz uma coisa bem vale mais que um que tenta tudo.
-
-### Pratique num problema real: quatro entregas
-
-Escolha um problema real, construa um agente para ele e melhore o mesmo projeto em quatro entregas. Você aprende o que o projeto pede, na hora em que ele pede.
+**Pratique num problema real.** Construa um agente para um problema de verdade e melhore o mesmo projeto em quatro entregas. Você aprende o que o projeto pede, na hora em que ele pede.
 
 **Escolha o problema certo.** Procure um processo **específico, repetitivo e caro**. "Melhorar o atendimento" não serve; "organizar pedidos de orçamento que chegam por mensagem" serve. Pergunte a quem faz o trabalho: *mostre o último caso*, *onde você precisa perguntar de novo*, *o que acontece quando um caso se perde* e *como saberíamos que ajudou*. Anote a **linha de base**: tempo por caso, retrabalho e erros.
 
@@ -280,7 +257,7 @@ Escolha um problema real, construa um agente para ele e melhore o mesmo projeto 
 | **3 · Uma ação útil** | Executa uma ação real, como registrar numa planilha ou num CRM, com a permissão no código. Não duplica e não diz "salvei" sem ter salvo. |
 | **4 · Testada e demonstrada** | Tem eval com casos reais, comparação entre versões, números contra a linha de base e uma demonstração com um limite conhecido. |
 
-**Com que ferramenta?** Com a que você já consegue usar: o agente do [curso da Dizevolv](https://comunidade.dizevolv.com/), o [Hermes](https://youtu.be/VHh2D9agRps), n8n ou código próprio. A ferramenta importa menos que a entrega funcionando.
+**Com que ferramenta?** Com a que você já consegue usar: o [Hermes](https://youtu.be/VHh2D9agRps), o n8n, um agente de código como Claude Code ou Codex, ou código próprio. A ferramenta importa menos que a entrega funcionando.
 
 **Quando algo falhar, isole a camada antes de trocar o modelo.** Informação errada: o trecho certo foi recuperado? Fonte certa e resposta errada: a instrução orienta o uso da fonte? Texto certo e tarefa não concluída: a ferramenta executou? Mude uma coisa por vez e rode os mesmos casos.
 
@@ -344,7 +321,7 @@ Comece com cinco situações: caso comum, informação ausente, pedido ambíguo,
 
 **Pronto quando:** você publica o seu progresso toda semana, participa de uma comunidade, já recebeu e deu ajuda num problema concreto e conhece pelo nome pessoas que constroem o mesmo que você.
 
-**Onde começar:** a [Comunidade Dizevolv](https://comunidade.dizevolv.com/), que é a minha comunidade. Lá estão o curso de agentes, a troca com quem implementa IA em empresas e o suporte do nosso time. É o melhor lugar para levar as dúvidas do seu projeto desta jornada. Para saber quem seguir e onde mais conversar, veja o [ecossistema](#ecossistema).
+**Onde começar:** escolha uma comunidade ativa e apareça toda semana. A minha é a [Dizevolv](https://comunidade.dizevolv.com/); no [ecossistema](#ecossistema) estão os Discords e fóruns abertos.
 
 **Como publicar:** use sempre o formato **problema → o que construí → como testei → o que aprendi → próximo passo**.
 
@@ -501,4 +478,4 @@ Esta página resume dois materiais de formação. Leia na íntegra quando quiser
 - [**Como a inteligência artificial chegou até aqui**](materiais/historia-da-ia-material-de-formacao.html): linha do tempo, três conceitos, cinco padrões, erros comuns e trilha de leitura. Cerca de 25 minutos.
 - [**Base técnica de IA**](materiais/Base%20Técnica%20de%20IA.html): 27 conceitos e nove perguntas de entrevista respondidas. Cerca de 40 minutos.
 
-Para aprender junto de quem já implementa IA em empresas, venha para a [comunidade Dizevolv](https://comunidade.dizevolv.com/). · [Explorar o mapa interativo](https://ailucasdz.github.io/jornada-engenheiro-de-ia/mapa.html) · [Contribuir](CONTRIBUTING.md)
+[Explorar o mapa interativo](https://ailucasdz.github.io/jornada-engenheiro-de-ia/mapa.html) · [Contribuir](CONTRIBUTING.md)
