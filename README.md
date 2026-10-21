@@ -151,7 +151,7 @@ A maior parte do trabalho é **processo, dado, integração e avaliação**. O m
 
 São 27 conceitos, divididos em cinco blocos, na ordem em que precisam ser aprendidos. Para cada um, você precisa saber **o que é** e **como falar dele** numa conversa técnica.
 
-**Pronto quando:** você explica cada conceito em uma frase e sabe em qual parte do seu projeto ele aparece.
+**Pronto quando:** você explica cada conceito em uma frase, sabe em qual parte do seu projeto ele aparece, mapeia um processo e organiza a entrega em ciclos.
 
 | Bloco | Conceitos | O que ter em mente |
 | --- | --- | --- |
@@ -219,6 +219,26 @@ São 27 conceitos, divididos em cinco blocos, na ordem em que precisam ser apren
 **Números para orçamento:** um agente consome cerca de 4× mais tokens que um chat, e um sistema multiagente cerca de 15× ([Anthropic](https://www.anthropic.com/engineering/multi-agent-research-system)).
 
 </details>
+
+**Dois fundamentos que não são de IA e pesam tanto quanto:**
+
+**Entender o processo.** Desenhar o fluxo certo é o trabalho; o agente vem depois. "Não sei onde aplicar IA" é falta de diagnóstico de processo, e quem vem de negócio tem vantagem aqui.
+
+1. **Veja o processo acontecer.** Acompanhe quem faz o trabalho e peça o último caso real.
+2. **Desenhe como ele é hoje:** gatilho, passos, quem faz, sistemas, decisões e exceções. Um fluxograma simples basta; [BPMN](https://www.bpmn.org/) é o padrão quando precisar.
+3. **Meça a linha de base:** volume, tempo por caso, retrabalho e erros.
+4. **Separe as partes:** o que tem regra clara vira fluxo, o que varia vira agente e o que exige julgamento fica com uma pessoa.
+5. **Desenhe o processo novo:** o que o agente faz, o que o sistema faz e onde a pessoa aprova.
+
+**Métodos ágeis.** Projeto de IA é experimento: ninguém sabe de antemão o que vai funcionar. Por isso se entrega em ciclos.
+
+- **Cada ciclo termina com algo que quem usa consegue testar.**
+- **O backlog são os casos reais.** As falhas que aparecem viram a lista de trabalho, priorizada pelo impacto.
+- **Revisão com quem usa a cada ciclo,** ajustando o processo, não só o agente.
+- **Cada ciclo fecha com uma decisão:** manter, ajustar ou desfazer, com os números dos casos de teste.
+- **Em operação, Kanban:** uma fila visível de falhas e melhorias, com pouco trabalho em andamento ao mesmo tempo.
+
+**Processo e ágil, na fonte:** [Manifesto Ágil](https://agilemanifesto.org/iso/ptbr/manifesto.html) · [Guia do Scrum](https://scrumguides.org/download.html) · [Guia do Kanban](https://kanbanguides.org/) · [Shape Up](https://basecamp.com/shapeup), gratuito e bom para times pequenos · [Mapeamento do fluxo de valor](https://www.lean.org/lexicon-terms/value-stream-mapping/)
 
 **Para aprofundar:** [*AI Engineering*, de Chip Huyen](https://huyenchip.com/books/) · [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) · [Agents Course, da Hugging Face](https://huggingface.co/learn/agents-course/unit0/introduction) · [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) · [MCP](https://modelcontextprotocol.io/docs/getting-started/intro) · [OWASP Top 10 para LLM](https://genai.owasp.org/llm-top-10/)
 
