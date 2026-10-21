@@ -2,7 +2,7 @@
 
 **Amplie o que você imagina. Construa o que faz diferença. Mostre o valor do seu trabalho.**
 
-**Um guia de direção, não um curso.** Nesta página está o que você precisa saber, o que construir, onde aprender e com quem conversar. O aprendizado acontece fora daqui: nas fontes certas, na comunidade e no seu projeto.
+**Um guia de direção, não um curso.** Nesta página está o que você precisa saber, o que construir, onde aprender e com quem conversar. O aprendizado acontece fora daqui: nas fontes certas, na comunidade e no seu projeto. **A meta é você não depender de curso:** saber achar a informação, testar e confirmar sozinho.
 
 <p class="compact-visual"><a href="mapas-e-desenhos/ciclo-de-valor.svg"><img src="mapas-e-desenhos/ciclo-de-valor.svg" width="548" alt="Ciclo de evolução profissional: mentalidade de IA, teoria, prática, comunidade, construção em público e entrega de valor. Resultados e conversas alimentam o próximo desafio." loading="lazy"></a></p>
 
@@ -38,31 +38,31 @@ A maior parte do trabalho é **processo, dado, integração e avaliação**. O m
 
 | Foco | O que você precisa conseguir fazer |
 | --- | --- |
-| [**1 · História**](#historia) | Contar como a IA chegou até aqui e as cinco lições que se repetem. Cai em entrevista. |
+| [**1 · História**](#historia) | Contar como a IA chegou até aqui e as cinco lições que se repetem. Serve na entrevista e na conversa com cliente. |
 | [**2 · Fundamentos**](#fundamentos) | Explicar em uma frase cada um dos 27 conceitos básicos. |
 | [**3 · Agentes: use, crie e pratique**](#pratica) | Usar agentes todos os dias, criar os seus e ter um resolvendo um problema real, testado e demonstrado. |
 | [**4 · Comunidade e build in public**](#comunidade) | Rodar o ciclo construir → publicar → conversar → conectar, que gera feedback e networking. |
 | [**5 · Ecossistema**](#ecossistema) | Saber quem seguir no X e onde conversar no Discord, e participar. |
-| [**6 · Onde buscar**](#onde-buscar) | Ir direto à fonte certa. |
-| [**7 · Entrevista e mercado**](#entrevista) | Dominar os pontos mais cobrados e o que vai importar daqui pra frente. |
+| [**6 · Onde buscar**](#onde-buscar) | Achar, testar e confirmar sozinho, direto na fonte certa. |
+| [**7 · Mercado: vender e ser contratado**](#mercado) | Vender um piloto com retorno provado e responder o que cliente e entrevistador perguntam. |
 
 [![Mapa dos sete focos: conhecer, construir e mostrar, e acompanhar em paralelo.](assets/jornada.svg)](https://ailucasdz.github.io/jornada-engenheiro-de-ia/mapa.html)
 
 ## Como usar este guia
 
 - **80% construindo, 20% estudando.** Estude o que o projeto pediu agora, não tudo de uma vez.
-- **Ordem:** comece a usar IA hoje. Leia História e Fundamentos uma vez para ter o mapa na cabeça. Depois, rode o ciclo sem parar: construa agentes, publique, converse na comunidade e no ecossistema e busque na fonte certa quando travar. Passe para Entrevista e mercado quando tiver algo para mostrar.
+- **Ordem:** comece a usar IA hoje. Leia História e Fundamentos uma vez para ter o mapa na cabeça. Depois, rode o ciclo sem parar: construa agentes, publique, converse na comunidade e no ecossistema e busque na fonte certa quando travar. Passe para Mercado quando tiver algo para mostrar.
 - **Os blocos recolhidos (▸)** trazem o detalhe. Abra quando precisar.
 
 ## O que ter sempre em mente
 
 1. **O modelo é commodity em queda de preço.** O valor está no entendimento do processo, no dado e na integração.
-2. **Escopo estreito vence ambição larga.** Ataque um processo específico e caro, não "melhorar o atendimento".
-3. **Prometa um número, não uma transformação.** Os invernos da IA foram causados por promessa, não por falha técnica.
-4. **Prompt → RAG → fine-tuning, nessa ordem.** Cada degrau adiciona custo e manutenção.
-5. **Fluxo antes de agente.** Dê autonomia só onde a variabilidade do problema justifica.
-6. **O modelo pede; o seu código executa.** Permissão e segurança ficam fora do prompt.
-7. **Sem eval, "melhorou" é opinião.** Casos reais, resultado binário, rodados a cada mudança.
+2. **Escopo estreito e um número prometido.** Ataque um processo específico e caro e prometa um resultado medível, não uma transformação. Os invernos da IA vieram de promessa, não de falha técnica.
+3. **Prompt → RAG → fine-tuning, nessa ordem.** Cada degrau adiciona custo e manutenção.
+4. **Fluxo antes de agente.** Dê autonomia só onde a variabilidade do problema justifica.
+5. **O modelo pede; o seu código executa.** Permissão e segurança ficam fora do prompt.
+6. **Sem eval, "melhorou" é opinião.** Casos reais, resultado binário, rodados a cada mudança.
+7. **Ache a resposta sozinho.** Fonte primária, teste pequeno e confirmação. É a habilidade que não envelhece.
 8. **Construir em público é um ciclo, não um post.** Cada volta traz feedback, reputação e networking.
 
 ---
@@ -74,17 +74,6 @@ A maior parte do trabalho é **processo, dado, integração e avaliação**. O m
 **Não é para decorar datas.** É para entender por que as coisas aconteceram nessa ordem, porque os mesmos padrões decidem quais projetos de IA dão certo numa empresa hoje.
 
 **Pronto quando:** você conta a linha do tempo em dois minutos, explica backpropagation, escala e Transformer sem matemática e cita as cinco lições.
-
-| Período | Marcos que você precisa citar | A lição |
-| --- | --- | --- |
-| **1943–1955 · Fundações** | Neurônio de McCulloch e Pitts (1943). Turing propõe o teste (1950). Samuel e o programa de damas que aprende; cunha *machine learning* (1959). | A pergunta filosófica virou teste operacional. Defina a métrica antes de aprovar o projeto. |
-| **1956–1973 · Euforia** | Dartmouth dá nome à IA (1956). Perceptron de Rosenblatt (1958). ELIZA (1966). Minsky e Papert: o Perceptron não resolve o XOR (1969). Relatório Lighthill (1973). | As pessoas atribuem inteligência a quem só combina padrões. Impressiona na demonstração, quebra em produção. |
-| **1974–1980 · 1º inverno** | Verba cortada nos EUA e no Reino Unido. | O inverno veio da distância entre o prometido e o entregue. |
-| **1980–1987 · Sistemas especialistas** | MYCIN. XCON economizava cerca de US$ 40 milhões por ano na DEC: o primeiro ROI de IA numa empresa. Quinta Geração no Japão (1982). | Escopo estreito, regra clara e processo caro. A fórmula continua valendo. |
-| **1987–1995 · 2º inverno** | Sistemas especialistas quebram pelo custo de manutenção. Rumelhart, Hinton e Williams popularizam a backpropagation (1986). | O que mata uma automação é o custo de manter. |
-| **1995–2011 · Trabalho silencioso** | Deep Blue vence Kasparov (1997). Redes profundas treináveis (2006). ImageNet, de Fei-Fei Li (2009). Watson no *Jeopardy!* (2011). | O marco de 2009 é um conjunto de dados. O gargalo costuma ser dado organizado com resposta certa. |
-| **2012–2022 · A virada** | AlexNet (2012). AlphaGo (2016). Transformer em *Attention Is All You Need* (2017). GPT-3 e *scaling laws* (2020). RLHF (2022). ChatGPT em 30/11/2022: 100 milhões de usuários em dois meses. | O maior evento comercial da IA foi de **interface**, não de modelo. |
-| **2023–hoje · Agentes** | GPT-4, Claude, Gemini. Pesos abertos: Llama, Mistral, DeepSeek. Modelos de raciocínio e Nobel para Hinton, Hopfield, Hassabis, Jumper e Baker (2024). Era dos agentes (2025–2026). | O gargalo agora é "o processo está organizado para o modelo operar nele?". |
 
 **Três conceitos para explicar sem matemática:**
 
@@ -99,6 +88,22 @@ A maior parte do trabalho é **processo, dado, integração e avaliação**. O m
 3. **O gargalo muda de lugar.** Hoje é processo e integração.
 4. **Escopo estreito ganha de ambição larga.** O XCON gerou milhões; a Quinta Geração queimou centenas de milhões.
 5. **A camada que captura valor sobe com o tempo:** hardware, modelo, aplicação e, agora, fluxo de trabalho.
+
+<details>
+<summary>A linha do tempo: os marcos para citar</summary>
+
+| Período | Marcos que você precisa citar | A lição |
+| --- | --- | --- |
+| **1943–1955 · Fundações** | Neurônio de McCulloch e Pitts (1943). Turing propõe o teste (1950). Samuel e o programa de damas que aprende; cunha *machine learning* (1959). | A pergunta filosófica virou teste operacional. Defina a métrica antes de aprovar o projeto. |
+| **1956–1973 · Euforia** | Dartmouth dá nome à IA (1956). Perceptron de Rosenblatt (1958). ELIZA (1966). Minsky e Papert: o Perceptron não resolve o XOR (1969). Relatório Lighthill (1973). | As pessoas atribuem inteligência a quem só combina padrões. Impressiona na demonstração, quebra em produção. |
+| **1974–1980 · 1º inverno** | Verba cortada nos EUA e no Reino Unido. | O inverno veio da distância entre o prometido e o entregue. |
+| **1980–1987 · Sistemas especialistas** | MYCIN. XCON economizava cerca de US$ 40 milhões por ano na DEC: o primeiro ROI de IA numa empresa. Quinta Geração no Japão (1982). | Escopo estreito, regra clara e processo caro. A fórmula continua valendo. |
+| **1987–1995 · 2º inverno** | Sistemas especialistas quebram pelo custo de manutenção. Rumelhart, Hinton e Williams popularizam a backpropagation (1986). | O que mata uma automação é o custo de manter. |
+| **1995–2011 · Trabalho silencioso** | Deep Blue vence Kasparov (1997). Redes profundas treináveis (2006). ImageNet, de Fei-Fei Li (2009). Watson no *Jeopardy!* (2011). | O marco de 2009 é um conjunto de dados. O gargalo costuma ser dado organizado com resposta certa. |
+| **2012–2022 · A virada** | AlexNet (2012). AlphaGo (2016). Transformer em *Attention Is All You Need* (2017). GPT-3 e *scaling laws* (2020). RLHF (2022). ChatGPT em 30/11/2022: 100 milhões de usuários em dois meses. | O maior evento comercial da IA foi de **interface**, não de modelo. |
+| **2023–hoje · Agentes** | GPT-4, Claude, Gemini. Pesos abertos: Llama, Mistral, DeepSeek. Modelos de raciocínio e Nobel para Hinton, Hopfield, Hassabis, Jumper e Baker (2024). Era dos agentes (2025–2026). | O gargalo agora é "o processo está organizado para o modelo operar nele?". |
+
+</details>
 
 <details>
 <summary>O que não repetir numa conversa técnica</summary>
@@ -257,11 +262,11 @@ São 27 conceitos, divididos em cinco blocos, na ordem em que precisam ser apren
 | **3 · Uma ação útil** | Executa uma ação real, como registrar numa planilha ou num CRM, com a permissão no código. Não duplica e não diz "salvei" sem ter salvo. |
 | **4 · Testada e demonstrada** | Tem eval com casos reais, comparação entre versões, números contra a linha de base e uma demonstração com um limite conhecido. |
 
+**Para cliente, as mesmas quatro entregas são o roteiro do piloto.** Veja [Mercado](#mercado).
+
 **Com que ferramenta?** Com a que você já consegue usar: o [Hermes](https://youtu.be/VHh2D9agRps), o n8n, um agente de código como Claude Code ou Codex, ou código próprio. A ferramenta importa menos que a entrega funcionando.
 
 **Quando algo falhar, isole a camada antes de trocar o modelo.** Informação errada: o trecho certo foi recuperado? Fonte certa e resposta errada: a instrução orienta o uso da fonte? Texto certo e tarefa não concluída: a ferramenta executou? Mude uma coisa por vez e rode os mesmos casos.
-
-**Ritmo de uma sessão de uma hora:** 10 minutos lendo o conceito que destrava o problema, 30 construindo a menor mudança, 15 rodando os casos e 5 registrando o resultado e o próximo teste.
 
 <details>
 <summary>Três registros para copiar no seu projeto</summary>
@@ -438,12 +443,22 @@ Use modos com busca para assuntos recentes e **abra os links citados** antes de 
 </details>
 
 <a id="entrevista"></a>
+<a id="mercado"></a>
 
-## 7 · Entrevista e mercado
+## 7 · Mercado: vender e ser contratado
 
-**Pronto quando:** você fala com segurança sobre cada ponto abaixo e tem um projeto com números para mostrar.
+**Pronto quando:** você tem um piloto com números de antes e depois e responde com segurança o que cliente e entrevistador vão perguntar.
 
-**Os pontos mais cobrados:**
+**Como vender serviços de IA:**
+
+1. **Comece por um setor que você já conhece.** Você entende o processo, fala a língua de quem compra e tem a quem pedir indicação.
+2. **Venda a solução de um processo, não "IA".** Um processo específico, repetitivo e caro, com uma linha de base medida.
+3. **Ofereça um piloto pequeno, com um número prometido.** Escopo fechado e prazo curto. As [quatro entregas](#pratica) são o roteiro do piloto.
+4. **Mostre o retorno na língua de quem paga:** horas, custo ou erros, antes e depois.
+5. **Transforme o piloto em contrato recorrente.** Agente em produção precisa de acompanhamento, eval, novos casos e novos processos.
+6. **Os clientes vêm da rede.** O [ciclo de build in public](#comunidade) é o seu canal: quem acompanha o seu trabalho indica e contrata.
+
+**O que cliente e entrevistador vão perguntar:**
 
 1. **RAG:** como funciona e por que a qualidade depende mais da recuperação que do modelo.
 2. **RAG × fine-tuning:** quando usar cada um.
@@ -453,7 +468,7 @@ Use modos com busca para assuntos recentes e **abra os links citados** antes de 
 6. **Diagnóstico:** o que fazer quando as respostas estão ruins.
 7. **Custo e latência:** custo por resolução, cache e o modelo certo para cada tarefa.
 8. **Segurança:** injeção de prompt, permissões e dados sensíveis.
-9. **Um problema real que você resolveu**, com números.
+9. **Um problema real que você resolveu**, com números de antes e depois.
 
 As respostas comentadas estão no bloco 6 da [Base técnica de IA](materiais/Base%20Técnica%20de%20IA.html).
 
@@ -467,7 +482,7 @@ As respostas comentadas estão no bloco 6 da [Base técnica de IA](materiais/Bas
 - **Custo por resultado:** os modelos barateiam, mas os agentes consomem mais. Quem controla o custo por tarefa resolvida vende melhor.
 - **Escolher o problema e provar o retorno:** a tecnologia virou commodity; entender o negócio, não.
 
-**O que mostrar:** o repositório do projeto, uma demonstração curta, números de antes e depois e os posts de build in public. Muitas oportunidades chegam antes da entrevista, por quem já acompanha o seu trabalho.
+**O que mostrar:** o repositório do projeto, uma demonstração curta, números de antes e depois e os posts de build in public. Serve para a proposta e para a vaga. Muitas oportunidades chegam antes da conversa, por quem já acompanha o seu trabalho.
 
 ---
 

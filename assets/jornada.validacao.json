@@ -1,7 +1,7 @@
 {
   "diagram_type": "workflow",
-  "specification_sha256": "9d056809adcde55fd53d023862648386cce70c85dd1d7dddbfa270d017dd15b2",
-  "artifact_sha256": "310608efeb6f24ebd1a86053e9415a8a813437fb0ed8b6b8635a270dc6d59e4e",
+  "specification_sha256": "1cee442646f2bb8f8bb39e58004f5f8caec073a22af6a01fb8d5f0658c2981da",
+  "artifact_sha256": "25f79ac13a33bab420007686bcaac53cc3ce54986f464a4985074961b1f9cad1",
   "gates": {
     "validate": "pass",
     "deliver": "pass",
@@ -20,8 +20,8 @@
   "generator": "Archify 3.0.1",
   "visual_review": "passed",
   "visual_review_detail": "SVG exportado e capturas do HTML em 1440x900 e 2048x1320, claro e escuro, revisados; sem cortes, cruzamentos ou sobreposição de rótulos.",
-  "correction_rounds": 1,
-  "export_svg_sha256": "b5316b1524857b80aa1bf1a6f5f14f2063553bf149168b70e3bb5b26f9816155",
+  "correction_rounds": 0,
+  "export_svg_sha256": "626aac1a5d2eb6fe837635ec22745de530b7f30ecc15e1a2cce13dd6d02763a6",
   "updated_at": "2026-10-21",
-  "source_artifact": ".archify/workflow-guia-20261021/jornada.html"
+  "source_artifact": ".archify/workflow-guia-20261021b/jornada.html"
 }

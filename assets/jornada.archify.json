@@ -4,7 +4,7 @@
   "meta": {
     "title": "Jornada do Engenheiro de IA",
     "quality_profile": "showcase",
-    "output": ".archify/workflow-guia-20261021/jornada.html",
+    "output": ".archify/workflow-guia-20261021b/jornada.html",
     "locale": "pt-BR",
     "translations": {
       "page.title": "Diagrama {title}",
@@ -480,7 +480,7 @@
     },
     {
       "id": "valor",
-      "label": "Mostrar",
+      "label": "Vender",
       "fromCol": 5,
       "toCol": 5
     }
@@ -548,9 +548,9 @@
       "lane": "construir",
       "col": 5,
       "type": "frontend",
-      "label": "7 · Entrevista e mercado",
-      "sublabel": "Pontos mais cobrados",
-      "tag": "O que vem pela frente",
+      "label": "7 · Mercado",
+      "sublabel": "Vender e ser contratado",
+      "tag": "Piloto com número",
       "width": 210
     },
     {
@@ -633,7 +633,7 @@
       "dot": "cyan",
       "title": "Um guia, não um curso",
       "items": [
-        "Cada foco aponta para onde aprender.",
+        "A meta: achar e confirmar sozinho.",
         "80% construindo, 20% estudando."
       ]
     },

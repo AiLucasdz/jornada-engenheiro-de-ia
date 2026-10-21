@@ -451,7 +451,7 @@ rect.c-bg-rect { fill: var(--bg); }
         <text x="817.3" y="39" class="t-backend" font-size="8" font-weight="600" text-anchor="middle">Ciclo contínuo</text>
         <line x1="1019.5999999999999" y1="35" x2="1111.6" y2="35" class="a-default" stroke-width="1.1"/>
         <rect x="1019.5999999999999" y="27" width="92" height="16" rx="4" class="c-mask"/>
-        <text x="1065.6" y="39" class="t-muted" font-size="8" font-weight="600" text-anchor="middle">Mostrar</text>
+        <text x="1065.6" y="39" class="t-muted" font-size="8" font-weight="600" text-anchor="middle">Vender</text>
 
         <!-- Workflow groups -->
 
@@ -533,8 +533,8 @@ rect.c-bg-rect { fill: var(--bg); }
         <text x="689" y="268" class="t-backend" font-size="7" text-anchor="middle">Problema real, 4 entregas</text>
         </g>
 
-        <g id="node-entrevista" data-node-id="entrevista" data-node-label="7 · Entrevista e mercado" tabindex="0" role="button" aria-label="Focar 7 · Entrevista e mercado, Pontos mais cobrados, CONSTRUIR E MOSTRAR › Mostrar" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="Pontos mais cobrados" data-node-tag="O que vem pela frente" data-node-context="CONSTRUIR E MOSTRAR › Mostrar">
-          <title>7 · Entrevista e mercado · Pontos mais cobrados · CONSTRUIR E MOSTRAR › Mostrar · O que vem pela frente</title>
+        <g id="node-entrevista" data-node-id="entrevista" data-node-label="7 · Mercado" tabindex="0" role="button" aria-label="Focar 7 · Mercado, Vender e ser contratado, CONSTRUIR E MOSTRAR › Vender" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="Vender e ser contratado" data-node-tag="Piloto com número" data-node-context="CONSTRUIR E MOSTRAR › Vender">
+          <title>7 · Mercado · Vender e ser contratado · CONSTRUIR E MOSTRAR › Vender · Piloto com número</title>
           <rect x="960.5999999999999" y="212" width="210" height="68" rx="6" class="c-mask"/>
           <rect x="960.5999999999999" y="212" width="210" height="68" rx="6" class="c-frontend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(966.5999999999999 218) scale(0.6875)">
@@ -543,9 +543,9 @@ rect.c-bg-rect { fill: var(--bg); }
             <circle cx="4.1" cy="4.8" r=".7" class="sigil-fill"/>
             <circle cx="6.3" cy="4.8" r=".7" class="sigil-fill"/>
           </g>
-          <text data-node-label="" x="1065.6" y="233" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">7 · Entrevista e mercado</text>
-          <text x="1065.6" y="250" class="t-muted" font-size="8" text-anchor="middle">Pontos mais cobrados</text>
-        <text x="1065.6" y="268" class="t-frontend" font-size="7" text-anchor="middle">O que vem pela frente</text>
+          <text data-node-label="" x="1065.6" y="233" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">7 · Mercado</text>
+          <text x="1065.6" y="250" class="t-muted" font-size="8" text-anchor="middle">Vender e ser contratado</text>
+        <text x="1065.6" y="268" class="t-frontend" font-size="7" text-anchor="middle">Piloto com número</text>
         </g>
 
         <g id="node-comunidade" data-node-id="comunidade" data-node-label="4 · Comunidade" tabindex="0" role="button" aria-label="Focar 4 · Comunidade, Build in public, PUBLICAR E CONECTAR › Ciclo contínuo" aria-pressed="false" data-node-kind="external" data-node-sublabel="Build in public" data-node-tag="Gera networking" data-node-context="PUBLICAR E CONECTAR › Ciclo contínuo">
