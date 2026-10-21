@@ -1,6 +1,8 @@
 # Jornada do Engenheiro de IA
 
-**Um guia de direção, não um curso.** Nesta página está o que você precisa saber, o que construir, onde aprender e com quem conversar. O aprendizado acontece fora daqui: nas fontes certas, na comunidade e no seu projeto.
+**Amplie o que você imagina. Construa o que faz diferença. Mostre o valor do seu trabalho.**
+
+**Um guia de direção, não um curso.** Nesta página está o que você precisa saber, o que construir, onde aprender e com quem conversar. O aprendizado acontece fora daqui: nas fontes certas, na comunidade e no seu projeto. **A meta é você não depender de curso:** saber achar a informação, testar e confirmar sozinho.
 
 <p class="compact-visual"><a href="mapas-e-desenhos/ciclo-de-valor.svg"><img src="mapas-e-desenhos/ciclo-de-valor.svg" width="548" alt="Ciclo de evolução profissional: mentalidade de IA, teoria, prática, comunidade, construção em público e entrega de valor. Resultados e conversas alimentam o próximo desafio." loading="lazy"></a></p>
 
@@ -10,43 +12,58 @@
 
 A maior parte do trabalho é **processo, dado, integração e avaliação**. O modelo é a última peça a escolher, não a primeira.
 
+<a id="mentalidade"></a>
+
+## Mentalidade de IA: quem não acredita imagina pouco
+
+**A primeira barreira não é técnica.** Quem não acredita no que a IA consegue fazer testa pouco, pede pouco e, por isso, imagina pouco. A descrença vira um teto: você só enxerga como possível o que já viu funcionar. Quem usa IA todos os dias amplia o repertório e começa a enxergar processos inteiros que podem mudar.
+
+- **Use antes de opinar.** Tente com IA o trabalho que você faria sozinho: pesquisa, código, documento, planilha, análise. Você descobre o que funciona testando, não lendo opinião.
+- **Peça mais do que acha possível.** Se der certo, você descobriu uma possibilidade. Se falhar, descobriu um limite e o motivo. As duas coisas viram repertório.
+- **O limite de hoje não é o de daqui a seis meses.** O que falhou no mês passado pode funcionar no próximo modelo. Refaça os seus testes a cada lançamento.
+- **Pense em processos, não em tarefas.** Troque "a IA escreve este texto?" por "que parte deste processo um agente poderia assumir?".
+- **Acredite no potencial e confira o resultado.** Mente aberta não é confiança cega: imagine grande e meça o que foi entregue.
+
+**Pronto quando:** você usa IA todos os dias no seu trabalho e consegue apontar três processos à sua volta que um agente poderia melhorar.
+
 ## Comece por aqui
 
 | Seu momento | Por onde ir |
 | --- | --- |
-| **Quer um caminho guiado, com suporte e comunidade** | **[Comunidade e curso da Dizevolv](https://comunidade.dizevolv.com/)**: curso *Construa seu próprio agente de IA*, comunidade fechada com quem está implementando IA em empresas e suporte do nosso time. É a minha comunidade, onde acompanho de perto quem segue esta jornada. |
-| **Quer começar sem investir** | [Meu vídeo: crie um agente Hermes em menos de 20 minutos](https://youtu.be/VHh2D9agRps). O vídeo é aberto; o consumo de modelos e hospedagem depende da configuração. |
-| **Já tem um agente funcionando** | Vá direto para a [prática](#pratica) com um problema real. |
+| **Quer criar o seu primeiro agente** | [Meu vídeo: crie um agente Hermes em menos de 20 minutos](https://youtu.be/VHh2D9agRps). O vídeo é aberto; o consumo de modelos e hospedagem depende da configuração. |
+| **Quer aprender junto com outras pessoas** | A [comunidade Dizevolv](https://comunidade.dizevolv.com/), onde acompanho quem segue esta jornada. |
+| **Já tem um agente funcionando** | Vá direto para os [agentes](#pratica) com um problema real. |
 
 ## O mapa: sete focos
 
 | Foco | O que você precisa conseguir fazer |
 | --- | --- |
-| [**1 · História**](#historia) | Contar como a IA chegou até aqui e as cinco lições que se repetem. Cai em entrevista. |
+| [**1 · História**](#historia) | Contar como a IA chegou até aqui e as cinco lições que se repetem. Serve na entrevista e na conversa com cliente. |
 | [**2 · Fundamentos**](#fundamentos) | Explicar em uma frase cada um dos 27 conceitos básicos. |
-| [**3 · Prática**](#pratica) | Ter um agente resolvendo um problema real, testado e demonstrado. |
-| [**4 · Comunidade**](#comunidade) | Participar de uma comunidade e construir em público. |
-| [**5 · Ecossistema**](#ecossistema) | Saber quem seguir no X e onde conversar no Discord. |
-| [**6 · Onde buscar**](#onde-buscar) | Ir direto à fonte certa. |
-| [**7 · Entrevista e mercado**](#entrevista) | Dominar os pontos mais cobrados e o que vai importar daqui pra frente. |
+| [**3 · Agentes: use, crie e pratique**](#pratica) | Usar agentes todos os dias, criar os seus e ter um resolvendo um problema real, testado e demonstrado. |
+| [**4 · Comunidade e build in public**](#comunidade) | Rodar o ciclo construir → publicar → conversar → conectar, que gera feedback e networking. |
+| [**5 · Ecossistema**](#ecossistema) | Saber quem seguir no X e onde conversar no Discord, e participar. |
+| [**6 · Onde buscar**](#onde-buscar) | Achar, testar e confirmar sozinho, direto na fonte certa. |
+| [**7 · Mercado: vender e ser contratado**](#mercado) | Vender um piloto com retorno provado e responder o que cliente e entrevistador perguntam. |
 
 [![Mapa dos sete focos: conhecer, construir e mostrar, e acompanhar em paralelo.](assets/jornada.svg)](https://ailucasdz.github.io/jornada-engenheiro-de-ia/mapa.html)
 
 ## Como usar este guia
 
 - **80% construindo, 20% estudando.** Estude o que o projeto pediu agora, não tudo de uma vez.
-- **Ordem:** leia História e Fundamentos uma vez para ter o mapa na cabeça. A Prática é contínua, com Comunidade, Ecossistema e Onde buscar em paralelo. Passe para Entrevista e mercado quando tiver algo para mostrar.
+- **Ordem:** comece a usar IA hoje. Leia História e Fundamentos uma vez para ter o mapa na cabeça. Depois, rode o ciclo sem parar: construa agentes, publique, converse na comunidade e no ecossistema e busque na fonte certa quando travar. Passe para Mercado quando tiver algo para mostrar.
 - **Os blocos recolhidos (▸)** trazem o detalhe. Abra quando precisar.
 
 ## O que ter sempre em mente
 
 1. **O modelo é commodity em queda de preço.** O valor está no entendimento do processo, no dado e na integração.
-2. **Escopo estreito vence ambição larga.** Ataque um processo específico e caro, não "melhorar o atendimento".
-3. **Prometa um número, não uma transformação.** Os invernos da IA foram causados por promessa, não por falha técnica.
-4. **Prompt → RAG → fine-tuning, nessa ordem.** Cada degrau adiciona custo e manutenção.
-5. **Fluxo antes de agente.** Dê autonomia só onde a variabilidade do problema justifica.
-6. **O modelo pede; o seu código executa.** Permissão e segurança ficam fora do prompt.
-7. **Sem eval, "melhorou" é opinião.** Casos reais, resultado binário, rodados a cada mudança.
+2. **Escopo estreito e um número prometido.** Ataque um processo específico e caro e prometa um resultado medível, não uma transformação. Os invernos da IA vieram de promessa, não de falha técnica.
+3. **Prompt → RAG → fine-tuning, nessa ordem.** Cada degrau adiciona custo e manutenção.
+4. **Fluxo antes de agente.** Dê autonomia só onde a variabilidade do problema justifica.
+5. **O modelo pede; o seu código executa.** Permissão e segurança ficam fora do prompt.
+6. **Sem eval, "melhorou" é opinião.** Casos reais, resultado binário, rodados a cada mudança.
+7. **Ache a resposta sozinho.** Fonte primária, teste pequeno e confirmação. É a habilidade que não envelhece.
+8. **Construir em público é um ciclo, não um post.** Cada volta traz feedback, reputação e networking.
 
 ---
 
@@ -57,17 +74,6 @@ A maior parte do trabalho é **processo, dado, integração e avaliação**. O m
 **Não é para decorar datas.** É para entender por que as coisas aconteceram nessa ordem, porque os mesmos padrões decidem quais projetos de IA dão certo numa empresa hoje.
 
 **Pronto quando:** você conta a linha do tempo em dois minutos, explica backpropagation, escala e Transformer sem matemática e cita as cinco lições.
-
-| Período | Marcos que você precisa citar | A lição |
-| --- | --- | --- |
-| **1943–1955 · Fundações** | Neurônio de McCulloch e Pitts (1943). Turing propõe o teste (1950). Samuel e o programa de damas que aprende; cunha *machine learning* (1959). | A pergunta filosófica virou teste operacional. Defina a métrica antes de aprovar o projeto. |
-| **1956–1973 · Euforia** | Dartmouth dá nome à IA (1956). Perceptron de Rosenblatt (1958). ELIZA (1966). Minsky e Papert: o Perceptron não resolve o XOR (1969). Relatório Lighthill (1973). | As pessoas atribuem inteligência a quem só combina padrões. Impressiona na demonstração, quebra em produção. |
-| **1974–1980 · 1º inverno** | Verba cortada nos EUA e no Reino Unido. | O inverno veio da distância entre o prometido e o entregue. |
-| **1980–1987 · Sistemas especialistas** | MYCIN. XCON economizava cerca de US$ 40 milhões por ano na DEC: o primeiro ROI de IA numa empresa. Quinta Geração no Japão (1982). | Escopo estreito, regra clara e processo caro. A fórmula continua valendo. |
-| **1987–1995 · 2º inverno** | Sistemas especialistas quebram pelo custo de manutenção. Rumelhart, Hinton e Williams popularizam a backpropagation (1986). | O que mata uma automação é o custo de manter. |
-| **1995–2011 · Trabalho silencioso** | Deep Blue vence Kasparov (1997). Redes profundas treináveis (2006). ImageNet, de Fei-Fei Li (2009). Watson no *Jeopardy!* (2011). | O marco de 2009 é um conjunto de dados. O gargalo costuma ser dado organizado com resposta certa. |
-| **2012–2022 · A virada** | AlexNet (2012). AlphaGo (2016). Transformer em *Attention Is All You Need* (2017). GPT-3 e *scaling laws* (2020). RLHF (2022). ChatGPT em 30/11/2022: 100 milhões de usuários em dois meses. | O maior evento comercial da IA foi de **interface**, não de modelo. |
-| **2023–hoje · Agentes** | GPT-4, Claude, Gemini. Pesos abertos: Llama, Mistral, DeepSeek. Modelos de raciocínio e Nobel para Hinton, Hopfield, Hassabis, Jumper e Baker (2024). Era dos agentes (2025–2026). | O gargalo agora é "o processo está organizado para o modelo operar nele?". |
 
 **Três conceitos para explicar sem matemática:**
 
@@ -82,6 +88,22 @@ A maior parte do trabalho é **processo, dado, integração e avaliação**. O m
 3. **O gargalo muda de lugar.** Hoje é processo e integração.
 4. **Escopo estreito ganha de ambição larga.** O XCON gerou milhões; a Quinta Geração queimou centenas de milhões.
 5. **A camada que captura valor sobe com o tempo:** hardware, modelo, aplicação e, agora, fluxo de trabalho.
+
+<details>
+<summary>A linha do tempo: os marcos para citar</summary>
+
+| Período | Marcos que você precisa citar | A lição |
+| --- | --- | --- |
+| **1943–1955 · Fundações** | Neurônio de McCulloch e Pitts (1943). Turing propõe o teste (1950). Samuel e o programa de damas que aprende; cunha *machine learning* (1959). | A pergunta filosófica virou teste operacional. Defina a métrica antes de aprovar o projeto. |
+| **1956–1973 · Euforia** | Dartmouth dá nome à IA (1956). Perceptron de Rosenblatt (1958). ELIZA (1966). Minsky e Papert: o Perceptron não resolve o XOR (1969). Relatório Lighthill (1973). | As pessoas atribuem inteligência a quem só combina padrões. Impressiona na demonstração, quebra em produção. |
+| **1974–1980 · 1º inverno** | Verba cortada nos EUA e no Reino Unido. | O inverno veio da distância entre o prometido e o entregue. |
+| **1980–1987 · Sistemas especialistas** | MYCIN. XCON economizava cerca de US$ 40 milhões por ano na DEC: o primeiro ROI de IA numa empresa. Quinta Geração no Japão (1982). | Escopo estreito, regra clara e processo caro. A fórmula continua valendo. |
+| **1987–1995 · 2º inverno** | Sistemas especialistas quebram pelo custo de manutenção. Rumelhart, Hinton e Williams popularizam a backpropagation (1986). | O que mata uma automação é o custo de manter. |
+| **1995–2011 · Trabalho silencioso** | Deep Blue vence Kasparov (1997). Redes profundas treináveis (2006). ImageNet, de Fei-Fei Li (2009). Watson no *Jeopardy!* (2011). | O marco de 2009 é um conjunto de dados. O gargalo costuma ser dado organizado com resposta certa. |
+| **2012–2022 · A virada** | AlexNet (2012). AlphaGo (2016). Transformer em *Attention Is All You Need* (2017). GPT-3 e *scaling laws* (2020). RLHF (2022). ChatGPT em 30/11/2022: 100 milhões de usuários em dois meses. | O maior evento comercial da IA foi de **interface**, não de modelo. |
+| **2023–hoje · Agentes** | GPT-4, Claude, Gemini. Pesos abertos: Llama, Mistral, DeepSeek. Modelos de raciocínio e Nobel para Hinton, Hopfield, Hassabis, Jumper e Baker (2024). Era dos agentes (2025–2026). | O gargalo agora é "o processo está organizado para o modelo operar nele?". |
+
+</details>
 
 <details>
 <summary>O que não repetir numa conversa técnica</summary>
@@ -199,13 +221,31 @@ São 27 conceitos, divididos em cinco blocos, na ordem em que precisam ser apren
 
 <a id="pratica"></a>
 
-## 3 · Prática: um problema real, quatro entregas
+## 3 · Agentes: use, crie e pratique
 
-**A regra:** escolha um problema real, construa um agente para ele e melhore o mesmo projeto em quatro entregas. Você aprende o que o projeto pede, na hora em que ele pede.
+**A regra:** agente se aprende em três frentes ao mesmo tempo: **usando** no dia a dia, **criando** o seu e **praticando** num problema real. Uma alimenta a outra.
 
-**Pronto quando:** você mostra a quem faz o trabalho uma solução testada, com números de antes e depois e uma limitação conhecida.
+**Pronto quando:** você usa agentes todos os dias, já criou o seu e mostrou a quem faz o trabalho um agente testado, com números de antes e depois e uma limitação conhecida.
+
+**Use todos os dias.** Entregue a um agente uma tarefa real por dia: uma pesquisa, um script, uma planilha, um documento. Anote o que ele acertou e o que você precisou corrigir. É usando que você aprende o que pedir e onde ele costuma errar.
+
+**Crie o seu.** Comece com um objetivo claro e uma única ferramenta, e aumente a autonomia aos poucos. Todo agente tem as mesmas seis peças: **modelo, instruções, ferramentas, contexto, critério de parada e limites**. Quando algo der errado, a causa está em uma delas. Se travar, leve a dúvida para a [comunidade](https://comunidade.dizevolv.com/).
+
+**Pratique num problema real.** Construa um agente para um problema de verdade e melhore o mesmo projeto em quatro entregas. Você aprende o que o projeto pede, na hora em que ele pede.
 
 **Escolha o problema certo.** Procure um processo **específico, repetitivo e caro**. "Melhorar o atendimento" não serve; "organizar pedidos de orçamento que chegam por mensagem" serve. Pergunte a quem faz o trabalho: *mostre o último caso*, *onde você precisa perguntar de novo*, *o que acontece quando um caso se perde* e *como saberíamos que ajudou*. Anote a **linha de base**: tempo por caso, retrabalho e erros.
+
+<details>
+<summary>Ideias de problemas para praticar</summary>
+
+- **Orçamentos:** lê o pedido que chega por mensagem, extrai os dados, pergunta o que falta e registra no CRM.
+- **Triagem de e-mails:** classifica, resume e sugere a resposta, com uma pessoa aprovando o envio.
+- **Documentos internos:** responde dúvidas da equipe citando o trecho do manual ou da política.
+- **Relatório semanal:** lê uma planilha ou um banco e escreve o resumo com os números que mudaram.
+- **Pesquisa:** busca em várias fontes, compara e entrega um relatório com links.
+- **Suporte:** consulta o status de pedidos por API e responde o cliente.
+
+</details>
 
 **Antes de construir, cinco perguntas:**
 
@@ -222,11 +262,11 @@ São 27 conceitos, divididos em cinco blocos, na ordem em que precisam ser apren
 | **3 · Uma ação útil** | Executa uma ação real, como registrar numa planilha ou num CRM, com a permissão no código. Não duplica e não diz "salvei" sem ter salvo. |
 | **4 · Testada e demonstrada** | Tem eval com casos reais, comparação entre versões, números contra a linha de base e uma demonstração com um limite conhecido. |
 
-**Com que ferramenta?** Com a que você já consegue usar: o agente do [curso da Dizevolv](https://comunidade.dizevolv.com/), o [Hermes](https://youtu.be/VHh2D9agRps), n8n ou código próprio. A ferramenta importa menos que a entrega funcionando.
+**Para cliente, as mesmas quatro entregas são o roteiro do piloto.** Veja [Mercado](#mercado).
+
+**Com que ferramenta?** Com a que você já consegue usar: o [Hermes](https://youtu.be/VHh2D9agRps), o n8n, um agente de código como Claude Code ou Codex, ou código próprio. A ferramenta importa menos que a entrega funcionando.
 
 **Quando algo falhar, isole a camada antes de trocar o modelo.** Informação errada: o trecho certo foi recuperado? Fonte certa e resposta errada: a instrução orienta o uso da fonte? Texto certo e tarefa não concluída: a ferramenta executou? Mude uma coisa por vez e rode os mesmos casos.
-
-**Ritmo de uma sessão de uma hora:** 10 minutos lendo o conceito que destrava o problema, 30 construindo a menor mudança, 15 rodando os casos e 5 registrando o resultado e o próximo teste.
 
 <details>
 <summary>Três registros para copiar no seu projeto</summary>
@@ -266,23 +306,43 @@ Comece com cinco situações: caso comum, informação ausente, pedido ambíguo,
 
 </details>
 
-**Para aprofundar:** [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) · [Boas práticas de avaliação da OpenAI](https://developers.openai.com/api/docs/guides/evaluation-best-practices) · [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) · [GitHub Skills](https://github.com/skills/introduction-to-github)
+**Para aprofundar:** [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) · [Writing tools for agents](https://www.anthropic.com/engineering/writing-tools-for-agents) · [Boas práticas de avaliação da OpenAI](https://developers.openai.com/api/docs/guides/evaluation-best-practices) · [Agents Course, da Hugging Face](https://huggingface.co/learn/agents-course/unit0/introduction) · [GitHub Skills](https://github.com/skills/introduction-to-github)
 
 <a id="comunidade"></a>
 
-## 4 · Comunidade e build in public
+## 4 · Comunidade e build in public: o ciclo que gera networking
 
-**Por que isso é parte do estudo:** aprender junto acelera, e mostrar o que você constrói transforma estudo em reputação. Cada post com um teste real vira portfólio.
+**Isto não é um extra, é metade da jornada.** Comunidade, ecossistema e build in public formam um ciclo contínuo, que começa no primeiro dia e não termina:
 
-**Pronto quando:** você participa de uma comunidade, publica o seu progresso com regularidade e já recebeu, e deu, ajuda num problema concreto.
+| Etapa do ciclo | O que você faz | O que ganha |
+| --- | --- | --- |
+| **Construa** | Um teste, uma entrega ou um erro resolvido no seu projeto. | Assunto real para mostrar. |
+| **Publique** | Post no X ou no LinkedIn, mensagem na comunidade, repositório aberto. | Registro do progresso e portfólio. |
+| **Converse** | Responda comentários, comente o trabalho de outros e ajude quem está um passo atrás. | Feedback e aprendizado mais rápido. |
+| **Conecte** | Quem viu o seu trabalho passa a reconhecer você, e você passa a conhecer quem constrói. | Networking: parcerias, indicações, clientes e vagas. |
+| **Volte a construir** | Leve o feedback e as conversas para o próximo teste. | Um projeto melhor e uma rede maior. |
 
-**Onde começar:** a [Comunidade Dizevolv](https://comunidade.dizevolv.com/), que é a minha comunidade. Lá estão o curso de agentes, a troca com quem implementa IA em empresas e o suporte do nosso time. É o melhor lugar para levar as dúvidas do seu projeto desta jornada. Para saber quem seguir e onde mais conversar, veja o [ecossistema](#ecossistema).
+**O networking vem do trabalho mostrado, não de pedir contato.** Quem publica com constância e ajuda os outros é lembrado quando aparece uma vaga, um projeto ou um cliente.
+
+**Pronto quando:** você publica o seu progresso toda semana, participa de uma comunidade, já recebeu e deu ajuda num problema concreto e conhece pelo nome pessoas que constroem o mesmo que você.
+
+**Onde começar:** escolha uma comunidade ativa e apareça toda semana. A minha é a [Dizevolv](https://comunidade.dizevolv.com/); no [ecossistema](#ecossistema) estão os Discords e fóruns abertos.
 
 **Como publicar:** use sempre o formato **problema → o que construí → como testei → o que aprendi → próximo passo**.
 
 > Estou construindo um agente que organiza pedidos de orçamento. Rodei 12 casos de teste: acertou 9. Os 3 erros foram do mesmo tipo: ele não pedia o endereço quando faltava. Ajustei a instrução e vou repetir os testes. Quem atende esse tipo de pedido: que outra situação eu deveria testar?
 
 Funciona porque traz números, mostra uma falha honesta e termina com uma pergunta que alguém consegue responder. Remova dados de clientes antes de publicar.
+
+**Como transformar presença em networking:**
+
+1. **Publique toda semana, mesmo que seja pouco.** Constância vale mais que o post perfeito.
+2. **Comente com substância:** um resultado seu ou uma pergunta específica.
+3. **Ajude quem está um passo atrás.** Responder dúvidas é o jeito mais rápido de ser lembrado.
+4. **Mande mensagem com algo concreto.** "Testei o que você publicou e aconteceu isto" abre mais portas que "vamos trocar uma ideia?".
+5. **Apareça ao vivo:** lives, meetups, hackathons e encontros da comunidade.
+6. **Contribua com projetos abertos:** uma issue bem escrita, uma correção na documentação, um exemplo.
+7. **Volte e conte o resultado.** Quem ajudou você gosta de saber que funcionou.
 
 <details>
 <summary>Como pedir ajuda e ser respondido</summary>
@@ -305,9 +365,9 @@ Antes de perguntar, procure se o assunto já foi discutido. Depois de resolver, 
 
 ## 5 · Ecossistema: quem seguir e onde conversar
 
-**Por que importa:** o que acabou de sair ainda não está nos modelos, e às vezes nem bem indexado na busca. Pesquisadores e construtores publicam primeiro no X e discutem no Discord. Quem está perto dessas pessoas fica sabendo antes, entende o contexto e encontra oportunidades.
+**Por que importa:** o que acabou de sair ainda não está nos modelos, e às vezes nem bem indexado na busca. Pesquisadores e construtores publicam primeiro no X e discutem no Discord. Quem está perto dessas pessoas fica sabendo antes, entende o contexto e encontra oportunidades. É aqui que o [ciclo de build in public](#comunidade) ganha escala.
 
-**Pronto quando:** você acompanha um grupo pequeno de pessoas que constroem, está em pelo menos um Discord ativo e sabe onde perguntar quando algo novo aparece.
+**Pronto quando:** você acompanha um grupo pequeno de pessoas que constroem, participa de pelo menos um Discord ativo e sabe onde perguntar quando algo novo aparece.
 
 **Comece pela minha lista:** [quem eu sigo no X](https://x.com/ailucasdz/following). Escolha dez perfis ligados ao que você está construindo.
 
@@ -383,12 +443,22 @@ Use modos com busca para assuntos recentes e **abra os links citados** antes de 
 </details>
 
 <a id="entrevista"></a>
+<a id="mercado"></a>
 
-## 7 · Entrevista e mercado
+## 7 · Mercado: vender e ser contratado
 
-**Pronto quando:** você fala com segurança sobre cada ponto abaixo e tem um projeto com números para mostrar.
+**Pronto quando:** você tem um piloto com números de antes e depois e responde com segurança o que cliente e entrevistador vão perguntar.
 
-**Os pontos mais cobrados:**
+**Como vender serviços de IA:**
+
+1. **Comece por um setor que você já conhece.** Você entende o processo, fala a língua de quem compra e tem a quem pedir indicação.
+2. **Venda a solução de um processo, não "IA".** Um processo específico, repetitivo e caro, com uma linha de base medida.
+3. **Ofereça um piloto pequeno, com um número prometido.** Escopo fechado e prazo curto. As [quatro entregas](#pratica) são o roteiro do piloto.
+4. **Mostre o retorno na língua de quem paga:** horas, custo ou erros, antes e depois.
+5. **Transforme o piloto em contrato recorrente.** Agente em produção precisa de acompanhamento, eval, novos casos e novos processos.
+6. **Os clientes vêm da rede.** O [ciclo de build in public](#comunidade) é o seu canal: quem acompanha o seu trabalho indica e contrata.
+
+**O que cliente e entrevistador vão perguntar:**
 
 1. **RAG:** como funciona e por que a qualidade depende mais da recuperação que do modelo.
 2. **RAG × fine-tuning:** quando usar cada um.
@@ -398,7 +468,7 @@ Use modos com busca para assuntos recentes e **abra os links citados** antes de 
 6. **Diagnóstico:** o que fazer quando as respostas estão ruins.
 7. **Custo e latência:** custo por resolução, cache e o modelo certo para cada tarefa.
 8. **Segurança:** injeção de prompt, permissões e dados sensíveis.
-9. **Um problema real que você resolveu**, com números.
+9. **Um problema real que você resolveu**, com números de antes e depois.
 
 As respostas comentadas estão no bloco 6 da [Base técnica de IA](materiais/Base%20Técnica%20de%20IA.html).
 
@@ -412,7 +482,7 @@ As respostas comentadas estão no bloco 6 da [Base técnica de IA](materiais/Bas
 - **Custo por resultado:** os modelos barateiam, mas os agentes consomem mais. Quem controla o custo por tarefa resolvida vende melhor.
 - **Escolher o problema e provar o retorno:** a tecnologia virou commodity; entender o negócio, não.
 
-**O que mostrar:** o repositório do projeto, uma demonstração curta, números de antes e depois e os posts de build in public.
+**O que mostrar:** o repositório do projeto, uma demonstração curta, números de antes e depois e os posts de build in public. Serve para a proposta e para a vaga. Muitas oportunidades chegam antes da conversa, por quem já acompanha o seu trabalho.
 
 ---
 
@@ -423,4 +493,4 @@ Esta página resume dois materiais de formação. Leia na íntegra quando quiser
 - [**Como a inteligência artificial chegou até aqui**](materiais/historia-da-ia-material-de-formacao.html): linha do tempo, três conceitos, cinco padrões, erros comuns e trilha de leitura. Cerca de 25 minutos.
 - [**Base técnica de IA**](materiais/Base%20Técnica%20de%20IA.html): 27 conceitos e nove perguntas de entrevista respondidas. Cerca de 40 minutos.
 
-Para aprender junto de quem já implementa IA em empresas, venha para a [comunidade Dizevolv](https://comunidade.dizevolv.com/). · [Explorar o mapa interativo](https://ailucasdz.github.io/jornada-engenheiro-de-ia/mapa.html) · [Contribuir](CONTRIBUTING.md)
+[Explorar o mapa interativo](https://ailucasdz.github.io/jornada-engenheiro-de-ia/mapa.html) · [Contribuir](CONTRIBUTING.md)
