@@ -75,22 +75,28 @@ A maior parte do trabalho é **processo, dado, integração e avaliação**. O m
 
 **Pronto quando:** você conta a linha do tempo em dois minutos, explica backpropagation, escala e Transformer sem matemática e cita as cinco lições.
 
+<p class="compact-visual timeline-visual"><a href="mapas-e-desenhos/linha-do-tempo.svg"><picture><source media="(max-width: 640px)" srcset="mapas-e-desenhos/linha-do-tempo-celular.svg"><img src="mapas-e-desenhos/linha-do-tempo.svg" width="1162" alt="Linha do tempo da IA em oito períodos, de 1943 até hoje, alternando euforia e inverno, com a lição de cada período. Invernos vêm de promessa, não de falha técnica." loading="lazy"></picture></a></p>
+
 **Três conceitos para explicar sem matemática:**
 
-- **Backpropagation (1986):** percorre a rede de trás para frente e ajusta cada parâmetro na medida da sua culpa pelo erro. *Por isso* o modelo não aprende com a sua conversa, treinar é caro e usar é barato, e *fine-tuning* exige gabarito.
-- **Escala (2012 e 2020):** algoritmo de 1986 + dados de 2009 + GPUs = AlexNet. As *scaling laws* mostraram que mais dados, parâmetros e computação melhoram o modelo de forma previsível. *Por isso* o seu diferencial nunca é "usamos o melhor modelo".
-- **Transformer e atenção (2017):** o modelo olha a frase inteira e calcula o quanto cada palavra importa para cada outra. *Por isso* deu para treinar em milhares de GPUs e manter contexto longo. É o "T" do ChatGPT.
+| Conceito | O que é | Por isso |
+| --- | --- | --- |
+| **Backpropagation (1986)** | Percorre a rede de trás para frente e ajusta cada parâmetro na medida da sua culpa pelo erro. | O modelo não aprende com a sua conversa, treinar é caro e usar é barato, e *fine-tuning* exige gabarito. |
+| **Escala (2012 e 2020)** | Algoritmo de 1986 + dados de 2009 + GPUs = AlexNet. Mais dados, parâmetros e computação melhoram o modelo de forma previsível. | O seu diferencial nunca é "usamos o melhor modelo". |
+| **Transformer (2017)** | O modelo olha a frase inteira e calcula o quanto cada palavra importa para cada outra. É o "T" do ChatGPT. | Deu para treinar em milhares de GPUs e manter contexto longo. |
 
 **As cinco lições que se repetem:**
 
-1. **Invernos são causados por promessa, não por falha técnica.**
-2. **A tecnologia chega antes do caso de uso viável.** Pergunte que peça falta: dado, processamento, algoritmo ou processo.
-3. **O gargalo muda de lugar.** Hoje é processo e integração.
-4. **Escopo estreito ganha de ambição larga.** O XCON gerou milhões; a Quinta Geração queimou centenas de milhões.
-5. **A camada que captura valor sobe com o tempo:** hardware, modelo, aplicação e, agora, fluxo de trabalho.
+| Lição | Na prática |
+| --- | --- |
+| **1 · Invernos vêm de promessa, não de falha técnica.** | Prometa um número, não uma transformação. |
+| **2 · A tecnologia chega antes do caso de uso viável.** | Pergunte que peça falta: dado, processamento, algoritmo ou processo. |
+| **3 · O gargalo muda de lugar.** | Hoje é processo e integração. |
+| **4 · Escopo estreito ganha de ambição larga.** | O XCON gerou milhões; a Quinta Geração queimou centenas de milhões. |
+| **5 · A camada que captura valor sobe com o tempo.** | Hardware, modelo, aplicação e, agora, fluxo de trabalho. |
 
 <details>
-<summary>A linha do tempo: os marcos para citar</summary>
+<summary>A linha do tempo completa: os marcos para citar</summary>
 
 | Período | Marcos que você precisa citar | A lição |
 | --- | --- | --- |
