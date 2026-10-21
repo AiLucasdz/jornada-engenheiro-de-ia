@@ -32,7 +32,6 @@ A maior parte do trabalho é **processo, dado, integração e avaliação**. O m
 | --- | --- |
 | **Quer criar o seu primeiro agente** | [Meu vídeo: crie um agente Hermes em menos de 20 minutos](https://youtu.be/VHh2D9agRps). O vídeo é aberto; o consumo de modelos e hospedagem depende da configuração. |
 | **Quer aprender junto com outras pessoas** | A [comunidade Dizevolv](https://comunidade.dizevolv.com/), onde acompanho quem segue esta jornada. |
-| **Já tem um agente funcionando** | Vá direto para os [agentes](#pratica) com um problema real. |
 
 ## O mapa: sete focos
 
