@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1162" height="472" viewBox="0 0 1162 472" role="img" aria-labelledby="title desc">
+<title id="title">Como a IA chegou até aqui</title>
+<desc id="desc">Linha do tempo da IA em oito períodos, alternando euforia e inverno. 1943–1955 · Fundações: Neurônio artificial, Turing. Lição: Defina a métrica antes; 1956–1973 · Euforia: Dartmouth, Perceptron, ELIZA. Lição: Demonstração não é produção; 1974–1980 · 1º inverno: Verba cortada nos EUA e RU. Lição: Promessa maior que a entrega; 1980–1987 · Sistemas especialistas: XCON: US$ 40 mi por ano. Lição: Escopo estreito gera retorno; 1987–1995 · 2º inverno: Regras caras de manter. Lição: Manutenção mata automação; 1995–2011 · Bastidores: Deep Blue, ImageNet. Lição: O gargalo é dado organizado; 2012–2022 · A virada: AlexNet, Transformer, ChatGPT. Lição: A interface fez o sucesso; 2023–hoje · Agentes: Modelos que usam ferramentas. Lição: O gargalo é o processo. Invernos vêm de promessa, não de falha técnica.</desc>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L12 6L0 12Z" fill="#007969"/></marker></defs>
+<rect width="1162" height="472" rx="24" fill="#f5f8f7"/>
+<text x="24" y="44" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#102236" font-weight="700" text-anchor="start">COMO A IA CHEGOU ATÉ AQUI</text>
+<text x="24" y="74" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#435866" font-weight="400" text-anchor="start">Euforia e inverno se alternam. As lições se repetem.</text>
+<rect x="24" y="100" width="256" height="132" rx="16" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<text x="40" y="128" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5b6f7d" font-weight="700" text-anchor="start">1943–1955</text>
+<text x="40" y="154" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#102236" font-weight="700" text-anchor="start">Fundações</text>
+<text x="40" y="184" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#435866" font-weight="400" text-anchor="start">Neurônio artificial, Turing</text>
+<text x="40" y="210" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#007969" font-weight="700" text-anchor="start">Defina a métrica antes</text>
+<path d="M286 166.0H302" stroke="#007969" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="310" y="100" width="256" height="132" rx="16" fill="#e6f4ef" stroke="#b5dacb" stroke-width="2"/>
+<text x="326" y="128" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#007969" font-weight="700" text-anchor="start">1956–1973</text>
+<text x="326" y="154" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#102236" font-weight="700" text-anchor="start">Euforia</text>
+<text x="326" y="184" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#435866" font-weight="400" text-anchor="start">Dartmouth, Perceptron, ELIZA</text>
+<text x="326" y="210" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#007969" font-weight="700" text-anchor="start">Demonstração não é produção</text>
+<path d="M572 166.0H588" stroke="#007969" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="596" y="100" width="256" height="132" rx="16" fill="#edf1f6" stroke="#c6d0dd" stroke-width="2"/>
+<text x="612" y="128" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#6a7a93" font-weight="700" text-anchor="start">1974–1980</text>
+<text x="612" y="154" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#3d4f6b" font-weight="700" text-anchor="start">1º inverno</text>
+<text x="612" y="184" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#435866" font-weight="400" text-anchor="start">Verba cortada nos EUA e RU</text>
+<text x="612" y="210" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#007969" font-weight="700" text-anchor="start">Promessa maior que a entrega</text>
+<path d="M858 166.0H874" stroke="#007969" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="882" y="100" width="256" height="132" rx="16" fill="#e6f4ef" stroke="#b5dacb" stroke-width="2"/>
+<text x="898" y="128" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#007969" font-weight="700" text-anchor="start">1980–1987</text>
+<text x="898" y="154" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#102236" font-weight="700" text-anchor="start">Sistemas especialistas</text>
+<text x="898" y="184" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#435866" font-weight="400" text-anchor="start">XCON: US$ 40 mi por ano</text>
+<text x="898" y="210" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#007969" font-weight="700" text-anchor="start">Escopo estreito gera retorno</text>
+<rect x="24" y="276" width="256" height="132" rx="16" fill="#edf1f6" stroke="#c6d0dd" stroke-width="2"/>
+<text x="40" y="304" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#6a7a93" font-weight="700" text-anchor="start">1987–1995</text>
+<text x="40" y="330" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#3d4f6b" font-weight="700" text-anchor="start">2º inverno</text>
+<text x="40" y="360" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#435866" font-weight="400" text-anchor="start">Regras caras de manter</text>
+<text x="40" y="386" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#007969" font-weight="700" text-anchor="start">Manutenção mata automação</text>
+<path d="M286 342.0H302" stroke="#007969" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="310" y="276" width="256" height="132" rx="16" fill="white" stroke="#c8d9d5" stroke-width="2"/>
+<text x="326" y="304" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5b6f7d" font-weight="700" text-anchor="start">1995–2011</text>
+<text x="326" y="330" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#102236" font-weight="700" text-anchor="start">Bastidores</text>
+<text x="326" y="360" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#435866" font-weight="400" text-anchor="start">Deep Blue, ImageNet</text>
+<text x="326" y="386" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#007969" font-weight="700" text-anchor="start">O gargalo é dado organizado</text>
+<path d="M572 342.0H588" stroke="#007969" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="596" y="276" width="256" height="132" rx="16" fill="#e6f4ef" stroke="#b5dacb" stroke-width="2"/>
+<text x="612" y="304" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#007969" font-weight="700" text-anchor="start">2012–2022</text>
+<text x="612" y="330" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#102236" font-weight="700" text-anchor="start">A virada</text>
+<text x="612" y="360" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#435866" font-weight="400" text-anchor="start">AlexNet, Transformer, ChatGPT</text>
+<text x="612" y="386" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#007969" font-weight="700" text-anchor="start">A interface fez o sucesso</text>
+<path d="M858 342.0H874" stroke="#007969" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="882" y="276" width="256" height="132" rx="16" fill="#e6f4ef" stroke="#b5dacb" stroke-width="2"/>
+<text x="898" y="304" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#007969" font-weight="700" text-anchor="start">2023–hoje</text>
+<text x="898" y="330" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#102236" font-weight="700" text-anchor="start">Agentes</text>
+<text x="898" y="360" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#435866" font-weight="400" text-anchor="start">Modelos que usam ferramentas</text>
+<text x="898" y="386" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#007969" font-weight="700" text-anchor="start">O gargalo é o processo</text>
+<path d="M1010.0 236V254.0H152.0V268" stroke="#007969" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="24" y="446" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#007969" font-weight="700" text-anchor="start">Invernos vêm de promessa, não de falha técnica.</text>
+</svg>
